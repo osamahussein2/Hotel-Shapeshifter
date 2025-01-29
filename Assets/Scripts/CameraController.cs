@@ -1,0 +1,59 @@
+using UnityEngine;
+
+public class CameraController : MonoBehaviour
+{
+    public float moveSpeed = 5f;
+    public float stopDistance = 2f;
+    public LayerMask interactableLayer;
+    public float closeEnough = 0.1f;
+
+    private Vector3 targetPosition;
+    private bool isMoving = false;
+    private float fixedYPosition;
+
+    void Start()
+    {
+        fixedYPosition = transform.position.y;
+    }
+
+    void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, interactableLayer))
+            {
+                Vector3 directionToObject = (hit.collider.transform.position - transform.position).normalized;
+                Vector3 target = hit.collider.transform.position - directionToObject * stopDistance;
+
+                targetPosition = new Vector3(target.x, fixedYPosition, target.z);
+
+                isMoving = true;
+            }
+        }
+
+        if (isMoving)
+        {
+            MoveCamera();
+        }
+    }
+
+    private void MoveCamera()
+    {
+
+        float distanceToTarget = Vector3.Distance(transform.position, targetPosition);
+
+        if (distanceToTarget < closeEnough)
+        {
+            isMoving = false;
+            transform.position = targetPosition;
+            return;
+        }
+
+        Vector3 direction = (targetPosition - transform.position).normalized;
+        Vector3 step = direction * moveSpeed * Time.deltaTime;
+
+        Vector3 newPosition = transform.position + step;
+        transform.position = new Vector3(newPosition.x, fixedYPosition, newPosition.z);
+    }
+}
