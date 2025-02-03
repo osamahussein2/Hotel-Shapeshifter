@@ -4214,13 +4214,13 @@ MonoBehaviour:
     characterImage: {fileID: 21300000, guid: 8ded29c6e91423140a3238e0ddee4ca9, type: 3}
     trustLevel: 0
     dialogueNodes:
-    - dialogueText: Want to buy some of my EugeneCoin?
+    - dialogueText: Hey there. Want to buy some of my EugeneCoin?
       choices:
-      - choiceText: okay
+      - choiceText: Sure
         nextNodeIndex: -1
         trustGain: 0
         trustRequirement: 0
-      - choiceText: fuckkkkk no
+      - choiceText: No thanks
         nextNodeIndex: -1
         trustGain: 0
         trustRequirement: 0
@@ -5667,13 +5667,13 @@ MonoBehaviour:
     characterImage: {fileID: 21300000, guid: 6d7dcb36f4f6fae4f9dcc8c38734ed71, type: 3}
     trustLevel: 0
     dialogueNodes:
-    - dialogueText: Hey I am so grumpy
+    - dialogueText: What do you want? I have enough of a headache as it is.
       choices:
       - choiceText: Fuck off
         nextNodeIndex: 1
         trustGain: 0
         trustRequirement: 0
-      - choiceText: Ok
+      - choiceText: Could you tell me a bit about yourself?
         nextNodeIndex: 1
         trustGain: 0
         trustRequirement: 0
