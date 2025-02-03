@@ -1,75 +1,200 @@
 using TMPro;
-using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine;
+using System.Collections;
 using System.Collections.Generic;
 
 public class DialogueManager : MonoBehaviour
 {
-    public GameObject dialogueUI;
-    public TMP_Text dialogueText;
-    public GameObject choiceContainer;
-    public GameObject choiceButtonPrefab;
-    public List<Button> choiceButtons;
-    public DialogueNode[] dialogueNodes;
-    private int currentNodeIndex = 0;
-    public bool dialogueActive = false;
+    // This is my code
+
+    public GameObject dialogueUI; // Dialogue UI
+    public TMP_Text charNameText; // Text for the character's name
+    public TMP_Text dialogueText; // Text for the dialogue
+    public Image charImage; // Image for the character
+    public GameObject choiceContainer; // Container for choice buttons
+    public GameObject choiceButtonPrefab; // Prefab for choice buttons
+
+    public DialogueNode[] dialogueNodes; // All the dialogue nodes
+    private int currentNodeIndex = 0; // Current node that we are currently being on
+
+    public float typingSpeed = 0.05f; // text typing speeds
+    private bool isTyping = false; // Are we typing text right now?
+
+    private Character currentCharacter; // The character we're talking to
+
+    public bool dialogueActive = false; // Is this dialogue active rn?
+
+
+    // No stealing
 
     void Start()
     {
-        dialogueUI.SetActive(false);
+        dialogueUI.SetActive(false); // Hide the dialogue UI at the start of the game
     }
+
+    // Hands off buster
 
     public void StartDialogue()
     {
-        dialogueActive = true;
-        dialogueUI.SetActive(true);
-        currentNodeIndex = 0;
-        ShowDialogue();
+        dialogueActive = true; // Dialogue is now active Yippee!
+        dialogueUI.SetActive(true); // Show the dialogue UI
+        currentNodeIndex = 0; // Start at the first node
+        ShowDialogueNode(currentNodeIndex); // Show the first node
     }
 
-    void ShowDialogue()
+    // Better not be trying to get MY dialogue system
+
+    void Update()
     {
-        DialogueNode currentNode = dialogueNodes[currentNodeIndex];
-        dialogueText.text = currentNode.dialogueText;
+        // If the player clicks and we're not showing choices or typing, go to the next node
+        if (Input.GetMouseButtonDown(0) && !choiceContainer.activeSelf && !isTyping)
+        {
+            ProgressToNextNode();
+        }
+    }
+
+    // I'm watching you
+
+    void ShowDialogueNode(int nodeIndex)
+    {
+        // If the node index is invalid, we will end the dialogue
+        if (nodeIndex < 0 || nodeIndex >= dialogueNodes.Length)
+        {
+            EndDialogue();
+            return;
+        }
+
+        // Getting the current node
+        DialogueNode currentNode = dialogueNodes[nodeIndex];
+
+        // Setting the character's name and image
+        charNameText.text = currentCharacter.characterName;
+        charImage.sprite = currentCharacter.characterImage;
+
+        // Start typing out the text
+        StartCoroutine(TypeText(currentNode.dialogueText));
+
+        // Show the choices (if there are any)
         ShowChoices(currentNode.choices);
     }
 
-    public void OnChoiceSelected(int nextNodeIndex)
+    // This is my system and not yours
+
+    IEnumerator TypeText(string text)
     {
-        if (nextNodeIndex == -1)
+        isTyping = true;
+        dialogueText.text = ""; // Clear the current text so we can get our awesome new fancy text
+
+        // Type out each letter one by one
+        foreach (char letter in text)
+        {
+            dialogueText.text += letter;
+            yield return new WaitForSeconds(typingSpeed);
+        }
+
+        isTyping = false; // We are done typing
+    }
+
+    // uh uh
+
+    void ProgressToNextNode()
+    {
+        // If we're typing, stop typing and show the full text
+        if (isTyping)
+        {
+            StopAllCoroutines();
+            dialogueText.text = dialogueNodes[currentNodeIndex].dialogueText;
+            isTyping = false;
+            return;
+        }
+
+        // Current node time!
+        DialogueNode currentNode = dialogueNodes[currentNodeIndex];
+
+        // If there's no next node, end the dialogue
+        if (currentNode.nextNodeIndex == -1)
         {
             EndDialogue();
+            return;
         }
-        else
-        {
-            currentNodeIndex = nextNodeIndex;
-            ShowDialogue();
-        }
+
+        // Go to the next node
+        currentNodeIndex = currentNode.nextNodeIndex;
+        ShowDialogueNode(currentNodeIndex);
     }
+
+    // mine
 
     void ShowChoices(List<Choice> choices)
     {
-        for (int i = 0; i < choiceButtons.Count; i++)
+        // Delete all old choice buttons they are unnecessary to our goals now...
+        foreach (Transform child in choiceContainer.transform)
         {
-            if (i < choices.Count)
-            {
-                choiceButtons[i].gameObject.SetActive(true);
-                choiceButtons[i].GetComponentInChildren<TMP_Text>().text = choices[i].choiceText;
+            Destroy(child.gameObject);
+        }
 
-                int nextNodeIndex = choices[i].nextNodeIndex;
-                choiceButtons[i].onClick.RemoveAllListeners();
-                choiceButtons[i].onClick.AddListener(() => OnChoiceSelected(nextNodeIndex));
-            }
-            else
+        // If there are no choices, hide the choice container
+        if (choices.Count == 0)
+        {
+            choiceContainer.SetActive(false);
+            return;
+        }
+
+        // Show the choice container
+        choiceContainer.SetActive(true);
+
+        // Create a button for each of the choice
+        foreach (Choice choice in choices)
+        {
+            // Only show the choice if the player has enough trust
+            if (currentCharacter.trustLevel >= choice.trustRequirement)
             {
-                choiceButtons[i].gameObject.SetActive(false);
+                GameObject choiceButton = Instantiate(choiceButtonPrefab, choiceContainer.transform);
+                choiceButton.GetComponentInChildren<TMP_Text>().text = choice.choiceText;
+
+                // When the button is clicked, call OnChoiceSelected
+                choiceButton.GetComponent<Button>().onClick.AddListener(() =>
+                {
+                    StopAllCoroutines();
+                        OnChoiceSelected(choice);
+                });
             }
         }
     }
 
+    // Property of ironpenguin222 on github
+
+    void OnChoiceSelected(Choice choice)
+    {
+        // Increase the character's trust level
+        currentCharacter.trustLevel += choice.trustGain;
+
+        // Go to the next node
+        currentNodeIndex = choice.nextNodeIndex;
+        ShowDialogueNode(currentNodeIndex);
+    }
+
+    // Have fun with the code
+
     void EndDialogue()
     {
-        dialogueActive = false;
-        dialogueUI.SetActive(false);
+        dialogueActive = false; // Dialogue is no longer active
+        dialogueUI.SetActive(false); // Hide the dialogue UI
+    }
+
+    // My code
+
+    public void SetDialogueNodes(DialogueNode[] nodes)
+    {
+        dialogueNodes = nodes; // Set the dialogue nodes
+        currentNodeIndex = 0; // Reset the current node
+    }
+
+    // Yuh
+
+    public void SetCurrentCharacter(Character character)
+    {
+        currentCharacter = character; // Setting the current character
     }
 }
