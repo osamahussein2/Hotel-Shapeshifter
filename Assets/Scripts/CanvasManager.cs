@@ -59,15 +59,25 @@ public class CanvasManager : MonoBehaviour
         {
             alpha -= Time.deltaTime * alphaSpeed;
 
-            // If alpha is at 0, make the playing game visible and hide the intro game canvas
+            // If alpha is at 0, make the playing game visible and destroy the intro canvas
             if (alpha <= 0.0f)
             {
-                introCanvas.gameObject.SetActive(false);
                 playingGame.SetActive(true);
+
+                Destroy(introCanvas.gameObject);
 
                 // Destroy the object too so it doesn't take up the game's resources
                 Destroy(gameObject);
             }
+        }
+
+        // If player presses the SPACE key, skip the intro
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            playingGame.SetActive(true);
+
+            Destroy(introCanvas.gameObject);
+            Destroy(gameObject);
         }
     }
 }
