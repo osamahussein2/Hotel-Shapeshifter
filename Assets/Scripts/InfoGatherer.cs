@@ -20,13 +20,13 @@ public class InfoGatherer : MonoBehaviour
 
         //update trust
         string charName;
-        float charTrust;
+        int charTrust;
         for(int i = 0; i < characters.Count; i++)
         {
             charName = characters[i].name;
             charTrust = characters[i].GetComponent<DialogueTrigger>().character.trustLevel;
 
-            PlayerPrefs.SetFloat(charName + "TRUST", charTrust);
+            PlayerPrefs.SetInt(charName + "TRUST", charTrust);
         }
 
         updating = false;

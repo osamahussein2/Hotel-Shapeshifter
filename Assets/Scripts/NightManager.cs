@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class NightManager : MonoBehaviour
 {
@@ -16,15 +17,21 @@ public class NightManager : MonoBehaviour
     float spotlightTimer;
 
     public float shapeshifterChance;
-    bool isShapeshifter;
+    public bool isShapeshifter;
 
     float knockTimer;
     public float knockFreq;
     public int knockCount;
     int knocks;
+
+    float endTimer;
+    bool ending;
+
     void Start()
     {
-        //PickCharacter();
+        ending = false;
+
+        PickCharacter();
 
         light.GetComponent<Light>().spotAngle = 0f;
 
@@ -34,8 +41,18 @@ public class NightManager : MonoBehaviour
 
     void PickCharacter()
     {
-        currentChar = characters[Random.Range(0, characters.Count / 2) * 2];
-        // door.GetComponent<DialogueTrigger>().character = currentChar;
+        for (int i = 0; i < characters.Count; i++)
+        {
+            if (PlayerPrefs.HasKey(characters[i].characterName + "TRUST"))
+            {
+                characters[i].trustLevel = PlayerPrefs.GetInt(characters[i].characterName + "TRUST");
+            }
+        }
+
+        //for now just pick bob, uncomment the other line and remove this one to make it pick a random char instead
+        currentChar = characters[5];
+
+        //currentChar = characters[Random.Range(0, characters.Count)];
 
         if (Random.Range(1, 100) <= shapeshifterChance)
         {
@@ -50,13 +67,14 @@ public class NightManager : MonoBehaviour
 
     void Update()
     {
+        //little intro light
         if(spotlightTimer <= 1f)
         {
             spotlightTimer += Time.deltaTime / 3f;
             light.GetComponent<Light>().spotAngle = curve.Evaluate(spotlightTimer) * spotlightRadias;
         }
         
-
+        //little intro knocking
         if (knocks < knockCount)
         {
             if (knockTimer <= 0)
@@ -67,6 +85,25 @@ public class NightManager : MonoBehaviour
             }
             knockTimer -= Time.deltaTime;
         }
-        
+        else
+        {
+            door.GetComponent<NightEventDoor>().interactable = true;
+        }
+
+        if (ending)
+        {
+            endTimer -= Time.deltaTime;
+            light.GetComponent<Light>().intensity = endTimer * 4f;
+            if(endTimer <= -1f)
+            {
+                SceneManager.LoadScene("SampleScene");
+            }
+        }
+    }
+
+    public void EndNight()
+    {
+        ending = true;
+        endTimer = 1f;
     }
 }
