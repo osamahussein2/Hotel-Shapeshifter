@@ -9,6 +9,11 @@ public class NightManager : MonoBehaviour
     public Character currentChar;
 
     public GameObject door;
+    public GameObject light;
+
+    public AnimationCurve curve;
+    public float spotlightRadias;
+    float spotlightTimer;
 
     public float shapeshifterChance;
     bool isShapeshifter;
@@ -19,8 +24,12 @@ public class NightManager : MonoBehaviour
     int knocks;
     void Start()
     {
-        PickCharacter();
-        knockTimer = knockFreq;
+        //PickCharacter();
+
+        light.GetComponent<Light>().spotAngle = 0f;
+
+        spotlightTimer = 0f;
+        knockTimer = knockFreq + 3f;
     }
 
     void PickCharacter()
@@ -41,6 +50,13 @@ public class NightManager : MonoBehaviour
 
     void Update()
     {
+        if(spotlightTimer <= 1f)
+        {
+            spotlightTimer += Time.deltaTime / 3f;
+            light.GetComponent<Light>().spotAngle = curve.Evaluate(spotlightTimer) * spotlightRadias;
+        }
+        
+
         if (knocks < knockCount)
         {
             if (knockTimer <= 0)

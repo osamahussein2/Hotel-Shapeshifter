@@ -23,9 +23,9 @@ RenderSettings:
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 1
+  m_AmbientIntensity: 0.99
   m_AmbientMode: 0
-  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SubtractiveShadowColor: {r: 0, g: 0, b: 0, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
@@ -146,11 +146,11 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 131692180}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -162,7 +162,7 @@ Light:
     m_CustomResolution: -1
     m_Strength: 1
     m_Bias: 0.05
-    m_NormalBias: 0.4
+    m_NormalBias: 0.53
     m_NearPlane: 0.2
     m_CullingMatrixOverride:
       e00: 1
@@ -228,7 +228,6 @@ GameObject:
   - component: {fileID: 166399198}
   - component: {fileID: 166399196}
   - component: {fileID: 166399199}
-  - component: {fileID: 166399200}
   m_Layer: 0
   m_Name: door
   m_TagString: Untagged
@@ -313,46 +312,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &166399200
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 166399195}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd5bf2e61cdff7b4884a2897540a7b2c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueManager: {fileID: 1387189864}
-  character:
-    characterName: ???
-    characterImage: {fileID: 21300000, guid: 73a442f152a284d449acf8762d5d4daf, type: 3}
-    trustLevel: 0
-    dialogueNodes:
-    - dialogueText: Someone is knocking at the door.
-      choices:
-      - choiceText: Approach the door
-        nextNodeIndex: 2
-        trustGain: 0
-        trustRequirement: 0
-      - choiceText: Ignore the door (-10 Trust with ???)
-        nextNodeIndex: 1
-        trustGain: -10
-        trustRequirement: 0
-      nextNodeIndex: 0
-    - dialogueText: After some time the knocking stops.
-      choices:
-      - choiceText: Go to bed
-        nextNodeIndex: -1
-        trustGain: 0
-        trustRequirement: 0
-      - choiceText: Go to bed
-        nextNodeIndex: -1
-        trustGain: 0
-        trustRequirement: 0
-      nextNodeIndex: -1
 --- !u!1 &167567175
 GameObject:
   m_ObjectHideFlags: 0
@@ -615,6 +574,7 @@ MonoBehaviour:
     - dialogueText: 
       choices: []
       nextNodeIndex: 0
+      clueWords: []
   - characterName: Howard
     characterImage: {fileID: 21300000, guid: 6d7dcb36f4f6fae4f9dcc8c38734ed71, type: 3}
     trustLevel: 2
@@ -622,6 +582,7 @@ MonoBehaviour:
     - dialogueText: 
       choices: []
       nextNodeIndex: 0
+      clueWords: []
   - characterName: Nikki?
     characterImage: {fileID: 21300000, guid: 73a442f152a284d449acf8762d5d4daf, type: 3}
     trustLevel: 0
@@ -629,6 +590,7 @@ MonoBehaviour:
     - dialogueText: 
       choices: []
       nextNodeIndex: 0
+      clueWords: []
   - characterName: Nikki
     characterImage: {fileID: 21300000, guid: ab7165e8d4a5a294e89c172fc571e47b, type: 3}
     trustLevel: -5
@@ -636,12 +598,84 @@ MonoBehaviour:
     - dialogueText: 
       choices: []
       nextNodeIndex: 0
+      clueWords: []
   currentChar:
     characterName: 
     characterImage: {fileID: 0}
     trustLevel: 0
     dialogueNodes: []
   door: {fileID: 166399195}
+  light: {fileID: 1824844316}
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.32898715
+      value: 0.06605776
+      inSlope: 0.70822316
+      outSlope: 0.70822316
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.501269
+    - serializedVersion: 3
+      time: 0.6950837
+      value: 1.0193391
+      inSlope: 1.8068402
+      outSlope: 1.8068402
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.8166846
+      value: 0.9379451
+      inSlope: -1.0014547
+      outSlope: -1.0014547
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.89490706
+      value: 1.0418084
+      inSlope: -0.4495837
+      outSlope: -0.4495837
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.9587658
+      value: 0.99219066
+      inSlope: -0.20657639
+      outSlope: -0.20657639
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 1
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0.5823208
+      outSlope: 0.5823208
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 1
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spotlightRadias: 66
   shapeshifterChance: 50
   knockFreq: 0.2
   knockCount: 4
@@ -1344,7 +1378,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1765,59 +1799,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &1387189863
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1387189865}
-  - component: {fileID: 1387189864}
-  m_Layer: 0
-  m_Name: DialogueManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1387189864
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1387189863}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89c90cd7be2eba245bb6d67d1ad05ef3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueUI: {fileID: 1735930448}
-  charNameText: {fileID: 630648616}
-  dialogueText: {fileID: 1217827437}
-  charImage: {fileID: 461504131}
-  choiceContainer: {fileID: 1975297180}
-  choiceButtonPrefab: {fileID: 3955439934205926547, guid: e119247aafbc3bf4585f85ae90bb0c49, type: 3}
-  dialogueNodes: []
-  typingSpeed: 0.05
-  dialogueActive: 0
---- !u!4 &1387189865
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1387189863}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 662.9817, y: 191.05, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1453670448
 GameObject:
   m_ObjectHideFlags: 0
@@ -2494,7 +2475,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1735930449
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2917,7 +2898,6 @@ SceneRoots:
   - {fileID: 1010216617}
   - {fileID: 131692182}
   - {fileID: 2032193699}
-  - {fileID: 1387189865}
   - {fileID: 1357920372}
   - {fileID: 166399197}
   - {fileID: 889190621}
