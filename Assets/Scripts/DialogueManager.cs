@@ -1,8 +1,8 @@
-using TMPro;
-using UnityEngine.UI;
-using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
+using UnityEngine;
+using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -14,6 +14,7 @@ public class DialogueManager : MonoBehaviour
     public Image charImage; // Image for the character
     public GameObject choiceContainer; // Container for choice buttons
     public GameObject choiceButtonPrefab; // Prefab for choice buttons
+    public GameState gameState;
 
     public DialogueNode[] dialogueNodes; // All the dialogue nodes
     private int currentNodeIndex = 0; // Current node that we are currently being on
@@ -25,11 +26,13 @@ public class DialogueManager : MonoBehaviour
 
     public bool dialogueActive = false; // Is this dialogue active rn?
 
+    public ClueList clueList;
 
     // No stealing
 
     void Start()
     {
+
         dialogueUI.SetActive(false); // Hide the dialogue UI at the start of the game
     }
 
@@ -41,6 +44,7 @@ public class DialogueManager : MonoBehaviour
         dialogueUI.SetActive(true); // Show the dialogue UI
         currentNodeIndex = 0; // Start at the first node
         ShowDialogueNode(currentNodeIndex); // Show the first node
+
     }
 
     // Better not be trying to get MY dialogue system
@@ -72,11 +76,26 @@ public class DialogueManager : MonoBehaviour
         charNameText.text = currentCharacter.characterName;
         charImage.sprite = currentCharacter.characterImage;
 
-        // Start typing out the text
+        // Process text and check for clue words
+        ProcessClueWords(currentNode.dialogueText, currentNode, clueList);
         StartCoroutine(TypeText(currentNode.dialogueText));
 
         // Show the choices (if there are any)
         ShowChoices(currentNode.choices);
+    }
+
+    // Checks for clue words in dialogue
+    string ProcessClueWords(string text, DialogueNode currentNode, ClueList clueList)
+    {
+        // Loop through the clue words in the current node
+        foreach (string clue in currentNode.clueWords)
+        {
+            if (text.Contains(clue) && !clueList.HasClue(clue)) // Check if it's a new clue
+            {
+                clueList.AddClue(clue); // Add the clue to the clue list
+            }
+        }
+        return text;
     }
 
     // This is my system and not yours
@@ -157,7 +176,7 @@ public class DialogueManager : MonoBehaviour
                 choiceButton.GetComponent<Button>().onClick.AddListener(() =>
                 {
                     StopAllCoroutines();
-                        OnChoiceSelected(choice);
+                    OnChoiceSelected(choice);
                 });
             }
         }
@@ -169,6 +188,8 @@ public class DialogueManager : MonoBehaviour
     {
         // Increase the character's trust level
         currentCharacter.trustLevel += choice.trustGain;
+        gameState.time += choice.timeIncrease;
+        Debug.Log(gameState.time);
 
         // Go to the next node
         currentNodeIndex = choice.nextNodeIndex;
