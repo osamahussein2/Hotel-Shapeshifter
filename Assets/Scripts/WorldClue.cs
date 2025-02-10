@@ -7,6 +7,8 @@ public class WorldClue : MonoBehaviour
     public int ClueNumber;
     public LayerMask Clue;
     int[] ClueStates = new int[2];
+
+    public ClueList clueList;
     //public object type journal
 
     // Start is called before the first frame update
@@ -29,8 +31,21 @@ public class WorldClue : MonoBehaviour
             //If it hits an object in the Clue Layermask
             if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, Clue))
             {
-                Debug.Log(hit.colliderInstanceID);
-                Debug.Log("You found a clue");
+
+                ClueObject objectScript = hit.collider.GetComponent<ClueObject>();
+                if (ClueStates[objectScript.objectNumber] == 0)
+                {
+                    //Updates that the object has now been found
+
+                    Debug.Log("You found a clue");
+                    //Play ding Sound effect
+
+                    //It can't be found twice
+                    ClueStates[objectScript.objectNumber] = 1;
+                    Debug.Log("I found a " + objectScript.objectName);
+
+                    clueList.AddClue(objectScript.objectName);
+                }
                 //Looks for the ID of the object
                 if (hit.colliderInstanceID == -4996)
                 {

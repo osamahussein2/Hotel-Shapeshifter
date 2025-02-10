@@ -626,6 +626,7 @@ GameObject:
   - component: {fileID: 116746224}
   - component: {fileID: 116746223}
   - component: {fileID: 116746222}
+  - component: {fileID: 116746226}
   m_Layer: 6
   m_Name: Clue 1
   m_TagString: Untagged
@@ -719,6 +720,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 45}
+--- !u!114 &116746226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 116746221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89aa831931fc0f243a512bbae209b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: Dagger In Wall
+  objectNumber: 0
 --- !u!1 &121403320
 GameObject:
   m_ObjectHideFlags: 0
@@ -3655,6 +3670,7 @@ GameObject:
   - component: {fileID: 420239088}
   - component: {fileID: 420239087}
   - component: {fileID: 420239086}
+  - component: {fileID: 420239090}
   m_Layer: 6
   m_Name: Clue 2
   m_TagString: Untagged
@@ -3748,6 +3764,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &420239090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 420239085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89aa831931fc0f243a512bbae209b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: Yellow Painting
+  objectNumber: 1
 --- !u!1 &421291714
 GameObject:
   m_ObjectHideFlags: 0
@@ -6364,7 +6394,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -6448,7 +6478,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 94, y: 359.8}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: 400, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &771022933
 GameObject:
@@ -16087,6 +16117,7 @@ MonoBehaviour:
   Clue:
     serializedVersion: 2
     m_Bits: 64
+  clueList: {fileID: 1885365776}
 --- !u!4 &1904762207
 Transform:
   m_ObjectHideFlags: 0
