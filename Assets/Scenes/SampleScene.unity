@@ -1589,7 +1589,7 @@ GameObject:
   - component: {fileID: 186845148}
   - component: {fileID: 186845147}
   m_Layer: 0
-  m_Name: Big_Man
+  m_Name: Big Man
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1622,7 +1622,36 @@ MonoBehaviour:
         timeIncrease: 0
       nextNodeIndex: -1
       clueWords: []
-  dialogueSections: []
+  dialogueSections:
+  - dialogueNodes:
+    - dialogueText: Hello, small one. Big Man is pleased to meet you.
+      choices:
+      - choiceText: Could you tell me about yourself?
+        nextNodeIndex: 1
+        trustGain: 2
+        trustRequirement: 0
+        timeIncrease: 10
+      - choiceText: Is something wrong with you?
+        nextNodeIndex: 2
+        trustGain: -3
+        trustRequirement: 0
+        timeIncrease: 10
+      - choiceText: Goodbye
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+      nextNodeIndex: 0
+      clueWords: []
+    - dialogueText: Big Man play football. Big Man is very good at football.
+      choices: []
+      nextNodeIndex: -1
+      clueWords:
+      - football
+    - dialogueText: Big Man is insulted. Big Man does not trust you.
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
   gameState: {fileID: 54618526}
 --- !u!65 &186845148
 BoxCollider:
@@ -1704,8 +1733,8 @@ Transform:
   m_GameObject: {fileID: 186845146}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: -4.01, y: -1.72, z: -20.24}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -4.01, y: -1.12, z: -20.24}
+  m_LocalScale: {x: 1.25, y: 1.25, z: 1.25}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1050940279}
@@ -4831,7 +4860,41 @@ MonoBehaviour:
         timeIncrease: 0
       nextNodeIndex: 0
       clueWords: []
-  dialogueSections: []
+  dialogueSections:
+  - dialogueNodes:
+    - dialogueText: Hey there. Want to buy some of my EugeneCoin?
+      choices:
+      - choiceText: Sure
+        nextNodeIndex: 1
+        trustGain: 2
+        trustRequirement: 0
+        timeIncrease: 10
+      - choiceText: No thanks
+        nextNodeIndex: 3
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+      nextNodeIndex: 0
+      clueWords: []
+    - dialogueText: 'Heh, I knew you''d say that. EugeneCoin is simply the most logical
+        choice for cryptocurrency, as I''m sure you''re well aware. '
+      choices: []
+      nextNodeIndex: 2
+      clueWords: []
+    - dialogueText: I'll keep you posted. Right now my account is... under investigation,
+        but my lawyers will take care of it soon.
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+    - dialogueText: Heh, I knew you'd say that. People like you simply don't understand
+        the potential of cryptocurrency.
+      choices: []
+      nextNodeIndex: 4
+      clueWords: []
+    - dialogueText: Of course, when you change your mind, I'll be right here.
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
   gameState: {fileID: 54618526}
 --- !u!65 &532401672
 BoxCollider:
@@ -5518,13 +5581,26 @@ MonoBehaviour:
     - dialogueText: Hello billy
       choices:
       - choiceText: hi
-        nextNodeIndex: -1
-        trustGain: 0
+        nextNodeIndex: 1
+        trustGain: 2
         trustRequirement: 0
         timeIncrease: 10
-      nextNodeIndex: -1
+      - choiceText: I'm going to kill you
+        nextNodeIndex: 2
+        trustGain: -5
+        trustRequirement: 0
+        timeIncrease: 10
+      nextNodeIndex: 0
       clueWords:
       - billy
+    - dialogueText: Hi
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+    - dialogueText: No
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
   gameState: {fileID: 54618526}
 --- !u!65 &609080387
 BoxCollider:
@@ -5862,7 +5938,48 @@ MonoBehaviour:
     characterImage: {fileID: 21300000, guid: de764a7fa9189d2469a7baa92624c6c1, type: 3}
     trustLevel: 0
     dialogueNodes: []
-  dialogueSections: []
+  dialogueSections:
+  - dialogueNodes:
+    - dialogueText: Howdy.
+      choices:
+      - choiceText: Could you tell me about yourself?
+        nextNodeIndex: 1
+        trustGain: 2
+        trustRequirement: 0
+        timeIncrease: 10
+      - choiceText: What's it like being a farmer?
+        nextNodeIndex: 3
+        trustGain: 2
+        trustRequirement: 2
+        timeIncrease: 10
+      - choiceText: Goodbye
+        nextNodeIndex: 0
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+      nextNodeIndex: 0
+      clueWords: []
+    - dialogueText: I'm a farmer. I grow various crops throughout the year and take
+        care of some animals.
+      choices: []
+      nextNodeIndex: 2
+      clueWords:
+      - farmer
+    - dialogueText: If you're curious about my job, I'd be happy to tell you more
+        about it later.
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+    - dialogueText: Glad you asked. It's hard work, but taking care of the animals
+        and the crops always puts a smile on my face.
+      choices: []
+      nextNodeIndex: 4
+      clueWords: []
+    - dialogueText: One of my buddies is taking care of the farm right now while
+        I'm on vacation. Hope he's doing well.
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
   gameState: {fileID: 54618526}
 --- !u!65 &654045072
 BoxCollider:
@@ -5952,6 +6069,54 @@ Transform:
   - {fileID: 356665719}
   m_Father: {fileID: 1390543949}
   m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
+--- !u!1 &703104702
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 703104704}
+  - component: {fileID: 703104703}
+  m_Layer: 0
+  m_Name: Information Gatherer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &703104703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 703104702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63ff162d81a9ac94e8058fa197d9d641, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clueHolder: {fileID: 1885365775}
+  characters:
+  - {fileID: 609080385}
+  updating: 0
+--- !u!4 &703104704
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 703104702}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.8411839, y: -5.9308276, z: 11.324993}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -6561,7 +6726,40 @@ MonoBehaviour:
         timeIncrease: 0
       nextNodeIndex: -1
       clueWords: []
-  dialogueSections: []
+  dialogueSections:
+  - dialogueNodes:
+    - dialogueText: What do you want? I have enough of a headache as it is.
+      choices:
+      - choiceText: Fuck off
+        nextNodeIndex: 1
+        trustGain: -5
+        trustRequirement: 0
+        timeIncrease: 10
+      - choiceText: Could you tell me a bit about yourself?
+        nextNodeIndex: 2
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 10
+      - choiceText: Goodbye.
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+      nextNodeIndex: 0
+      clueWords: []
+    - dialogueText: Wha-!? Get out of my face!
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+    - dialogueText: Why? I don't know you, so I don't see how that's any of your
+        business.
+      choices: []
+      nextNodeIndex: 3
+      clueWords: []
+    - dialogueText: Now leave me. You're making my headache worse.
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
   gameState: {fileID: 54618526}
 --- !u!65 &799987388
 BoxCollider:
@@ -6773,7 +6971,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &809411258
 Transform:
   m_ObjectHideFlags: 0
@@ -6801,6 +6999,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80bf4fa36483b8546a2ef2f2c9c81b89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  alphaSpeed: 0.25
+  maxTimeForGameTitle: 4
 --- !u!1 &814796824
 GameObject:
   m_ObjectHideFlags: 0
@@ -7653,7 +7853,36 @@ MonoBehaviour:
         timeIncrease: 0
       nextNodeIndex: 0
       clueWords: []
-  dialogueSections: []
+  dialogueSections:
+  - dialogueNodes:
+    - dialogueText: I'm the hotel manager. What do you need?
+      choices:
+      - choiceText: I love your hotel!
+        nextNodeIndex: 1
+        trustGain: 1
+        trustRequirement: 0
+        timeIncrease: 10
+      - choiceText: Your hotel sucks!
+        nextNodeIndex: 0
+        trustGain: -1
+        trustRequirement: 0
+        timeIncrease: 10
+      - choiceText: Nothing
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+      nextNodeIndex: 0
+      clueWords: []
+    - dialogueText: Glad to hear it. If any problems arise, make sure to let me know.
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+    - dialogueText: '*sigh* If you have a problem with the hotel, please leave a
+        review and be specific on the issue.'
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
   gameState: {fileID: 54618526}
 --- !u!65 &926742069
 BoxCollider:
@@ -8485,7 +8714,40 @@ MonoBehaviour:
         timeIncrease: 0
       nextNodeIndex: -1
       clueWords: []
-  dialogueSections: []
+  dialogueSections:
+  - dialogueNodes:
+    - dialogueText: Hmm...
+      choices: []
+      nextNodeIndex: 1
+      clueWords: []
+    - dialogueText: Your fashion sense is rather boring.
+      choices:
+      - choiceText: How can I improve it?
+        nextNodeIndex: 2
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 10
+      - choiceText: I don't like your tone.
+        nextNodeIndex: 3
+        trustGain: -2
+        trustRequirement: 0
+        timeIncrease: 10
+      nextNodeIndex: 1
+      clueWords: []
+    - dialogueText: 'My advice for the time being: dress a little more... colorfully.'
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+    - dialogueText: ...Excuse me? Do you KNOW who I am?
+      choices: []
+      nextNodeIndex: 4
+      clueWords: []
+    - dialogueText: I am Nikki Shiningson, one of the most stylish fashion designers
+        of this age, and I would APPRECIATE if you did not cramp my style. Now get
+        out.
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
   gameState: {fileID: 54618526}
 --- !u!65 &1048935381
 BoxCollider:
@@ -15564,6 +15826,7 @@ MonoBehaviour:
   hideClueButton: {fileID: 917443409}
   tempTimer: {fileID: 1613659069}
   gameState: {fileID: 54618526}
+  collectedClues: []
 --- !u!4 &1885365777
 Transform:
   m_ObjectHideFlags: 0
@@ -16293,7 +16556,38 @@ MonoBehaviour:
         timeIncrease: 0
       nextNodeIndex: 0
       clueWords: []
-  dialogueSections: []
+  dialogueSections:
+  - dialogueNodes:
+    - dialogueText: Oh, another stranger. What do you need?
+      choices:
+      - choiceText: How's it going?
+        nextNodeIndex: 1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 10
+      - choiceText: Could you tell me about yourself?
+        nextNodeIndex: 1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 10
+      - choiceText: I don't need anything
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+      nextNodeIndex: 0
+      clueWords: []
+    - dialogueText: I am quite unwell. I need some time to mourn.
+      choices: []
+      nextNodeIndex: 2
+      clueWords:
+      - mourn
+    - dialogueText: My family was murdered last month. I have been devastated since.
+      choices: []
+      nextNodeIndex: 0
+      clueWords:
+      - family
+      - murdered last month
   gameState: {fileID: 54618526}
 --- !u!65 &1993476001
 BoxCollider:
@@ -17468,3 +17762,4 @@ SceneRoots:
   - {fileID: 1904762207}
   - {fileID: 317517757}
   - {fileID: 54618527}
+  - {fileID: 703104704}

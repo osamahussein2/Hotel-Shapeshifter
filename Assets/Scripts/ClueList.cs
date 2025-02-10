@@ -12,7 +12,7 @@ public class ClueList : MonoBehaviour
     public TMP_Text tempTimer;
     public GameState gameState;
 
-    private List<string> collectedClues = new List<string>(); // List of collected clues
+    public List<string> collectedClues = new List<string>(); // List of collected clues
 
     void Start()
     {
