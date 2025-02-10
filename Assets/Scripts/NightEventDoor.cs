@@ -11,6 +11,7 @@ public class NightEventDoor : MonoBehaviour
     Animator am;
     public GameObject dialougeUI;
     public GameObject choices;
+    public GameObject questionChoices;
     NightManager nightMan;
 
     bool isTyping;
@@ -18,10 +19,13 @@ public class NightEventDoor : MonoBehaviour
     float typingSpeed = 0.05f;
 
     bool ignoreQued;
+    bool letinQued;
     bool interacted;
+    bool questioning;
 
     private void Start()
     {
+        questioning = false;
         nightMan = GameObject.Find("Nightynight manager").GetComponent<NightManager>();
         interacted = false;
         choices.SetActive(false);
@@ -39,6 +43,14 @@ public class NightEventDoor : MonoBehaviour
 
             nightMan.EndNight();
             ignoreQued = false;
+        }
+        if (questioning) { questionChoices.SetActive(true); } else { questionChoices.SetActive(false); }
+
+        if (letinQued && !isTyping)
+        {
+            dialougeUI.SetActive(false);
+
+            nightMan.LetInside();
         }
     }
 
@@ -78,8 +90,10 @@ public class NightEventDoor : MonoBehaviour
 
     public void Respond()
     {
+        questionChoices.SetActive(false);
         choices.SetActive(false);
 
+        questioning = true;
     }
 
     public void Ignore()
@@ -89,8 +103,24 @@ public class NightEventDoor : MonoBehaviour
 
         StartCoroutine(TypeText("After some time, The knocking stops.           "));
 
-        int oldTrust = PlayerPrefs.GetInt(nightMan.currentChar.characterName + "TRUST");
-        PlayerPrefs.SetInt(nightMan.currentChar.characterName + "TRUST", oldTrust - 10);
+        if (!nightMan.isShapeshifter)
+        {
+            int oldTrust = PlayerPrefs.GetInt(nightMan.currentChar.characterName + "TRUST");
+            PlayerPrefs.SetInt(nightMan.currentChar.characterName + "TRUST", oldTrust - 10);
+        }
+    }
+
+    public void LetInside()
+    {
+        letinQued = true;
+
+        StartCoroutine(TypeText("Thank you so much.           "));
+
+        if (!nightMan.isShapeshifter)
+        {
+            int oldTrust = PlayerPrefs.GetInt(nightMan.currentChar.characterName + "TRUST");
+            PlayerPrefs.SetInt(nightMan.currentChar.characterName + "TRUST", oldTrust + 20);
+        }
     }
 
     public void Open()

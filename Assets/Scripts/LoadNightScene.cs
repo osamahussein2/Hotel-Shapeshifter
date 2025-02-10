@@ -15,6 +15,8 @@ public class LoadNightScene : MonoBehaviour
     public void LoadNight()
     {
         infoGatherer.GetComponent<InfoGatherer>().UpdateInfo();
+        //infoGatherer.GetComponent<InfoGatherer>().backFromNight = true;
+        PlayerPrefs.SetInt("BackFromNight", 1);
 
         SceneManager.LoadScene("NightEvent");
     }

@@ -10,7 +10,12 @@ public class NightManager : MonoBehaviour
     public Character currentChar;
 
     public GameObject door;
-    public GameObject light;
+    public GameObject doorLight;
+
+    public GameObject normalChar;//character model
+    public GameObject evilChar; //shapeshifter model
+
+    public GameObject gameOver;
 
     public AnimationCurve curve;
     public float spotlightRadias;
@@ -27,13 +32,16 @@ public class NightManager : MonoBehaviour
     float endTimer;
     bool ending;
 
+    float walkinTimer;
+    bool walkin;
+
     void Start()
     {
         ending = false;
 
         PickCharacter();
 
-        light.GetComponent<Light>().spotAngle = 0f;
+        doorLight.GetComponent<Light>().spotAngle = 0f;
 
         spotlightTimer = 0f;
         knockTimer = knockFreq + 3f;
@@ -71,7 +79,7 @@ public class NightManager : MonoBehaviour
         if(spotlightTimer <= 1f)
         {
             spotlightTimer += Time.deltaTime / 3f;
-            light.GetComponent<Light>().spotAngle = curve.Evaluate(spotlightTimer) * spotlightRadias;
+            doorLight.GetComponent<Light>().spotAngle = curve.Evaluate(spotlightTimer) * spotlightRadias;
         }
         
         //little intro knocking
@@ -93,11 +101,44 @@ public class NightManager : MonoBehaviour
         if (ending)
         {
             endTimer -= Time.deltaTime;
-            light.GetComponent<Light>().intensity = endTimer * 4f;
+            doorLight.GetComponent<Light>().intensity = endTimer * 4f;
             if(endTimer <= -1f)
             {
                 SceneManager.LoadScene("SampleScene");
             }
+        }
+
+        if (walkin)
+        {
+
+            walkinTimer -= Time.deltaTime;
+
+            if(walkinTimer <= 0f)
+            {
+                if (isShapeshifter)
+                {
+                    if (evilChar.transform.position.x < -6)
+                    {
+                        evilChar.transform.position = evilChar.transform.position + new Vector3(1f * Time.deltaTime, 0, 0);
+                    }
+                    else
+                    {
+                        GameOver();
+                    }
+                }
+                else
+                {
+                    if (normalChar.transform.position.x < -6)
+                    {
+                        normalChar.transform.position = normalChar.transform.position + new Vector3(1f * Time.deltaTime, 0, 0);
+                    }
+                    else
+                    {
+                        if (!ending) { EndNight(); }
+                    }
+                }
+            }
+            
         }
     }
 
@@ -105,5 +146,25 @@ public class NightManager : MonoBehaviour
     {
         ending = true;
         endTimer = 1f;
+    }
+
+    public void LetInside()
+    {
+        if (!walkin)
+        {
+            door.GetComponent<Animator>().speed = 0.2f;
+            door.GetComponent<NightEventDoor>().Open();
+
+            walkin = true;
+            walkinTimer = 1f;
+
+            normalChar.transform.position = new Vector3(-10f, normalChar.transform.position.y, normalChar.transform.position.z);
+            evilChar.transform.position = new Vector3(-10f, evilChar.transform.position.y, evilChar.transform.position.z);
+        }
+    }
+
+    public void GameOver()
+    {
+        gameOver.SetActive(true);
     }
 }
