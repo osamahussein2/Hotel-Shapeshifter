@@ -29,6 +29,8 @@ public class WorldClue : MonoBehaviour
             //If it hits an object in the Clue Layermask
             if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, Clue))
             {
+                Debug.Log(hit.colliderInstanceID);
+                Debug.Log("You found a clue");
                 //Looks for the ID of the object
                 if (hit.colliderInstanceID == -4996)
                 {
@@ -37,6 +39,7 @@ public class WorldClue : MonoBehaviour
                     //Play ding Sound effect
                     ClueStates[0] = 1;
 
+                    Debug.Log("You found a clue");
                     //Update journal here
                 }
 
@@ -45,6 +48,7 @@ public class WorldClue : MonoBehaviour
                     //Play ding Sound effect
                     ClueStates[1] = 1;
 
+                    Debug.Log("You found a clue");
                     //Update journal here
                 }
             }
