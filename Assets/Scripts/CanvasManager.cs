@@ -9,6 +9,7 @@ public class CanvasManager : MonoBehaviour
     private GameObject playingGame;
     private Canvas introCanvas;
     private Canvas gameInstructions;
+    private Canvas tutorialSideQuest;
 
     private TextMeshProUGUI gameIntroText;
 
@@ -26,6 +27,7 @@ public class CanvasManager : MonoBehaviour
         introCanvas = GameObject.Find("GameIntroCanvas").GetComponent<Canvas>();
         playingGame = GameObject.Find("PlayingGame");
         gameInstructions = GameObject.Find("Game Instructions").GetComponent<Canvas>();
+        tutorialSideQuest = GameObject.Find("Tutorial Side Quest").GetComponent<Canvas>();
 
         // Find the game intro text
         gameIntroText = GameObject.Find("GameIntroCanvas/GameTitleText").GetComponent<TextMeshProUGUI>();
@@ -34,6 +36,7 @@ public class CanvasManager : MonoBehaviour
         introCanvas.gameObject.SetActive(true);
         playingGame.SetActive(false);
         gameInstructions.gameObject.SetActive(false);
+        tutorialSideQuest.gameObject.SetActive(false);
 
         // Set alpha to 0 so the intro text won't be seen as soon as the game starts
         alpha = 0.0f;
@@ -67,6 +70,7 @@ public class CanvasManager : MonoBehaviour
             {
                 playingGame.SetActive(true);
                 gameInstructions.gameObject.SetActive(true);
+                tutorialSideQuest.gameObject.SetActive(true);
 
                 Destroy(introCanvas.gameObject);
 
@@ -80,6 +84,7 @@ public class CanvasManager : MonoBehaviour
         {
             playingGame.SetActive(true);
             gameInstructions.gameObject.SetActive(true);
+            tutorialSideQuest.gameObject.SetActive(true);
 
             Destroy(introCanvas.gameObject);
             Destroy(gameObject);
