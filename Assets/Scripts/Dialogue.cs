@@ -21,4 +21,14 @@ public class Choice
     public int trustGain; // How much trust this choice gives
     public int trustRequirement; // How much trust is needed to see this choice bam!
     public int timeIncrease;
+
+    [System.Serializable]
+    public struct QuestInfo
+    {
+        public string questID;
+        public int questProgressGain;
+        public int questRequirement;
+    }
+    public QuestInfo quest;
+
 }

@@ -28,6 +28,8 @@ public class DialogueManager : MonoBehaviour
 
     public ClueList clueList;
 
+    public QuestList questList;
+
     // No stealing
 
     void Start()
@@ -166,13 +168,23 @@ public class DialogueManager : MonoBehaviour
         // Create a button for each of the choice
         foreach (Choice choice in choices)
         {
-            // Only show the choice if the player has enough trust
-            if (currentCharacter.trustLevel >= choice.trustRequirement)
+            // Only show the choice if the player meets trust and quest requirements
+            bool meetsTrustRequirement = currentCharacter.trustLevel >= choice.trustRequirement;
+            bool meetsQuestRequirement = true;
+
+            if (!string.IsNullOrEmpty(choice.quest.questID) && choice.quest.questRequirement > 0)
+            {
+                Quest quest = questList.GetQuest(choice.quest.questID);
+                if (quest == null || quest.questProgress < choice.quest.questRequirement)
+                {
+                    meetsQuestRequirement = false;
+                }
+            }
+
+            if (meetsTrustRequirement && meetsQuestRequirement)
             {
                 GameObject choiceButton = Instantiate(choiceButtonPrefab, choiceContainer.transform);
                 choiceButton.GetComponentInChildren<TMP_Text>().text = choice.choiceText;
-
-                // When the button is clicked, call OnChoiceSelected
                 choiceButton.GetComponent<Button>().onClick.AddListener(() =>
                 {
                     StopAllCoroutines();
@@ -190,6 +202,24 @@ public class DialogueManager : MonoBehaviour
         currentCharacter.trustLevel += choice.trustGain;
         gameState.time += choice.timeIncrease;
         Debug.Log(gameState.time);
+
+        // Increase quest progress
+        if (!string.IsNullOrEmpty(choice.quest.questID))
+        {
+            Quest quest = questList.GetQuest(choice.quest.questID);
+            if (quest != null)
+            {
+                if (!quest.isActive) quest.isActive = true;
+                quest.questProgress += choice.quest.questProgressGain;
+                if (quest.questProgress >= 100)
+                {
+                    quest.isCompleted = true;
+                    quest.isActive = false;
+                    currentCharacter.trustLevel += quest.trustReward;
+                    Debug.Log("You got a " + quest.itemReward);
+                }
+            }
+        }
 
         // Go to the next node
         currentNodeIndex = choice.nextNodeIndex;
@@ -219,3 +249,4 @@ public class DialogueManager : MonoBehaviour
         currentCharacter = character; // Setting the current character
     }
 }
+
