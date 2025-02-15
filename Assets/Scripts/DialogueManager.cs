@@ -15,6 +15,7 @@ public class DialogueManager : MonoBehaviour
     public GameObject choiceContainer; // Container for choice buttons
     public GameObject choiceButtonPrefab; // Prefab for choice buttons
     public GameState gameState;
+    private bool canSkipText = false; // Prevents skipping immediately
 
     public DialogueNode[] dialogueNodes; // All the dialogue nodes
     private int currentNodeIndex = 0; // Current node that we are currently being on
@@ -45,8 +46,16 @@ public class DialogueManager : MonoBehaviour
         dialogueActive = true; // Dialogue is now active Yippee!
         dialogueUI.SetActive(true); // Show the dialogue UI
         currentNodeIndex = 0; // Start at the first node
+        canSkipText = false; // Prevent skipping instantly
+        StartCoroutine(SkipBuffer());
         ShowDialogueNode(currentNodeIndex); // Show the first node
 
+    }
+
+    private IEnumerator SkipBuffer()
+    {
+        yield return new WaitForSeconds(0.1f); // Short delay to prevent instant skip
+        canSkipText = true;
     }
 
     // Better not be trying to get MY dialogue system
@@ -54,10 +63,19 @@ public class DialogueManager : MonoBehaviour
     void Update()
     {
         // If the player clicks and we're not showing choices or typing, go to the next node
-        if (Input.GetMouseButtonDown(0) && !choiceContainer.activeSelf && !isTyping)
+        if (Input.GetMouseButtonDown(0))
         {
-            ProgressToNextNode();
+            if (isTyping &&canSkipText)
+            {
+                isTyping = false; // Stop typing and display full text instantly
+                dialogueText.text = dialogueNodes[currentNodeIndex].dialogueText;
+            }
+            else if (!choiceContainer.activeSelf) // Only progress if text is done typing
+            {
+                ProgressToNextNode();
+            }
         }
+
     }
 
     // I'm watching you
@@ -106,20 +124,26 @@ public class DialogueManager : MonoBehaviour
     {
         isTyping = true;
         dialogueText.text = ""; // Clear the current text so we can get our awesome new fancy text
+        string fullText = text;
 
-        // Type out each letter one by one
         foreach (char letter in text)
         {
+            if (!isTyping) // If interrupted, stop typing
+            {
+                dialogueText.text = fullText;
+                yield break;
+            }
+
             dialogueText.text += letter;
             yield return new WaitForSeconds(typingSpeed);
         }
-
+        canSkipText = true;
         isTyping = false; // We are done typing
     }
 
-    // uh uh
+        // uh uh
 
-    void ProgressToNextNode()
+        void ProgressToNextNode()
     {
         // If we're typing, stop typing and show the full text
         if (isTyping)
