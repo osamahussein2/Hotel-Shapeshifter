@@ -31,6 +31,7 @@ public class DialogueManager : MonoBehaviour
 
     public QuestList questList;
 
+    public QuestPopUp popUp; // pop up when you get or finish a quest
     // No stealing
 
     void Start()
@@ -233,12 +234,22 @@ public class DialogueManager : MonoBehaviour
             Quest quest = questList.GetQuest(choice.quest.questID);
             if (quest != null)
             {
-                if (!quest.isActive) quest.isActive = true;
+                if (!quest.isActive) 
+                { 
+                    quest.isActive = true; 
+                    popUp.PopUp(quest.questName, false);
+                    for (int i = 0; i < quest.questItems.Count; i++)
+                    {
+                        quest.questItems[i].gameObject.SetActive(true);
+                        quest.questItems[i].gameObject.GetComponent<QuestItem>().collected = false;
+                    }
+                }
                 quest.questProgress += choice.quest.questProgressGain;
                 if (quest.questProgress >= 100)
                 {
                     quest.isCompleted = true;
                     quest.isActive = false;
+                    popUp.PopUp(quest.questName, true);//quest pop up
                     currentCharacter.trustLevel += quest.trustReward;
                     Debug.Log("You got a " + quest.itemReward);
                 }
