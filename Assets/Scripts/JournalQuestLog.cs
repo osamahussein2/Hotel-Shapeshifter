@@ -10,6 +10,7 @@ public class JournalQuestLog : MonoBehaviour
 
     List<GameObject> questTexts;
 
+    /*
     void Start()
     {
         questTexts = new List<GameObject>();
@@ -57,4 +58,5 @@ public class JournalQuestLog : MonoBehaviour
             }
         }
     }
+    */
 }

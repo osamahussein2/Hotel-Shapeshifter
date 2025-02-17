@@ -6,7 +6,8 @@ public class ClueObject : MonoBehaviour
 {
     public string objectName;
     public int objectNumber;
-    private int objectState; //0=not found, 1=found, 2=found and looked at in journal
+    public int objectType;
+    public int objectState; //0=not found, 1=found, 2=found and looked at in journal
 
     // Start is called before the first frame update
     void Start()
@@ -17,6 +18,9 @@ public class ClueObject : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (objectState == 1)
+        {
+            this.gameObject.SetActive(false);
+        }
     }
 }

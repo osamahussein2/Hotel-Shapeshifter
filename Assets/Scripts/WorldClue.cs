@@ -6,7 +6,8 @@ public class WorldClue : MonoBehaviour
 {
     public int ClueNumber;
     public LayerMask Clue;
-    int[] ClueStates = new int[2];
+    int[] WorldClues = new int[2];
+    int[] Items = new int[2];
 
     public ClueList clueList;
     //public object type journal
@@ -14,9 +15,11 @@ public class WorldClue : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //List that states weather a clue has been, 0=not found, 1=found, 2=found and looked at in journal
-        ClueStates[0] = 0; //Wood in wall (ID = -4996)
-        ClueStates[1] = 0; //Painting (ID = -10174)
+        //List that states weather a clue has been, 0=not found, 1=found,
+        WorldClues[0] = 0; //Wood in wall 
+        WorldClues[1] = 0; //Painting 
+        Items[0] = 0; //Wood in wall 
+        Items[0] = 0; //Painting 
     }
 
     // Update is called once per frame
@@ -33,38 +36,38 @@ public class WorldClue : MonoBehaviour
             {
 
                 ClueObject objectScript = hit.collider.GetComponent<ClueObject>();
-                if (ClueStates[objectScript.objectNumber] == 0)
+                if (objectScript.objectType == 0)
                 {
-                    //Updates that the object has now been found
-
-                    Debug.Log("You found a clue");
-                    //Play ding Sound effect
-
-                    //It can't be found twice
-                    ClueStates[objectScript.objectNumber] = 1;
-                    Debug.Log("I found a " + objectScript.objectName);
-
-                    clueList.AddClue(objectScript.objectName);
+                    if (WorldClues[objectScript.objectNumber] == 0)
+                    {
+                        //Updates that the object has now been found
+    
+                        Debug.Log("You found a clue");
+                        //Play ding Sound effect
+                            
+                        //It can't be found twice
+                        WorldClues[objectScript.objectNumber] = 1;
+                        Debug.Log("I found a " + objectScript.objectName);
+    
+                        clueList.AddClue(objectScript.objectName, 0);
+                    }
                 }
-                //Looks for the ID of the object
-                if (hit.colliderInstanceID == -4996)
+                if (objectScript.objectType == 2)
                 {
-                    //Updates that the object has now been found
+                    if (Items[objectScript.objectNumber] == 0)
+                    {
+                        //Updates that the object has now been found
 
-                    //Play ding Sound effect
-                    ClueStates[0] = 1;
+                        Debug.Log("You found a clue");
+                        //Play ding Sound effect
 
-                    Debug.Log("You found a clue");
-                    //Update journal here
-                }
+                        //It can't be found twice
+                        Items[objectScript.objectNumber] = 1;
+                        Debug.Log("I found a " + objectScript.objectName);
 
-                if (hit.colliderInstanceID == -10174)
-                {
-                    //Play ding Sound effect
-                    ClueStates[1] = 1;
-
-                    Debug.Log("You found a clue");
-                    //Update journal here
+                        clueList.AddClue(objectScript.objectName, 2);
+                        objectScript.objectState = 1;
+                    }
                 }
             }
         }

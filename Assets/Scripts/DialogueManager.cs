@@ -111,9 +111,9 @@ public class DialogueManager : MonoBehaviour
         // Loop through the clue words in the current node
         foreach (string clue in currentNode.clueWords)
         {
-            if (text.Contains(clue) && !clueList.HasClue(clue)) // Check if it's a new clue
+            if (text.Contains(clue) && !clueList.HasClue(clue, 0)) // Check if it's a new clue
             {
-                clueList.AddClue(clue); // Add the clue to the clue list
+                clueList.AddClue(clue, 0); // Add the clue to the clue list
             }
         }
         return text;
