@@ -12666,17 +12666,17 @@ MonoBehaviour:
           questRequirement: 0
       - choiceText: Your hotel sucks!
         nextNodeIndex: 2
-        trustGain: 2
+        trustGain: -2
         trustRequirement: -99
         timeIncrease: 10
         quest:
           questID: 
           questProgressGain: 0
           questRequirement: 0
-      - choiceText: Nothing
-        nextNodeIndex: -1
+      - choiceText: Do you have any tasks for me?
+        nextNodeIndex: 3
         trustGain: 0
-        trustRequirement: -99
+        trustRequirement: -2
         timeIncrease: 0
         quest:
           questID: 
@@ -12691,6 +12691,29 @@ MonoBehaviour:
     - dialogueText: '*sigh* If you have a problem with the hotel, please leave a
         review and be specific on the issue.'
       choices: []
+      nextNodeIndex: -1
+      clueWords: []
+    - dialogueText: I do, actually. Could you let Nikki know that she left some of
+        her tailoring supplies in the lobby?
+      choices:
+      - choiceText: Sure thing
+        nextNodeIndex: -1
+        trustGain: 1
+        trustRequirement: -99
+        timeIncrease: 0
+        quest:
+          questID: Nikki1
+          questProgressGain: 1
+          questRequirement: 0
+      - choiceText: No thanks
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: -99
+        timeIncrease: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
       nextNodeIndex: -1
       clueWords: []
   gameState: {fileID: 54618526}
@@ -13489,6 +13512,15 @@ MonoBehaviour:
       trustReward: 10
       questItems:
       - {fileID: 177343031}
+    - questID: Nikki1
+      questName: Talk to Nikki
+      description: Tell Nikki she left her supplies in the lobby
+      questProgress: 0
+      isActive: 0
+      isCompleted: 0
+      itemReward: gun
+      trustReward: 10
+      questItems: []
   popUp: {fileID: 1692012226}
 --- !u!4 &965023554
 Transform:
@@ -14216,6 +14248,15 @@ MonoBehaviour:
           questID: 
           questProgressGain: 0
           questRequirement: 0
+      - choiceText: Your tailor supplies are in the lobby
+        nextNodeIndex: 5
+        trustGain: 1
+        trustRequirement: -99
+        timeIncrease: 10
+        quest:
+          questID: Nikki1
+          questProgressGain: 99
+          questRequirement: 1
       nextNodeIndex: 1
       clueWords: []
     - dialogueText: 'My advice for the time being: dress a little more... colorfully.'
@@ -14229,6 +14270,10 @@ MonoBehaviour:
     - dialogueText: I am Nikki Shiningson, one of the most stylish fashion designers
         of this age, and I would APPRECIATE if you did not cramp my style. Now get
         out.
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+    - dialogueText: Oh, did I leave them there? Thanks... I guess.
       choices: []
       nextNodeIndex: -1
       clueWords: []
