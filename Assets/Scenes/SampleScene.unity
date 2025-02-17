@@ -2492,7 +2492,7 @@ MonoBehaviour:
       - choiceText: Could you tell me about yourself?
         nextNodeIndex: 1
         trustGain: 2
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 10
         quest:
           questID: 
@@ -2501,7 +2501,7 @@ MonoBehaviour:
       - choiceText: Is something wrong with you?
         nextNodeIndex: 2
         trustGain: -3
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 10
         quest:
           questID: 
@@ -2510,7 +2510,7 @@ MonoBehaviour:
       - choiceText: Goodbye
         nextNodeIndex: -1
         trustGain: 0
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 0
         quest:
           questID: 
@@ -9382,7 +9382,7 @@ MonoBehaviour:
       - choiceText: Could you tell me about yourself?
         nextNodeIndex: 1
         trustGain: 2
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 10
         quest:
           questID: 
@@ -9400,7 +9400,7 @@ MonoBehaviour:
       - choiceText: Goodbye
         nextNodeIndex: 0
         trustGain: 0
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 0
         quest:
           questID: 
@@ -12654,16 +12654,16 @@ MonoBehaviour:
       - choiceText: I love your hotel!
         nextNodeIndex: 1
         trustGain: 1
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 10
         quest:
           questID: 
           questProgressGain: 0
           questRequirement: 0
       - choiceText: Your hotel sucks!
-        nextNodeIndex: 0
-        trustGain: -1
-        trustRequirement: 0
+        nextNodeIndex: 2
+        trustGain: 2
+        trustRequirement: -99
         timeIncrease: 10
         quest:
           questID: 
@@ -12672,7 +12672,7 @@ MonoBehaviour:
       - choiceText: Nothing
         nextNodeIndex: -1
         trustGain: 0
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 0
         quest:
           questID: 
@@ -14197,7 +14197,7 @@ MonoBehaviour:
       - choiceText: How can I improve it?
         nextNodeIndex: 2
         trustGain: 0
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 10
         quest:
           questID: 
@@ -14206,7 +14206,7 @@ MonoBehaviour:
       - choiceText: I don't like your tone.
         nextNodeIndex: 3
         trustGain: -2
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 10
         quest:
           questID: 
@@ -25518,7 +25518,7 @@ MonoBehaviour:
       - choiceText: How's it going?
         nextNodeIndex: 1
         trustGain: 0
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 10
         quest:
           questID: 
@@ -25527,7 +25527,7 @@ MonoBehaviour:
       - choiceText: Could you tell me about yourself?
         nextNodeIndex: 1
         trustGain: 0
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 10
         quest:
           questID: 
@@ -25536,7 +25536,7 @@ MonoBehaviour:
       - choiceText: I don't need anything
         nextNodeIndex: -1
         trustGain: 0
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 0
         quest:
           questID: 
