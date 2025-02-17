@@ -10,20 +10,23 @@ public class JournalQuestLog : MonoBehaviour
 
     List<GameObject> questTexts;
 
-    /*
+    
     void Start()
     {
         questTexts = new List<GameObject>();
 
-        for (int i = 0; i < transform.GetChild(2).childCount; i++)
+        for (int i = 0; i < transform.GetChild(1).GetChild(0).childCount; i++)
         {
-            questTexts.Add(transform.GetChild(2).GetChild(i).gameObject);
+            questTexts.Add(transform.GetChild(1).GetChild(0).GetChild(i).gameObject);
         }
     }
 
     void Update()
     {
-        UpdateQuestLog();
+        if (transform.GetChild(1).gameObject.activeSelf)
+        {
+            UpdateQuestLog();
+        }
     }
 
     public void UpdateQuestLog()
@@ -58,5 +61,5 @@ public class JournalQuestLog : MonoBehaviour
             }
         }
     }
-    */
+    
 }
