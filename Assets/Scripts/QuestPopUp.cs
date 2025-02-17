@@ -10,6 +10,7 @@ public class QuestPopUp : MonoBehaviour
 
     public Sprite qGot;
     public Sprite qDone;
+    public Sprite cGot;
 
     public TextMeshProUGUI popText;
     public Image popBg;
@@ -54,20 +55,24 @@ public class QuestPopUp : MonoBehaviour
         }
     }
 
-    public void PopUp(string qName, bool completed)
+    public void PopUp(string qName, string type)
     {
         if (!active)
         {
             active = true;
             popText.text = qName;
 
-            if (completed)
+            if (type == "Quest Done")
             {
                 popBg.sprite = qDone;
             }
-            else
+            else if (type == "Quest Got")
             {
                 popBg.sprite = qGot;
+            }
+            else if (type == "Clue Got")
+            {
+                popBg.sprite = cGot;
             }
 
             popUpTimer = 0;

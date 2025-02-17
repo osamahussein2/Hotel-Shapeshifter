@@ -237,7 +237,7 @@ public class DialogueManager : MonoBehaviour
                 if (!quest.isActive) 
                 { 
                     quest.isActive = true; 
-                    popUp.PopUp(quest.questName, false);
+                    popUp.PopUp(quest.questName, "Quest Got");
                     for (int i = 0; i < quest.questItems.Count; i++)
                     {
                         quest.questItems[i].gameObject.SetActive(true);
@@ -249,7 +249,7 @@ public class DialogueManager : MonoBehaviour
                 {
                     quest.isCompleted = true;
                     quest.isActive = false;
-                    popUp.PopUp(quest.questName, true);//quest pop up
+                    popUp.PopUp(quest.questName, "Quest Done");//quest pop up
                     currentCharacter.trustLevel += quest.trustReward;
                     Debug.Log("You got a " + quest.itemReward);
                 }
