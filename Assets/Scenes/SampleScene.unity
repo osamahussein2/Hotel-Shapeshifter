@@ -3109,7 +3109,6 @@ GameObject:
   - component: {fileID: 204052230}
   - component: {fileID: 204052229}
   - component: {fileID: 204052228}
-  - component: {fileID: 204052231}
   m_Layer: 5
   m_Name: clue_Journal
   m_TagString: Untagged
@@ -3177,19 +3176,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &204052231
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 204052227}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: efc47b65db645314a87a78bf5593efd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueManager: {fileID: 965023553}
 --- !u!1 &211614902
 GameObject:
   m_ObjectHideFlags: 0
@@ -12564,7 +12550,6 @@ GameObject:
   - component: {fileID: 894043585}
   - component: {fileID: 894043588}
   - component: {fileID: 894043587}
-  - component: {fileID: 894043586}
   m_Layer: 5
   m_Name: item_Journal
   m_TagString: Untagged
@@ -12592,19 +12577,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &894043586
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 894043584}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: efc47b65db645314a87a78bf5593efd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueManager: {fileID: 965023553}
 --- !u!114 &894043587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17444,6 +17416,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1262093644}
   - component: {fileID: 1262093645}
+  - component: {fileID: 1262093646}
   m_Layer: 5
   m_Name: journalMaster
   m_TagString: Untagged
@@ -17482,6 +17455,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1262093643}
   m_CullTransparentMesh: 1
+--- !u!114 &1262093646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1262093643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efc47b65db645314a87a78bf5593efd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueManager: {fileID: 965023553}
 --- !u!1 &1271145126
 GameObject:
   m_ObjectHideFlags: 0
@@ -18424,7 +18410,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1353831562}
-  - component: {fileID: 1353831563}
   m_Layer: 5
   m_Name: buttonMaster
   m_TagString: Untagged
@@ -18453,19 +18438,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1353831563
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1353831561}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: efc47b65db645314a87a78bf5593efd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueManager: {fileID: 965023553}
 --- !u!1 &1357852171
 GameObject:
   m_ObjectHideFlags: 0
@@ -26004,7 +25976,6 @@ GameObject:
   - component: {fileID: 1943990707}
   - component: {fileID: 1943990710}
   - component: {fileID: 1943990709}
-  - component: {fileID: 1943990708}
   m_Layer: 5
   m_Name: quest_Journal
   m_TagString: Untagged
@@ -26032,19 +26003,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1943990708
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1943990706}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: efc47b65db645314a87a78bf5593efd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueManager: {fileID: 965023553}
 --- !u!114 &1943990709
 MonoBehaviour:
   m_ObjectHideFlags: 0
