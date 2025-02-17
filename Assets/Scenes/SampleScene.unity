@@ -7448,18 +7448,18 @@ MonoBehaviour:
         trustRequirement: 0
         timeIncrease: 0
         quest:
-          questID: 
+          questID: 5
           questProgressGain: 0
           questRequirement: 0
       - choiceText: What about this quest?
-        nextNodeIndex: 3
+        nextNodeIndex: 5
         trustGain: 0
         trustRequirement: 0
         timeIncrease: 0
         quest:
-          questID: 
+          questID: Kill
           questProgressGain: 0
-          questRequirement: 0
+          questRequirement: 50
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: 'Heh, I knew you''d say that. EugeneCoin is simply the most logical
@@ -7478,6 +7478,10 @@ MonoBehaviour:
       nextNodeIndex: 4
       clueWords: []
     - dialogueText: Of course, when you change your mind, I'll be right here.
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+    - dialogueText: Kill Bob? Who is Bob?
       choices: []
       nextNodeIndex: -1
       clueWords: []
