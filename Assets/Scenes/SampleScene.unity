@@ -453,7 +453,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueProgress: 0
-  time: 0
 --- !u!4 &54618527
 Transform:
   m_ObjectHideFlags: 0
@@ -1675,7 +1674,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 122866130}
   m_OnClick:
     m_PersistentCalls:
@@ -12600,7 +12599,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &809411258
 Transform:
   m_ObjectHideFlags: 0
@@ -12623,7 +12622,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 809411257}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 80bf4fa36483b8546a2ef2f2c9c81b89, type: 3}
   m_Name: 
@@ -27537,7 +27536,6 @@ MonoBehaviour:
   showClueButton: {fileID: 373727973}
   hideClueButton: {fileID: 2057138529}
   changeClueButton: {fileID: 1678159585}
-  tempTimer: {fileID: 1613659069}
   gameState: {fileID: 54618526}
   collectedClues: []
   collectedQuests: []

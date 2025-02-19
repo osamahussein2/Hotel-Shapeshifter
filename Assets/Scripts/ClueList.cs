@@ -18,7 +18,6 @@ public class ClueList : MonoBehaviour
 
     public Button hideClueButton; // Button to hide the clues
     public Button changeClueButton; // Button to change the journal page
-    public TMP_Text tempTimer;
     public GameState gameState;
 
     int currentJournalPage; //0 = clue, 1 = quest, 2 = items
@@ -41,7 +40,6 @@ public class ClueList : MonoBehaviour
 
     private void Update()
     {
-        tempTimer.text = "" + gameState.time;
     }
 
     // Add a new clue if it's not already collected

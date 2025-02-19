@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
@@ -7,6 +8,8 @@ using UnityEngine;
 public class TimeManager : MonoBehaviour
 {
     private TextMeshProUGUI timeText;
+
+    private LoadNightScene nightSceneScript;
 
     // So the minutes and seconds can be set outside of this script using TimeManager class
     public static int minutes, seconds;
@@ -19,6 +22,8 @@ public class TimeManager : MonoBehaviour
 
         // Let's get the text mesh pro component that inside the time component itself
         timeText = GetComponent<TextMeshProUGUI>();
+
+        nightSceneScript = GameObject.Find("sleepy_btn").GetComponent<LoadNightScene>();
 
         timeText.text = $"{minutes} : {seconds} ";
     }
@@ -56,6 +61,23 @@ public class TimeManager : MonoBehaviour
             {
                 timeText.text = $"{minutes} : {seconds} ";
             }
+        }
+
+        if (seconds >= 60)
+        {
+            minutes += 1;
+
+            seconds = 0;
+        }
+
+        TransitionToNightEvent();
+    }
+
+    private void TransitionToNightEvent()
+    {
+        if (minutes >= 12 && seconds >= 0)
+        {
+            nightSceneScript.LoadNight();
         }
     }
 }
