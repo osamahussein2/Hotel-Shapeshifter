@@ -34,10 +34,14 @@ public class DialogueManager : MonoBehaviour
     public QuestPopUp popUp; // pop up when you get or finish a quest
     // No stealing
 
+    public static bool isDialogueTriggered;
+
     void Start()
     {
 
         dialogueUI.SetActive(false); // Hide the dialogue UI at the start of the game
+
+        isDialogueTriggered = false;
     }
 
     // Hands off buster
@@ -50,6 +54,8 @@ public class DialogueManager : MonoBehaviour
         canSkipText = false; // Prevent skipping instantly
         StartCoroutine(SkipBuffer());
         ShowDialogueNode(currentNodeIndex); // Show the first node
+
+        isDialogueTriggered = true;
 
     }
 
@@ -266,6 +272,8 @@ public class DialogueManager : MonoBehaviour
     {
         dialogueActive = false; // Dialogue is no longer active
         dialogueUI.SetActive(false); // Hide the dialogue UI
+
+        isDialogueTriggered = false;
     }
 
     // My code
