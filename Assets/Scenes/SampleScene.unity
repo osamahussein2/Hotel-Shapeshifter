@@ -1063,6 +1063,45 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 40466431}
   m_CullTransparentMesh: 1
+--- !u!1 &41328958
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 41328959}
+  m_Layer: 0
+  m_Name: Characters
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &41328959
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 41328958}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 799987391}
+  - {fileID: 609080390}
+  - {fileID: 532401675}
+  - {fileID: 1993476004}
+  - {fileID: 1048935384}
+  - {fileID: 926742072}
+  - {fileID: 186845151}
+  - {fileID: 654045075}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &43520185
 GameObject:
   m_ObjectHideFlags: 0
@@ -5617,24 +5656,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueManager: {fileID: 965023553}
-  character:
-    characterName: Big Man
-    characterImage: {fileID: 21300000, guid: c53b1d7ae2a9a01429a71ebd9fe38ea3, type: 3}
-    trustLevel: 0
-    dialogueNodes:
-    - dialogueText: ooga
-      choices:
-      - choiceText: booga
-        nextNodeIndex: -1
-        trustGain: 0
-        trustRequirement: 0
-        timeIncrease: 0
-        quest:
-          questID: 
-          questProgressGain: 0
-          questRequirement: 0
-      nextNodeIndex: -1
-      clueWords: []
+  character: {fileID: 0}
   dialogueSections:
   - dialogueNodes:
     - dialogueText: Hello, small one. Big Man is pleased to meet you.
@@ -5644,6 +5666,7 @@ MonoBehaviour:
         trustGain: 2
         trustRequirement: -99
         timeIncrease: 10
+        oneUse: 0
         quest:
           questID: 
           questProgressGain: 0
@@ -5653,6 +5676,7 @@ MonoBehaviour:
         trustGain: -3
         trustRequirement: -99
         timeIncrease: 10
+        oneUse: 0
         quest:
           questID: 
           questProgressGain: 0
@@ -5662,6 +5686,7 @@ MonoBehaviour:
         trustGain: 0
         trustRequirement: -99
         timeIncrease: 0
+        oneUse: 0
         quest:
           questID: 
           questProgressGain: 0
@@ -5765,7 +5790,7 @@ Transform:
   - {fileID: 1050940279}
   - {fileID: 455610722}
   - {fileID: 1349579734}
-  m_Father: {fileID: 1390543949}
+  m_Father: {fileID: 41328959}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!114 &186845152
 MonoBehaviour:
@@ -16114,33 +16139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueManager: {fileID: 965023553}
-  character:
-    characterName: Eugene
-    characterImage: {fileID: 21300000, guid: 4c6f3949078fa70429d690846a7b75a2, type: 3}
-    trustLevel: 0
-    dialogueNodes:
-    - dialogueText: Hey there. Want to buy some of my EugeneCoin?
-      choices:
-      - choiceText: Sure
-        nextNodeIndex: -1
-        trustGain: 0
-        trustRequirement: 0
-        timeIncrease: 0
-        quest:
-          questID: 
-          questProgressGain: 0
-          questRequirement: 0
-      - choiceText: No thanks
-        nextNodeIndex: -1
-        trustGain: 0
-        trustRequirement: 0
-        timeIncrease: 0
-        quest:
-          questID: 
-          questProgressGain: 0
-          questRequirement: 0
-      nextNodeIndex: 0
-      clueWords: []
+  character: {fileID: 0}
   dialogueSections:
   - dialogueNodes:
     - dialogueText: Hey there. Want to buy some of my EugeneCoin?
@@ -16150,6 +16149,7 @@ MonoBehaviour:
         trustGain: 2
         trustRequirement: 0
         timeIncrease: 10
+        oneUse: 0
         quest:
           questID: 
           questProgressGain: 0
@@ -16159,6 +16159,7 @@ MonoBehaviour:
         trustGain: 0
         trustRequirement: 0
         timeIncrease: 0
+        oneUse: 0
         quest:
           questID: 5
           questProgressGain: 0
@@ -16168,6 +16169,7 @@ MonoBehaviour:
         trustGain: 0
         trustRequirement: 0
         timeIncrease: 0
+        oneUse: 0
         quest:
           questID: Kill
           questProgressGain: 0
@@ -16285,7 +16287,7 @@ Transform:
   - {fileID: 944147794}
   - {fileID: 1746275698}
   - {fileID: 166361876}
-  m_Father: {fileID: 1390543949}
+  m_Father: {fileID: 41328959}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &532401676
 MonoBehaviour:
@@ -17899,6 +17901,7 @@ GameObject:
   - component: {fileID: 609080387}
   - component: {fileID: 609080386}
   - component: {fileID: 609080391}
+  - component: {fileID: 609080392}
   m_Layer: 0
   m_Name: Bob
   m_TagString: Untagged
@@ -17919,11 +17922,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueManager: {fileID: 965023553}
-  character:
-    characterName: Bob
-    characterImage: {fileID: 21300000, guid: f4cf4454540f6404cbd468b2a66af17b, type: 3}
-    trustLevel: 0
-    dialogueNodes: []
+  character: {fileID: 609080392}
   dialogueSections:
   - dialogueNodes:
     - dialogueText: Hello billy
@@ -17932,7 +17931,8 @@ MonoBehaviour:
         nextNodeIndex: 1
         trustGain: 2
         trustRequirement: 0
-        timeIncrease: 10
+        timeIncrease: 80
+        oneUse: 0
         quest:
           questID: 
           questProgressGain: 0
@@ -17942,6 +17942,7 @@ MonoBehaviour:
         trustGain: 0
         trustRequirement: 0
         timeIncrease: 10
+        oneUse: 1
         quest:
           questID: Kill
           questProgressGain: 50
@@ -17960,6 +17961,7 @@ MonoBehaviour:
         trustGain: 0
         trustRequirement: 0
         timeIncrease: 0
+        oneUse: 0
         quest:
           questID: Kill
           questProgressGain: 0
@@ -17969,6 +17971,7 @@ MonoBehaviour:
         trustGain: 0
         trustRequirement: 0
         timeIncrease: 0
+        oneUse: 0
         quest:
           questID: 
           questProgressGain: 0
@@ -18063,7 +18066,7 @@ Transform:
   - {fileID: 1421111975}
   - {fileID: 268184228}
   - {fileID: 278069303}
-  m_Father: {fileID: 1390543949}
+  m_Father: {fileID: 41328959}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &609080391
 MonoBehaviour:
@@ -18079,6 +18082,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textHolder: {fileID: 1961501171}
   trustText: {fileID: 837328469}
+--- !u!114 &609080392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 609080385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 249cc24ea26a89c4495780b2f7350bdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Bob
+  characterImage: {fileID: 21300000, guid: f4cf4454540f6404cbd468b2a66af17b, type: 3}
+  trustLevel: 0
+  dialogueNodes: []
+  schedule: []
+  currentLocation: {fileID: 609080390}
 --- !u!1 &617725919
 GameObject:
   m_ObjectHideFlags: 0
@@ -19642,11 +19663,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueManager: {fileID: 965023553}
-  character:
-    characterName: Ben
-    characterImage: {fileID: 21300000, guid: 6a5bd59e7aaf8bf4392b99eb946786b8, type: 3}
-    trustLevel: 0
-    dialogueNodes: []
+  character: {fileID: 0}
   dialogueSections:
   - dialogueNodes:
     - dialogueText: Howdy.
@@ -19656,6 +19673,7 @@ MonoBehaviour:
         trustGain: 2
         trustRequirement: -99
         timeIncrease: 10
+        oneUse: 0
         quest:
           questID: 
           questProgressGain: 0
@@ -19665,6 +19683,7 @@ MonoBehaviour:
         trustGain: 2
         trustRequirement: 2
         timeIncrease: 10
+        oneUse: 0
         quest:
           questID: 
           questProgressGain: 0
@@ -19674,6 +19693,7 @@ MonoBehaviour:
         trustGain: 0
         trustRequirement: -99
         timeIncrease: 0
+        oneUse: 0
         quest:
           questID: 
           questProgressGain: 0
@@ -19781,7 +19801,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 654045070}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7071068, z: -0, w: -0.7071068}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: -0.7071068}
   m_LocalPosition: {x: -5.33, y: -1.72, z: -14.43}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -19789,7 +19809,7 @@ Transform:
   - {fileID: 959993352}
   - {fileID: 356665719}
   - {fileID: 62054957}
-  m_Father: {fileID: 1390543949}
+  m_Father: {fileID: 41328959}
   m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
 --- !u!114 &654045076
 MonoBehaviour:
@@ -24392,6 +24412,7 @@ GameObject:
   - component: {fileID: 799987388}
   - component: {fileID: 799987387}
   - component: {fileID: 799987392}
+  - component: {fileID: 799987393}
   m_Layer: 3
   m_Name: Howard
   m_TagString: Untagged
@@ -24412,55 +24433,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueManager: {fileID: 965023553}
-  character:
-    characterName: Howard
-    characterImage: {fileID: 21300000, guid: c4ef54da6188f344c98c6b3d6845fe27, type: 3}
-    trustLevel: 0
-    dialogueNodes:
-    - dialogueText: What do you want? I have enough of a headache as it is.
-      choices:
-      - choiceText: Fuck off
-        nextNodeIndex: 1
-        trustGain: 0
-        trustRequirement: 0
-        timeIncrease: 0
-        quest:
-          questID: 
-          questProgressGain: 0
-          questRequirement: 0
-      - choiceText: Could you tell me a bit about yourself?
-        nextNodeIndex: 1
-        trustGain: 0
-        trustRequirement: 0
-        timeIncrease: 0
-        quest:
-          questID: 
-          questProgressGain: 0
-          questRequirement: 0
-      nextNodeIndex: 0
-      clueWords: []
-    - dialogueText: Urgh
-      choices:
-      - choiceText: Sorry
-        nextNodeIndex: -1
-        trustGain: 0
-        trustRequirement: 0
-        timeIncrease: 0
-        quest:
-          questID: 
-          questProgressGain: 0
-          questRequirement: 0
-      - choiceText: Adios
-        nextNodeIndex: -1
-        trustGain: 0
-        trustRequirement: 0
-        timeIncrease: 0
-        quest:
-          questID: 
-          questProgressGain: 0
-          questRequirement: 0
-      nextNodeIndex: -1
-      clueWords: []
+  character: {fileID: 799987393}
   dialogueSections:
   - dialogueNodes:
     - dialogueText: What do you want? I have enough of a headache as it is.
@@ -24470,6 +24443,7 @@ MonoBehaviour:
         trustGain: -5
         trustRequirement: 0
         timeIncrease: 10
+        oneUse: 0
         quest:
           questID: 
           questProgressGain: 0
@@ -24479,6 +24453,7 @@ MonoBehaviour:
         trustGain: 0
         trustRequirement: 0
         timeIncrease: 10
+        oneUse: 0
         quest:
           questID: 
           questProgressGain: 0
@@ -24488,6 +24463,7 @@ MonoBehaviour:
         trustGain: 0
         trustRequirement: 0
         timeIncrease: 0
+        oneUse: 0
         quest:
           questID: 
           questProgressGain: 0
@@ -24596,7 +24572,7 @@ Transform:
   - {fileID: 244601673}
   - {fileID: 1435901985}
   - {fileID: 785706597}
-  m_Father: {fileID: 1390543949}
+  m_Father: {fileID: 41328959}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &799987392
 MonoBehaviour:
@@ -24612,6 +24588,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textHolder: {fileID: 1958490371}
   trustText: {fileID: 631169478}
+--- !u!114 &799987393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 799987386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 249cc24ea26a89c4495780b2f7350bdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Howard
+  characterImage: {fileID: 21300000, guid: c4ef54da6188f344c98c6b3d6845fe27, type: 3}
+  trustLevel: 0
+  dialogueNodes: []
+  schedule:
+  - startHour: 1
+    startMinute: 20
+    location: {fileID: 1460050349}
+  currentLocation: {fileID: 799987391}
 --- !u!1 &802125875
 GameObject:
   m_ObjectHideFlags: 0
@@ -27625,24 +27622,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueManager: {fileID: 965023553}
-  character:
-    characterName: Gerard
-    characterImage: {fileID: 21300000, guid: 273b6610c1f3fbc4ba0a209bf993cde1, type: 3}
-    trustLevel: 0
-    dialogueNodes:
-    - dialogueText: Can you get information from these people?
-      choices:
-      - choiceText: Okay
-        nextNodeIndex: -1
-        trustGain: 0
-        trustRequirement: 0
-        timeIncrease: 0
-        quest:
-          questID: 
-          questProgressGain: 0
-          questRequirement: 0
-      nextNodeIndex: 0
-      clueWords: []
+  character: {fileID: 0}
   dialogueSections:
   - dialogueNodes:
     - dialogueText: I'm the hotel manager. What do you need?
@@ -27652,6 +27632,7 @@ MonoBehaviour:
         trustGain: 1
         trustRequirement: -99
         timeIncrease: 10
+        oneUse: 0
         quest:
           questID: 
           questProgressGain: 0
@@ -27661,6 +27642,7 @@ MonoBehaviour:
         trustGain: -2
         trustRequirement: -99
         timeIncrease: 10
+        oneUse: 0
         quest:
           questID: 
           questProgressGain: 0
@@ -27670,6 +27652,7 @@ MonoBehaviour:
         trustGain: 0
         trustRequirement: -2
         timeIncrease: 0
+        oneUse: 0
         quest:
           questID: 
           questProgressGain: 0
@@ -27693,6 +27676,7 @@ MonoBehaviour:
         trustGain: 1
         trustRequirement: -99
         timeIncrease: 0
+        oneUse: 0
         quest:
           questID: Nikki1
           questProgressGain: 1
@@ -27702,6 +27686,7 @@ MonoBehaviour:
         trustGain: 0
         trustRequirement: -99
         timeIncrease: 0
+        oneUse: 0
         quest:
           questID: 
           questProgressGain: 0
@@ -27796,7 +27781,7 @@ Transform:
   - {fileID: 1893993867}
   - {fileID: 1372475273}
   - {fileID: 262231012}
-  m_Father: {fileID: 1390543949}
+  m_Father: {fileID: 41328959}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!114 &926742073
 MonoBehaviour:
@@ -31165,24 +31150,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueManager: {fileID: 965023553}
-  character:
-    characterName: Nikki
-    characterImage: {fileID: 21300000, guid: 27de9e67e49daf8428092dcaff1bae99, type: 3}
-    trustLevel: 0
-    dialogueNodes:
-    - dialogueText: I am NOT okay
-      choices:
-      - choiceText: damn that sucks L
-        nextNodeIndex: -1
-        trustGain: 0
-        trustRequirement: 0
-        timeIncrease: 0
-        quest:
-          questID: 
-          questProgressGain: 0
-          questRequirement: 0
-      nextNodeIndex: -1
-      clueWords: []
+  character: {fileID: 0}
   dialogueSections:
   - dialogueNodes:
     - dialogueText: Hmm...
@@ -31196,6 +31164,7 @@ MonoBehaviour:
         trustGain: 0
         trustRequirement: -99
         timeIncrease: 10
+        oneUse: 0
         quest:
           questID: 
           questProgressGain: 0
@@ -31205,6 +31174,7 @@ MonoBehaviour:
         trustGain: -2
         trustRequirement: -99
         timeIncrease: 10
+        oneUse: 0
         quest:
           questID: 
           questProgressGain: 0
@@ -31214,6 +31184,7 @@ MonoBehaviour:
         trustGain: 1
         trustRequirement: -99
         timeIncrease: 10
+        oneUse: 0
         quest:
           questID: Nikki1
           questProgressGain: 99
@@ -31327,7 +31298,7 @@ Transform:
   - {fileID: 1383226152}
   - {fileID: 1317440287}
   - {fileID: 186575023}
-  m_Father: {fileID: 1390543949}
+  m_Father: {fileID: 41328959}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1048935385
 MonoBehaviour:
@@ -39970,14 +39941,6 @@ Transform:
   - {fileID: 411370556}
   - {fileID: 71549328}
   - {fileID: 965023554}
-  - {fileID: 799987391}
-  - {fileID: 609080390}
-  - {fileID: 532401675}
-  - {fileID: 1993476004}
-  - {fileID: 1048935384}
-  - {fileID: 926742072}
-  - {fileID: 186845151}
-  - {fileID: 654045075}
   - {fileID: 2064887355}
   - {fileID: 856823577}
   - {fileID: 1516387557}
@@ -42006,6 +41969,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1455671523}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1460050348
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1460050349}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1460050349
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1460050348}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.196, y: 4.2359295, z: 6.5451264}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1465710812
 GameObject:
   m_ObjectHideFlags: 0
@@ -56446,24 +56440,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueManager: {fileID: 965023553}
-  character:
-    characterName: Pato
-    characterImage: {fileID: 21300000, guid: de2b24c2516c8bc48982ea8f2076f5f3, type: 3}
-    trustLevel: 0
-    dialogueNodes:
-    - dialogueText: My children are DEAD
-      choices:
-      - choiceText: aaaaaa
-        nextNodeIndex: -1
-        trustGain: 0
-        trustRequirement: 0
-        timeIncrease: 0
-        quest:
-          questID: 
-          questProgressGain: 0
-          questRequirement: 0
-      nextNodeIndex: 0
-      clueWords: []
+  character: {fileID: 0}
   dialogueSections:
   - dialogueNodes:
     - dialogueText: Oh, another stranger. What do you need?
@@ -56473,6 +56450,7 @@ MonoBehaviour:
         trustGain: 0
         trustRequirement: -99
         timeIncrease: 10
+        oneUse: 0
         quest:
           questID: 
           questProgressGain: 0
@@ -56482,6 +56460,7 @@ MonoBehaviour:
         trustGain: 0
         trustRequirement: -99
         timeIncrease: 10
+        oneUse: 0
         quest:
           questID: 
           questProgressGain: 0
@@ -56491,6 +56470,7 @@ MonoBehaviour:
         trustGain: 0
         trustRequirement: -99
         timeIncrease: 0
+        oneUse: 0
         quest:
           questID: 
           questProgressGain: 0
@@ -56597,7 +56577,7 @@ Transform:
   - {fileID: 162823383}
   - {fileID: 137800981}
   - {fileID: 779190157}
-  m_Father: {fileID: 1390543949}
+  m_Father: {fileID: 41328959}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1993476005
 MonoBehaviour:
@@ -60720,6 +60700,7 @@ SceneRoots:
   - {fileID: 963194228}
   - {fileID: 705507995}
   - {fileID: 1719805946}
+  - {fileID: 41328959}
   - {fileID: 1390543949}
   - {fileID: 1904762207}
   - {fileID: 317517757}
@@ -60727,3 +60708,4 @@ SceneRoots:
   - {fileID: 809411258}
   - {fileID: 703104704}
   - {fileID: 54618527}
+  - {fileID: 1460050349}

@@ -238,7 +238,7 @@ public class DialogueManager : MonoBehaviour
 
         // Increase the character's trust level
         currentCharacter.trustLevel += choice.trustGain;
-        TimeManager.seconds += choice.timeIncrease;
+        TimeManager.minutes += choice.timeIncrease;
 
         // Increase quest progress
         if (!string.IsNullOrEmpty(choice.quest.questID))
