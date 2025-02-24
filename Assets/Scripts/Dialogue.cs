@@ -22,6 +22,9 @@ public class Choice
     public int trustRequirement; // How much trust is needed to see this choice bam!
     public int timeIncrease;
 
+    public bool oneUse;
+    [NonSerialized] public bool hasBeenSelected = false;
+
     [System.Serializable]
     public struct QuestInfo
     {
