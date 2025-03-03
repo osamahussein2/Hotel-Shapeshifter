@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: f592dcbffc2dc974e9e1db9238d4bd8c, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: cf3acd2ace984cc4280f4b0676951224, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -1313,6 +1313,41 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 46984569}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &53961434
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 53961435}
+  m_Layer: 0
+  m_Name: Howard_Locations
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &53961435
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 53961434}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1460050349}
+  - {fileID: 1358359951}
+  - {fileID: 1356852636}
+  - {fileID: 151852776}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &54355460
 GameObject:
   m_ObjectHideFlags: 0
@@ -3761,7 +3796,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 52f140be7da4d0442a949adc91da0f5f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 146ef65247bd6484b9fd1f89bd4b6256, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4736,6 +4771,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 146142908}
   m_CullTransparentMesh: 1
+--- !u!1 &151852775
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 151852776}
+  m_Layer: 0
+  m_Name: howard_pos (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &151852776
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151852775}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.81, y: -1.72, z: 6.5451264}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 53961435}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &157985407
 GameObject:
   m_ObjectHideFlags: 0
@@ -5636,6 +5702,7 @@ GameObject:
   - component: {fileID: 186845148}
   - component: {fileID: 186845147}
   - component: {fileID: 186845152}
+  - component: {fileID: 186845153}
   m_Layer: 0
   m_Name: Big Man
   m_TagString: Untagged
@@ -5656,7 +5723,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueManager: {fileID: 965023553}
-  character: {fileID: 0}
+  character: {fileID: 186845153}
   dialogueSections:
   - dialogueNodes:
     - dialogueText: Hello, small one. Big Man is pleased to meet you.
@@ -5806,6 +5873,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textHolder: {fileID: 1145555699}
   trustText: {fileID: 1136858524}
+--- !u!114 &186845153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 186845146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 249cc24ea26a89c4495780b2f7350bdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Big Man
+  characterImage: {fileID: 21300000, guid: c53b1d7ae2a9a01429a71ebd9fe38ea3, type: 3}
+  trustLevel: 0
+  schedule: []
+  currentLocation: {fileID: 186845151}
 --- !u!1 &188297879
 GameObject:
   m_ObjectHideFlags: 0
@@ -16119,6 +16203,7 @@ GameObject:
   - component: {fileID: 532401672}
   - component: {fileID: 532401671}
   - component: {fileID: 532401676}
+  - component: {fileID: 532401677}
   m_Layer: 0
   m_Name: Eugene
   m_TagString: Untagged
@@ -16139,7 +16224,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueManager: {fileID: 965023553}
-  character: {fileID: 0}
+  character: {fileID: 532401677}
   dialogueSections:
   - dialogueNodes:
     - dialogueText: Hey there. Want to buy some of my EugeneCoin?
@@ -16303,6 +16388,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textHolder: {fileID: 750976024}
   trustText: {fileID: 75828139}
+--- !u!114 &532401677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 532401670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 249cc24ea26a89c4495780b2f7350bdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Eugene
+  characterImage: {fileID: 21300000, guid: 4c6f3949078fa70429d690846a7b75a2, type: 3}
+  trustLevel: 0
+  schedule: []
+  currentLocation: {fileID: 532401675}
 --- !u!1 &538796291
 GameObject:
   m_ObjectHideFlags: 0
@@ -18097,7 +18199,6 @@ MonoBehaviour:
   characterName: Bob
   characterImage: {fileID: 21300000, guid: f4cf4454540f6404cbd468b2a66af17b, type: 3}
   trustLevel: 0
-  dialogueNodes: []
   schedule: []
   currentLocation: {fileID: 609080390}
 --- !u!1 &617725919
@@ -19643,6 +19744,7 @@ GameObject:
   - component: {fileID: 654045072}
   - component: {fileID: 654045071}
   - component: {fileID: 654045076}
+  - component: {fileID: 654045077}
   m_Layer: 0
   m_Name: Ben
   m_TagString: Untagged
@@ -19663,7 +19765,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueManager: {fileID: 965023553}
-  character: {fileID: 0}
+  character: {fileID: 654045077}
   dialogueSections:
   - dialogueNodes:
     - dialogueText: Howdy.
@@ -19825,6 +19927,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textHolder: {fileID: 1600748199}
   trustText: {fileID: 1333917192}
+--- !u!114 &654045077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 654045070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 249cc24ea26a89c4495780b2f7350bdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Ben
+  characterImage: {fileID: 21300000, guid: 6a5bd59e7aaf8bf4392b99eb946786b8, type: 3}
+  trustLevel: 0
+  schedule: []
+  currentLocation: {fileID: 654045075}
 --- !u!1 &657819692
 GameObject:
   m_ObjectHideFlags: 0
@@ -24603,11 +24722,22 @@ MonoBehaviour:
   characterName: Howard
   characterImage: {fileID: 21300000, guid: c4ef54da6188f344c98c6b3d6845fe27, type: 3}
   trustLevel: 0
-  dialogueNodes: []
   schedule:
   - startHour: 1
     startMinute: 20
+    endHour: 2
+    endMinute: 0
     location: {fileID: 1460050349}
+  - startHour: 2
+    startMinute: 0
+    endHour: 3
+    endMinute: 0
+    location: {fileID: 1358359951}
+  - startHour: 3
+    startMinute: 0
+    endHour: 4
+    endMinute: 5
+    location: {fileID: 1356852636}
   currentLocation: {fileID: 799987391}
 --- !u!1 &802125875
 GameObject:
@@ -27602,6 +27732,7 @@ GameObject:
   - component: {fileID: 926742069}
   - component: {fileID: 926742068}
   - component: {fileID: 926742073}
+  - component: {fileID: 926742074}
   m_Layer: 0
   m_Name: Gerard
   m_TagString: Untagged
@@ -27622,7 +27753,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueManager: {fileID: 965023553}
-  character: {fileID: 0}
+  character: {fileID: 926742074}
   dialogueSections:
   - dialogueNodes:
     - dialogueText: I'm the hotel manager. What do you need?
@@ -27797,6 +27928,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textHolder: {fileID: 1486417278}
   trustText: {fileID: 189027206}
+--- !u!114 &926742074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 926742067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 249cc24ea26a89c4495780b2f7350bdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Gerard
+  characterImage: {fileID: 21300000, guid: 273b6610c1f3fbc4ba0a209bf993cde1, type: 3}
+  trustLevel: 0
+  schedule: []
+  currentLocation: {fileID: 926742072}
 --- !u!1 &927099389
 GameObject:
   m_ObjectHideFlags: 0
@@ -29420,7 +29568,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 1, g: 1, b: 1, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -31130,6 +31278,7 @@ GameObject:
   - component: {fileID: 1048935381}
   - component: {fileID: 1048935380}
   - component: {fileID: 1048935385}
+  - component: {fileID: 1048935386}
   m_Layer: 0
   m_Name: Nikki
   m_TagString: Untagged
@@ -31150,7 +31299,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueManager: {fileID: 965023553}
-  character: {fileID: 0}
+  character: {fileID: 1048935386}
   dialogueSections:
   - dialogueNodes:
     - dialogueText: Hmm...
@@ -31314,6 +31463,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textHolder: {fileID: 245734610}
   trustText: {fileID: 642836962}
+--- !u!114 &1048935386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1048935379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 249cc24ea26a89c4495780b2f7350bdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Nikki
+  characterImage: {fileID: 21300000, guid: 27de9e67e49daf8428092dcaff1bae99, type: 3}
+  trustLevel: 0
+  schedule: []
+  currentLocation: {fileID: 1048935384}
 --- !u!1 &1050914984
 GameObject:
   m_ObjectHideFlags: 0
@@ -39156,6 +39322,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1356254465}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1356852635
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1356852636}
+  m_Layer: 0
+  m_Name: howard_pos (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1356852636
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1356852635}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.196, y: -1.72, z: -5.745}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 53961435}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1357852171
 GameObject:
   m_ObjectHideFlags: 0
@@ -39231,6 +39428,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1357852171}
   m_CullTransparentMesh: 1
+--- !u!1 &1358359950
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1358359951}
+  m_Layer: 0
+  m_Name: howard_pos (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1358359951
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358359950}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2, y: -1.72, z: 6.5451264}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 53961435}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1369972583
 GameObject:
   m_ObjectHideFlags: 0
@@ -41979,7 +42207,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1460050349}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: howard_pos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41993,12 +42221,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1460050348}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.196, y: 4.2359295, z: 6.5451264}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.196, y: -1.72, z: 6.5451264}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 53961435}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1465710812
 GameObject:
@@ -45478,6 +45706,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa6fd8cc2f012ca4a8687bcc288f247a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  skyboxes:
+  - {fileID: 2100000, guid: cf3acd2ace984cc4280f4b0676951224, type: 2}
+  - {fileID: 2100000, guid: b1dc2a2157ad88841815adf8a1ab26b9, type: 2}
+  - {fileID: 2100000, guid: 601b77ead22c1084b9bd9bb2e1bf235a, type: 2}
+  - {fileID: 2100000, guid: 8fb668123e6483243a0250f90f7bdb00, type: 2}
+  - {fileID: 2100000, guid: f592dcbffc2dc974e9e1db9238d4bd8c, type: 2}
 --- !u!1 &1615333830
 GameObject:
   m_ObjectHideFlags: 0
@@ -56420,6 +56654,7 @@ GameObject:
   - component: {fileID: 1993476001}
   - component: {fileID: 1993476000}
   - component: {fileID: 1993476005}
+  - component: {fileID: 1993476006}
   m_Layer: 0
   m_Name: Pato
   m_TagString: Untagged
@@ -56440,7 +56675,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueManager: {fileID: 965023553}
-  character: {fileID: 0}
+  character: {fileID: 1993476006}
   dialogueSections:
   - dialogueNodes:
     - dialogueText: Oh, another stranger. What do you need?
@@ -56593,6 +56828,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textHolder: {fileID: 1381414640}
   trustText: {fileID: 706744262}
+--- !u!114 &1993476006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993475999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 249cc24ea26a89c4495780b2f7350bdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Pato
+  characterImage: {fileID: 21300000, guid: de2b24c2516c8bc48982ea8f2076f5f3, type: 3}
+  trustLevel: 0
+  schedule: []
+  currentLocation: {fileID: 1993476004}
 --- !u!1 &1993477371
 GameObject:
   m_ObjectHideFlags: 0
@@ -60708,4 +60960,4 @@ SceneRoots:
   - {fileID: 809411258}
   - {fileID: 703104704}
   - {fileID: 54618527}
-  - {fileID: 1460050349}
+  - {fileID: 53961435}

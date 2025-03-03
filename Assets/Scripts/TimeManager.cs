@@ -11,6 +11,9 @@ public class TimeManager : MonoBehaviour
 
     private LoadNightScene nightSceneScript;
 
+    public Material[] skyboxes;
+    private int currentSkyboxIndex = 0;
+
     // So the hours and minutes can be set outside of this script using TimeManager class
     public static int hours, minutes;
 
@@ -31,6 +34,8 @@ public class TimeManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        ChangeSkybox();
+
         // If the time is less than hours, print the extra 0 inside of the hours variable in text
         if (hours < 10)
         {
@@ -71,6 +76,31 @@ public class TimeManager : MonoBehaviour
         }
 
         TransitionToNightEvent();
+    }
+
+    private void ChangeSkybox()
+    {
+        int newSkyboxIndex = 0; // Default morning
+
+        if (hours >= 2) newSkyboxIndex = 1;  // Late Morning
+        if (hours >= 5) newSkyboxIndex = 2; // Afternoon
+        if (hours >= 8) newSkyboxIndex = 3; // Evening
+        if (hours >= 10) newSkyboxIndex = 4; // Night
+
+        if (newSkyboxIndex != currentSkyboxIndex)
+        {
+            currentSkyboxIndex = newSkyboxIndex;
+            ChangeSkyboxMat();
+        }
+    }
+
+    private void ChangeSkyboxMat()
+    {
+        if (skyboxes.Length > currentSkyboxIndex)
+        {
+            RenderSettings.skybox = skyboxes[currentSkyboxIndex];
+            DynamicGI.UpdateEnvironment();
+        }
     }
 
     private void TransitionToNightEvent()
