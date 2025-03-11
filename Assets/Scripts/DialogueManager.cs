@@ -195,13 +195,14 @@ public class DialogueManager : MonoBehaviour
 
         // Show the choice container
         choiceContainer.SetActive(true);
-
+     
         // Create a button for each of the choice
         foreach (Choice choice in choices)
         {
             // Only show the choice if the player meets trust and quest requirements
             bool meetsTrustRequirement = currentCharacter.trustLevel >= choice.trustRequirement;
             bool meetsQuestRequirement = true;
+            bool meetsOneTimeRequirement = !(choice.oneUse && choice.hasBeenSelected);
 
             if (!string.IsNullOrEmpty(choice.quest.questID) && choice.quest.questRequirement > 0)
             {
@@ -212,7 +213,7 @@ public class DialogueManager : MonoBehaviour
                 }
             }
 
-            if (meetsTrustRequirement && meetsQuestRequirement)
+            if (meetsTrustRequirement && meetsQuestRequirement && meetsOneTimeRequirement)
             {
                 GameObject choiceButton = Instantiate(choiceButtonPrefab, choiceContainer.transform);
                 choiceButton.GetComponentInChildren<TMP_Text>().text = choice.choiceText;
@@ -229,9 +230,15 @@ public class DialogueManager : MonoBehaviour
 
     void OnChoiceSelected(Choice choice)
     {
+
+        if (choice.oneUse)
+        {
+            choice.hasBeenSelected = true;
+        }
+
         // Increase the character's trust level
         currentCharacter.trustLevel += choice.trustGain;
-        TimeManager.seconds += choice.timeIncrease;
+        TimeManager.minutes += choice.timeIncrease;
 
         // Increase quest progress
         if (!string.IsNullOrEmpty(choice.quest.questID))
