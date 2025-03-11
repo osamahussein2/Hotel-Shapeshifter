@@ -1684,43 +1684,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characters:
-  - characterName: Pato
-    characterImage: {fileID: 21300000, guid: 5db8fed30e562514a8662e69ccee95a8, type: 3}
-    trustLevel: 0
-    dialogueNodes: []
-  - characterName: Nikki
-    characterImage: {fileID: 21300000, guid: ab7165e8d4a5a294e89c172fc571e47b, type: 3}
-    trustLevel: 0
-    dialogueNodes: []
-  - characterName: Gerard
-    characterImage: {fileID: 21300000, guid: 04d681dab7e48064691f9c7a82742bcb, type: 3}
-    trustLevel: 0
-    dialogueNodes: []
-  - characterName: Howard
-    characterImage: {fileID: 21300000, guid: 6d7dcb36f4f6fae4f9dcc8c38734ed71, type: 3}
-    trustLevel: 0
-    dialogueNodes: []
-  - characterName: Ben
-    characterImage: {fileID: 21300000, guid: de764a7fa9189d2469a7baa92624c6c1, type: 3}
-    trustLevel: 0
-    dialogueNodes: []
-  - characterName: Bob
-    characterImage: {fileID: 21300000, guid: af83b1bc66e0f0c44a90601028d08acd, type: 3}
-    trustLevel: 0
-    dialogueNodes: []
-  - characterName: Eugene
-    characterImage: {fileID: 21300000, guid: 8ded29c6e91423140a3238e0ddee4ca9, type: 3}
-    trustLevel: 0
-    dialogueNodes: []
-  - characterName: Big Man
-    characterImage: {fileID: 21300000, guid: c53b1d7ae2a9a01429a71ebd9fe38ea3, type: 3}
-    trustLevel: 0
-    dialogueNodes: []
-  currentChar:
-    characterName: 
-    characterImage: {fileID: 0}
-    trustLevel: 0
-    dialogueNodes: []
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  currentChar: {fileID: 0}
   door: {fileID: 166399195}
   doorLight: {fileID: 1824844316}
   normalChar: {fileID: 1857204443}
@@ -3103,6 +3075,58 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 889190621}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1091262058
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1091262060}
+  - component: {fileID: 1091262059}
+  m_Layer: 0
+  m_Name: Telementry
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1091262059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091262058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 286038c7bf69e8046b2933b67bf376bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <Settings>k__BackingField: {fileID: 11400000, guid: 5fadb49c2b4822a4f842f6a4e037ae78, type: 2}
+  _section: NightEvent
+  OnConnectionSuccess:
+    m_PersistentCalls:
+      m_Calls: []
+  OnConnectionFail:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!4 &1091262060
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091262058}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.114584744, y: -2.3099723, z: -12.378287}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1133768408
 GameObject:
@@ -6638,3 +6662,4 @@ SceneRoots:
   - {fileID: 550591080}
   - {fileID: 1857204447}
   - {fileID: 1922555992}
+  - {fileID: 1091262060}

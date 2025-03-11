@@ -5,14 +5,14 @@ using TMPro;
 
 public class TrustVisualizer : MonoBehaviour
 {
-    public GameObject textHolder;
-    public TextMeshProUGUI trustText;
+    //public GameObject textHolder;
+    //public TextMeshProUGUI trustText;
     DialogueTrigger diaTrig;
 
     // Start is called before the first frame update
     void Start()
     {
-        textHolder.SetActive(false);
+        //textHolder.SetActive(false);
 
         diaTrig = transform.GetComponentInParent<DialogueTrigger>();
     }
@@ -20,16 +20,16 @@ public class TrustVisualizer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        trustText.text = "Trust: " + diaTrig.character.trustLevel;
+        //trustText.text = "Trust: " + diaTrig.character.trustLevel;
     }
 
     private void OnMouseEnter()
     {
-        textHolder.SetActive(true);
+        //textHolder.SetActive(true);
     }
 
     private void OnMouseExit()
     {
-        textHolder.SetActive(false);
+        //textHolder.SetActive(false);
     }
 }

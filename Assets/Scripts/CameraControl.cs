@@ -11,6 +11,15 @@ public class CameraController : MonoBehaviour
     private bool isMoving = false;
     private float fixedYPosition;
 
+    //"Compiler. plz generate code to convert shis object to/from a save file"
+    [System.Serializable]
+    public struct MoveEventData
+    {
+        public string movetype;
+        public Vector3 movePosition;
+        public Vector3 currentPosition;
+    }
+
     void Start()
     {
         fixedYPosition = transform.position.y;
@@ -29,6 +38,15 @@ public class CameraController : MonoBehaviour
                 targetPosition = new Vector3(target.x, fixedYPosition, target.z);
 
                 isMoving = true;
+
+                var date = new MoveEventData()
+                {
+                    movetype = "Walking",
+                    movePosition = targetPosition,
+                    currentPosition = transform.position,
+                };
+
+                TelemetryLogger.Log(this, "Move", date); //Logging when the player moves.
             }
         }
 

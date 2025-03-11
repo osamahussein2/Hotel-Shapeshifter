@@ -64,14 +64,18 @@
     <Compile Include="Assets\Scripts\QuestList.cs" />
     <Compile Include="Assets\Scripts\QuitGame.cs" />
     <Compile Include="Assets\Scripts\TrustVisualizer.cs" />
+    <Compile Include="Assets\Telemetry\TelemetryZone.cs" />
     <Compile Include="Assets\Scripts\NightEventDoor.cs" />
     <Compile Include="Assets\Scripts\ClueObject.cs" />
     <Compile Include="Assets\Scripts\NightManager.cs" />
+    <Compile Include="Assets\Telemetry\TelemetryEvent.cs" />
     <Compile Include="Assets\Scripts\Dialogue.cs" />
+    <Compile Include="Assets\Telemetry\TelemetryLogger.cs" />
     <Compile Include="Assets\Scripts\Character.cs" />
     <Compile Include="Assets\Scripts\DialogueTrigger.cs" />
     <Compile Include="Assets\Scripts\InfoGatherer.cs" />
     <Compile Include="Assets\Scripts\LoadNightScene.cs" />
+    <Compile Include="Assets\Telemetry\TelemetryService.cs" />
     <Compile Include="Assets\Scripts\QuestPopUp.cs" />
     <Compile Include="Assets\Scripts\LookAtCamera.cs" />
     <Compile Include="Assets\Scripts\DialogueManager.cs" />
@@ -81,10 +85,12 @@
     <Compile Include="Assets\Scripts\TimeManager.cs" />
     <Compile Include="Assets\Scripts\Quest.cs" />
     <Compile Include="Assets\Scripts\JournalQuestLog.cs" />
+    <Compile Include="Assets\Telemetry\TelemetrySettings.cs" />
     <Compile Include="Assets\Scripts\CameraControl.cs" />
     <Compile Include="Assets\Scripts\HelpTestKill.cs" />
     <Compile Include="Assets\Scripts\ClueList.cs" />
     <Compile Include="Assets\Scripts\DoorInteraction.cs" />
+    <Compile Include="Assets\Telemetry\SessionDisplay.cs" />
     <Compile Include="Assets\Scripts\CanvasManager.cs" />
     <Compile Include="Assets\Scripts\GameState.cs" />
   </ItemGroup>
