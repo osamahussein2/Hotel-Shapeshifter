@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa188ed3cd5ee314b91a17c5c707da0a, type: 3}
   m_Name: TelemetrySettings
   m_EditorClassIdentifier: 
-  userName: Your SLATE user name or team name
-  secret: Your student # or team passphrase
+  userName: loet
+  secret: 991719790
   _version: test
   _serverURL: https://telemetry-dg-13578a3082a2.herokuapp.com/
   serverCommunication: 1
   debugLogging: 0
-  <SetupId>k__BackingField: 
+  <SetupId>k__BackingField: OA-S141-02 > Hotel-Shapeshifter / GameStuff @ loet-1031536525
