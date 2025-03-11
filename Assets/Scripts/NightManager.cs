@@ -59,7 +59,7 @@ public class NightManager : MonoBehaviour
 
         //for now just pick bob, uncomment the other line and remove this one to make it pick a random char instead
         currentChar = characters[5];
-
+        
         //currentChar = characters[Random.Range(0, characters.Count)];
 
         if (Random.Range(1, 100) <= shapeshifterChance)
@@ -134,7 +134,8 @@ public class NightManager : MonoBehaviour
                     }
                     else
                     {
-                        if (!ending) { EndNight(); }
+                        
+                        if (!ending) { EndNight(); TelemetryLogger.Log(this, "LetIn"); }
                     }
                 }
             }
@@ -144,6 +145,10 @@ public class NightManager : MonoBehaviour
 
     public void EndNight()
     {
+        NightEventData thisNightData = new NightEventData();
+        thisNightData.character = currentChar.name;
+        thisNightData.trust = currentChar.trustLevel;
+        TelemetryLogger.Log(this, "NightSurvived", thisNightData);
         ending = true;
         endTimer = 1f;
     }
@@ -165,6 +170,14 @@ public class NightManager : MonoBehaviour
 
     public void GameOver()
     {
+        TelemetryLogger.Log(this, "GameOver");
         gameOver.SetActive(true);
+    }
+
+    [System.Serializable]
+    public struct NightEventData
+    {
+        public string character;
+        public int trust;
     }
 }
