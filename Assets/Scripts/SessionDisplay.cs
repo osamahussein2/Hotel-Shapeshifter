@@ -22,7 +22,7 @@ public class SessionDisplay : MonoBehaviour
         var displayField = GetComponent<TextMeshProUGUI>();
         if (sessionID < 0)
         {
-            displayField.text = $"Local Session {sessionID})";
+            displayField.text = $"Local Session {sessionID}";
         }
         else
         {
