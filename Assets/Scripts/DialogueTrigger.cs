@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using static DialogueManager;
 
 public class DialogueTrigger : MonoBehaviour
 {
@@ -9,6 +10,13 @@ public class DialogueTrigger : MonoBehaviour
     public List<DialogueSection> dialogueSections; // List of dialogue sections
 
     public GameState gameState; // Reference to the GameState script
+
+    [System.Serializable]
+    public struct CharacterInteractData
+    {
+        public Vector3 playerPos;
+        public Character character;
+    }
 
     private void OnMouseDown()
     {
@@ -20,6 +28,12 @@ public class DialogueTrigger : MonoBehaviour
             {
                 // Load the dialogue nodes for the current section
                 dialogueManager.SetDialogueNodes(dialogueSections[gameState.dialogueProgress].dialogueNodes);
+                var data = new CharacterInteractData()
+                {
+                    playerPos = transform.position,
+                    character = character
+                };
+                TelemetryLogger.Log(this, "Dialogue Started", data);
             }
             else
             {

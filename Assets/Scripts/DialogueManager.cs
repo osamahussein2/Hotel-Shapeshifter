@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -119,10 +120,39 @@ public class DialogueManager : MonoBehaviour
         {
             if (text.Contains(clue) && !clueList.HasClue(clue, 0)) // Check if it's a new clue
             {
+                TelemetryLogger.Log(this, "Player has obtained clue: " + clue);
                 clueList.AddClue(clue, 0); // Add the clue to the clue list
             }
         }
         return text;
+    }
+
+    [System.Serializable]
+    public struct SkipDialogueData
+    {
+        public string text;
+        public Character character;
+    }
+
+    [System.Serializable]
+    public struct DialogueChoiceData
+    {
+        public string choiceText;
+        public Character character;
+    }
+
+    [System.Serializable]
+    public struct StartQuestData
+    {
+        public string quest;
+        public Character character;
+    }
+
+    [System.Serializable]
+    public struct EndQuestData
+    {
+        public string quest;
+        public Character character;
     }
 
     // This is my system and not yours
@@ -138,6 +168,12 @@ public class DialogueManager : MonoBehaviour
             if (!isTyping) // If interrupted, stop typing
             {
                 dialogueText.text = fullText;
+                var data = new SkipDialogueData()
+                {
+                    text = dialogueText.text,
+                    character = currentCharacter
+                };
+                TelemetryLogger.Log(this, "Dialogue Skipped:", data);
                 yield break;
             }
 
@@ -239,6 +275,12 @@ public class DialogueManager : MonoBehaviour
         // Increase the character's trust level
         currentCharacter.trustLevel += choice.trustGain;
         TimeManager.minutes += choice.timeIncrease;
+        var data = new DialogueChoiceData()
+        {
+            choiceText = choice.choiceText,
+            character = currentCharacter
+        };
+        TelemetryLogger.Log(this, "Option Selected", data);
 
         // Increase quest progress
         if (!string.IsNullOrEmpty(choice.quest.questID))
@@ -250,6 +292,12 @@ public class DialogueManager : MonoBehaviour
                 { 
                     quest.isActive = true; 
                     popUp.PopUp(quest.questName, "Quest Got");
+                    var data1 = new StartQuestData()
+                    {
+                        quest = quest.questName,
+                        character = currentCharacter
+                    };
+                    TelemetryLogger.Log(this, "Quest Started", data1);
                     for (int i = 0; i < quest.questItems.Count; i++)
                     {
                         quest.questItems[i].gameObject.SetActive(true);
@@ -261,6 +309,12 @@ public class DialogueManager : MonoBehaviour
                 {
                     quest.isCompleted = true;
                     quest.isActive = false;
+                    var data2 = new EndQuestData()
+                    {
+                        quest = quest.questName,
+                        character = currentCharacter
+                    };
+                    TelemetryLogger.Log(this, "Quest Completed", data2);
                     popUp.PopUp(quest.questName, "Quest Done");//quest pop up
                     currentCharacter.trustLevel += quest.trustReward;
                     Debug.Log("You got a " + quest.itemReward);
