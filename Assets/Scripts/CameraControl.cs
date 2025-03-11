@@ -60,6 +60,6 @@ public class CameraController : MonoBehaviour
     public void RotateCamera()
     {
         transform.Rotate(0, 180, 0);
-        TelemetryLogger.Log(this, "Turn Around");
+        TelemetryLogger.Log(this, "Turn Around", transform.position);
     }
 }
