@@ -7,6 +7,9 @@ public class NightManager : MonoBehaviour
 {
     public List<Character> characters;
 
+    public List<GameObject> normModels;
+    public List<GameObject> evilModels;
+
     public Character currentChar;
 
     public GameObject door;
@@ -56,11 +59,10 @@ public class NightManager : MonoBehaviour
                 characters[i].trustLevel = PlayerPrefs.GetInt(characters[i].characterName + "TRUST");
             }
         }
-
-        //for now just pick bob, uncomment the other line and remove this one to make it pick a random char instead
-        currentChar = characters[5];
-
-        //currentChar = characters[Random.Range(0, characters.Count)];
+        int rand = Random.Range(0, characters.Count);
+        currentChar = characters[rand];
+        normalChar = normModels[rand];
+        evilChar = evilModels[rand];
 
         if (Random.Range(1, 100) <= shapeshifterChance)
         {

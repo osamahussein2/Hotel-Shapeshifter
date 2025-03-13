@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class NightEventDoor : MonoBehaviour
 {
@@ -13,20 +14,33 @@ public class NightEventDoor : MonoBehaviour
     public GameObject choices;
     public GameObject questionChoices;
     NightManager nightMan;
+    NightEventQuestions nightQues;
+
+    public List<int> chosenQuestions;
 
     bool isTyping;
     public TMP_Text dialogueText;
     float typingSpeed = 0.05f;
 
+    public bool shuffleQuestions;
+    public int trustLostPerQuestion;
     bool ignoreQued;
     bool letinQued;
     bool interacted;
     bool questioning;
 
+    public Image characterSprite;
+    public TextMeshProUGUI nameTxt;
+
     private void Start()
     {
+        chosenQuestions = new List<int>();
+        chosenQuestions.Add(0);
+        chosenQuestions.Add(1);
+        chosenQuestions.Add(2);
         questioning = false;
         nightMan = GameObject.Find("Nightynight manager").GetComponent<NightManager>();
+        nightQues = GameObject.Find("Nightynight manager").GetComponent<NightEventQuestions>();
         interacted = false;
         choices.SetActive(false);
         dialougeUI.SetActive(false);
@@ -69,6 +83,9 @@ public class NightEventDoor : MonoBehaviour
     {
         dialougeUI.SetActive(true);
 
+        characterSprite.sprite = nightMan.currentChar.characterImage;
+        nameTxt.text = nightMan.currentChar.characterName + "?";
+
         StartCoroutine(TypeText("Hello? Is anyone there?"));
     }
 
@@ -85,15 +102,74 @@ public class NightEventDoor : MonoBehaviour
         }
 
         isTyping = false; // We are done typing
-        choices.SetActive(true);
+        if (!questioning)
+        {
+            choices.SetActive(true);
+        }
     }
 
     public void Respond()
     {
         questionChoices.SetActive(false);
         choices.SetActive(false);
+        PickQuestions();
 
         questioning = true;
+    }
+
+    public void QuestionAsked(int question)
+    {
+
+        if (nightMan.isShapeshifter)
+        {
+            if(Random.Range(1, 3) == 1)
+            {
+                StartCoroutine(TypeText(nightMan.currentChar.GetComponent<NightAnswers>().answersNutral[chosenQuestions[question]]));
+            }
+            else
+            {
+                StartCoroutine(TypeText(nightMan.currentChar.GetComponent<NightAnswers>().answersLie[chosenQuestions[question]]));
+            }
+        }
+        else
+        {
+            if (Random.Range(1, 3) == 1)
+            {
+                StartCoroutine(TypeText(nightMan.currentChar.GetComponent<NightAnswers>().answersNutral[chosenQuestions[question]]));
+            }
+            else
+            {
+                StartCoroutine(TypeText(nightMan.currentChar.GetComponent<NightAnswers>().answersHonest[chosenQuestions[question]]));
+            }
+        }
+
+        if (!nightMan.isShapeshifter)
+        {
+            int oldTrust = PlayerPrefs.GetInt(nightMan.currentChar.characterName + "TRUST");
+            PlayerPrefs.SetInt(nightMan.currentChar.characterName + "TRUST", oldTrust - trustLostPerQuestion);
+        }
+
+        if (shuffleQuestions) { PickQuestions(); }
+    }
+
+    public void PickQuestions()
+    {
+        chosenQuestions[0] = Random.Range(0, nightQues.questions.Count);
+        chosenQuestions[1] = Random.Range(0, nightQues.questions.Count);
+        chosenQuestions[2] = Random.Range(0, nightQues.questions.Count);
+
+        while (chosenQuestions[2] == chosenQuestions[1] || chosenQuestions[2] == chosenQuestions[0] || chosenQuestions[0] == chosenQuestions[1])
+        {
+            chosenQuestions[0] = Random.Range(0, nightQues.questions.Count);
+            chosenQuestions[1] = Random.Range(0, nightQues.questions.Count);
+            chosenQuestions[2] = Random.Range(0, nightQues.questions.Count);
+        }
+
+        for(int i = 0; i < questionChoices.GetComponent<NightEventQuestionButtons>().questions.Count; i++)
+        {
+            questionChoices.GetComponent<NightEventQuestionButtons>().questions[i].transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = nightQues.questions[chosenQuestions[i]];
+            Debug.Log("Question set as: " + nightQues.questions[chosenQuestions[i]]);
+        }
     }
 
     public void Ignore()
