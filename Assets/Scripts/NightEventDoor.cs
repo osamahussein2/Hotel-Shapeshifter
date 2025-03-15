@@ -86,6 +86,7 @@ public class NightEventDoor : MonoBehaviour
         characterSprite.sprite = nightMan.currentChar.characterImage;
         nameTxt.text = nightMan.currentChar.characterName + "?";
 
+        StopAllCoroutines();
         StartCoroutine(TypeText("Hello? Is anyone there?"));
     }
 
@@ -124,10 +125,12 @@ public class NightEventDoor : MonoBehaviour
         {
             if(Random.Range(1, 3) == 1)
             {
+                StopAllCoroutines();
                 StartCoroutine(TypeText(nightMan.currentChar.GetComponent<NightAnswers>().answersNutral[chosenQuestions[question]]));
             }
             else
             {
+                StopAllCoroutines();
                 StartCoroutine(TypeText(nightMan.currentChar.GetComponent<NightAnswers>().answersLie[chosenQuestions[question]]));
             }
         }
@@ -135,10 +138,12 @@ public class NightEventDoor : MonoBehaviour
         {
             if (Random.Range(1, 3) == 1)
             {
+                StopAllCoroutines();
                 StartCoroutine(TypeText(nightMan.currentChar.GetComponent<NightAnswers>().answersNutral[chosenQuestions[question]]));
             }
             else
             {
+                StopAllCoroutines();
                 StartCoroutine(TypeText(nightMan.currentChar.GetComponent<NightAnswers>().answersHonest[chosenQuestions[question]]));
             }
         }
@@ -177,6 +182,7 @@ public class NightEventDoor : MonoBehaviour
         ignoreQued = true;
         choices.SetActive(false);
 
+        StopAllCoroutines();
         StartCoroutine(TypeText("After some time, The knocking stops.           "));
 
         if (!nightMan.isShapeshifter)
@@ -190,6 +196,7 @@ public class NightEventDoor : MonoBehaviour
     {
         letinQued = true;
 
+        StopAllCoroutines();
         StartCoroutine(TypeText("Thank you so much.           "));
 
         if (!nightMan.isShapeshifter)
