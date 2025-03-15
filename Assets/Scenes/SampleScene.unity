@@ -6056,24 +6056,24 @@ MonoBehaviour:
   character: {fileID: 186845153}
   dialogueSections:
   - dialogueNodes:
-    - dialogueText: Hello, small one. Big Man is pleased to meet you.
+    - dialogueText: Hey, how's it going? I'm Big Man.
       choices:
       - choiceText: Could you tell me about yourself?
         nextNodeIndex: 1
-        trustGain: 2
+        trustGain: 1
         trustRequirement: -99
         timeIncrease: 10
-        oneUse: 0
+        oneUse: 1
         quest:
           questID: 
           questProgressGain: 0
           questRequirement: 0
-      - choiceText: Is something wrong with you?
-        nextNodeIndex: 2
-        trustGain: -3
+      - choiceText: What's with the nickname?
+        nextNodeIndex: 1
+        trustGain: 0
         trustRequirement: -99
         timeIncrease: 10
-        oneUse: 0
+        oneUse: 1
         quest:
           questID: 
           questProgressGain: 0
@@ -6090,12 +6090,16 @@ MonoBehaviour:
           questRequirement: 0
       nextNodeIndex: 0
       clueWords: []
-    - dialogueText: Big Man play football. Big Man is very good at football.
+    - dialogueText: I used to play football in high school. I was a defensive lineman,
+        one of the big guys. No one remembered my name, so they just called me "Big
+        Man".
       choices: []
-      nextNodeIndex: -1
+      nextNodeIndex: 2
       clueWords:
       - football
-    - dialogueText: Big Man is insulted. Big Man does not trust you.
+      - defensive lineman
+    - dialogueText: I don't mind the nickname, I think it's kinda funny. So I still
+        use it to this day.
       choices: []
       nextNodeIndex: -1
       clueWords: []
@@ -20586,7 +20590,7 @@ MonoBehaviour:
         trustGain: 2
         trustRequirement: -99
         timeIncrease: 10
-        oneUse: 0
+        oneUse: 1
         quest:
           questID: 
           questProgressGain: 0
@@ -20596,7 +20600,7 @@ MonoBehaviour:
         trustGain: 2
         trustRequirement: 2
         timeIncrease: 10
-        oneUse: 0
+        oneUse: 1
         quest:
           questID: 
           questProgressGain: 0
@@ -26305,7 +26309,7 @@ MonoBehaviour:
         trustGain: -5
         trustRequirement: 0
         timeIncrease: 10
-        oneUse: 0
+        oneUse: 1
         quest:
           questID: 
           questProgressGain: 0
@@ -26315,7 +26319,7 @@ MonoBehaviour:
         trustGain: 0
         trustRequirement: 0
         timeIncrease: 10
-        oneUse: 0
+        oneUse: 1
         quest:
           questID: 
           questProgressGain: 0
@@ -29795,7 +29799,7 @@ MonoBehaviour:
         trustGain: 1
         trustRequirement: -99
         timeIncrease: 10
-        oneUse: 0
+        oneUse: 1
         quest:
           questID: 
           questProgressGain: 0
@@ -29805,7 +29809,7 @@ MonoBehaviour:
         trustGain: -2
         trustRequirement: -99
         timeIncrease: 10
-        oneUse: 0
+        oneUse: 1
         quest:
           questID: 
           questProgressGain: 0
@@ -29814,6 +29818,16 @@ MonoBehaviour:
         nextNodeIndex: 3
         trustGain: 0
         trustRequirement: -2
+        timeIncrease: 10
+        oneUse: 1
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+      - choiceText: I don't need anything
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: -99
         timeIncrease: 0
         oneUse: 0
         quest:
@@ -33252,7 +33266,7 @@ MonoBehaviour:
         trustGain: -2
         trustRequirement: -99
         timeIncrease: 10
-        oneUse: 0
+        oneUse: 1
         quest:
           questID: 
           questProgressGain: 0
@@ -33262,7 +33276,7 @@ MonoBehaviour:
         trustGain: 1
         trustRequirement: -99
         timeIncrease: 10
-        oneUse: 0
+        oneUse: 1
         quest:
           questID: Nikki1
           questProgressGain: 99
