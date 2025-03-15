@@ -29807,7 +29807,8 @@ MonoBehaviour:
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: How about you speak to the other residents? I think it would
-        be good to initiate some friendly conversations, don't you think?
+        be good to initiate some friendly conversations, don't you think? Also, feel
+        free to roam around the hotel.
       choices:
       - choiceText: Sure thing, boss
         nextNodeIndex: -1
