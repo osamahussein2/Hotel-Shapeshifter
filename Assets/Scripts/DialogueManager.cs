@@ -13,6 +13,7 @@ public class DialogueManager : MonoBehaviour
     public TMP_Text charNameText; // Text for the character's name
     public TMP_Text dialogueText; // Text for the dialogue
     public Image charImage; // Image for the character
+    public Image dialogueBoxIMG; // Image for the box
     public GameObject choiceContainer; // Container for choice buttons
     public GameObject choiceButtonPrefab; // Prefab for choice buttons
     public GameState gameState;

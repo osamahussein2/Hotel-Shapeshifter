@@ -8,6 +8,7 @@ public class Character : MonoBehaviour
 {
     public string characterName; // Name of the character
     public Sprite characterImage; // Image of the character
+    public Sprite dialogueBox; // Image of the character
     public int trustLevel; // How much the character trusts the player
     public List<TimeLocation> schedule; // Location based on each time
     public Transform currentLocation; // Where the NPC currently is
