@@ -22066,7 +22066,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clueHolder: {fileID: 1885365775}
   characters:
+  - {fileID: 799987386}
   - {fileID: 609080385}
+  - {fileID: 532401670}
+  - {fileID: 1993475999}
+  - {fileID: 1048935379}
+  - {fileID: 926742067}
+  - {fileID: 186845146}
+  - {fileID: 654045070}
   updating: 0
   backFromNight: 0
 --- !u!4 &703104704
