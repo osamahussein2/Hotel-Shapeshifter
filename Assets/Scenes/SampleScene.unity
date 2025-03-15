@@ -26300,7 +26300,7 @@ MonoBehaviour:
   - dialogueNodes:
     - dialogueText: What do you want? I have enough of a headache as it is.
       choices:
-      - choiceText: Fuck off
+      - choiceText: Piss off, old man.
         nextNodeIndex: 1
         trustGain: -5
         trustRequirement: 0
