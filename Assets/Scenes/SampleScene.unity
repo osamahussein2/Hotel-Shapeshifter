@@ -29792,7 +29792,37 @@ MonoBehaviour:
   character: {fileID: 926742074}
   dialogueSections:
   - dialogueNodes:
-    - dialogueText: I'm the hotel manager. What do you need?
+    - dialogueText: Hello! I'm Gerard, the hotel manager.
+      choices:
+      - choiceText: Anything you need me to do?
+        nextNodeIndex: 1
+        trustGain: 1
+        trustRequirement: -99
+        timeIncrease: 10
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+      nextNodeIndex: 0
+      clueWords: []
+    - dialogueText: How about you speak to the other residents? I think it would
+        be good to initiate some friendly conversations, don't you think?
+      choices:
+      - choiceText: Sure thing, boss
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: It's me, Gerard. What do you need?
       choices:
       - choiceText: I love your hotel!
         nextNodeIndex: 1
@@ -29814,7 +29844,7 @@ MonoBehaviour:
           questID: 
           questProgressGain: 0
           questRequirement: 0
-      - choiceText: Do you have any tasks for me?
+      - choiceText: Any other tasks for me?
         nextNodeIndex: 3
         trustGain: 0
         trustRequirement: -2
