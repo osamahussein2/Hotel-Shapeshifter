@@ -68,6 +68,7 @@ public class DoorInteraction : MonoBehaviour
 
         while (walkTimer < walkDuration)
         {
+            CameraController.teleporting = true;
             float bobbingOffset = Mathf.Sin(walkTimer * Mathf.PI * 2 * walkSpeed) * bobbingHeight;
             Vector3 newPos = Vector3.Lerp(start, end, walkTimer / walkDuration);
             newPos.y += bobbingOffset;
@@ -79,5 +80,6 @@ public class DoorInteraction : MonoBehaviour
 
         cameraController.transform.position = newAreaPosition;
         isWalking = false;
+        CameraController.teleporting = false;
     }
 }

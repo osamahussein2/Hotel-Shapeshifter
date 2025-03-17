@@ -81,9 +81,11 @@ public class TimeManager : MonoBehaviour
 
         if (hours == 50)
         {
+            CameraController.teleporting = true;
             player.transform.position = outRoomPosition;
             hours = 0;
             minutes = 0;
+            CameraController.teleporting = false;
         }
 
         TransitionToNightEvent();

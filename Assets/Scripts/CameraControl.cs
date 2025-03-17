@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class CameraController : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class CameraController : MonoBehaviour
     public float closeEnoughThreshold = 0.1f;
     public float rotationSpeed = 10f;
     public float buttonRotationSpeed = 45f;
+    public static bool teleporting;
 
     private Vector3 targetPosition;
     private bool isMoving = false;
@@ -23,19 +25,28 @@ public class CameraController : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && !DialogueManager.isDialogueTriggered)
-        {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, interactableLayer))
-            {
-                Vector3 directionToObject = (hit.point - transform.position).normalized;
-                directionToObject.y = 0;
-                Vector3 target = hit.point - directionToObject * stopDistance;
 
-                targetPosition = new Vector3(target.x, fixedYPosition, target.z);
-                targetRotation = Quaternion.LookRotation(directionToObject);
-                isMoving = true;
-                isRotatingWithButton = false;
+        if (teleporting)
+        {
+            isMoving = false;
+            return;
+        }
+        if (!EventSystem.current.IsPointerOverGameObject())
+        {
+            if (Input.GetMouseButtonDown(0) && !DialogueManager.isDialogueTriggered)
+            {
+                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, interactableLayer))
+                {
+                    Vector3 directionToObject = (hit.point - transform.position).normalized;
+                    directionToObject.y = 0;
+                    Vector3 target = hit.point - directionToObject * stopDistance;
+
+                    targetPosition = new Vector3(target.x, fixedYPosition, target.z);
+                    targetRotation = Quaternion.LookRotation(directionToObject);
+                    isMoving = true;
+                    isRotatingWithButton = false;
+                }
             }
         }
 
