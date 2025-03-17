@@ -14,7 +14,8 @@ public class HelpTestKill : MonoBehaviour
     void Update()
     {
         //When k is pressed we take this object out back and tell it to look at the flowers
-        if (Input.GetKeyDown("k"))
+
+        if(Input.GetMouseButtonDown(0))
         {
             Destroy(gameObject);
         }

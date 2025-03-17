@@ -2163,7 +2163,7 @@ GameObject:
   - component: {fileID: 62043262}
   - component: {fileID: 62043261}
   - component: {fileID: 62043260}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Chair holder (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2593,7 +2593,7 @@ GameObject:
   - component: {fileID: 71482275}
   - component: {fileID: 71482274}
   - component: {fileID: 71482273}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Chair (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5870,7 +5870,7 @@ GameObject:
   - component: {fileID: 143027446}
   - component: {fileID: 143027445}
   - component: {fileID: 143027444}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Circle table (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8882,7 +8882,7 @@ GameObject:
   - component: {fileID: 237473813}
   - component: {fileID: 237473812}
   - component: {fileID: 237473811}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Chair holder (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9279,7 +9279,7 @@ GameObject:
   - component: {fileID: 240149339}
   - component: {fileID: 240149338}
   - component: {fileID: 240149337}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Chair holder (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13724,7 +13724,7 @@ GameObject:
   - component: {fileID: 389418447}
   - component: {fileID: 389418446}
   - component: {fileID: 389418445}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Chair holder (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18785,7 +18785,7 @@ GameObject:
   - component: {fileID: 526364485}
   - component: {fileID: 526364484}
   - component: {fileID: 526364483}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Chair holder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20694,7 +20694,7 @@ GameObject:
   - component: {fileID: 591242893}
   - component: {fileID: 591242892}
   - component: {fileID: 591242891}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Chair holder (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32450,7 +32450,7 @@ GameObject:
   - component: {fileID: 875407168}
   - component: {fileID: 875407167}
   - component: {fileID: 875407169}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Bed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35375,7 +35375,7 @@ GameObject:
   - component: {fileID: 954775814}
   - component: {fileID: 954775813}
   - component: {fileID: 954775812}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Chair holder (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35858,7 +35858,7 @@ MonoBehaviour:
     - questID: Tutorial
       questName: Introductions
       description: Talk to everyone in the hotel
-      questProgress: 0
+      questProgress: 50
       isActive: 0
       isCompleted: 0
       itemReward: 
@@ -39750,7 +39750,7 @@ GameObject:
   - component: {fileID: 1120828586}
   - component: {fileID: 1120828585}
   - component: {fileID: 1120828584}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Fireplace (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41482,7 +41482,7 @@ GameObject:
   - component: {fileID: 1168908212}
   - component: {fileID: 1168908211}
   - component: {fileID: 1168908210}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Sofa (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42667,7 +42667,7 @@ GameObject:
   - component: {fileID: 1205331786}
   - component: {fileID: 1205331785}
   - component: {fileID: 1205331784}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Sofa (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43663,7 +43663,7 @@ GameObject:
   - component: {fileID: 1225212356}
   - component: {fileID: 1225212355}
   - component: {fileID: 1225212354}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Sofa (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47531,7 +47531,7 @@ GameObject:
   - component: {fileID: 1360546769}
   - component: {fileID: 1360546768}
   - component: {fileID: 1360546767}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Chair behind
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49504,7 +49504,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -557, y: 669}
   m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &1412668184
@@ -49527,22 +49527,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'How to play:
-
-    To move left click on an object or place you wish to
-    move
-
-    Right click to look for clues
-
-    Speak to people to gain their trust
-
-    You
-    only have so much time untill the Shapeshifter comes out
-
-    Good luck
-
-    Press
-    "K" to close this text'
+  m_text: '[Click to Move]'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -49551,8 +49536,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -49569,13 +49554,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 1024
   m_textAlignment: 65535
@@ -49605,7 +49590,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -468.25574, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -54242,7 +54227,7 @@ GameObject:
   - component: {fileID: 1548225034}
   - component: {fileID: 1548225033}
   - component: {fileID: 1548225032}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Fireplace decoration (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58600,7 +58585,7 @@ GameObject:
   - component: {fileID: 1661861611}
   - component: {fileID: 1661861610}
   - component: {fileID: 1661861609}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Chair (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59715,7 +59700,7 @@ GameObject:
   - component: {fileID: 1698363724}
   - component: {fileID: 1698363723}
   - component: {fileID: 1698363722}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Sofa (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -66679,7 +66664,7 @@ GameObject:
   - component: {fileID: 1863861742}
   - component: {fileID: 1863861741}
   - component: {fileID: 1863861740}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Chair holder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70128,7 +70113,7 @@ GameObject:
   - component: {fileID: 1972744201}
   - component: {fileID: 1972744200}
   - component: {fileID: 1972744199}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Sofa (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72295,7 +72280,7 @@ GameObject:
   - component: {fileID: 2032086299}
   - component: {fileID: 2032086298}
   - component: {fileID: 2032086297}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Chair behind
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73605,7 +73590,7 @@ GameObject:
   - component: {fileID: 2062570703}
   - component: {fileID: 2062570702}
   - component: {fileID: 2062570701}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: door1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74311,7 +74296,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2074860317}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
