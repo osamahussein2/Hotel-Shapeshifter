@@ -25,6 +25,14 @@ public class Choice
     public bool oneUse;
     [NonSerialized] public bool hasBeenSelected = false;
 
+
+
+    [System.Serializable]
+    public struct SpecialDialogue
+    {
+        public bool sleepTime;
+    }
+
     [System.Serializable]
     public struct QuestInfo
     {
@@ -33,5 +41,8 @@ public class Choice
         public int questRequirement;
     }
     public QuestInfo quest;
+    public SpecialDialogue specialOptions;
+
+
 
 }

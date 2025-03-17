@@ -6,14 +6,19 @@ public class CameraController : MonoBehaviour
     public float stopDistance = 2f;
     public LayerMask interactableLayer;
     public float closeEnoughThreshold = 0.1f;
+    public float rotationSpeed = 10f;
+    public float buttonRotationSpeed = 45f;
 
     private Vector3 targetPosition;
     private bool isMoving = false;
     private float fixedYPosition;
+    private Quaternion targetRotation;
+    private bool isRotatingWithButton = false;
 
     void Start()
     {
         fixedYPosition = transform.position.y;
+        targetRotation = transform.rotation;
     }
 
     void Update()
@@ -23,30 +28,36 @@ public class CameraController : MonoBehaviour
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, interactableLayer))
             {
-                Vector3 directionToObject = (hit.collider.transform.position - transform.position).normalized;
-                Vector3 target = hit.collider.transform.position - directionToObject * stopDistance;
+                Vector3 directionToObject = (hit.point - transform.position).normalized;
+                directionToObject.y = 0;
+                Vector3 target = hit.point - directionToObject * stopDistance;
 
                 targetPosition = new Vector3(target.x, fixedYPosition, target.z);
-
+                targetRotation = Quaternion.LookRotation(directionToObject);
                 isMoving = true;
+                isRotatingWithButton = false;
             }
         }
 
         if (isMoving)
         {
-            MoveCamera();
+            MoveAndRotateCamera();
+        }
+
+        if (isRotatingWithButton)
+        {
+            SmoothRotate();
         }
     }
 
-    private void MoveCamera()
+    private void MoveAndRotateCamera()
     {
-  
         float distanceToTarget = Vector3.Distance(transform.position, targetPosition);
 
         if (distanceToTarget < closeEnoughThreshold)
         {
             isMoving = false;
-            transform.position = targetPosition; 
+            transform.position = targetPosition;
             return;
         }
 
@@ -55,10 +66,29 @@ public class CameraController : MonoBehaviour
 
         Vector3 newPosition = transform.position + step;
         transform.position = new Vector3(newPosition.x, fixedYPosition, newPosition.z);
+
+        SmoothRotate();
     }
 
-    public void RotateCamera()
+    public void RotateRight()
     {
-        transform.Rotate(0, 180, 0);
+        targetRotation = Quaternion.Euler(transform.eulerAngles + new Vector3(0, buttonRotationSpeed, 0));
+        isRotatingWithButton = true;
+    }
+
+    public void RotateLeft()
+    {
+        targetRotation = Quaternion.Euler(transform.eulerAngles + new Vector3(0, -buttonRotationSpeed, 0));
+        isRotatingWithButton = true;
+    }
+
+    private void SmoothRotate()
+    {
+        transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+
+        if (Quaternion.Angle(transform.rotation, targetRotation) < 0.1f)
+        {
+            isRotatingWithButton = false;
+        }
     }
 }

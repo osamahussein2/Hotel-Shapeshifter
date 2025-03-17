@@ -10,7 +10,10 @@ public class TimeManager : MonoBehaviour
     private TextMeshProUGUI timeText;
 
     private LoadNightScene nightSceneScript;
-
+    public GameState gameState;
+    public CameraController player;
+    public Vector3 roomPosition;
+    public Vector3 outRoomPosition;
     public Material[] skyboxes;
     private int currentSkyboxIndex = 0;
 
@@ -22,6 +25,7 @@ public class TimeManager : MonoBehaviour
     {
         hours = 0;
         minutes = 0;
+
 
         // Let's get the text mesh pro component that inside the time component itself
         timeText = GetComponent<TextMeshProUGUI>();
@@ -75,6 +79,13 @@ public class TimeManager : MonoBehaviour
             minutes = minutes - 60;
         }
 
+        if (hours == 50)
+        {
+            player.transform.position = outRoomPosition;
+            hours = 0;
+            minutes = 0;
+        }
+
         TransitionToNightEvent();
     }
 
@@ -107,7 +118,14 @@ public class TimeManager : MonoBehaviour
     {
         if (hours >= 12 && minutes >= 0)
         {
-            nightSceneScript.LoadNight();
+            if (gameState.currentDay == 0)
+            {
+                player.transform.position = roomPosition;
+            }
+            else
+            {
+                nightSceneScript.LoadNight();
+            }
         }
     }
 }

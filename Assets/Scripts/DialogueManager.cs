@@ -283,6 +283,13 @@ public class DialogueManager : MonoBehaviour
         };
         TelemetryLogger.Log(this, "Option Selected", data);
 
+        if (choice.specialOptions.sleepTime)
+        {
+            Debug.Log("time");
+            gameState.currentDay += 1;
+            TimeManager.hours = 50;
+            gameState.dialogueProgress += 1;
+        }
         // Increase quest progress
         if (!string.IsNullOrEmpty(choice.quest.questID))
         {
