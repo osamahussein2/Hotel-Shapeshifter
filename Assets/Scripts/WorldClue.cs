@@ -26,7 +26,7 @@ public class WorldClue : MonoBehaviour
     void Update()
     {
         //When the player right clicks
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonDown(0))
         {
             //Send out a ray to see what they are clicking
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);

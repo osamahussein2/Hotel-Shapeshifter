@@ -5,6 +5,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class DialogueManager : MonoBehaviour
 {
     // This is my code
@@ -71,6 +72,12 @@ public class DialogueManager : MonoBehaviour
 
     void Update()
     {
+
+        if (Input.GetKeyDown("p"))
+        {
+            TelemetryLogger.Log(this, "Player doesn't appreciate what is happening right now");
+        }
+
         // If the player clicks and we're not showing choices or typing, go to the next node
         if (Input.GetMouseButtonDown(0))
         {

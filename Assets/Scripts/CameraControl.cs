@@ -6,6 +6,8 @@ public class CameraController : MonoBehaviour
     public float moveSpeed = 5f;
     public float stopDistance = 2f;
     public LayerMask interactableLayer;
+    public LayerMask nonoLayer;
+    public LayerMask bonoLayer;
     public float closeEnoughThreshold = 0.1f;
     public float rotationSpeed = 10f;
     public float buttonRotationSpeed = 45f;
@@ -43,11 +45,23 @@ public class CameraController : MonoBehaviour
                     Vector3 target = hit.point - directionToObject * stopDistance;
 
                     targetPosition = new Vector3(target.x, fixedYPosition, target.z);
+
+                    if (Physics.Raycast(transform.position, directionToObject, out RaycastHit nonoHit, Vector3.Distance(transform.position, targetPosition), nonoLayer))
+                    {
+                        Debug.Log("Movement blocked by clue: " + nonoHit.collider.name);
+                        return;
+                    }
+                    if (Physics.Raycast(transform.position, directionToObject, out RaycastHit bamHit, Vector3.Distance(transform.position, targetPosition), bonoLayer))
+                    {
+                        Debug.Log("Movement blocked by clue: " + bamHit.collider.name);
+                        return;
+                    }
                     targetRotation = Quaternion.LookRotation(directionToObject);
                     isMoving = true;
                     isRotatingWithButton = false;
                 }
             }
+
         }
 
         if (isMoving)
