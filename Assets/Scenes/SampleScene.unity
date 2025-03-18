@@ -19029,7 +19029,7 @@ MonoBehaviour:
         trustGain: 2
         trustRequirement: 0
         timeIncrease: 10
-        oneUse: 0
+        oneUse: 1
         quest:
           questID: 
           questProgressGain: 0
