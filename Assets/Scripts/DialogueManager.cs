@@ -111,6 +111,7 @@ public class DialogueManager : MonoBehaviour
         // Setting the character's name and image
         charNameText.text = currentCharacter.characterName;
         charImage.sprite = currentCharacter.characterImage;
+        dialogueBoxIMG.sprite = currentCharacter.dialogueBox;
 
         // Process text and check for clue words
         ProcessClueWords(currentNode.dialogueText, currentNode, clueList);

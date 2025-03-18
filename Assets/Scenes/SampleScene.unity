@@ -512,7 +512,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -434, y: -323.16}
+  m_AnchoredPosition: {x: -488, y: -316}
   m_SizeDelta: {x: 100, y: 352.72}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &17510647
@@ -19215,7 +19215,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Eugene
   characterImage: {fileID: 21300000, guid: 4c6f3949078fa70429d690846a7b75a2, type: 3}
-  dialogueBox: {fileID: 21300000, guid: b639ae619db707641873e69371843f7a, type: 3}
+  dialogueBox: {fileID: 21300000, guid: 5c4599cd1a5801943b57f999895776e5, type: 3}
   trustLevel: 10
   schedule: []
   currentLocation: {fileID: 532401675}
@@ -29772,7 +29772,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Howard
   characterImage: {fileID: 21300000, guid: c4ef54da6188f344c98c6b3d6845fe27, type: 3}
-  dialogueBox: {fileID: 21300000, guid: b639ae619db707641873e69371843f7a, type: 3}
+  dialogueBox: {fileID: 21300000, guid: 5c4599cd1a5801943b57f999895776e5, type: 3}
   trustLevel: 10
   schedule: []
   currentLocation: {fileID: 799987391}
@@ -30584,14 +30584,14 @@ RectTransform:
   m_GameObject: {fileID: 819615619}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.0371, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 293642357}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -4.1229, y: 214.19}
+  m_AnchoredPosition: {x: -72, y: 214.19}
   m_SizeDelta: {x: 1270.6885, y: 347.43}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &819615621
@@ -30641,8 +30641,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -30677,7 +30677,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 155.03174, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -33768,30 +33768,6 @@ MonoBehaviour:
   - dialogueNodes:
     - dialogueText: It's me, Gerard. What do you need?
       choices:
-      - choiceText: I love your hotel!
-        nextNodeIndex: 1
-        trustGain: 1
-        trustRequirement: -99
-        timeIncrease: 10
-        oneUse: 1
-        quest:
-          questID: 
-          questProgressGain: 0
-          questRequirement: 0
-        specialOptions:
-          sleepTime: 0
-      - choiceText: Your hotel sucks!
-        nextNodeIndex: 2
-        trustGain: -2
-        trustRequirement: -99
-        timeIncrease: 10
-        oneUse: 1
-        quest:
-          questID: 
-          questProgressGain: 0
-          questRequirement: 0
-        specialOptions:
-          sleepTime: 0
       - choiceText: Any other tasks for me?
         nextNodeIndex: 3
         trustGain: 0
@@ -33804,11 +33780,11 @@ MonoBehaviour:
           questRequirement: 0
         specialOptions:
           sleepTime: 0
-      - choiceText: I don't need anything
+      - choiceText: End Day
         nextNodeIndex: -1
         trustGain: 0
         trustRequirement: -99
-        timeIncrease: 0
+        timeIncrease: 500
         oneUse: 0
         quest:
           questID: 
@@ -33816,11 +33792,11 @@ MonoBehaviour:
           questRequirement: 0
         specialOptions:
           sleepTime: 0
-      - choiceText: End Day
+      - choiceText: I don't need anything
         nextNodeIndex: -1
         trustGain: 0
         trustRequirement: -99
-        timeIncrease: 500
+        timeIncrease: 0
         oneUse: 0
         quest:
           questID: 
@@ -33986,7 +33962,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Gerard
   characterImage: {fileID: 21300000, guid: 273b6610c1f3fbc4ba0a209bf993cde1, type: 3}
-  dialogueBox: {fileID: 21300000, guid: b639ae619db707641873e69371843f7a, type: 3}
+  dialogueBox: {fileID: 21300000, guid: 5c4599cd1a5801943b57f999895776e5, type: 3}
   trustLevel: 10
   schedule: []
   currentLocation: {fileID: 926742072}
@@ -35980,7 +35956,7 @@ MonoBehaviour:
   charNameText: {fileID: 1979308076}
   dialogueText: {fileID: 819615621}
   charImage: {fileID: 1572774868}
-  dialogueBoxIMG: {fileID: 1327838917}
+  dialogueBoxIMG: {fileID: 211614904}
   choiceContainer: {fileID: 14730212}
   choiceButtonPrefab: {fileID: 3955439934205926547, guid: e119247aafbc3bf4585f85ae90bb0c49, type: 3}
   gameState: {fileID: 54618526}
@@ -37738,6 +37714,79 @@ MonoBehaviour:
       clueWords: []
     - dialogueText: Oh, did I leave them there? Thanks... I guess.
       choices: []
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: Hmm...
+      choices: []
+      nextNodeIndex: 1
+      clueWords: []
+    - dialogueText: Your fashion sense is STILL rather boring.
+      choices:
+      - choiceText: Thanks Nikki
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: -99
+        timeIncrease: 10
+        oneUse: 1
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+      - choiceText: Okay man
+        nextNodeIndex: -1
+        trustGain: -2
+        trustRequirement: -99
+        timeIncrease: 10
+        oneUse: 1
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+      - choiceText: Your tailor supplies are in the lobby
+        nextNodeIndex: 5
+        trustGain: 1
+        trustRequirement: -99
+        timeIncrease: 10
+        oneUse: 1
+        quest:
+          questID: Nikki1
+          questProgressGain: 99
+          questRequirement: 1
+        specialOptions:
+          sleepTime: 0
+      - choiceText: ...bye
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: -99
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+      nextNodeIndex: 1
+      clueWords: []
+    - dialogueText: 'My advice for the time being: dress a little more... colorfully.'
+      choices:
+      - choiceText: I'll keep that in mind
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: Tutorial
+          questProgressGain: 10
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
       nextNodeIndex: -1
       clueWords: []
   gameState: {fileID: 54618526}
@@ -66411,8 +66460,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -2.3690186, y: 412.1944}
-  m_SizeDelta: {x: -40.9885, y: 200.10278}
+  m_AnchoredPosition: {x: 0.8812256, y: 481}
+  m_SizeDelta: {x: -96.162415, y: 75.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1858465741
 MonoBehaviour:
@@ -66434,8 +66483,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c4b3e8cf7eb4a024482d4e7dd7545e2a, type: 3}
-  m_Type: 2
+  m_Sprite: {fileID: 21300000, guid: 99735042e9625e044991884e9e625af1, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 3
@@ -66443,7 +66492,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 2
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 100
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1858465742
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -71006,7 +71055,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 136.24, y: -59.254}
+  m_AnchoredPosition: {x: 149, y: -68}
   m_SizeDelta: {x: 200, y: 63}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1979308076
@@ -71056,8 +71105,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -71745,7 +71794,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Pato
   characterImage: {fileID: 21300000, guid: de2b24c2516c8bc48982ea8f2076f5f3, type: 3}
-  dialogueBox: {fileID: 21300000, guid: b639ae619db707641873e69371843f7a, type: 3}
+  dialogueBox: {fileID: 21300000, guid: d3511b96eece1794c807ffc96c3a9b57, type: 3}
   trustLevel: 10
   schedule: []
   currentLocation: {fileID: 1993476004}
