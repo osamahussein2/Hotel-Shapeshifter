@@ -53,7 +53,7 @@ public class CameraController : MonoBehaviour
                     }
                     if (Physics.Raycast(transform.position, directionToObject, out RaycastHit bamHit, Vector3.Distance(transform.position, targetPosition), bonoLayer))
                     {
-                        Debug.Log("Movement blocked by clue: " + bamHit.collider.name);
+                        Debug.Log("Movement blocked by object: " + bamHit.collider.name);
                         return;
                     }
                     targetRotation = Quaternion.LookRotation(directionToObject);

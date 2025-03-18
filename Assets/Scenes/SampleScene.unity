@@ -3211,8 +3211,8 @@ Transform:
   m_GameObject: {fileID: 84648567}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.78, y: -4.2, z: -17.87}
-  m_LocalScale: {x: 0.5, y: 2, z: 2}
+  m_LocalPosition: {x: 6.11, y: 1.83, z: -15.56}
+  m_LocalScale: {x: 0.51, y: 0.65, z: 0.64}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1462286274}
@@ -4456,7 +4456,7 @@ Transform:
   m_GameObject: {fileID: 116746221}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.38268343, w: 0.92387956}
-  m_LocalPosition: {x: 6.4, y: -3.23, z: -10.79}
+  m_LocalPosition: {x: -6.45, y: 0.8, z: 2.21}
   m_LocalScale: {x: 0.5, y: 2, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -35920,7 +35920,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -63, y: 490.99988}
+  m_AnchoredPosition: {x: -63, y: 429}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &965023552
@@ -40075,7 +40075,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 286038c7bf69e8046b2933b67bf376bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Settings>k__BackingField: {fileID: 11400000, guid: 66c16def83e178d42a4488891bf36890, type: 2}
+  <Settings>k__BackingField: {fileID: 11400000, guid: 9b9b7820d820b054199a28a6daac04e3, type: 2}
   _section: SampleScene
   OnConnectionSuccess:
     m_PersistentCalls:
@@ -49731,7 +49731,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -557, y: 669}
+  m_AnchoredPosition: {x: -575, y: 669}
   m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &1412668184
