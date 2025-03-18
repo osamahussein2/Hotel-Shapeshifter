@@ -75,6 +75,8 @@ public class CameraController : MonoBehaviour
         }
     }
 
+    Vector3 _moveVelocity;
+
     private void MoveAndRotateCamera()
     {
         float distanceToTarget = Vector3.Distance(transform.position, targetPosition);
@@ -86,12 +88,10 @@ public class CameraController : MonoBehaviour
             return;
         }
 
-        Vector3 direction = (targetPosition - transform.position).normalized;
-        Vector3 step = direction * moveSpeed * Time.deltaTime;
-
-        Vector3 newPosition = transform.position + step;
-        transform.position = new Vector3(newPosition.x, fixedYPosition, newPosition.z);
-
+        //Vector3 moved = Vector3.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
+        Vector3 moved = Vector3.SmoothDamp(transform.position, targetPosition, ref _moveVelocity, 0.15f, moveSpeed);
+        transform.position = moved;
+        
         SmoothRotate();
     }
 

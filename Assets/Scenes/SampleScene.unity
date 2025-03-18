@@ -512,7 +512,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -488, y: -316}
+  m_AnchoredPosition: {x: -488, y: -396}
   m_SizeDelta: {x: 100, y: 352.72}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &17510647
@@ -40083,7 +40083,7 @@ MonoBehaviour:
       - m_Target: {fileID: 963268781}
         m_TargetAssemblyTypeName: SessionDisplay, Assembly-CSharp
         m_MethodName: OnConnectionSuccess
-        m_Mode: 3
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -40098,7 +40098,7 @@ MonoBehaviour:
       - m_Target: {fileID: 963268781}
         m_TargetAssemblyTypeName: SessionDisplay, Assembly-CSharp
         m_MethodName: OnConnectionFail
-        m_Mode: 5
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -55452,7 +55452,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 318, y: 228}
+  m_AnchoredPosition: {x: 318, y: 185}
   m_SizeDelta: {x: 426.27625, y: 556.0233}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1572774868
@@ -71055,7 +71055,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 149, y: -68}
+  m_AnchoredPosition: {x: 149, y: -129}
   m_SizeDelta: {x: 200, y: 63}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1979308076
