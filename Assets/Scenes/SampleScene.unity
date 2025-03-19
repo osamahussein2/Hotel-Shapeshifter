@@ -22100,6 +22100,44 @@ MonoBehaviour:
       choices: []
       nextNodeIndex: -1
       clueWords: []
+  - dialogueNodes:
+    - dialogueText: Hello billy
+      choices:
+      - choiceText: Hi
+        nextNodeIndex: 1
+        trustGain: 2
+        trustRequirement: 0
+        timeIncrease: 80
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+      - choiceText: What are you doing up there?
+        nextNodeIndex: 2
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 10
+        oneUse: 1
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+      nextNodeIndex: 0
+      clueWords:
+      - billy
+    - dialogueText: Be prepared
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+    - dialogueText: I am living my best life
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
   gameState: {fileID: 54618526}
 --- !u!65 &609080387
 BoxCollider:
@@ -30407,7 +30445,7 @@ MonoBehaviour:
       - choiceText: Piss off, old man.
         nextNodeIndex: 1
         trustGain: -5
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 10
         oneUse: 1
         quest:
@@ -30465,6 +30503,41 @@ MonoBehaviour:
           questRequirement: 0
         specialOptions:
           sleepTime: 0
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: You again? People these days just don't know when to leave an
+        old man alone!
+      choices:
+      - choiceText: Why are you so grumpy?
+        nextNodeIndex: 1
+        trustGain: -2
+        trustRequirement: -99
+        timeIncrease: 10
+        oneUse: 1
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+      - choiceText: Sorry to bother you
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: -99
+        timeIncrease: 10
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+      nextNodeIndex: 0
+      clueWords: []
+    - dialogueText: Didn't you hear a single word I just said? It's none of your
+        damn business!
+      choices: []
       nextNodeIndex: -1
       clueWords: []
   gameState: {fileID: 54618526}
@@ -34670,12 +34743,13 @@ MonoBehaviour:
           sleepTime: 0
       nextNodeIndex: -1
       clueWords: []
-    - dialogueText: Oh that's good. You can head to your room now.
+    - dialogueText: Oh that's good. Feel free to roam around the hotel and do as
+        you wish. Let me know when you're ready to end the day and go to your room.
       choices:
       - choiceText: Okay
         nextNodeIndex: -1
         trustGain: 0
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 1000
         oneUse: 1
         quest:
@@ -73276,6 +73350,58 @@ MonoBehaviour:
       clueWords:
       - family
       - murdered last month
+  - dialogueNodes:
+    - dialogueText: I must apologize, stranger.
+      choices:
+      - choiceText: What for?
+        nextNodeIndex: 1
+        trustGain: 0
+        trustRequirement: -99
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+      nextNodeIndex: 0
+      clueWords: []
+    - dialogueText: You probably don't want to hear about my personal troubles. I
+        shouldn't have overwhelmed you with such disturbing information.
+      choices:
+      - choiceText: It's fine
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: -99
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: Tutorial
+          questProgressGain: 10
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+      - choiceText: Do you want to talk more about it?
+        nextNodeIndex: 2
+        trustGain: 0
+        trustRequirement: -99
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: Tutorial
+          questProgressGain: 10
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+      nextNodeIndex: 2
+      clueWords:
+      - mourn
+    - dialogueText: No... I most certainly do not.
+      choices: []
+      nextNodeIndex: -1
+      clueWords:
+      - mourn
   gameState: {fileID: 54618526}
 --- !u!65 &1993476001
 BoxCollider:
