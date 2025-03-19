@@ -19699,6 +19699,53 @@ MonoBehaviour:
       choices: []
       nextNodeIndex: -1
       clueWords: []
+  - dialogueNodes:
+    - dialogueText: Ah, it's you. Say, would you perhaps be interested in my monthly
+        subscription service, Eugenely?
+      choices:
+      - choiceText: What's this about?
+        nextNodeIndex: 1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 10
+        oneUse: 1
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+      - choiceText: Absolutely not
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: -99
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+      nextNodeIndex: 0
+      clueWords: []
+    - dialogueText: Your ultimate guide to becoming successful in the 21st century,
+        from cryptocurrency to investing in the latest generative AI tools!
+      choices:
+      - choiceText: I think I'll pass.
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: -99
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+      nextNodeIndex: 0
+      clueWords: []
   gameState: {fileID: 54618526}
 --- !u!65 &532401672
 BoxCollider:
@@ -34750,7 +34797,7 @@ MonoBehaviour:
         nextNodeIndex: -1
         trustGain: 0
         trustRequirement: -99
-        timeIncrease: 1000
+        timeIncrease: 0
         oneUse: 1
         quest:
           questID: Tutorial
