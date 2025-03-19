@@ -14,8 +14,11 @@ public class DoorInteraction : MonoBehaviour
     public float walkDuration = 2f;
     public float bobbingHeight = 0.1f;
     public float walkStartDelay = 0.5f;
+    public float closeSpeed = 2f;
+    public float closeDelay = 1f;
 
     private bool isOpening = false;
+    private bool isClosing = false;
     private bool isWalking = false;
     private Quaternion initialRotation;
     private Quaternion targetRotation;
@@ -23,7 +26,7 @@ public class DoorInteraction : MonoBehaviour
 
     private void Start()
     {
-        initialRotation = door.rotation;
+        initialRotation = hinge.rotation;
         targetRotation = Quaternion.Euler(hinge.eulerAngles + new Vector3(0, openAngle, 0));
     }
 
@@ -43,12 +46,9 @@ public class DoorInteraction : MonoBehaviour
 
     private void OnMouseDown()
     {
-        Debug.Log("hi");
-        if (!isOpening && !isWalking)
+        if (!isOpening && !isWalking && !isClosing)
         {
             isOpening = true;
-            
-
         }
     }
 
@@ -81,5 +81,24 @@ public class DoorInteraction : MonoBehaviour
         cameraController.transform.position = newAreaPosition;
         isWalking = false;
         CameraController.teleporting = false;
+
+
+        yield return new WaitForSeconds(closeDelay);
+        StartCoroutine(CloseDoor());
+    }
+
+    private IEnumerator CloseDoor()
+    {
+        isClosing = true;
+
+        while (Quaternion.Angle(hinge.rotation, initialRotation) > 0.1f)
+        {
+            hinge.rotation = Quaternion.Slerp(hinge.rotation, initialRotation, Time.deltaTime * closeSpeed);
+            yield return null;
+        }
+
+        hinge.rotation = initialRotation;
+        isClosing = false;
     }
 }
+
