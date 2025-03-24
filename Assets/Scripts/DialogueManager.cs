@@ -298,6 +298,10 @@ public class DialogueManager : MonoBehaviour
             TimeManager.hours = 50;
             gameState.dialogueProgress += 1;
         }
+        if (choice.specialOptions.moveGameState)
+        {
+            gameState.dialogueProgress += 1;
+        }
         // Increase quest progress
         if (!string.IsNullOrEmpty(choice.quest.questID))
         {

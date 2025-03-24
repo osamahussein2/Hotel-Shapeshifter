@@ -31,6 +31,7 @@ public class Choice
     public struct SpecialDialogue
     {
         public bool sleepTime;
+        public bool moveGameState;
     }
 
     [System.Serializable]
