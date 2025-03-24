@@ -261,6 +261,7 @@ public class DialogueManager : MonoBehaviour
             if (meetsTrustRequirement && meetsQuestRequirement && meetsOneTimeRequirement)
             {
                 GameObject choiceButton = Instantiate(choiceButtonPrefab, choiceContainer.transform);
+                choiceButton.GetComponent<ButtonProperties>().clockImg.SetActive(choice.timeIncrease > 0f);
                 choiceButton.GetComponentInChildren<TMP_Text>().text = choice.choiceText;
                 choiceButton.GetComponent<Button>().onClick.AddListener(() =>
                 {

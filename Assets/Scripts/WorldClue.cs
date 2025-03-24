@@ -9,12 +9,16 @@ public class WorldClue : MonoBehaviour
     int[] WorldClues = new int[2];
     int[] Items = new int[2];
 
+    GameObject popUpThing;
+
     public ClueList clueList;
     //public object type journal
 
     // Start is called before the first frame update
     void Start()
     {
+        popUpThing = GameObject.Find("QuestGotPopup");
+
         //List that states weather a clue has been, 0=not found, 1=found,
         WorldClues[0] = 0; //Wood in wall 
         WorldClues[1] = 0; //Painting 
@@ -48,7 +52,10 @@ public class WorldClue : MonoBehaviour
                         //It can't be found twice
                         WorldClues[objectScript.objectNumber] = 1;
                         Debug.Log("I found a " + objectScript.objectName);
-    
+
+                        //initiate the pop up
+                        popUpThing.GetComponent<QuestPopUp>().PopUp(objectScript.objectName, "Clue Got");
+
                         clueList.AddClue(objectScript.objectName, 0);
                     }
                 }
@@ -64,6 +71,9 @@ public class WorldClue : MonoBehaviour
                         //It can't be found twice
                         Items[objectScript.objectNumber] = 1;
                         Debug.Log("I found a " + objectScript.objectName);
+
+                        //initiate the pop up
+                        popUpThing.GetComponent<QuestPopUp>().PopUp(objectScript.objectName, "Clue Got");
 
                         clueList.AddClue(objectScript.objectName, 2);
                         objectScript.objectState = 1;

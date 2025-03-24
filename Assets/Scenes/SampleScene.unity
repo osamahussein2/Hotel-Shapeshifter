@@ -64807,7 +64807,7 @@ MonoBehaviour:
   myPos: {fileID: 1692012225}
   qGot: {fileID: 21300000, guid: af8a0a5dec2808b4ebf6e0e4f1da5a1e, type: 3}
   qDone: {fileID: 21300000, guid: 15c4525d920d60f49981e5ce55dae6e0, type: 3}
-  cGot: {fileID: 0}
+  cGot: {fileID: 21300000, guid: ceb019b56138e2243b6cbd3446222147, type: 3}
   popText: {fileID: 1963842836}
   popBg: {fileID: 1012974490}
   popUpSpeed: 0.5
@@ -75690,7 +75690,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 53.302612, w: 0}
+  m_margin: {x: 0, y: 0, z: 83.091934, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
