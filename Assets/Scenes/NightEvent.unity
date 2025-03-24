@@ -8181,7 +8181,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 991623037368476368, guid: e119247aafbc3bf4585f85ae90bb0c49, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 991623037368476368, guid: e119247aafbc3bf4585f85ae90bb0c49, type: 3}
       propertyPath: m_AnchorMin.x
@@ -8189,7 +8189,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 991623037368476368, guid: e119247aafbc3bf4585f85ae90bb0c49, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 991623037368476368, guid: e119247aafbc3bf4585f85ae90bb0c49, type: 3}
       propertyPath: m_SizeDelta.x
@@ -8229,11 +8229,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 991623037368476368, guid: e119247aafbc3bf4585f85ae90bb0c49, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 225
       objectReference: {fileID: 0}
     - target: {fileID: 991623037368476368, guid: e119247aafbc3bf4585f85ae90bb0c49, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -30
       objectReference: {fileID: 0}
     - target: {fileID: 991623037368476368, guid: e119247aafbc3bf4585f85ae90bb0c49, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -9772,7 +9772,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 991623037368476368, guid: e119247aafbc3bf4585f85ae90bb0c49, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 991623037368476368, guid: e119247aafbc3bf4585f85ae90bb0c49, type: 3}
       propertyPath: m_AnchorMin.x
@@ -9780,7 +9780,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 991623037368476368, guid: e119247aafbc3bf4585f85ae90bb0c49, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 991623037368476368, guid: e119247aafbc3bf4585f85ae90bb0c49, type: 3}
       propertyPath: m_SizeDelta.x
@@ -9820,11 +9820,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 991623037368476368, guid: e119247aafbc3bf4585f85ae90bb0c49, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 225
       objectReference: {fileID: 0}
     - target: {fileID: 991623037368476368, guid: e119247aafbc3bf4585f85ae90bb0c49, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -236.11638
       objectReference: {fileID: 0}
     - target: {fileID: 991623037368476368, guid: e119247aafbc3bf4585f85ae90bb0c49, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -10501,7 +10501,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 991623037368476368, guid: e119247aafbc3bf4585f85ae90bb0c49, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 991623037368476368, guid: e119247aafbc3bf4585f85ae90bb0c49, type: 3}
       propertyPath: m_AnchorMin.x
@@ -10509,7 +10509,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 991623037368476368, guid: e119247aafbc3bf4585f85ae90bb0c49, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 991623037368476368, guid: e119247aafbc3bf4585f85ae90bb0c49, type: 3}
       propertyPath: m_SizeDelta.x
@@ -10549,11 +10549,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 991623037368476368, guid: e119247aafbc3bf4585f85ae90bb0c49, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 225
       objectReference: {fileID: 0}
     - target: {fileID: 991623037368476368, guid: e119247aafbc3bf4585f85ae90bb0c49, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -124.649994
       objectReference: {fileID: 0}
     - target: {fileID: 991623037368476368, guid: e119247aafbc3bf4585f85ae90bb0c49, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -12535,6 +12535,8 @@ MonoBehaviour:
   - What is my name?
   - What is your hobby?
   - What room is yours?
+  lockedQuestions: []
+  lockedQuestionsClueRequirement: []
 --- !u!1 &651548891
 GameObject:
   m_ObjectHideFlags: 0
@@ -13074,7 +13076,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 991623037368476368, guid: e119247aafbc3bf4585f85ae90bb0c49, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 991623037368476368, guid: e119247aafbc3bf4585f85ae90bb0c49, type: 3}
       propertyPath: m_AnchorMin.x
@@ -13082,7 +13084,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 991623037368476368, guid: e119247aafbc3bf4585f85ae90bb0c49, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 991623037368476368, guid: e119247aafbc3bf4585f85ae90bb0c49, type: 3}
       propertyPath: m_SizeDelta.x
@@ -13122,11 +13124,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 991623037368476368, guid: e119247aafbc3bf4585f85ae90bb0c49, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 225
       objectReference: {fileID: 0}
     - target: {fileID: 991623037368476368, guid: e119247aafbc3bf4585f85ae90bb0c49, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -304.82184
       objectReference: {fileID: 0}
     - target: {fileID: 991623037368476368, guid: e119247aafbc3bf4585f85ae90bb0c49, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -16384,6 +16386,8 @@ MonoBehaviour:
   - What is my name?
   - What is your hobby?
   - What room is yours?
+  lockedQuestions: []
+  lockedQuestionsClueRequirement: []
 --- !u!1 &872056342
 GameObject:
   m_ObjectHideFlags: 0
@@ -16439,7 +16443,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 991623037368476368, guid: e119247aafbc3bf4585f85ae90bb0c49, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 991623037368476368, guid: e119247aafbc3bf4585f85ae90bb0c49, type: 3}
       propertyPath: m_AnchorMin.x
@@ -16447,7 +16451,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 991623037368476368, guid: e119247aafbc3bf4585f85ae90bb0c49, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 991623037368476368, guid: e119247aafbc3bf4585f85ae90bb0c49, type: 3}
       propertyPath: m_SizeDelta.x
@@ -16487,11 +16491,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 991623037368476368, guid: e119247aafbc3bf4585f85ae90bb0c49, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 225
       objectReference: {fileID: 0}
     - target: {fileID: 991623037368476368, guid: e119247aafbc3bf4585f85ae90bb0c49, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -30
       objectReference: {fileID: 0}
     - target: {fileID: 991623037368476368, guid: e119247aafbc3bf4585f85ae90bb0c49, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -18605,6 +18609,8 @@ MonoBehaviour:
   - What is my name?
   - What is your hobby?
   - What room is yours?
+  lockedQuestions: []
+  lockedQuestionsClueRequirement: []
 --- !u!1 &1057420839
 GameObject:
   m_ObjectHideFlags: 0
@@ -21093,6 +21099,8 @@ MonoBehaviour:
   - What is my name?
   - What is your hobby?
   - What room is yours?
+  lockedQuestions: []
+  lockedQuestionsClueRequirement: []
 --- !u!1001 &1222237105
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21115,7 +21123,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 991623037368476368, guid: e119247aafbc3bf4585f85ae90bb0c49, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 991623037368476368, guid: e119247aafbc3bf4585f85ae90bb0c49, type: 3}
       propertyPath: m_AnchorMin.x
@@ -21123,7 +21131,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 991623037368476368, guid: e119247aafbc3bf4585f85ae90bb0c49, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 991623037368476368, guid: e119247aafbc3bf4585f85ae90bb0c49, type: 3}
       propertyPath: m_SizeDelta.x
@@ -21163,11 +21171,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 991623037368476368, guid: e119247aafbc3bf4585f85ae90bb0c49, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 225
       objectReference: {fileID: 0}
     - target: {fileID: 991623037368476368, guid: e119247aafbc3bf4585f85ae90bb0c49, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -98.70546
       objectReference: {fileID: 0}
     - target: {fileID: 991623037368476368, guid: e119247aafbc3bf4585f85ae90bb0c49, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -27936,6 +27944,8 @@ MonoBehaviour:
   - What is my name?
   - What is your hobby?
   - What room is yours?
+  lockedQuestions: []
+  lockedQuestionsClueRequirement: []
 --- !u!1 &1640690307
 GameObject:
   m_ObjectHideFlags: 0
@@ -29322,7 +29332,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 991623037368476368, guid: e119247aafbc3bf4585f85ae90bb0c49, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 991623037368476368, guid: e119247aafbc3bf4585f85ae90bb0c49, type: 3}
       propertyPath: m_AnchorMin.x
@@ -29330,7 +29340,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 991623037368476368, guid: e119247aafbc3bf4585f85ae90bb0c49, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 991623037368476368, guid: e119247aafbc3bf4585f85ae90bb0c49, type: 3}
       propertyPath: m_SizeDelta.x
@@ -29370,11 +29380,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 991623037368476368, guid: e119247aafbc3bf4585f85ae90bb0c49, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 225
       objectReference: {fileID: 0}
     - target: {fileID: 991623037368476368, guid: e119247aafbc3bf4585f85ae90bb0c49, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -167.41092
       objectReference: {fileID: 0}
     - target: {fileID: 991623037368476368, guid: e119247aafbc3bf4585f85ae90bb0c49, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -29937,6 +29947,8 @@ MonoBehaviour:
   - What is my name?
   - What is your hobby?
   - What room is yours?
+  lockedQuestions: []
+  lockedQuestionsClueRequirement: []
 --- !u!1 &1786707557
 GameObject:
   m_ObjectHideFlags: 0
@@ -30229,7 +30241,9 @@ MonoBehaviour:
   - Billy.
   - :)
   - I don't live here.
+  - I didn't know where to put it.
   answersNutral:
+  - ...
   - ...
   - ...
   - ...
@@ -30239,6 +30253,7 @@ MonoBehaviour:
   - Bobby.
   - :(
   - Whatever room you are in.
+  - I am going to stab you with it.
 --- !u!114 &1805508985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30256,6 +30271,10 @@ MonoBehaviour:
   - What is my name?
   - What is your hobby?
   - What room is yours?
+  lockedQuestions:
+  - What was with the dagger in the wall?
+  lockedQuestionsClueRequirement:
+  - Dagger In Wall
 --- !u!1 &1808879646
 GameObject:
   m_ObjectHideFlags: 0
@@ -33471,7 +33490,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1975297181
 RectTransform:
   m_ObjectHideFlags: 0
@@ -33618,6 +33637,8 @@ MonoBehaviour:
   - What is my name?
   - What is your hobby?
   - What room is yours?
+  lockedQuestions: []
+  lockedQuestionsClueRequirement: []
 --- !u!1 &1981816326
 GameObject:
   m_ObjectHideFlags: 0
@@ -35531,7 +35552,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2086675064
 RectTransform:
   m_ObjectHideFlags: 0

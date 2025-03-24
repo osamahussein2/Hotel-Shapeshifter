@@ -16,6 +16,8 @@ public class NightEventDoor : MonoBehaviour
     NightManager nightMan;
     NightEventQuestions nightQues;
 
+    List<string> unlockedQuestions;
+    List<string> allQuestions;
     public List<int> chosenQuestions;
 
     bool isTyping;
@@ -72,8 +74,6 @@ public class NightEventDoor : MonoBehaviour
     {
         if (interactable && !interacted)
         {
-            nightQues = nightMan.currentChar.GetComponent<NightEventQuestions>();
-
             interacted=true;
             StartDialouge();
             //if (open) { Close(); }
@@ -161,21 +161,51 @@ public class NightEventDoor : MonoBehaviour
 
     public void PickQuestions()
     {
-        chosenQuestions[0] = Random.Range(0, nightQues.questions.Count);
-        chosenQuestions[1] = Random.Range(0, nightQues.questions.Count);
-        chosenQuestions[2] = Random.Range(0, nightQues.questions.Count);
+        nightQues = nightMan.currentChar.GetComponent<NightEventQuestions>();
 
+        allQuestions = new List<string>();
+        unlockedQuestions = new List<string>();
+
+        foreach(string question in nightQues.questions)
+        {
+            allQuestions.Add(question);
+            unlockedQuestions.Add(question);
+        }
+
+        for(int i = 0; i < nightQues.lockedQuestions.Count; i++)
+        {
+            if (nightMan.collectedClues.Contains(nightQues.lockedQuestionsClueRequirement[i]))
+            {
+                unlockedQuestions.Add(nightQues.lockedQuestions[i]);
+            }
+            allQuestions.Add(nightQues.lockedQuestions[i]);
+        }
+
+        List<int> unlockedIndexes = new List<int>();
+
+        foreach(string question in unlockedQuestions)
+        {
+            unlockedIndexes.Add(allQuestions.IndexOf(question));
+        }
+
+        chosenQuestions[0] = Random.Range(0, unlockedIndexes.Count);
+        chosenQuestions[1] = Random.Range(0, unlockedIndexes.Count);
+        chosenQuestions[2] = Random.Range(0, unlockedIndexes.Count);
+
+        //int attemptsMade = 0;
+
+        //make sure all questions are unique
         while (chosenQuestions[2] == chosenQuestions[1] || chosenQuestions[2] == chosenQuestions[0] || chosenQuestions[0] == chosenQuestions[1])
         {
-            chosenQuestions[0] = Random.Range(0, nightQues.questions.Count);
-            chosenQuestions[1] = Random.Range(0, nightQues.questions.Count);
-            chosenQuestions[2] = Random.Range(0, nightQues.questions.Count);
+            chosenQuestions[0] = Random.Range(0, unlockedIndexes.Count);
+            chosenQuestions[1] = Random.Range(0, unlockedIndexes.Count);
+            chosenQuestions[2] = Random.Range(0, unlockedIndexes.Count);
         }
 
         for(int i = 0; i < questionChoices.GetComponent<NightEventQuestionButtons>().questions.Count; i++)
         {
-            questionChoices.GetComponent<NightEventQuestionButtons>().questions[i].transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = nightQues.questions[chosenQuestions[i]];
-            Debug.Log("Question set as: " + nightQues.questions[chosenQuestions[i]]);
+            questionChoices.GetComponent<NightEventQuestionButtons>().questions[i].transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = allQuestions[chosenQuestions[i]];
+            Debug.Log("Question set as: " + allQuestions[chosenQuestions[i]]);
         }
     }
 
