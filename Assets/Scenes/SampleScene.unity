@@ -3690,7 +3690,7 @@ GameObject:
   - component: {fileID: 84648569}
   m_Layer: 6
   m_Name: Item 2
-  m_TagString: Untagged
+  m_TagString: Clue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4962,7 +4962,7 @@ GameObject:
   - component: {fileID: 116746226}
   m_Layer: 6
   m_Name: Clue 1
-  m_TagString: Untagged
+  m_TagString: Clue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16873,7 +16873,7 @@ GameObject:
   - component: {fileID: 420239090}
   m_Layer: 6
   m_Name: Clue 2
-  m_TagString: Untagged
+  m_TagString: Clue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74388,7 +74388,7 @@ GameObject:
   - component: {fileID: 1910934200}
   m_Layer: 6
   m_Name: Item 1
-  m_TagString: Untagged
+  m_TagString: Clue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

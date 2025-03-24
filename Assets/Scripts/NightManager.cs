@@ -10,6 +10,9 @@ public class NightManager : MonoBehaviour
     public List<GameObject> normModels;
     public List<GameObject> evilModels;
 
+    public List<string> allClueNames;
+    public List<string> collectedClues;
+
     public Character currentChar;
 
     public GameObject door;
@@ -48,6 +51,15 @@ public class NightManager : MonoBehaviour
 
         spotlightTimer = 0f;
         knockTimer = knockFreq + 3f;
+
+        //load clue info
+        foreach(string clue in allClueNames)
+        {
+            if(PlayerPrefs.GetString("CLUECOLLECTED"+clue) == "COLLECTED")
+            {
+                collectedClues.Add(clue);
+            }
+        }
     }
 
     void PickCharacter()

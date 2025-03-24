@@ -12,6 +12,7 @@ public class ClueObject : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        gameObject.tag = "Clue";
         objectState = 0;
     }
 

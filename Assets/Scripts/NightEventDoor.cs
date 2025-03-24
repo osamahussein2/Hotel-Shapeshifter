@@ -40,7 +40,7 @@ public class NightEventDoor : MonoBehaviour
         chosenQuestions.Add(2);
         questioning = false;
         nightMan = GameObject.Find("Nightynight manager").GetComponent<NightManager>();
-        nightQues = GameObject.Find("Nightynight manager").GetComponent<NightEventQuestions>();
+        //nightQues = GameObject.Find("Nightynight manager").GetComponent<NightEventQuestions>();
         interacted = false;
         choices.SetActive(false);
         dialougeUI.SetActive(false);
@@ -72,6 +72,8 @@ public class NightEventDoor : MonoBehaviour
     {
         if (interactable && !interacted)
         {
+            nightQues = nightMan.currentChar.GetComponent<NightEventQuestions>();
+
             interacted=true;
             StartDialouge();
             //if (open) { Close(); }

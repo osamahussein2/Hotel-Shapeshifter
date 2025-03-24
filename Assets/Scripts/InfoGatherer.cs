@@ -67,6 +67,24 @@ public class InfoGatherer : MonoBehaviour
             PlayerPrefs.SetInt(charName + "TRUST", charTrust);
         }
 
+        List<string> collectedClues = clueHolder.GetComponent<ClueList>().collectedClues;
+        List<string> allClues = new List<string>();
+
+        //update clues
+        foreach (GameObject clue in GameObject.FindGameObjectsWithTag("Clue"))
+        {
+            string clueName = clue.GetComponent<ClueObject>().objectName;
+            allClues.Add(clueName);
+            if (collectedClues.Contains(clueName))
+            {
+                PlayerPrefs.SetString("CLUECOLLECTED" + clueName, "COLLECTED");
+            }
+            else
+            {
+                PlayerPrefs.SetString("CLUECOLLECTED" + clueName, "NOTCOLLECTED");
+            }
+        }
+
         updating = false;
     }
 }
