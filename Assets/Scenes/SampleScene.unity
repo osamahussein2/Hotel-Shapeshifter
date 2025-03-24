@@ -5611,12 +5611,12 @@ MonoBehaviour:
   character: {fileID: 126196404}
   dialogueSections:
   - dialogueNodes:
-    - dialogueText: Hey I'm Allie.
+    - dialogueText: Hey, I'm Allie.
       choices:
       - choiceText: How's it going?
         nextNodeIndex: 1
         trustGain: 0
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 0
         oneUse: 1
         quest:
@@ -5629,7 +5629,7 @@ MonoBehaviour:
       - choiceText: Go away Allie.
         nextNodeIndex: 4
         trustGain: -1
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 0
         oneUse: 0
         quest:
@@ -5642,7 +5642,7 @@ MonoBehaviour:
       - choiceText: Bye.
         nextNodeIndex: -1
         trustGain: 0
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 0
         oneUse: 0
         quest:
@@ -5654,12 +5654,12 @@ MonoBehaviour:
           moveGameState: 0
       nextNodeIndex: 0
       clueWords: []
-    - dialogueText: Going good, just hacked NASA
+    - dialogueText: Going good, just hacked NASA.
       choices:
       - choiceText: Why?
         nextNodeIndex: 2
         trustGain: 0
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 0
         oneUse: 0
         quest:
@@ -5672,7 +5672,7 @@ MonoBehaviour:
       - choiceText: Isn't that illegal?
         nextNodeIndex: 3
         trustGain: 1
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 0
         oneUse: 0
         quest:
@@ -5689,7 +5689,7 @@ MonoBehaviour:
       - choiceText: Alright then
         nextNodeIndex: -1
         trustGain: 0
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 0
         oneUse: 0
         quest:
@@ -5706,7 +5706,7 @@ MonoBehaviour:
       - choiceText: Whatever you say.
         nextNodeIndex: -1
         trustGain: 0
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 0
         oneUse: 0
         quest:
@@ -5741,7 +5741,7 @@ MonoBehaviour:
       - choiceText: Why?
         nextNodeIndex: 1
         trustGain: 0
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 0
         oneUse: 1
         quest:
@@ -5754,7 +5754,7 @@ MonoBehaviour:
       - choiceText: Okay
         nextNodeIndex: -1
         trustGain: 0
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 0
         oneUse: 0
         quest:
@@ -5767,7 +5767,7 @@ MonoBehaviour:
       - choiceText: Bye.
         nextNodeIndex: -1
         trustGain: 0
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 0
         oneUse: 0
         quest:
@@ -5779,7 +5779,12 @@ MonoBehaviour:
           moveGameState: 0
       nextNodeIndex: 0
       clueWords: []
-    - dialogueText: I'm busy
+    - dialogueText: I'm busy.
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: '[PLACEHOLDER]'
       choices: []
       nextNodeIndex: -1
       clueWords: []
@@ -8162,9 +8167,9 @@ MonoBehaviour:
       nextNodeIndex: -1
       clueWords: []
   - dialogueNodes:
-    - dialogueText: Yo, whats up little man
+    - dialogueText: Yo, whats up, little man?
       choices:
-      - choiceText: Tell me more about you
+      - choiceText: Tell me more about yourself.
         nextNodeIndex: 1
         trustGain: 1
         trustRequirement: -99
@@ -8177,7 +8182,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
-      - choiceText: Why am I little man?
+      - choiceText: Why am I "little man"?
         nextNodeIndex: 2
         trustGain: 0
         trustRequirement: -99
@@ -8205,20 +8210,19 @@ MonoBehaviour:
           moveGameState: 0
       nextNodeIndex: 0
       clueWords: []
-    - dialogueText: I mean there's not really that much to know about me. I hate
-        peaches, so that's something.
+    - dialogueText: I mean, there's not really that much else to know about me. I
+        hate peaches, so that's something.
       choices: []
       nextNodeIndex: -1
       clueWords:
-      - football
-      - defensive lineman
-    - dialogueText: Because you're smaller than me. I call a lot of people little
-        man
+      - hates peaches
+    - dialogueText: Because you're smaller than me. I call a lot of people "little
+        man"!
       choices:
-      - choiceText: But I'm not smaller than you
+      - choiceText: But I'm not smaller than you!
         nextNodeIndex: 3
         trustGain: 1
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 0
         oneUse: 0
         quest:
@@ -8231,7 +8235,7 @@ MonoBehaviour:
       - choiceText: Shut up
         nextNodeIndex: 4
         trustGain: -1
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 0
         oneUse: 0
         quest:
@@ -8243,13 +8247,83 @@ MonoBehaviour:
           moveGameState: 0
       nextNodeIndex: -1
       clueWords: []
-    - dialogueText: Tell yourself whatever you want little man
+    - dialogueText: Tell yourself whatever you want, little man.
       choices: []
       nextNodeIndex: -1
       clueWords: []
-    - dialogueText: No need to get defensive... Little man
+    - dialogueText: No need to get defensive... little man.
       choices: []
       nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: Hey, little man. Are you alright?
+      choices:
+      - choiceText: I'm okay.
+        nextNodeIndex: 1
+        trustGain: 0
+        trustRequirement: -99
+        timeIncrease: 10
+        oneUse: 1
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+      - choiceText: What's happening?
+        nextNodeIndex: 2
+        trustGain: 0
+        trustRequirement: -99
+        timeIncrease: 10
+        oneUse: 1
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+      - choiceText: Not now, Big Man
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: -99
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+      nextNodeIndex: 0
+      clueWords: []
+    - dialogueText: Good to hear, champ. Stay strong.
+      choices: []
+      nextNodeIndex: 3
+      clueWords: []
+    - dialogueText: I don't know. Things are getting pretty scary right now.
+      choices: []
+      nextNodeIndex: 3
+      clueWords: []
+    - dialogueText: Listen, whatever happens, we're gonna make it out of this. I'll
+        make sure everyone is safe. Okay?
+      choices:
+      - choiceText: Thanks, Big Man.
+        nextNodeIndex: -1
+        trustGain: 2
+        trustRequirement: -99
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+      nextNodeIndex: 3
       clueWords: []
   gameState: {fileID: 54618526}
 --- !u!65 &186845148
@@ -21239,7 +21313,8 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
       nextNodeIndex: 0
-      clueWords: []
+      clueWords:
+      - Eugenely
     - dialogueText: Your ultimate guide to becoming successful in the 21st century,
         from cryptocurrency to investing in the latest generative AI tools!
       choices:
@@ -21305,6 +21380,55 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
       nextNodeIndex: 0
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: Hmph. I knew something like this would happen one day.
+      choices:
+      - choiceText: What do you mean?
+        nextNodeIndex: 1
+        trustGain: 0
+        trustRequirement: -99
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+      nextNodeIndex: 0
+      clueWords: []
+    - dialogueText: This invasion! It's all a part of their plan to create a new
+        world order. They really were out to get us all along...
+      choices:
+      - choiceText: Whatever you say...
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: -99
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+      - choiceText: Right, of course...
+        nextNodeIndex: 1
+        trustGain: 0
+        trustRequirement: -99
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+      nextNodeIndex: -1
       clueWords: []
   gameState: {fileID: 54618526}
 --- !u!65 &532401672
@@ -23928,7 +24052,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
-      - choiceText: Get down right now
+      - choiceText: Get down here right now
         nextNodeIndex: 2
         trustGain: 0
         trustRequirement: 0
@@ -26475,7 +26599,7 @@ MonoBehaviour:
       - choiceText: What's it like being a farmer?
         nextNodeIndex: 3
         trustGain: 2
-        trustRequirement: 2
+        trustRequirement: 11
         timeIncrease: 10
         oneUse: 1
         quest:
@@ -26529,11 +26653,13 @@ MonoBehaviour:
       choices: []
       nextNodeIndex: 4
       clueWords: []
-    - dialogueText: One of my buddies is taking care of the farm right now while
-        I'm on vacation. Hope he's doing well.
+    - dialogueText: One of my buddies, Milo, is taking care of the farm right now
+        while I'm on vacation. Hope he's doing well.
       choices: []
       nextNodeIndex: -1
-      clueWords: []
+      clueWords:
+      - vacation
+      - Milo
   - dialogueNodes:
     - dialogueText: Howdy.
       choices:
@@ -26553,7 +26679,7 @@ MonoBehaviour:
       - choiceText: Why the hat?
         nextNodeIndex: 3
         trustGain: 2
-        trustRequirement: 2
+        trustRequirement: -99
         timeIncrease: 10
         oneUse: 1
         quest:
@@ -26588,7 +26714,7 @@ MonoBehaviour:
       - choiceText: Sounds good
         nextNodeIndex: -1
         trustGain: 0
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 0
         oneUse: 0
         quest:
@@ -26608,6 +26734,15 @@ MonoBehaviour:
         sentiment.'
       choices: []
       nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: Oh man... I'm not sure what's going on right now.
+      choices: []
+      nextNodeIndex: 1
+      clueWords: []
+    - dialogueText: I hope Milo is alright...
+      choices: []
+      nextNodeIndex: 0
       clueWords: []
   gameState: {fileID: 54618526}
 --- !u!65 &654045072
@@ -33154,6 +33289,15 @@ MonoBehaviour:
       choices: []
       nextNodeIndex: -1
       clueWords: []
+  - dialogueNodes:
+    - dialogueText: What a disaster. The world's really gone to shit!
+      choices: []
+      nextNodeIndex: 1
+      clueWords: []
+    - dialogueText: The hell are we supposed to do now? Wait for our inevitable deaths?
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
   gameState: {fileID: 54618526}
 --- !u!65 &799987388
 BoxCollider:
@@ -37621,6 +37765,12 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: Hey, I'm supposed to be dead! If you're reading this text, someone
+        messed up! Sorry about that!
+      choices: []
       nextNodeIndex: -1
       clueWords: []
   gameState: {fileID: 54618526}
@@ -42276,7 +42426,7 @@ MonoBehaviour:
       choices:
       - choiceText: Thanks Nikki
         nextNodeIndex: 2
-        trustGain: 0
+        trustGain: 1
         trustRequirement: -99
         timeIncrease: 10
         oneUse: 1
@@ -42338,6 +42488,137 @@ MonoBehaviour:
         nextNodeIndex: -1
         trustGain: 0
         trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: What a mess! How will I continue my fashion career now?
+      choices:
+      - choiceText: Don't you have bigger things to worry about?
+        nextNodeIndex: 1
+        trustGain: -3
+        trustRequirement: -99
+        timeIncrease: 10
+        oneUse: 1
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+      - choiceText: Fashion will prevail!
+        nextNodeIndex: 2
+        trustGain: 3
+        trustRequirement: 9
+        timeIncrease: 10
+        oneUse: 1
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+      - choiceText: Goodbye
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: -99
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+      nextNodeIndex: 1
+      clueWords: []
+    - dialogueText: What? How preposterous! If I cannot grace the runway with my
+        presence, then the world is certainly doomed!
+      choices:
+      - choiceText: Don't you have bigger things to worry about?
+        nextNodeIndex: 1
+        trustGain: -3
+        trustRequirement: -99
+        timeIncrease: 10
+        oneUse: 1
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+      - choiceText: Fashion will prevail!
+        nextNodeIndex: 2
+        trustGain: 2
+        trustRequirement: 9
+        timeIncrease: 10
+        oneUse: 1
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+      - choiceText: Goodbye
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: -99
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+      nextNodeIndex: -1
+      clueWords: []
+    - dialogueText: I certainly hope so!
+      choices:
+      - choiceText: Don't you have bigger things to worry about?
+        nextNodeIndex: 1
+        trustGain: -3
+        trustRequirement: -99
+        timeIncrease: 10
+        oneUse: 1
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+      - choiceText: Fashion will prevail!
+        nextNodeIndex: 2
+        trustGain: 2
+        trustRequirement: 9
+        timeIncrease: 10
+        oneUse: 1
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+      - choiceText: Goodbye
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: -99
         timeIncrease: 0
         oneUse: 0
         quest:
@@ -76934,6 +77215,50 @@ MonoBehaviour:
       nextNodeIndex: -1
       clueWords:
       - mourn
+  - dialogueNodes:
+    - dialogueText: Oh, what HORROR! I can't believe this is happening...
+      choices:
+      - choiceText: Are you okay?
+        nextNodeIndex: 1
+        trustGain: -2
+        trustRequirement: -99
+        timeIncrease: 10
+        oneUse: 1
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+      - choiceText: (Leave)
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: -99
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+      nextNodeIndex: 0
+      clueWords: []
+    - dialogueText: You... stay away from me. You could be one of them...
+      choices: []
+      nextNodeIndex: 2
+      clueWords: []
+    - dialogueText: Those... "shapeshifters"... One of them has killed the manager,
+        I'm sure of it!
+      choices: []
+      nextNodeIndex: 3
+      clueWords: []
+    - dialogueText: Please, don't hurt me...
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
   gameState: {fileID: 54618526}
 --- !u!65 &1993476001
 BoxCollider:
