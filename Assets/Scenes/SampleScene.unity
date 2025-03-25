@@ -5656,7 +5656,7 @@ MonoBehaviour:
       clueWords: []
     - dialogueText: Going good, just hacked NASA.
       choices:
-      - choiceText: Why?
+      - choiceText: What? Why?
         nextNodeIndex: 2
         trustGain: 0
         trustRequirement: -99
@@ -5718,7 +5718,7 @@ MonoBehaviour:
           moveGameState: 0
       nextNodeIndex: 0
       clueWords: []
-    - dialogueText: Well you're not worth my time anyways
+    - dialogueText: Well, you're not worth my time anyways.
       choices:
       - choiceText: Whatever you say.
         nextNodeIndex: -1
@@ -5784,7 +5784,7 @@ MonoBehaviour:
       nextNodeIndex: -1
       clueWords: []
   - dialogueNodes:
-    - dialogueText: '[PLACEHOLDER]'
+    - dialogueText: (Allie seems deep in thought about something.)
       choices: []
       nextNodeIndex: -1
       clueWords: []
@@ -24076,6 +24076,12 @@ MonoBehaviour:
       choices: []
       nextNodeIndex: -1
       clueWords: []
+  - dialogueNodes:
+    - dialogueText: '[PLACEHOLDER]'
+      choices: []
+      nextNodeIndex: -1
+      clueWords:
+      - billy
   gameState: {fileID: 54618526}
 --- !u!65 &609080387
 BoxCollider:
