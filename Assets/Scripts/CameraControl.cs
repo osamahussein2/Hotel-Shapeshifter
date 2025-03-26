@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -12,6 +13,7 @@ public class CameraController : MonoBehaviour
     public float rotationSpeed = 10f;
     public float buttonRotationSpeed = 45f;
     public static bool teleporting;
+    public AudioSource walking;
 
     private Vector3 targetPosition;
     private bool isMoving = false;
@@ -58,6 +60,7 @@ public class CameraController : MonoBehaviour
                     }
                     targetRotation = Quaternion.LookRotation(directionToObject);
                     isMoving = true;
+                    walking.Play();
                     isRotatingWithButton = false;
                 }
             }
@@ -85,6 +88,10 @@ public class CameraController : MonoBehaviour
         {
             isMoving = false;
             transform.position = targetPosition;
+            if (walking.isPlaying)
+            {
+                walking.Stop();  // Stop the sound immediately
+            }
             return;
         }
 

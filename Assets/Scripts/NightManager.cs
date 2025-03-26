@@ -41,6 +41,8 @@ public class NightManager : MonoBehaviour
     float walkinTimer;
     bool walkin;
 
+    public AudioSource jump;
+
     void Start()
     {
         ending = false;
@@ -131,12 +133,14 @@ public class NightManager : MonoBehaviour
             {
                 if (isShapeshifter)
                 {
+                    jump.Play();
                     if (evilChar.transform.position.x < -6)
                     {
                         evilChar.transform.position = evilChar.transform.position + new Vector3(1f * Time.deltaTime, 0, 0);
                     }
                     else
                     {
+                        
                         GameOver();
                     }
                 }

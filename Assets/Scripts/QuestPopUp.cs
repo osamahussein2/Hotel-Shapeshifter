@@ -22,9 +22,20 @@ public class QuestPopUp : MonoBehaviour
     float popOutTimer;
 
     public bool active;
+    public AudioSource ding;
+    bool dingPlayed = false;
 
     private void Update()
     {
+        if (!ding.isPlaying && active && !dingPlayed)
+        {
+            ding.Play();
+            dingPlayed = true;
+        }
+        if (!active && dingPlayed)
+        {
+            dingPlayed = false;
+        }
         if (popUpTimer < popUpSpeed && active)
         {
             myPos.position = new Vector3(-400 + ((400 * popUpTimer)/popUpSpeed), myPos.position.y, 0);

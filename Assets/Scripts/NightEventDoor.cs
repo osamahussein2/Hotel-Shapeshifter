@@ -33,6 +33,10 @@ public class NightEventDoor : MonoBehaviour
 
     public Image characterSprite;
     public TextMeshProUGUI nameTxt;
+    public AudioSource doorSound;
+    public AudioSource lightFlicker;
+    public AudioSource lights;
+    public AudioSource knock;
 
     private void Start()
     {
@@ -49,10 +53,16 @@ public class NightEventDoor : MonoBehaviour
         am = GetComponent<Animator>();
         open = false;
         am.SetBool("Open", false);
+        lightFlicker.Play();
     }
 
     private void Update()
     {
+        if (!lightFlicker.isPlaying)
+        {
+            lights.Play();
+        }
+
         if (ignoreQued && !isTyping)
         {
             dialougeUI.SetActive(false);
@@ -212,7 +222,14 @@ public class NightEventDoor : MonoBehaviour
     public void Ignore()
     {
         ignoreQued = true;
+        if (lights.isPlaying)
+        {
+            lights.loop = false;  // Stop looping
+            lights.volume = 0;       // Stop the sound immediately
+        }
         choices.SetActive(false);
+
+        lights.Stop();
 
         StopAllCoroutines();
         StartCoroutine(TypeText("After some time, The knocking stops.           "));
@@ -227,7 +244,11 @@ public class NightEventDoor : MonoBehaviour
     public void LetInside()
     {
         letinQued = true;
-
+        if (lights.isPlaying)
+        {
+            lights.loop = false;  // Stop looping
+            lights.volume = 0;       // Stop the sound immediately
+        }
         StopAllCoroutines();
         StartCoroutine(TypeText("Thank you so much.           "));
 
@@ -243,6 +264,7 @@ public class NightEventDoor : MonoBehaviour
         if (!open)
         {
             open = true;
+            doorSound.Play();
             am.SetBool("Open", true);
         }
     }
@@ -261,6 +283,7 @@ public class NightEventDoor : MonoBehaviour
         if (!open)
         {
             am.SetTrigger("Knock");
+            knock.Play();
         }
     }
 }

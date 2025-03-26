@@ -39,6 +39,8 @@ public class DialogueManager : MonoBehaviour
 
     public static bool isDialogueTriggered;
 
+    public AudioSource talk;
+
     void Start()
     {
 
@@ -169,6 +171,12 @@ public class DialogueManager : MonoBehaviour
     IEnumerator TypeText(string text)
     {
         isTyping = true;
+
+        if (!talk.isPlaying && talk!=null)
+        {
+            talk.Play();
+        }
+
         dialogueText.text = ""; // Clear the current text so we can get our awesome new fancy text
         string fullText = text;
 
@@ -183,6 +191,10 @@ public class DialogueManager : MonoBehaviour
                     character = currentCharacter
                 };
                 TelemetryLogger.Log(this, "Dialogue Skipped:", data);
+                if (talk.isPlaying && talk != null)
+                {
+                    talk.Stop();
+                }
                 yield break;
             }
 
@@ -190,6 +202,11 @@ public class DialogueManager : MonoBehaviour
             yield return new WaitForSeconds(typingSpeed);
         }
         canSkipText = true;
+
+        if (talk.isPlaying && talk != null)
+        {
+            talk.Stop();
+        }
         isTyping = false; // We are done typing
     }
 

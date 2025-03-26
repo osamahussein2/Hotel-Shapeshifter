@@ -17,6 +17,10 @@ public class DoorInteraction : MonoBehaviour
     public float closeSpeed = 2f;
     public float closeDelay = 1f;
 
+    public AudioSource walking;
+    public AudioSource doorSound;
+    private bool soundplayed = false;
+
     private bool isOpening = false;
     private bool isClosing = false;
     private bool isWalking = false;
@@ -34,6 +38,11 @@ public class DoorInteraction : MonoBehaviour
     {
         if (isOpening)
         {
+            if (!doorSound.isPlaying && soundplayed == false)
+            {
+                doorSound.Play();
+                soundplayed = true;
+            }
             hinge.rotation = Quaternion.Slerp(hinge.rotation, targetRotation, Time.deltaTime * openSpeed);
 
             if (Quaternion.Angle(hinge.rotation, targetRotation) < 0.1f)
@@ -54,6 +63,10 @@ public class DoorInteraction : MonoBehaviour
 
     private IEnumerator Delay(float delay)
     {
+        if (doorSound.isPlaying)
+        {
+            doorSound.Stop();
+        }
         yield return new WaitForSeconds(delay);
         StartCoroutine(Walking());
     }
@@ -65,7 +78,7 @@ public class DoorInteraction : MonoBehaviour
 
         Vector3 start = cameraController.transform.position;
         Vector3 end = stopPosition;
-
+        walking.Play();
         while (walkTimer < walkDuration)
         {
             CameraController.teleporting = true;
@@ -79,6 +92,11 @@ public class DoorInteraction : MonoBehaviour
         }
 
         cameraController.transform.position = newAreaPosition;
+        if (walking.isPlaying)
+        {
+            walking.Stop();  // Stop the sound immediately
+        }
+        soundplayed = false;
         isWalking = false;
         CameraController.teleporting = false;
 

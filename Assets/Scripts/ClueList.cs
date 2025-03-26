@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -25,6 +26,8 @@ public class ClueList : MonoBehaviour
     public List<string> collectedClues = new List<string>(); // List of collected clues
     public List<string> collectedQuests = new List<string>(); // List of collected quests
     public List<string> collectedItems = new List<string>(); // List of collected items
+
+    public AudioSource pages;
 
     void Start()
     {
@@ -123,6 +126,7 @@ public class ClueList : MonoBehaviour
     public void ShowCluePanel()
     {
         //hideClueButton.gameObject.SetActive(true);
+        pages.Play();
         journalMaster.SetActive(true);
     }
 
@@ -130,6 +134,7 @@ public class ClueList : MonoBehaviour
     public void HideCluePanel()
     {
         //hideClueButton.gameObject.SetActive(false);
+        pages.Play();
         journalMaster.SetActive(false);
     }
 
@@ -142,7 +147,7 @@ public class ClueList : MonoBehaviour
             currentJournalPage = 0;
         }
         Debug.Log("currentJournalPage is " + currentJournalPage);
-
+        pages.Play();
         if (currentJournalPage == 0)
         {
             itemPanel.SetActive(false);
