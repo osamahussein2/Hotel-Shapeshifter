@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.TextCore.Text;
 using UnityEngine.UIElements;
@@ -8,11 +9,13 @@ public class Character : MonoBehaviour
 {
     public string characterName; // Name of the character
     public Sprite characterImage; // Image of the character
+    public Sprite deadCharImage;
+    public bool charDead;
     public Sprite dialogueBox; // Image of the character
     public int trustLevel; // How much the character trusts the player
     public List<TimeLocation> schedule; // Location based on each time
     public Transform currentLocation; // Where the NPC currently is
-
+    public SpriteRenderer sr;
     void Start()
     {
         UpdateLocation(); // Set initial location
@@ -21,6 +24,10 @@ public class Character : MonoBehaviour
     void Update()
     {
         UpdateLocation(); // Update NPC location based on time
+        if (charDead)
+        {
+            sr.sprite = deadCharImage;
+        }
     }
 
     void UpdateLocation()
@@ -57,5 +64,6 @@ public class TimeLocation
     public int startMinute;
     public int endHour;
     public int endMinute;
+    public int day;
     public Transform location;
 }

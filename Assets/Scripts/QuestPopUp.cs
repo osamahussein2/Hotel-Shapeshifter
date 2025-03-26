@@ -66,7 +66,7 @@ public class QuestPopUp : MonoBehaviour
         }
     }
 
-    public void PopUp(string qName, string type)
+    public void PopUp(string qName, float qProgress, string type)
     {
         if (!active)
         {
@@ -77,6 +77,12 @@ public class QuestPopUp : MonoBehaviour
             {
                 popBg.sprite = qDone;
             }
+
+            if (type == "Quest Progress")
+            {
+                popText.text = qName + "\nQuest Progress:" + qProgress;
+            }
+
             else if (type == "Quest Got")
             {
                 popBg.sprite = qGot;

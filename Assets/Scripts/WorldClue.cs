@@ -54,7 +54,7 @@ public class WorldClue : MonoBehaviour
                         Debug.Log("I found a " + objectScript.objectName);
 
                         //initiate the pop up
-                        popUpThing.GetComponent<QuestPopUp>().PopUp(objectScript.objectName, "Clue Got");
+                        popUpThing.GetComponent<QuestPopUp>().PopUp(objectScript.objectName, 0, "Clue Got");
 
                         clueList.AddClue(objectScript.objectName, 0);
                     }
@@ -73,7 +73,7 @@ public class WorldClue : MonoBehaviour
                         Debug.Log("I found a " + objectScript.objectName);
 
                         //initiate the pop up
-                        popUpThing.GetComponent<QuestPopUp>().PopUp(objectScript.objectName, "Clue Got");
+                        popUpThing.GetComponent<QuestPopUp>().PopUp(objectScript.objectName, 0,  "Clue Got");
 
                         clueList.AddClue(objectScript.objectName, 2);
                         objectScript.objectState = 1;

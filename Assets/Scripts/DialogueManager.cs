@@ -111,8 +111,15 @@ public class DialogueManager : MonoBehaviour
         DialogueNode currentNode = dialogueNodes[nodeIndex];
 
         // Setting the character's name and image
+        if (!currentCharacter.charDead)
+        {
+            charImage.sprite = currentCharacter.characterImage;
+        }
+        else
+        {
+            charImage.sprite = currentCharacter.deadCharImage;
+        }
         charNameText.text = currentCharacter.characterName;
-        charImage.sprite = currentCharacter.characterImage;
         dialogueBoxIMG.sprite = currentCharacter.dialogueBox;
 
         // Process text and check for clue words
@@ -320,6 +327,10 @@ public class DialogueManager : MonoBehaviour
         {
             gameState.dialogueProgress += 1;
         }
+        if (choice.specialOptions.killChar)
+        {
+            currentCharacter.charDead = true;
+        }
         // Increase quest progress
         if (!string.IsNullOrEmpty(choice.quest.questID))
         {
@@ -329,7 +340,7 @@ public class DialogueManager : MonoBehaviour
                 if (!quest.isActive) 
                 { 
                     quest.isActive = true; 
-                    popUp.PopUp(quest.questName, "Quest Got");
+                    popUp.PopUp(quest.questName, 0, "Quest Got");
                     var data1 = new StartQuestData()
                     {
                         quest = quest.questName,
@@ -343,7 +354,10 @@ public class DialogueManager : MonoBehaviour
                     }
                 }
                 quest.questProgress += choice.quest.questProgressGain;
-                if (quest.questProgress >= 100)
+                if (quest.questProgress <95) {
+                    popUp.PopUp(quest.questName, quest.questProgress, "Quest Progress");
+                }
+                else if (quest.questProgress >= 100)
                 {
                     quest.isCompleted = true;
                     quest.isActive = false;
@@ -353,7 +367,7 @@ public class DialogueManager : MonoBehaviour
                         character = currentCharacter
                     };
                     TelemetryLogger.Log(this, "Quest Completed", data2);
-                    popUp.PopUp(quest.questName, "Quest Done");//quest pop up
+                    popUp.PopUp(quest.questName, 0, "Quest Done");//quest pop up
                     currentCharacter.trustLevel += quest.trustReward;
                     Debug.Log("You got a " + quest.itemReward);
                 }

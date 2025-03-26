@@ -2996,10 +2996,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: 
   characterImage: {fileID: 21300000, guid: b7da13793f6d4724ab5c9a52bb3ca6e9, type: 3}
+  deadCharImage: {fileID: 0}
+  charDead: 0
   dialogueBox: {fileID: 21300000, guid: b639ae619db707641873e69371843f7a, type: 3}
   trustLevel: 0
   schedule: []
   currentLocation: {fileID: 0}
+  sr: {fileID: 0}
 --- !u!114 &70196341
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5709,10 +5712,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Allie
   characterImage: {fileID: 21300000, guid: 89163020603d4dd41a2e839c835f302a, type: 3}
+  deadCharImage: {fileID: 21300000, guid: 3f97b1d2f27404c44a3771e5bb9f80dd, type: 3}
+  charDead: 0
   dialogueBox: {fileID: 21300000, guid: b639ae619db707641873e69371843f7a, type: 3}
   trustLevel: 10
   schedule: []
   currentLocation: {fileID: 126196403}
+  sr: {fileID: 597355765}
 --- !u!114 &126196405
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5758,6 +5764,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       - choiceText: Go away Allie.
         nextNodeIndex: 4
         trustGain: -1
@@ -5771,6 +5778,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       - choiceText: Bye.
         nextNodeIndex: -1
         trustGain: 0
@@ -5784,6 +5792,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: Going good, just hacked NASA.
@@ -5795,12 +5804,13 @@ MonoBehaviour:
         timeIncrease: 0
         oneUse: 0
         quest:
-          questID: 
-          questProgressGain: 0
+          questID: Tutorial
+          questProgressGain: 10
           questRequirement: 0
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       - choiceText: Isn't that illegal?
         nextNodeIndex: 3
         trustGain: 1
@@ -5808,12 +5818,13 @@ MonoBehaviour:
         timeIncrease: 0
         oneUse: 0
         quest:
-          questID: 
-          questProgressGain: 0
+          questID: Tutorial
+          questProgressGain: 10
           questRequirement: 0
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: It's all for the love of the game.
@@ -5831,6 +5842,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: Only if I get caught. Which I wouldn't.
@@ -5848,6 +5860,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: Well, you're not worth my time anyways.
@@ -5865,6 +5878,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       nextNodeIndex: 0
       clueWords: []
   - dialogueNodes:
@@ -5883,6 +5897,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       - choiceText: Okay
         nextNodeIndex: -1
         trustGain: 0
@@ -5896,6 +5911,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       - choiceText: Bye.
         nextNodeIndex: -1
         trustGain: 0
@@ -5909,6 +5925,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: I'm busy.
@@ -5991,6 +6008,111 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 126196402}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &133011713
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 133011714}
+  - component: {fileID: 133011717}
+  - component: {fileID: 133011716}
+  - component: {fileID: 133011715}
+  m_Layer: 0
+  m_Name: blackbox (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &133011714
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 133011713}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.4, y: -1.34, z: 27.24}
+  m_LocalScale: {x: 3.13, y: 5.63, z: 5}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1393438886}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &133011715
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 133011713}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &133011716
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 133011713}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: c40501bc0fd004d488cccd226a27b15c, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &133011717
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 133011713}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &134788882
 GameObject:
@@ -7063,10 +7185,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: 
   characterImage: {fileID: 21300000, guid: b7da13793f6d4724ab5c9a52bb3ca6e9, type: 3}
+  deadCharImage: {fileID: 0}
+  charDead: 0
   dialogueBox: {fileID: 21300000, guid: b639ae619db707641873e69371843f7a, type: 3}
   trustLevel: 0
   schedule: []
   currentLocation: {fileID: 0}
+  sr: {fileID: 0}
 --- !u!65 &145970228
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7634,6 +7759,111 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &166390580
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 166390581}
+  - component: {fileID: 166390584}
+  - component: {fileID: 166390583}
+  - component: {fileID: 166390582}
+  m_Layer: 0
+  m_Name: blackbox (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &166390581
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166390580}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.4, y: -1.34, z: -29.66}
+  m_LocalScale: {x: 3.13, y: 5.63, z: 5}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1393438886}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &166390582
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166390580}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &166390583
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166390580}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: c40501bc0fd004d488cccd226a27b15c, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &166390584
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166390580}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &174699813
 GameObject:
   m_ObjectHideFlags: 0
@@ -8240,10 +8470,11 @@ MonoBehaviour:
         quest:
           questID: Tutorial
           questProgressGain: 0
-          questRequirement: 10
+          questRequirement: 0
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       - choiceText: What's with the nickname?
         nextNodeIndex: 1
         trustGain: 0
@@ -8257,6 +8488,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       - choiceText: Adios
         nextNodeIndex: -1
         trustGain: 0
@@ -8270,6 +8502,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: I used to play football in high school. I was a defensive lineman,
@@ -8296,6 +8529,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       nextNodeIndex: -1
       clueWords: []
   - dialogueNodes:
@@ -8314,6 +8548,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       - choiceText: Why am I "little man"?
         nextNodeIndex: 2
         trustGain: 0
@@ -8327,6 +8562,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       - choiceText: Adios
         nextNodeIndex: -1
         trustGain: 0
@@ -8340,6 +8576,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: I mean, there's not really that much else to know about me. I
@@ -8364,6 +8601,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       - choiceText: Shut up
         nextNodeIndex: 4
         trustGain: -1
@@ -8377,6 +8615,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Tell yourself whatever you want, little man.
@@ -8403,6 +8642,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       - choiceText: What's happening?
         nextNodeIndex: 2
         trustGain: 0
@@ -8416,6 +8656,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       - choiceText: Not now, Big Man
         nextNodeIndex: -1
         trustGain: 0
@@ -8429,6 +8670,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: Good to hear, champ. Stay strong.
@@ -8455,6 +8697,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       nextNodeIndex: 3
       clueWords: []
   gameState: {fileID: 54618526}
@@ -8576,10 +8819,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Big Man
   characterImage: {fileID: 21300000, guid: edf00fde79848b541bec10b8f753557a, type: 3}
+  deadCharImage: {fileID: 21300000, guid: 98375b7e3b01bfa4bb5cb7167e235b9a, type: 3}
+  charDead: 0
   dialogueBox: {fileID: 21300000, guid: b639ae619db707641873e69371843f7a, type: 3}
   trustLevel: 10
   schedule: []
   currentLocation: {fileID: 186845151}
+  sr: {fileID: 116829680}
 --- !u!1 &188297879
 GameObject:
   m_ObjectHideFlags: 0
@@ -13530,10 +13776,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: 
   characterImage: {fileID: 21300000, guid: b7da13793f6d4724ab5c9a52bb3ca6e9, type: 3}
+  deadCharImage: {fileID: 0}
+  charDead: 0
   dialogueBox: {fileID: 21300000, guid: b639ae619db707641873e69371843f7a, type: 3}
   trustLevel: 0
   schedule: []
   currentLocation: {fileID: 0}
+  sr: {fileID: 0}
 --- !u!65 &307338761
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15488,10 +15737,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: 
   characterImage: {fileID: 21300000, guid: b7da13793f6d4724ab5c9a52bb3ca6e9, type: 3}
+  deadCharImage: {fileID: 0}
+  charDead: 0
   dialogueBox: {fileID: 21300000, guid: b639ae619db707641873e69371843f7a, type: 3}
   trustLevel: 0
   schedule: []
   currentLocation: {fileID: 0}
+  sr: {fileID: 0}
 --- !u!114 &376614052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15959,10 +16211,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: 
   characterImage: {fileID: 21300000, guid: b7da13793f6d4724ab5c9a52bb3ca6e9, type: 3}
+  deadCharImage: {fileID: 0}
+  charDead: 0
   dialogueBox: {fileID: 21300000, guid: b639ae619db707641873e69371843f7a, type: 3}
   trustLevel: 0
   schedule: []
   currentLocation: {fileID: 0}
+  sr: {fileID: 0}
 --- !u!114 &392502036
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17926,10 +18181,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: 
   characterImage: {fileID: 21300000, guid: b7da13793f6d4724ab5c9a52bb3ca6e9, type: 3}
+  deadCharImage: {fileID: 0}
+  charDead: 0
   dialogueBox: {fileID: 21300000, guid: b639ae619db707641873e69371843f7a, type: 3}
   trustLevel: 0
   schedule: []
   currentLocation: {fileID: 0}
+  sr: {fileID: 0}
 --- !u!114 &443346432
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20927,10 +21185,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: 
   characterImage: {fileID: 21300000, guid: b7da13793f6d4724ab5c9a52bb3ca6e9, type: 3}
+  deadCharImage: {fileID: 0}
+  charDead: 0
   dialogueBox: {fileID: 21300000, guid: b639ae619db707641873e69371843f7a, type: 3}
   trustLevel: 0
   schedule: []
   currentLocation: {fileID: 0}
+  sr: {fileID: 0}
 --- !u!114 &519886005
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21581,6 +21842,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       - choiceText: No thanks
         nextNodeIndex: 3
         trustGain: 0
@@ -21594,6 +21856,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       - choiceText: What about this quest?
         nextNodeIndex: 5
         trustGain: 0
@@ -21607,6 +21870,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: 'Heh, I knew you''d say that. EugeneCoin is simply the most logical
@@ -21630,6 +21894,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Heh, I knew you'd say that. People like you simply don't understand
@@ -21662,6 +21927,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       - choiceText: Absolutely not
         nextNodeIndex: 2
         trustGain: 0
@@ -21675,6 +21941,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       nextNodeIndex: 0
       clueWords:
       - Eugenely
@@ -21694,6 +21961,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: You simply do not understand. Get in now while EugeneCoin is
@@ -21712,6 +21980,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       - choiceText: Still no (but with emphasis)
         nextNodeIndex: 3
         trustGain: 0
@@ -21725,6 +21994,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: URGH. You're just like my mom.. I mean it's your loss.
@@ -21742,6 +22012,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       nextNodeIndex: 0
       clueWords: []
   - dialogueNodes:
@@ -21760,6 +22031,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: This invasion! It's all a part of their plan to create a new
@@ -21778,6 +22050,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       - choiceText: Right, of course...
         nextNodeIndex: 1
         trustGain: 0
@@ -21791,6 +22064,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       nextNodeIndex: -1
       clueWords: []
   gameState: {fileID: 54618526}
@@ -21912,10 +22186,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Eugene
   characterImage: {fileID: 21300000, guid: 4c6f3949078fa70429d690846a7b75a2, type: 3}
+  deadCharImage: {fileID: 21300000, guid: 7069cb2d337284d4c92cbadeed7309a3, type: 3}
+  charDead: 0
   dialogueBox: {fileID: 21300000, guid: 5c4599cd1a5801943b57f999895776e5, type: 3}
   trustLevel: 10
   schedule: []
   currentLocation: {fileID: 532401675}
+  sr: {fileID: 90878551}
 --- !u!1 &533362869
 GameObject:
   m_ObjectHideFlags: 0
@@ -24375,6 +24652,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       - choiceText: What are you doing up there?
         nextNodeIndex: 2
         trustGain: 0
@@ -24388,6 +24666,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       nextNodeIndex: 0
       clueWords:
       - billy
@@ -24415,6 +24694,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       - choiceText: Get down here right now
         nextNodeIndex: 2
         trustGain: 0
@@ -24428,6 +24708,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       nextNodeIndex: 0
       clueWords:
       - billy
@@ -24564,10 +24845,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Bob
   characterImage: {fileID: 21300000, guid: f4cf4454540f6404cbd468b2a66af17b, type: 3}
+  deadCharImage: {fileID: 21300000, guid: 34dcd188fb31d7e4f81f745ded3eb9db, type: 3}
+  charDead: 0
   dialogueBox: {fileID: 21300000, guid: b639ae619db707641873e69371843f7a, type: 3}
   trustLevel: 10
   schedule: []
   currentLocation: {fileID: 609080390}
+  sr: {fileID: 1044912942}
 --- !u!1 &610617983
 GameObject:
   m_ObjectHideFlags: 0
@@ -25439,10 +25723,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: 
   characterImage: {fileID: 21300000, guid: b7da13793f6d4724ab5c9a52bb3ca6e9, type: 3}
+  deadCharImage: {fileID: 0}
+  charDead: 0
   dialogueBox: {fileID: 21300000, guid: b639ae619db707641873e69371843f7a, type: 3}
   trustLevel: 0
   schedule: []
   currentLocation: {fileID: 0}
+  sr: {fileID: 0}
 --- !u!114 &627265143
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26471,10 +26758,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: 
   characterImage: {fileID: 21300000, guid: b7da13793f6d4724ab5c9a52bb3ca6e9, type: 3}
+  deadCharImage: {fileID: 0}
+  charDead: 0
   dialogueBox: {fileID: 21300000, guid: b639ae619db707641873e69371843f7a, type: 3}
   trustLevel: 0
   schedule: []
   currentLocation: {fileID: 0}
+  sr: {fileID: 0}
 --- !u!65 &647606162
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26806,10 +27096,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: 
   characterImage: {fileID: 21300000, guid: b7da13793f6d4724ab5c9a52bb3ca6e9, type: 3}
+  deadCharImage: {fileID: 0}
+  charDead: 0
   dialogueBox: {fileID: 21300000, guid: b639ae619db707641873e69371843f7a, type: 3}
   trustLevel: 0
   schedule: []
   currentLocation: {fileID: 0}
+  sr: {fileID: 0}
 --- !u!114 &653785522
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26965,6 +27258,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       - choiceText: What's it like being a farmer?
         nextNodeIndex: 3
         trustGain: 2
@@ -26978,6 +27272,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       - choiceText: Goodbye
         nextNodeIndex: -1
         trustGain: 0
@@ -26991,6 +27286,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: I'm a farmer. I grow various crops throughout the year and take
@@ -27009,12 +27305,13 @@ MonoBehaviour:
         timeIncrease: 0
         oneUse: 0
         quest:
-          questID: 
-          questProgressGain: 0
+          questID: Tutorial
+          questProgressGain: 10
           questRequirement: 0
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Glad you asked. It's hard work, but taking care of the animals
@@ -27045,6 +27342,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       - choiceText: Why the hat?
         nextNodeIndex: 3
         trustGain: 2
@@ -27058,6 +27356,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       - choiceText: Goodbye
         nextNodeIndex: -1
         trustGain: 0
@@ -27071,6 +27370,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: Cuz I'm a big fan of the farming lifestyle.
@@ -27093,6 +27393,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: My buddy gave it to me, called it his "lucky hat".
@@ -27232,10 +27533,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Ben
   characterImage: {fileID: 21300000, guid: 6a5bd59e7aaf8bf4392b99eb946786b8, type: 3}
+  deadCharImage: {fileID: 21300000, guid: 53457483f14a4ab49b6a50f6544a833e, type: 3}
+  charDead: 0
   dialogueBox: {fileID: 21300000, guid: d3511b96eece1794c807ffc96c3a9b57, type: 3}
   trustLevel: 10
   schedule: []
   currentLocation: {fileID: 654045075}
+  sr: {fileID: 216343196}
 --- !u!1 &657055363
 GameObject:
   m_ObjectHideFlags: 0
@@ -33569,6 +33873,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       - choiceText: Could you tell me a bit about yourself?
         nextNodeIndex: 2
         trustGain: 0
@@ -33582,6 +33887,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       - choiceText: Goodbye.
         nextNodeIndex: -1
         trustGain: 0
@@ -33595,6 +33901,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: Wha-!? Get out of my face!
@@ -33621,6 +33928,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       nextNodeIndex: -1
       clueWords: []
   - dialogueNodes:
@@ -33640,6 +33948,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       - choiceText: Sorry to bother you
         nextNodeIndex: -1
         trustGain: 0
@@ -33653,6 +33962,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: Didn't you hear a single word I just said? It's none of your
@@ -33789,10 +34099,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Howard
   characterImage: {fileID: 21300000, guid: c4ef54da6188f344c98c6b3d6845fe27, type: 3}
+  deadCharImage: {fileID: 21300000, guid: 8247e80a633f5934a81e88360b0e0a1d, type: 3}
+  charDead: 0
   dialogueBox: {fileID: 21300000, guid: 5c4599cd1a5801943b57f999895776e5, type: 3}
   trustLevel: 10
   schedule: []
   currentLocation: {fileID: 799987391}
+  sr: {fileID: 241976679}
 --- !u!1 &801717585
 GameObject:
   m_ObjectHideFlags: 0
@@ -34332,10 +34645,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: 
   characterImage: {fileID: 21300000, guid: b7da13793f6d4724ab5c9a52bb3ca6e9, type: 3}
+  deadCharImage: {fileID: 0}
+  charDead: 0
   dialogueBox: {fileID: 21300000, guid: b639ae619db707641873e69371843f7a, type: 3}
   trustLevel: 0
   schedule: []
   currentLocation: {fileID: 0}
+  sr: {fileID: 0}
 --- !u!114 &814175577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36834,10 +37150,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: 
   characterImage: {fileID: 21300000, guid: 146ef65247bd6484b9fd1f89bd4b6256, type: 3}
+  deadCharImage: {fileID: 0}
+  charDead: 0
   dialogueBox: {fileID: 21300000, guid: b639ae619db707641873e69371843f7a, type: 3}
   trustLevel: 0
   schedule: []
   currentLocation: {fileID: 875407166}
+  sr: {fileID: 0}
 --- !u!114 &875407168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36869,6 +37188,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 1
           moveGameState: 0
+          killChar: 0
       - choiceText: No
         nextNodeIndex: -1
         trustGain: 0
@@ -36882,6 +37202,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       nextNodeIndex: 0
       clueWords: []
   gameState: {fileID: 54618526}
@@ -38155,6 +38476,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       - choiceText: I've spoken to everyone
         nextNodeIndex: 2
         trustGain: 0
@@ -38164,10 +38486,11 @@ MonoBehaviour:
         quest:
           questID: Tutorial
           questProgressGain: 0
-          questRequirement: 50
+          questRequirement: 100
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       - choiceText: Bye-bye
         nextNodeIndex: -1
         trustGain: 0
@@ -38181,11 +38504,13 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: How about you speak to the other residents? I think it would
         be good to initiate some friendly conversations, don't you think? Also, feel
-        free to roam around the hotel.
+        free to roam around the hotel. Come talk to me again once you've spoken to
+        everyone.
       choices:
       - choiceText: Sure thing, boss
         nextNodeIndex: -1
@@ -38200,6 +38525,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Oh that's good. Feel free to roam around the hotel and do as
@@ -38218,6 +38544,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 1
+          killChar: 0
       nextNodeIndex: -1
       clueWords: []
   - dialogueNodes:
@@ -38236,11 +38563,12 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       - choiceText: End Day
         nextNodeIndex: -1
         trustGain: 0
         trustRequirement: -99
-        timeIncrease: 500
+        timeIncrease: 800
         oneUse: 0
         quest:
           questID: 
@@ -38249,6 +38577,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 1
       - choiceText: I don't need anything
         nextNodeIndex: -1
         trustGain: 0
@@ -38262,6 +38591,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: Glad to hear it. If any problems arise, make sure to let me know.
@@ -38289,6 +38619,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       - choiceText: No thanks
         nextNodeIndex: -1
         trustGain: 0
@@ -38302,11 +38633,11 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       nextNodeIndex: -1
       clueWords: []
   - dialogueNodes:
-    - dialogueText: Hey, I'm supposed to be dead! If you're reading this text, someone
-        messed up! Sorry about that!
+    - dialogueText: He's dead.
       choices: []
       nextNodeIndex: -1
       clueWords: []
@@ -38429,10 +38760,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Gerard
   characterImage: {fileID: 21300000, guid: 273b6610c1f3fbc4ba0a209bf993cde1, type: 3}
+  deadCharImage: {fileID: 21300000, guid: 937d7c8dcda29c04a8b76990b02436eb, type: 3}
+  charDead: 0
   dialogueBox: {fileID: 21300000, guid: 5c4599cd1a5801943b57f999895776e5, type: 3}
   trustLevel: 10
   schedule: []
   currentLocation: {fileID: 926742072}
+  sr: {fileID: 610617986}
 --- !u!1 &927099389
 GameObject:
   m_ObjectHideFlags: 0
@@ -40979,10 +41313,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: 
   characterImage: {fileID: 21300000, guid: b7da13793f6d4724ab5c9a52bb3ca6e9, type: 3}
+  deadCharImage: {fileID: 0}
+  charDead: 0
   dialogueBox: {fileID: 21300000, guid: b639ae619db707641873e69371843f7a, type: 3}
   trustLevel: 0
   schedule: []
   currentLocation: {fileID: 0}
+  sr: {fileID: 0}
 --- !u!114 &997263048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41263,10 +41600,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: 
   characterImage: {fileID: 21300000, guid: b7da13793f6d4724ab5c9a52bb3ca6e9, type: 3}
+  deadCharImage: {fileID: 0}
+  charDead: 0
   dialogueBox: {fileID: 21300000, guid: b639ae619db707641873e69371843f7a, type: 3}
   trustLevel: 0
   schedule: []
   currentLocation: {fileID: 0}
+  sr: {fileID: 0}
 --- !u!114 &1001203080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42153,10 +42493,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: 
   characterImage: {fileID: 21300000, guid: b7da13793f6d4724ab5c9a52bb3ca6e9, type: 3}
+  deadCharImage: {fileID: 0}
+  charDead: 0
   dialogueBox: {fileID: 21300000, guid: b639ae619db707641873e69371843f7a, type: 3}
   trustLevel: 0
   schedule: []
   currentLocation: {fileID: 0}
+  sr: {fileID: 0}
 --- !u!65 &1021377202
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -42999,6 +43342,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       - choiceText: I don't like your tone.
         nextNodeIndex: 3
         trustGain: -2
@@ -43012,6 +43356,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       - choiceText: ...bye
         nextNodeIndex: -1
         trustGain: 0
@@ -43025,6 +43370,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       nextNodeIndex: 1
       clueWords: []
     - dialogueText: 'My advice for the time being: dress a little more... colorfully.'
@@ -43042,6 +43388,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: ...Excuse me? Do you KNOW who I am?
@@ -43074,6 +43421,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       - choiceText: ...bye
         nextNodeIndex: -1
         trustGain: 0
@@ -43087,6 +43435,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       - choiceText: Your tailor supplies are in the lobby
         nextNodeIndex: 4
         trustGain: 1
@@ -43100,6 +43449,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       nextNodeIndex: 1
       clueWords: []
     - dialogueText: 'My advice for the time being: dress a little less like a slob.'
@@ -43117,6 +43467,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Thanks for letting me know. I'll go grab them.
@@ -43134,6 +43485,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       nextNodeIndex: -1
       clueWords: []
   - dialogueNodes:
@@ -43152,6 +43504,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       - choiceText: Fashion will prevail!
         nextNodeIndex: 2
         trustGain: 3
@@ -43165,6 +43518,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       - choiceText: Goodbye
         nextNodeIndex: -1
         trustGain: 0
@@ -43178,6 +43532,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       nextNodeIndex: 1
       clueWords: []
     - dialogueText: What? How preposterous! If I cannot grace the runway with my
@@ -43196,6 +43551,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       - choiceText: Fashion will prevail!
         nextNodeIndex: 2
         trustGain: 2
@@ -43209,6 +43565,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       - choiceText: Goodbye
         nextNodeIndex: -1
         trustGain: 0
@@ -43222,6 +43579,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: I certainly hope so!
@@ -43239,6 +43597,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       - choiceText: Fashion will prevail!
         nextNodeIndex: 2
         trustGain: 2
@@ -43252,6 +43611,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       - choiceText: Goodbye
         nextNodeIndex: -1
         trustGain: 0
@@ -43265,6 +43625,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       nextNodeIndex: -1
       clueWords: []
   gameState: {fileID: 54618526}
@@ -43387,10 +43748,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Nikki
   characterImage: {fileID: 21300000, guid: 4806be272bae7e04ebefa8eb15c808d3, type: 3}
+  deadCharImage: {fileID: 21300000, guid: a41c1335905032c48a059729fbe14c67, type: 3}
+  charDead: 0
   dialogueBox: {fileID: 21300000, guid: b639ae619db707641873e69371843f7a, type: 3}
   trustLevel: 10
   schedule: []
   currentLocation: {fileID: 1048935384}
+  sr: {fileID: 1968223}
 --- !u!1 &1050914984
 GameObject:
   m_ObjectHideFlags: 0
@@ -51759,10 +52123,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: 
   characterImage: {fileID: 21300000, guid: b7da13793f6d4724ab5c9a52bb3ca6e9, type: 3}
+  deadCharImage: {fileID: 0}
+  charDead: 0
   dialogueBox: {fileID: 21300000, guid: b639ae619db707641873e69371843f7a, type: 3}
   trustLevel: 0
   schedule: []
   currentLocation: {fileID: 0}
+  sr: {fileID: 0}
 --- !u!1 &1310444451
 GameObject:
   m_ObjectHideFlags: 0
@@ -52273,10 +52640,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: 
   characterImage: {fileID: 21300000, guid: b7da13793f6d4724ab5c9a52bb3ca6e9, type: 3}
+  deadCharImage: {fileID: 0}
+  charDead: 0
   dialogueBox: {fileID: 21300000, guid: b639ae619db707641873e69371843f7a, type: 3}
   trustLevel: 0
   schedule: []
   currentLocation: {fileID: 0}
+  sr: {fileID: 0}
 --- !u!65 &1326905448
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -55089,6 +55459,8 @@ Transform:
   - {fileID: 1589848728}
   - {fileID: 809981645}
   - {fileID: 1369972584}
+  - {fileID: 133011714}
+  - {fileID: 166390581}
   - {fileID: 1111542499}
   m_Father: {fileID: 856823577}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -58308,10 +58680,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: 
   characterImage: {fileID: 21300000, guid: b7da13793f6d4724ab5c9a52bb3ca6e9, type: 3}
+  deadCharImage: {fileID: 0}
+  charDead: 0
   dialogueBox: {fileID: 21300000, guid: b639ae619db707641873e69371843f7a, type: 3}
   trustLevel: 0
   schedule: []
   currentLocation: {fileID: 0}
+  sr: {fileID: 0}
 --- !u!114 &1470357566
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60937,10 +61312,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: 
   characterImage: {fileID: 21300000, guid: b7da13793f6d4724ab5c9a52bb3ca6e9, type: 3}
+  deadCharImage: {fileID: 0}
+  charDead: 0
   dialogueBox: {fileID: 21300000, guid: b639ae619db707641873e69371843f7a, type: 3}
   trustLevel: 0
   schedule: []
   currentLocation: {fileID: 0}
+  sr: {fileID: 0}
 --- !u!65 &1563658725
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -62378,10 +62756,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: 
   characterImage: {fileID: 21300000, guid: b7da13793f6d4724ab5c9a52bb3ca6e9, type: 3}
+  deadCharImage: {fileID: 0}
+  charDead: 0
   dialogueBox: {fileID: 21300000, guid: b639ae619db707641873e69371843f7a, type: 3}
   trustLevel: 0
   schedule: []
   currentLocation: {fileID: 0}
+  sr: {fileID: 0}
 --- !u!65 &1589848731
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -78007,6 +78388,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       - choiceText: Could you tell me about yourself?
         nextNodeIndex: 1
         trustGain: 0
@@ -78020,6 +78402,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       - choiceText: I don't need anything
         nextNodeIndex: -1
         trustGain: 0
@@ -78033,6 +78416,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: I am quite unwell. I need some time to mourn.
@@ -78050,6 +78434,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       nextNodeIndex: 2
       clueWords:
       - mourn
@@ -78075,6 +78460,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: You probably don't want to hear about my personal troubles. I
@@ -78093,6 +78479,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       - choiceText: Do you want to talk more about it?
         nextNodeIndex: 2
         trustGain: 0
@@ -78106,6 +78493,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       nextNodeIndex: 2
       clueWords:
       - mourn
@@ -78130,6 +78518,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       - choiceText: (Leave)
         nextNodeIndex: -1
         trustGain: 0
@@ -78143,6 +78532,7 @@ MonoBehaviour:
         specialOptions:
           sleepTime: 0
           moveGameState: 0
+          killChar: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: You... stay away from me. You could be one of them...
@@ -78278,10 +78668,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Pato
   characterImage: {fileID: 21300000, guid: de2b24c2516c8bc48982ea8f2076f5f3, type: 3}
+  deadCharImage: {fileID: 21300000, guid: 2dfaa58a30d43264f95228b3d258b19c, type: 3}
+  charDead: 0
   dialogueBox: {fileID: 21300000, guid: d3511b96eece1794c807ffc96c3a9b57, type: 3}
   trustLevel: 10
   schedule: []
   currentLocation: {fileID: 1993476004}
+  sr: {fileID: 711333058}
 --- !u!1 &1993477371
 GameObject:
   m_ObjectHideFlags: 0
@@ -79608,7 +80001,7 @@ GameObject:
   - component: {fileID: 2044217319}
   - component: {fileID: 2044217318}
   m_Layer: 9
-  m_Name: Chair (1)
+  m_Name: Entrace Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -79643,10 +80036,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: 
   characterImage: {fileID: 21300000, guid: b7da13793f6d4724ab5c9a52bb3ca6e9, type: 3}
+  deadCharImage: {fileID: 0}
+  charDead: 0
   dialogueBox: {fileID: 21300000, guid: b639ae619db707641873e69371843f7a, type: 3}
   trustLevel: 0
   schedule: []
   currentLocation: {fileID: 0}
+  sr: {fileID: 0}
 --- !u!114 &2044217319
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80540,10 +80936,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: 
   characterImage: {fileID: 21300000, guid: b7da13793f6d4724ab5c9a52bb3ca6e9, type: 3}
+  deadCharImage: {fileID: 0}
+  charDead: 0
   dialogueBox: {fileID: 21300000, guid: b639ae619db707641873e69371843f7a, type: 3}
   trustLevel: 0
   schedule: []
   currentLocation: {fileID: 2060413548}
+  sr: {fileID: 0}
 --- !u!114 &2060413553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80594,7 +80993,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 1.29, y: 0, z: -0.047}
-  m_LocalScale: {x: -0.93, y: 0.41, z: 3.499999}
+  m_LocalScale: {x: 0.68, y: 0.41, z: 3.499999}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1645593520}
