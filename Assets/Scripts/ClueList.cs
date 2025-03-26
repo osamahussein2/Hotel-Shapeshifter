@@ -99,7 +99,7 @@ public class ClueList : MonoBehaviour
     // Update the clue UI
     void UpdateClueUI()
     {
-        clueText.text = "Clues:\n";
+        clueText.text = "\n";
         foreach (string clue in collectedClues)
         {
             clueText.text += $"- {clue}\n";
@@ -107,7 +107,7 @@ public class ClueList : MonoBehaviour
     }
     void UpdateQuestUI()
     {
-        questText.text = "Quests:\n";
+        questText.text = "\n";
         foreach (string quest in collectedQuests)
         {
             questText.text += $"- {quest}\n";
@@ -115,7 +115,7 @@ public class ClueList : MonoBehaviour
     }
     void UpdateItemUI()
     {
-        itemText.text = "Items:\n";
+        itemText.text = "\n";
         foreach (string item in collectedItems)
         {
             itemText.text += $"- {item}\n";
