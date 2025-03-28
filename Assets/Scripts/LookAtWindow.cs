@@ -29,11 +29,11 @@ public class LookAtWindow : MonoBehaviour
 
     private void LookOutsideHotel()
     {
-        /* Make sure the main camera's position is always equal to its last camera position if the player can't
+        /* Make sure the last camera position is always equal to the main camera's position if the player can't
         look outside yet */
         if (!playerCanLookOutside)
         {
-            Camera.main.transform.position = lastCameraPosition;
+            lastCameraPosition = Camera.main.transform.position;
 
             timer = 0.0f; // Don't increment the timer, make sure it's 0
         }
@@ -50,6 +50,9 @@ public class LookAtWindow : MonoBehaviour
 
             if (Input.GetMouseButtonDown(0) && timer >= 1.0f)
             {
+                // Set the camera back to its last saved position before looking at the window
+                Camera.main.transform.position = lastCameraPosition;
+
                 // Set this bool false to make the camera go back to its last position
                 playerCanLookOutside = false;
             }
