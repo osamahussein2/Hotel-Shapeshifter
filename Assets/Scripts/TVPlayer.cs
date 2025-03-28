@@ -19,6 +19,10 @@ public class TVPlayer : MonoBehaviour
         {
             NewsBroadcast();
         }
+        else
+        {
+            TV.SetActive(false);
+        }
     }
 
     public void NewsBroadcast()

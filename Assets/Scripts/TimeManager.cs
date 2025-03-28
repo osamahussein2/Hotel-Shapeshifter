@@ -88,6 +88,11 @@ public class TimeManager : MonoBehaviour
             CameraController.teleporting = false;
         }
 
+        if (hours > 6 && gameState.currentDay != 1)
+        {
+            gameState.dialogueProgress++;
+        }
+
         TransitionToNightEvent();
     }
 
