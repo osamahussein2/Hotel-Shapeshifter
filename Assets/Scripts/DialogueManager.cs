@@ -53,15 +53,17 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue()
     {
-        dialogueActive = true; // Dialogue is now active Yippee!
-        dialogueUI.SetActive(true); // Show the dialogue UI
-        currentNodeIndex = 0; // Start at the first node
-        canSkipText = false; // Prevent skipping instantly
-        StartCoroutine(SkipBuffer());
-        ShowDialogueNode(currentNodeIndex); // Show the first node
+        if (!currentCharacter.charDead)
+        {
+            dialogueActive = true; // Dialogue is now active Yippee!
+            dialogueUI.SetActive(true); // Show the dialogue UI
+            currentNodeIndex = 0; // Start at the first node
+            canSkipText = false; // Prevent skipping instantly
+            StartCoroutine(SkipBuffer());
+            ShowDialogueNode(currentNodeIndex); // Show the first node
 
-        isDialogueTriggered = true;
-
+            isDialogueTriggered = true;
+        }
     }
 
     private IEnumerator SkipBuffer()
