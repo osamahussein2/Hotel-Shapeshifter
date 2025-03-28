@@ -85,6 +85,7 @@
     <Compile Include="Assets\Scripts\WorldClue.cs" />
     <Compile Include="Assets\Scripts\CustomCursor.cs" />
     <Compile Include="Assets\Scripts\TimeManager.cs" />
+    <Compile Include="Assets\Scripts\TVPlayer.cs" />
     <Compile Include="Assets\Scripts\Quest.cs" />
     <Compile Include="Assets\Scripts\JournalQuestLog.cs" />
     <Compile Include="Assets\Telemetry\TelemetrySettings.cs" />
