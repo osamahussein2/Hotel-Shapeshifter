@@ -22515,7 +22515,7 @@ MonoBehaviour:
         trustGain: 0
         trustRequirement: -99
         timeIncrease: 0
-        oneUse: 0
+        oneUse: 1
         quest:
           questID: 
           questProgressGain: 0
@@ -22529,7 +22529,7 @@ MonoBehaviour:
         trustGain: 0
         trustRequirement: -99
         timeIncrease: 0
-        oneUse: 0
+        oneUse: 1
         quest:
           questID: 
           questProgressGain: 0
@@ -22546,8 +22546,8 @@ MonoBehaviour:
         oneUse: 1
         quest:
           questID: d3g
-          questProgressGain: 0
-          questRequirement: 100
+          questProgressGain: 50
+          questRequirement: 50
         specialOptions:
           sleepTime: 0
           moveGameState: 0
@@ -22610,6 +22610,190 @@ MonoBehaviour:
         know what it's her loss. Maybe we need to be more selective with who we choose
         next time.
       choices: []
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: I've got this whole situation under control.
+      choices:
+      - choiceText: Are you sure?
+        nextNodeIndex: 1
+        trustGain: 0
+        trustRequirement: -99
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      nextNodeIndex: 0
+      clueWords: []
+    - dialogueText: Yeah I've saved up enough crypto to last me at least like.. 5
+        weeks.
+      choices:
+      - choiceText: Isn't crypto useless at this point?
+        nextNodeIndex: 2
+        trustGain: 0
+        trustRequirement: -99
+        timeIncrease: 0
+        oneUse: 1
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      - choiceText: You're a genius
+        nextNodeIndex: 3
+        trustGain: 0
+        trustRequirement: -99
+        timeIncrease: 0
+        oneUse: 1
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      - choiceText: Nikki called you a gerbil
+        nextNodeIndex: 4
+        trustGain: 5
+        trustRequirement: -99
+        timeIncrease: 0
+        oneUse: 1
+        quest:
+          questID: d4g
+          questProgressGain: 30
+          questRequirement: 30
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      - choiceText: Nikki said some ...horrific things
+        nextNodeIndex: 5
+        trustGain: 0
+        trustRequirement: -99
+        timeIncrease: 0
+        oneUse: 1
+        quest:
+          questID: d4g
+          questProgressGain: 10
+          questRequirement: 90
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      - choiceText: I think I'll head somewhere else.
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: -99
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      nextNodeIndex: -1
+      clueWords: []
+    - dialogueText: Actually crypto is only raising in the market. Pay me about 3
+        bottles of water and I can maybe let you in on this.
+      choices:
+      - choiceText: No thanks
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      - choiceText: Still good on the crypto
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      nextNodeIndex: -1
+      clueWords: []
+    - dialogueText: I'm starting to think that you may be quite the genius yourself.
+        It's not easy to recognize someone of my intelligence calibur.
+      choices:
+      - choiceText: Okay
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      nextNodeIndex: -1
+      clueWords: []
+    - dialogueText: Wow. Well tell Nikki that I don't really like her outfit. It
+        makes her look like an ugly pink cloud.
+      choices:
+      - choiceText: Damn alright
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: d4g
+          questProgressGain: 30
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      nextNodeIndex: -1
+      clueWords: []
+    - dialogueText: You know what, I will remove myself from this argument like the
+        nice guy that I am. It's not that I'm scared or anything.
+      choices:
+      - choiceText: Damn alright
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: d4g
+          questProgressGain: 30
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
       nextNodeIndex: -1
       clueWords: []
   gameState: {fileID: 54618526}
@@ -25424,6 +25608,64 @@ MonoBehaviour:
       clueWords:
       - billy
     - dialogueText: I am nobody.
+      choices: []
+      nextNodeIndex: -1
+      clueWords:
+      - billy
+  - dialogueNodes:
+    - dialogueText: They're coming for you.
+      choices:
+      - choiceText: What?
+        nextNodeIndex: 1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 1
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      - choiceText: How can I stop them?
+        nextNodeIndex: 2
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 1
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      - choiceText: Bye
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      nextNodeIndex: -1
+      clueWords:
+      - billy
+    - dialogueText: Danger.
+      choices: []
+      nextNodeIndex: -1
+      clueWords:
+      - billy
+    - dialogueText: Use the information.
       choices: []
       nextNodeIndex: -1
       clueWords:
@@ -35083,7 +35325,8 @@ MonoBehaviour:
           killChar: 0
       nextNodeIndex: -1
       clueWords: []
-    - dialogueText: Yeah? How's someone like you going to survive with MONSTERS around?
+    - dialogueText: Yeah? How's a brat like you gonna survive ina  world gone to
+        hell?
       choices:
       - choiceText: I'll find a way
         nextNodeIndex: 4
@@ -35120,6 +35363,90 @@ MonoBehaviour:
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Don't come crawling back to me when you lose all hope, brat.
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+    - dialogueText: Why don't you stop being a little rat with it's head up it's
+        ass?
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: If this were back in the old days I bet ya those monsters wouldn'tve
+        been able to take over so easy
+      choices: []
+      nextNodeIndex: 1
+      clueWords: []
+    - dialogueText: Your generation is far too soft, you and those other brats
+      choices:
+      - choiceText: Okay
+        nextNodeIndex: 2
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 1
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      - choiceText: You're just old
+        nextNodeIndex: 3
+        trustGain: 1
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 1
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      - choiceText: What's your problem?
+        nextNodeIndex: 4
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 1
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      - choiceText: Bye
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      nextNodeIndex: -1
+      clueWords: []
+    - dialogueText: Don't look at me like that. You know I'm right about all this.
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+    - dialogueText: Yeah, well at least I ain't useless like you, boy.
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+    - dialogueText: I got a lot of problems right now, your generation bein' weak
+        ain't one of them. I'm just bein' honest.
       choices: []
       nextNodeIndex: -1
       clueWords: []
@@ -39513,10 +39840,10 @@ MonoBehaviour:
         trustGain: 1
         trustRequirement: -99
         timeIncrease: 10
-        oneUse: 1
+        oneUse: 0
         quest:
-          questID: 
-          questProgressGain: 0
+          questID: Tutorial
+          questProgressGain: 30
           questRequirement: 0
         specialOptions:
           sleepTime: 0
@@ -39527,7 +39854,7 @@ MonoBehaviour:
         trustGain: 0
         trustRequirement: -99
         timeIncrease: 0
-        oneUse: 1
+        oneUse: 0
         quest:
           questID: Tutorial
           questProgressGain: 0
@@ -41942,6 +42269,15 @@ MonoBehaviour:
     - questID: d3g
       questName: The "Truth"
       description: Inform Nikki of the "Truth"
+      questProgress: 0
+      isActive: 0
+      isCompleted: 0
+      itemReward: 
+      trustReward: 5
+      questItems: []
+    - questID: d4g
+      questName: The Gerbil
+      description: Inform Eachother of Their Opinions
       questProgress: 0
       isActive: 0
       isCompleted: 0
@@ -44581,7 +44917,7 @@ MonoBehaviour:
         oneUse: 1
         quest:
           questID: d3g
-          questProgressGain: 100
+          questProgressGain: 50
           questRequirement: 0
         specialOptions:
           sleepTime: 0
@@ -44655,54 +44991,68 @@ MonoBehaviour:
       nextNodeIndex: -1
       clueWords: []
   - dialogueNodes:
-    - dialogueText: What a mess! How will I continue my fashion career now?
+    - dialogueText: Ugh, I bet those monsters don't even understand fashion.
       choices:
-      - choiceText: Don't you have bigger things to worry about?
+      - choiceText: You're probably right
         nextNodeIndex: 1
-        trustGain: -3
-        trustRequirement: -99
-        timeIncrease: 10
-        oneUse: 1
-        quest:
-          questID: 
-          questProgressGain: 0
-          questRequirement: 0
-        specialOptions:
-          sleepTime: 0
-          moveGameState: 0
-          killChar: 0
-      - choiceText: Fashion will prevail!
-        nextNodeIndex: 2
-        trustGain: 3
-        trustRequirement: 9
-        timeIncrease: 10
-        oneUse: 1
-        quest:
-          questID: 
-          questProgressGain: 0
-          questRequirement: 0
-        specialOptions:
-          sleepTime: 0
-          moveGameState: 0
-          killChar: 0
-      - choiceText: (Explain the "Truth")
-        nextNodeIndex: 5
         trustGain: 0
-        trustRequirement: -99
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 1
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      - choiceText: At least they look better than you
+        nextNodeIndex: 2
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 1
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      - choiceText: Is there anyone here you dislike?
+        nextNodeIndex: 3
+        trustGain: 0
+        trustRequirement: 0
         timeIncrease: 0
         oneUse: 1
         quest:
           questID: d3g
-          questProgressGain: 100
-          questRequirement: 0
+          questProgressGain: 0
+          questRequirement: 100
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      - choiceText: Eugene just said you look like an "ugly pink cloud"
+        nextNodeIndex: 4
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: d4g
+          questProgressGain: 20
+          questRequirement: 60
         specialOptions:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
       - choiceText: Goodbye
-        nextNodeIndex: -1
+        nextNodeIndex: 0
         trustGain: 0
-        trustRequirement: -99
+        trustRequirement: 0
         timeIncrease: 0
         oneUse: 0
         quest:
@@ -44713,34 +45063,31 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
-      nextNodeIndex: 1
+      nextNodeIndex: -1
       clueWords: []
-    - dialogueText: What? How preposterous! If I cannot grace the runway with my
-        presence, then the world is certainly doomed!
+    - dialogueText: Thank you. Just imagining a shapeshifter stealing MY style, it
+        gives me shivers.
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+    - dialogueText: Now you've gone too far. I will not take this from someone who
+        looks like they got their outfit from the dump
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+    - dialogueText: Yeah. Eugene and his weird ass fantasies. If I'm being real I
+        am so sick of that man like I absolutely just cannot. His fashion looks like
+        that of a diseased gerbil. Please tell him I said that too.
       choices:
-      - choiceText: Truly a shame
-        nextNodeIndex: 3
-        trustGain: 2
-        trustRequirement: 9
-        timeIncrease: 10
-        oneUse: 1
-        quest:
-          questID: 
-          questProgressGain: 0
-          questRequirement: 0
-        specialOptions:
-          sleepTime: 0
-          moveGameState: 0
-          killChar: 0
-      - choiceText: Better off that way
-        nextNodeIndex: 4
-        trustGain: -2
-        trustRequirement: -99
+      - choiceText: That's valid
+        nextNodeIndex: 0
+        trustGain: 0
+        trustRequirement: 0
         timeIncrease: 0
         oneUse: 0
         quest:
-          questID: 
-          questProgressGain: 0
+          questID: d4g
+          questProgressGain: 30
           questRequirement: 0
         specialOptions:
           sleepTime: 0
@@ -44748,22 +45095,23 @@ MonoBehaviour:
           killChar: 0
       nextNodeIndex: -1
       clueWords: []
-    - dialogueText: I certainly hope so!
-      choices: []
-      nextNodeIndex: -1
-      clueWords: []
-    - dialogueText: See? now you're starting to get it.
-      choices: []
-      nextNodeIndex: -1
-      clueWords: []
-    - dialogueText: Ugh, I just can't deal with people like you. Talk to the hand
-        because I'm not  even going to look at you right now.
-      choices: []
-      nextNodeIndex: -1
-      clueWords: []
-    - dialogueText: Hmm. Out of everyone in the hotel I didn't think YOU'd be the
-        one to go crazy first. Get out of here with your weird nonsensical ramblings.
-      choices: []
+    - dialogueText: TELL EUGENE THAT I'M GOING TO SHIVE MY FOOT SO FAR UP HIS ###
+        #### ### ### #### ### ### ### ### ########### ############
+      choices:
+      - choiceText: That's valid
+        nextNodeIndex: 0
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: d4g
+          questProgressGain: 30
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
       nextNodeIndex: -1
       clueWords: []
   gameState: {fileID: 54618526}
@@ -84065,14 +84413,14 @@ MonoBehaviour:
   door: {fileID: 93965106}
   cameraController: {fileID: 963194229}
   openAngle: 90
-  openSpeed: 2
+  openSpeed: 3
   stopPosition: {x: -132.216, y: 0, z: -6.357}
   newAreaPosition: {x: -0.38, y: 0, z: 18}
   walkSpeed: 1
-  walkDuration: 4
+  walkDuration: 3
   bobbingHeight: 0.1
-  walkStartDelay: 0.5
-  closeSpeed: 2
+  walkStartDelay: 0.1
+  closeSpeed: 1
   closeDelay: 1
   walking: {fileID: 963194230}
   doorSound: {fileID: 206961647}
