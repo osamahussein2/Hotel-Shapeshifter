@@ -29,52 +29,54 @@ public class CameraController : MonoBehaviour
 
     void Update()
     {
-
-        if (teleporting)
+        if (LookAtWindow.playerCanLookOutside == false)
         {
-            isMoving = false;
-            return;
-        }
-        if (!EventSystem.current.IsPointerOverGameObject())
-        {
-            if (Input.GetMouseButtonDown(0) && !DialogueManager.isDialogueTriggered)
+            if (teleporting)
             {
-                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-                if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, interactableLayer))
+                isMoving = false;
+                return;
+            }
+            if (!EventSystem.current.IsPointerOverGameObject())
+            {
+                if (Input.GetMouseButtonDown(0) && !DialogueManager.isDialogueTriggered)
                 {
-                    Vector3 directionToObject = (hit.point - transform.position).normalized;
-                    directionToObject.y = 0;
-                    Vector3 target = hit.point - directionToObject * stopDistance;
-
-                    targetPosition = new Vector3(target.x, fixedYPosition, target.z);
-
-                    if (Physics.Raycast(transform.position, directionToObject, out RaycastHit nonoHit, Vector3.Distance(transform.position, targetPosition), nonoLayer))
+                    Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                    if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, interactableLayer))
                     {
-                        Debug.Log("Movement blocked by clue: " + nonoHit.collider.name);
-                        return;
+                        Vector3 directionToObject = (hit.point - transform.position).normalized;
+                        directionToObject.y = 0;
+                        Vector3 target = hit.point - directionToObject * stopDistance;
+
+                        targetPosition = new Vector3(target.x, fixedYPosition, target.z);
+
+                        if (Physics.Raycast(transform.position, directionToObject, out RaycastHit nonoHit, Vector3.Distance(transform.position, targetPosition), nonoLayer))
+                        {
+                            Debug.Log("Movement blocked by clue: " + nonoHit.collider.name);
+                            return;
+                        }
+                        if (Physics.Raycast(transform.position, directionToObject, out RaycastHit bamHit, Vector3.Distance(transform.position, targetPosition), bonoLayer))
+                        {
+                            Debug.Log("Movement blocked by object: " + bamHit.collider.name);
+                            return;
+                        }
+                        targetRotation = Quaternion.LookRotation(directionToObject);
+                        isMoving = true;
+                        walking.Play();
+                        isRotatingWithButton = false;
                     }
-                    if (Physics.Raycast(transform.position, directionToObject, out RaycastHit bamHit, Vector3.Distance(transform.position, targetPosition), bonoLayer))
-                    {
-                        Debug.Log("Movement blocked by object: " + bamHit.collider.name);
-                        return;
-                    }
-                    targetRotation = Quaternion.LookRotation(directionToObject);
-                    isMoving = true;
-                    walking.Play();
-                    isRotatingWithButton = false;
                 }
+
             }
 
-        }
+            if (isMoving)
+            {
+                MoveAndRotateCamera();
+            }
 
-        if (isMoving)
-        {
-            MoveAndRotateCamera();
-        }
-
-        if (isRotatingWithButton)
-        {
-            SmoothRotate();
+            if (isRotatingWithButton)
+            {
+                SmoothRotate();
+            }
         }
     }
 
@@ -104,14 +106,20 @@ public class CameraController : MonoBehaviour
 
     public void RotateRight()
     {
-        targetRotation = Quaternion.Euler(transform.eulerAngles + new Vector3(0, buttonRotationSpeed, 0));
-        isRotatingWithButton = true;
+        if (LookAtWindow.playerCanLookOutside == false)
+        {
+            targetRotation = Quaternion.Euler(transform.eulerAngles + new Vector3(0, buttonRotationSpeed, 0));
+            isRotatingWithButton = true;
+        }
     }
 
     public void RotateLeft()
     {
-        targetRotation = Quaternion.Euler(transform.eulerAngles + new Vector3(0, -buttonRotationSpeed, 0));
-        isRotatingWithButton = true;
+        if (LookAtWindow.playerCanLookOutside == false)
+        {
+            targetRotation = Quaternion.Euler(transform.eulerAngles + new Vector3(0, -buttonRotationSpeed, 0));
+            isRotatingWithButton = true;
+        }
     }
 
     private void SmoothRotate()

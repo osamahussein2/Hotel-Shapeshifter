@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LookAtWindow : MonoBehaviour
 {
-    private bool playerCanLookOutside;
+    public static bool playerCanLookOutside;
     private Vector3 lastCameraPosition;
 
     [SerializeField] private Vector3 windowOffset;
