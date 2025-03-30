@@ -16,6 +16,7 @@ public class TimeManager : MonoBehaviour
     public Vector3 outRoomPosition;
     public Material[] skyboxes;
     private int currentSkyboxIndex = 0;
+    private int changesPerDay;
 
     // So the hours and minutes can be set outside of this script using TimeManager class
     public static int hours, minutes;
@@ -81,16 +82,22 @@ public class TimeManager : MonoBehaviour
 
         if (hours == 50)
         {
+            if (gameState.currentDay != 1)
+            {
+                nightSceneScript.LoadNight();
+            }
             CameraController.teleporting = true;
             player.transform.position = outRoomPosition;
             hours = 0;
             minutes = 0;
             CameraController.teleporting = false;
+            changesPerDay = 1;
         }
 
-        if (hours > 6 && gameState.currentDay != 1)
+        if (hours > 6 && gameState.currentDay != 1 && changesPerDay !=0)
         {
             gameState.dialogueProgress++;
+            changesPerDay--;
         }
 
         TransitionToNightEvent();
@@ -125,14 +132,8 @@ public class TimeManager : MonoBehaviour
     {
         if (hours >= 12 && minutes >= 0)
         {
-            if (gameState.currentDay == 0)
-            {
                 player.transform.position = roomPosition;
-            }
-            else
-            {
-                nightSceneScript.LoadNight();
-            }
+            
         }
     }
 }

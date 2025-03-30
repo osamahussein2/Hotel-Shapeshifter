@@ -16,6 +16,7 @@ public class DoorInteraction : MonoBehaviour
     public float walkStartDelay = 0.5f;
     public float closeSpeed = 2f;
     public float closeDelay = 1f;
+    public bool canOpen = true;
 
     public AudioSource walking;
     public AudioSource doorSound;
@@ -36,6 +37,12 @@ public class DoorInteraction : MonoBehaviour
 
     void Update()
     {
+        if (TimeManager.hours >= 12)
+        {
+            canOpen = false;
+        } else {
+            canOpen = true;
+                }
         if (isOpening)
         {
             if (!doorSound.isPlaying && soundplayed == false)
@@ -55,7 +62,7 @@ public class DoorInteraction : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (!isOpening && !isWalking && !isClosing)
+        if (!isOpening && !isWalking && !isClosing && canOpen)
         {
             isOpening = true;
         }
