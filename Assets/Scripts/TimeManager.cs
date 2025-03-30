@@ -82,7 +82,7 @@ public class TimeManager : MonoBehaviour
 
         if (hours == 50)
         {
-            if (gameState.currentDay != 1)
+            if (gameState.currentDay != 2)
             {
                 nightSceneScript.LoadNight();
             }

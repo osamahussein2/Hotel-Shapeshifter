@@ -6054,8 +6054,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: Allie
-  characterImage: {fileID: 21300000, guid: 89163020603d4dd41a2e839c835f302a, type: 3}
-  deadCharImage: {fileID: 21300000, guid: 3f97b1d2f27404c44a3771e5bb9f80dd, type: 3}
+  characterImage: {fileID: 21300000, guid: b4d3b9ca279a79446aa4d7e67525be05, type: 3}
+  deadCharImage: {fileID: 21300000, guid: 7ddfa44e930327540a7b474c0cdba1b4, type: 3}
   charDead: 0
   dialogueBox: {fileID: 21300000, guid: b639ae619db707641873e69371843f7a, type: 3}
   trustLevel: 10
@@ -15777,7 +15777,7 @@ Transform:
   m_GameObject: {fileID: 330149185}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.155, y: 2.0333328, z: 0.85899967}
+  m_LocalPosition: {x: -6.155, y: 0.68, z: 0.85899967}
   m_LocalScale: {x: 0.053, y: 1.3566668, z: 0.714}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -22516,7 +22516,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 8bab1a2c5d993df45ae1ce7d8e93cbc7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 91fbe37ffddabd842814121cbe1e37c8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -26172,8 +26172,8 @@ Transform:
   m_GameObject: {fileID: 597355762}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0.05, y: -0.585, z: -0.041}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.7692306}
+  m_LocalPosition: {x: 0.05, y: -0.672, z: -0.041}
+  m_LocalScale: {x: 0.15, y: 0.15, z: 0.7692306}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 126196403}
@@ -26231,12 +26231,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 89163020603d4dd41a2e839c835f302a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bfcb91e46b14f354a8a3499cc0ec72c5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 11, y: 14.17}
+  m_Size: {x: 13.09, y: 18.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -44269,8 +44269,8 @@ Transform:
   m_GameObject: {fileID: 970767869}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -129.1, y: -1.81, z: 90.619995}
-  m_LocalScale: {x: 1.82, y: 2.37, z: 1.2699999}
+  m_LocalPosition: {x: -129.1, y: 0.58, z: 90.619995}
+  m_LocalScale: {x: 1.82, y: 1.13, z: 1.2699999}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1414576903}
@@ -44314,7 +44314,7 @@ MonoBehaviour:
   - dialogueNodes:
     - dialogueText: This'll be nice if I'm ever feeling thirsty
       choices: []
-      nextNodeIndex: 0
+      nextNodeIndex: -1
       clueWords: []
   gameState: {fileID: 54618526}
 --- !u!65 &970767873
@@ -65703,8 +65703,8 @@ Transform:
   m_GameObject: {fileID: 1566233995}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -115.639946, y: 6.08, z: -368.45007}
-  m_LocalScale: {x: 2.2, y: 1.6, z: 3}
+  m_LocalPosition: {x: -115.639946, y: 2.05, z: -368.45007}
+  m_LocalScale: {x: 5.25, y: 3.63, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1414576903}
@@ -65756,7 +65756,12 @@ MonoBehaviour:
       nextNodeIndex: -1
       clueWords: []
   - dialogueNodes:
-    - dialogueText: It's playing the news.
+    - dialogueText: The news showcases monsters terrorizing the people.
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: The news showcases monsters terrorizing the people.
       choices: []
       nextNodeIndex: -1
       clueWords: []
