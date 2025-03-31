@@ -3155,11 +3155,6 @@ MonoBehaviour:
       choices: []
       nextNodeIndex: -1
       clueWords: []
-  - dialogueNodes:
-    - dialogueText: This does not look comfortable. Hope I don't have to wait much.
-      choices: []
-      nextNodeIndex: -1
-      clueWords: []
   gameState: {fileID: 54618526}
 --- !u!65 &70196342
 BoxCollider:
@@ -17139,11 +17134,6 @@ MonoBehaviour:
       choices: []
       nextNodeIndex: -1
       clueWords: []
-  - dialogueNodes:
-    - dialogueText: This sure is something!
-      choices: []
-      nextNodeIndex: -1
-      clueWords: []
   gameState: {fileID: 54618526}
 --- !u!65 &376614053
 BoxCollider:
@@ -19266,43 +19256,7 @@ MonoBehaviour:
   - dialogueNodes:
     - dialogueText: Don't really feel like sitting right now
       choices: []
-      nextNodeIndex: 0
-      clueWords: []
-  - dialogueNodes:
-    - dialogueText: Don't really feel like sitting right now
-      choices: []
-      nextNodeIndex: 0
-      clueWords: []
-    - dialogueText: Don't really feel like sitting right now
-      choices: []
-      nextNodeIndex: 0
-      clueWords: []
-  - dialogueNodes:
-    - dialogueText: Don't really feel like sitting right now
-      choices: []
-      nextNodeIndex: 0
-      clueWords: []
-    - dialogueText: Don't really feel like sitting right now
-      choices: []
-      nextNodeIndex: 0
-      clueWords: []
-  - dialogueNodes:
-    - dialogueText: Don't really feel like sitting right now
-      choices: []
-      nextNodeIndex: 0
-      clueWords: []
-    - dialogueText: Don't really feel like sitting right now
-      choices: []
-      nextNodeIndex: 0
-      clueWords: []
-  - dialogueNodes:
-    - dialogueText: Don't really feel like sitting right now
-      choices: []
-      nextNodeIndex: 0
-      clueWords: []
-    - dialogueText: Don't really feel like sitting right now
-      choices: []
-      nextNodeIndex: 0
+      nextNodeIndex: -1
       clueWords: []
   gameState: {fileID: 54618526}
 --- !u!65 &424367623
@@ -19658,11 +19612,6 @@ MonoBehaviour:
   dialogueManager: {fileID: 965023553}
   character: {fileID: 443346431}
   dialogueSections:
-  - dialogueNodes:
-    - dialogueText: This does not look comfortable. Hope I don't have to wait much.
-      choices: []
-      nextNodeIndex: -1
-      clueWords: []
   - dialogueNodes:
     - dialogueText: This does not look comfortable. Hope I don't have to wait much.
       choices: []
@@ -24895,47 +24844,7 @@ MonoBehaviour:
   - dialogueNodes:
     - dialogueText: Don't really feel like sitting right now
       choices: []
-      nextNodeIndex: 0
-      clueWords: []
-    - dialogueText: Don't really feel like sitting right now
-      choices: []
-      nextNodeIndex: 0
-      clueWords: []
-  - dialogueNodes:
-    - dialogueText: Don't really feel like sitting right now
-      choices: []
-      nextNodeIndex: 0
-      clueWords: []
-    - dialogueText: Don't really feel like sitting right now
-      choices: []
-      nextNodeIndex: 0
-      clueWords: []
-  - dialogueNodes:
-    - dialogueText: Don't really feel like sitting right now
-      choices: []
-      nextNodeIndex: 0
-      clueWords: []
-    - dialogueText: Don't really feel like sitting right now
-      choices: []
-      nextNodeIndex: 0
-      clueWords: []
-  - dialogueNodes:
-    - dialogueText: Don't really feel like sitting right now
-      choices: []
-      nextNodeIndex: 0
-      clueWords: []
-    - dialogueText: Don't really feel like sitting right now
-      choices: []
-      nextNodeIndex: 0
-      clueWords: []
-  - dialogueNodes:
-    - dialogueText: Don't really feel like sitting right now
-      choices: []
-      nextNodeIndex: 0
-      clueWords: []
-    - dialogueText: Don't really feel like sitting right now
-      choices: []
-      nextNodeIndex: 0
+      nextNodeIndex: -1
       clueWords: []
   gameState: {fileID: 54618526}
 --- !u!65 &559963873
@@ -26422,43 +26331,7 @@ MonoBehaviour:
   - dialogueNodes:
     - dialogueText: Don't really feel like sitting right now
       choices: []
-      nextNodeIndex: 0
-      clueWords: []
-  - dialogueNodes:
-    - dialogueText: Don't really feel like sitting right now
-      choices: []
-      nextNodeIndex: 0
-      clueWords: []
-    - dialogueText: Don't really feel like sitting right now
-      choices: []
-      nextNodeIndex: 0
-      clueWords: []
-  - dialogueNodes:
-    - dialogueText: Don't really feel like sitting right now
-      choices: []
-      nextNodeIndex: 0
-      clueWords: []
-    - dialogueText: Don't really feel like sitting right now
-      choices: []
-      nextNodeIndex: 0
-      clueWords: []
-  - dialogueNodes:
-    - dialogueText: Don't really feel like sitting right now
-      choices: []
-      nextNodeIndex: 0
-      clueWords: []
-    - dialogueText: Don't really feel like sitting right now
-      choices: []
-      nextNodeIndex: 0
-      clueWords: []
-  - dialogueNodes:
-    - dialogueText: Don't really feel like sitting right now
-      choices: []
-      nextNodeIndex: 0
-      clueWords: []
-    - dialogueText: Don't really feel like sitting right now
-      choices: []
-      nextNodeIndex: 0
+      nextNodeIndex: -1
       clueWords: []
   gameState: {fileID: 54618526}
 --- !u!65 &602502904
@@ -44817,11 +44690,6 @@ MonoBehaviour:
       choices: []
       nextNodeIndex: -1
       clueWords: []
-  - dialogueNodes:
-    - dialogueText: This does not look comfortable. Hope I don't have to wait much.
-      choices: []
-      nextNodeIndex: -1
-      clueWords: []
   gameState: {fileID: 54618526}
 --- !u!65 &997263049
 BoxCollider:
@@ -45099,12 +44967,6 @@ MonoBehaviour:
   dialogueManager: {fileID: 965023553}
   character: {fileID: 1001203079}
   dialogueSections:
-  - dialogueNodes:
-    - dialogueText: It's a clock. Very useful if my phone and watch both manage to
-        die.
-      choices: []
-      nextNodeIndex: -1
-      clueWords: []
   - dialogueNodes:
     - dialogueText: It's a clock. Very useful if my phone and watch both manage to
         die.
@@ -88598,43 +88460,7 @@ MonoBehaviour:
   - dialogueNodes:
     - dialogueText: Don't really feel like sitting right now
       choices: []
-      nextNodeIndex: 0
-      clueWords: []
-  - dialogueNodes:
-    - dialogueText: Don't really feel like sitting right now
-      choices: []
-      nextNodeIndex: 0
-      clueWords: []
-    - dialogueText: Don't really feel like sitting right now
-      choices: []
-      nextNodeIndex: 0
-      clueWords: []
-  - dialogueNodes:
-    - dialogueText: Don't really feel like sitting right now
-      choices: []
-      nextNodeIndex: 0
-      clueWords: []
-    - dialogueText: Don't really feel like sitting right now
-      choices: []
-      nextNodeIndex: 0
-      clueWords: []
-  - dialogueNodes:
-    - dialogueText: Don't really feel like sitting right now
-      choices: []
-      nextNodeIndex: 0
-      clueWords: []
-    - dialogueText: Don't really feel like sitting right now
-      choices: []
-      nextNodeIndex: 0
-      clueWords: []
-  - dialogueNodes:
-    - dialogueText: Don't really feel like sitting right now
-      choices: []
-      nextNodeIndex: 0
-      clueWords: []
-    - dialogueText: Don't really feel like sitting right now
-      choices: []
-      nextNodeIndex: 0
+      nextNodeIndex: -1
       clueWords: []
   gameState: {fileID: 54618526}
 --- !u!65 &2098146397
