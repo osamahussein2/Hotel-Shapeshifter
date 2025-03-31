@@ -58052,7 +58052,7 @@ MonoBehaviour:
   cameraController: {fileID: 963194229}
   openAngle: 90
   openSpeed: 5
-  stopPosition: {x: -100, y: 0, z: 0}
+  stopPosition: {x: 0, y: -1.01, z: 90}
   newAreaPosition: {x: -0.38, y: 0, z: 18}
   walkSpeed: 1
   walkDuration: 2.5
