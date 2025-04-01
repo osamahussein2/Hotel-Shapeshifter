@@ -151,28 +151,28 @@ public class DialogueManager : MonoBehaviour
     public struct SkipDialogueData
     {
         public string text;
-        public Character character;
+        public string character;
     }
 
     [System.Serializable]
     public struct DialogueChoiceData
     {
         public string choiceText;
-        public Character character;
+        public string character;
     }
 
     [System.Serializable]
     public struct StartQuestData
     {
         public string quest;
-        public Character character;
+        public string character;
     }
 
     [System.Serializable]
     public struct EndQuestData
     {
         public string quest;
-        public Character character;
+        public string character;
     }
 
     // This is my system and not yours
@@ -197,7 +197,7 @@ public class DialogueManager : MonoBehaviour
                 var data = new SkipDialogueData()
                 {
                     text = dialogueText.text,
-                    character = currentCharacter
+                    character = currentCharacter.characterName
                 };
                 TelemetryLogger.Log(this, "Dialogue Skipped:", data);
                 if (talk.isPlaying && talk != null)
@@ -314,7 +314,7 @@ public class DialogueManager : MonoBehaviour
         var data = new DialogueChoiceData()
         {
             choiceText = choice.choiceText,
-            character = currentCharacter
+            character = currentCharacter.characterName
         };
         TelemetryLogger.Log(this, "Option Selected", data);
 
@@ -346,7 +346,7 @@ public class DialogueManager : MonoBehaviour
                     var data1 = new StartQuestData()
                     {
                         quest = quest.questName,
-                        character = currentCharacter
+                        character = currentCharacter.characterName
                     };
                     TelemetryLogger.Log(this, "Quest Started", data1);
                     for (int i = 0; i < quest.questItems.Count; i++)
@@ -366,7 +366,7 @@ public class DialogueManager : MonoBehaviour
                     var data2 = new EndQuestData()
                     {
                         quest = quest.questName,
-                        character = currentCharacter
+                        character = currentCharacter.characterName
                     };
                     TelemetryLogger.Log(this, "Quest Completed", data2);
                     popUp.PopUp(quest.questName, 0, "Quest Done");//quest pop up

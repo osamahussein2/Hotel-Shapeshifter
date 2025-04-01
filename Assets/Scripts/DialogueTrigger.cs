@@ -16,7 +16,7 @@ public class DialogueTrigger : MonoBehaviour
     public struct CharacterInteractData
     {
         public Vector3 playerPos;
-        public Character character;
+        public string character;
     }
 
     private void OnMouseDown()
@@ -35,7 +35,7 @@ public class DialogueTrigger : MonoBehaviour
                     var data = new CharacterInteractData()
                     {
                         playerPos = transform.position,
-                        character = character
+                        character = character.characterName
                     };
                     TelemetryLogger.Log(this, "Dialogue Started", data);
                 }
