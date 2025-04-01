@@ -9495,7 +9495,7 @@ MonoBehaviour:
         timeIncrease: 10
         oneUse: 1
         quest:
-          questID: Tutorial
+          questID: 
           questProgressGain: 0
           questRequirement: 0
         specialOptions:
@@ -9503,7 +9503,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
       - choiceText: What's with the nickname?
-        nextNodeIndex: 1
+        nextNodeIndex: 2
         trustGain: 0
         trustRequirement: -99
         timeIncrease: 10
@@ -9551,7 +9551,7 @@ MonoBehaviour:
         oneUse: 0
         quest:
           questID: Tutorial
-          questProgressGain: 10
+          questProgressGain: 5
           questRequirement: 0
         specialOptions:
           sleepTime: 0
