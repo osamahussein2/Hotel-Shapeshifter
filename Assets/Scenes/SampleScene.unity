@@ -4907,7 +4907,7 @@ GameObject:
   - component: {fileID: 93965108}
   - component: {fileID: 93965107}
   m_Layer: 9
-  m_Name: Door
+  m_Name: To Hallway
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6277,7 +6277,7 @@ MonoBehaviour:
         nextNodeIndex: 1
         trustGain: 0
         trustRequirement: 0
-        timeIncrease: 0
+        timeIncrease: 10
         oneUse: 1
         quest:
           questID: 
@@ -6291,7 +6291,7 @@ MonoBehaviour:
         nextNodeIndex: 2
         trustGain: 0
         trustRequirement: 0
-        timeIncrease: 0
+        timeIncrease: 10
         oneUse: 1
         quest:
           questID: 
@@ -6323,7 +6323,7 @@ MonoBehaviour:
         nextNodeIndex: 2
         trustGain: 0
         trustRequirement: 0
-        timeIncrease: 0
+        timeIncrease: 15
         oneUse: 0
         quest:
           questID: 
@@ -6356,7 +6356,7 @@ MonoBehaviour:
         nextNodeIndex: 3
         trustGain: 0
         trustRequirement: 0
-        timeIncrease: 0
+        timeIncrease: 15
         oneUse: 0
         quest:
           questID: 
@@ -6394,7 +6394,7 @@ MonoBehaviour:
         nextNodeIndex: 1
         trustGain: 0
         trustRequirement: 0
-        timeIncrease: 0
+        timeIncrease: 15
         oneUse: 0
         quest:
           questID: 
@@ -6408,7 +6408,7 @@ MonoBehaviour:
         nextNodeIndex: 2
         trustGain: 0
         trustRequirement: 0
-        timeIncrease: 0
+        timeIncrease: 15
         oneUse: 0
         quest:
           questID: 
@@ -6440,7 +6440,7 @@ MonoBehaviour:
         nextNodeIndex: 2
         trustGain: 0
         trustRequirement: 0
-        timeIncrease: 0
+        timeIncrease: 15
         oneUse: 0
         quest:
           questID: 
@@ -6472,7 +6472,7 @@ MonoBehaviour:
         nextNodeIndex: 3
         trustGain: 0
         trustRequirement: 0
-        timeIncrease: 0
+        timeIncrease: 15
         oneUse: 0
         quest:
           questID: 
@@ -9706,7 +9706,7 @@ MonoBehaviour:
         nextNodeIndex: 4
         trustGain: 0
         trustRequirement: 0
-        timeIncrease: 0
+        timeIncrease: 15
         oneUse: 0
         quest:
           questID: 
@@ -9720,7 +9720,7 @@ MonoBehaviour:
         nextNodeIndex: -1
         trustGain: 0
         trustRequirement: 0
-        timeIncrease: 0
+        timeIncrease: 15
         oneUse: 0
         quest:
           questID: 
@@ -9781,7 +9781,7 @@ MonoBehaviour:
         nextNodeIndex: 1
         trustGain: 0
         trustRequirement: -99
-        timeIncrease: 10
+        timeIncrease: 15
         oneUse: 1
         quest:
           questID: 
@@ -9795,7 +9795,7 @@ MonoBehaviour:
         nextNodeIndex: 4
         trustGain: 0
         trustRequirement: -99
-        timeIncrease: 10
+        timeIncrease: 15
         oneUse: 1
         quest:
           questID: 
@@ -9828,7 +9828,7 @@ MonoBehaviour:
         nextNodeIndex: 2
         trustGain: 0
         trustRequirement: 0
-        timeIncrease: 0
+        timeIncrease: 15
         oneUse: 0
         quest:
           questID: 
@@ -9842,7 +9842,7 @@ MonoBehaviour:
         nextNodeIndex: 3
         trustGain: 0
         trustRequirement: 0
-        timeIncrease: 0
+        timeIncrease: 15
         oneUse: 0
         quest:
           questID: 
@@ -13620,7 +13620,7 @@ GameObject:
   - component: {fileID: 274725261}
   - component: {fileID: 274725260}
   m_Layer: 0
-  m_Name: door3 (1)
+  m_Name: Room Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23713,7 +23713,7 @@ MonoBehaviour:
         nextNodeIndex: 2
         trustGain: 0
         trustRequirement: -99
-        timeIncrease: 0
+        timeIncrease: 15
         oneUse: 1
         quest:
           questID: 
@@ -23727,7 +23727,7 @@ MonoBehaviour:
         nextNodeIndex: 3
         trustGain: 0
         trustRequirement: -99
-        timeIncrease: 0
+        timeIncrease: 15
         oneUse: 1
         quest:
           questID: 
@@ -23837,7 +23837,7 @@ MonoBehaviour:
         nextNodeIndex: 2
         trustGain: 0
         trustRequirement: -99
-        timeIncrease: 0
+        timeIncrease: 15
         oneUse: 1
         quest:
           questID: 
@@ -23851,7 +23851,7 @@ MonoBehaviour:
         nextNodeIndex: 3
         trustGain: 0
         trustRequirement: -99
-        timeIncrease: 0
+        timeIncrease: 15
         oneUse: 1
         quest:
           questID: 
@@ -23979,7 +23979,7 @@ MonoBehaviour:
     - dialogueText: You know what, I will remove myself from this argument like the
         nice guy that I am. It's not that I'm scared or anything.
       choices:
-      - choiceText: Damn alright
+      - choiceText: Okay Eugene
         nextNodeIndex: -1
         trustGain: 0
         trustRequirement: 0
@@ -29800,7 +29800,7 @@ MonoBehaviour:
         nextNodeIndex: 2
         trustGain: 0
         trustRequirement: 0
-        timeIncrease: 0
+        timeIncrease: 15
         oneUse: 1
         quest:
           questID: 
@@ -29814,7 +29814,7 @@ MonoBehaviour:
         nextNodeIndex: 3
         trustGain: 0
         trustRequirement: 0
-        timeIncrease: 0
+        timeIncrease: 15
         oneUse: 1
         quest:
           questID: 
@@ -29959,7 +29959,7 @@ MonoBehaviour:
         nextNodeIndex: 2
         trustGain: 0
         trustRequirement: 0
-        timeIncrease: 0
+        timeIncrease: 10
         oneUse: 1
         quest:
           questID: 
@@ -29973,7 +29973,7 @@ MonoBehaviour:
         nextNodeIndex: 3
         trustGain: 0
         trustRequirement: 0
-        timeIncrease: 0
+        timeIncrease: 15
         oneUse: 1
         quest:
           questID: 
@@ -36981,7 +36981,7 @@ MonoBehaviour:
         nextNodeIndex: 2
         trustGain: 0
         trustRequirement: 0
-        timeIncrease: 0
+        timeIncrease: 15
         oneUse: 1
         quest:
           questID: 
@@ -36995,7 +36995,7 @@ MonoBehaviour:
         nextNodeIndex: 3
         trustGain: 1
         trustRequirement: 0
-        timeIncrease: 0
+        timeIncrease: 15
         oneUse: 1
         quest:
           questID: 
@@ -37028,7 +37028,7 @@ MonoBehaviour:
         nextNodeIndex: 4
         trustGain: 0
         trustRequirement: 0
-        timeIncrease: 0
+        timeIncrease: 15
         oneUse: 1
         quest:
           questID: 
@@ -37042,7 +37042,7 @@ MonoBehaviour:
         nextNodeIndex: 5
         trustGain: 0
         trustRequirement: 0
-        timeIncrease: 0
+        timeIncrease: 15
         oneUse: 1
         quest:
           questID: 
@@ -37079,7 +37079,7 @@ MonoBehaviour:
         nextNodeIndex: 2
         trustGain: 0
         trustRequirement: 0
-        timeIncrease: 0
+        timeIncrease: 15
         oneUse: 1
         quest:
           questID: 
@@ -37093,7 +37093,7 @@ MonoBehaviour:
         nextNodeIndex: 3
         trustGain: 1
         trustRequirement: 0
-        timeIncrease: 0
+        timeIncrease: 15
         oneUse: 1
         quest:
           questID: 
@@ -37107,7 +37107,7 @@ MonoBehaviour:
         nextNodeIndex: 4
         trustGain: 0
         trustRequirement: 0
-        timeIncrease: 0
+        timeIncrease: 15
         oneUse: 1
         quest:
           questID: 
@@ -46834,7 +46834,7 @@ MonoBehaviour:
         nextNodeIndex: 1
         trustGain: -3
         trustRequirement: -99
-        timeIncrease: 10
+        timeIncrease: 15
         oneUse: 1
         quest:
           questID: 
@@ -46848,7 +46848,7 @@ MonoBehaviour:
         nextNodeIndex: 2
         trustGain: 3
         trustRequirement: 9
-        timeIncrease: 10
+        timeIncrease: 15
         oneUse: 1
         quest:
           questID: 
@@ -46909,7 +46909,7 @@ MonoBehaviour:
         nextNodeIndex: 4
         trustGain: -2
         trustRequirement: -99
-        timeIncrease: 0
+        timeIncrease: 10
         oneUse: 0
         quest:
           questID: 
@@ -46946,7 +46946,7 @@ MonoBehaviour:
         nextNodeIndex: 1
         trustGain: 0
         trustRequirement: 0
-        timeIncrease: 0
+        timeIncrease: 15
         oneUse: 1
         quest:
           questID: 
@@ -46960,7 +46960,7 @@ MonoBehaviour:
         nextNodeIndex: 2
         trustGain: 0
         trustRequirement: 0
-        timeIncrease: 0
+        timeIncrease: 15
         oneUse: 1
         quest:
           questID: 
@@ -46974,7 +46974,7 @@ MonoBehaviour:
         nextNodeIndex: 3
         trustGain: 0
         trustRequirement: 0
-        timeIncrease: 0
+        timeIncrease: 10
         oneUse: 1
         quest:
           questID: d3g
@@ -46989,7 +46989,7 @@ MonoBehaviour:
         trustGain: 0
         trustRequirement: 0
         timeIncrease: 0
-        oneUse: 0
+        oneUse: 1
         quest:
           questID: d4g
           questProgressGain: 20
@@ -46999,7 +46999,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
       - choiceText: Goodbye
-        nextNodeIndex: 0
+        nextNodeIndex: -1
         trustGain: 0
         trustRequirement: 0
         timeIncrease: 0
@@ -51593,7 +51593,7 @@ GameObject:
   - component: {fileID: 1188349518}
   - component: {fileID: 1188349517}
   m_Layer: 9
-  m_Name: Door
+  m_Name: To Lounge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -52569,7 +52569,7 @@ GameObject:
   - component: {fileID: 1207808774}
   - component: {fileID: 1207808773}
   m_Layer: 9
-  m_Name: door3 (1)
+  m_Name: To Lobby
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -54614,7 +54614,7 @@ GameObject:
   - component: {fileID: 1246882814}
   - component: {fileID: 1246882813}
   m_Layer: 9
-  m_Name: Door
+  m_Name: To Kitchen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -56509,7 +56509,7 @@ GameObject:
   - component: {fileID: 1328100537}
   - component: {fileID: 1328100536}
   m_Layer: 9
-  m_Name: Door
+  m_Name: To Hallway
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -68105,7 +68105,7 @@ GameObject:
   - component: {fileID: 1617780561}
   - component: {fileID: 1617780560}
   m_Layer: 9
-  m_Name: Door
+  m_Name: To Lobby
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -83804,7 +83804,7 @@ MonoBehaviour:
         nextNodeIndex: 1
         trustGain: -2
         trustRequirement: -99
-        timeIncrease: 10
+        timeIncrease: 15
         oneUse: 1
         quest:
           questID: 
@@ -83845,7 +83845,7 @@ MonoBehaviour:
         nextNodeIndex: 4
         trustGain: 0
         trustRequirement: 0
-        timeIncrease: 0
+        timeIncrease: 15
         oneUse: 0
         quest:
           questID: 
@@ -83859,7 +83859,7 @@ MonoBehaviour:
         nextNodeIndex: 5
         trustGain: -2
         trustRequirement: 0
-        timeIncrease: 0
+        timeIncrease: 15
         oneUse: 0
         quest:
           questID: 
@@ -83886,7 +83886,7 @@ MonoBehaviour:
         nextNodeIndex: 1
         trustGain: -2
         trustRequirement: -99
-        timeIncrease: 10
+        timeIncrease: 15
         oneUse: 1
         quest:
           questID: 
@@ -83900,7 +83900,7 @@ MonoBehaviour:
         nextNodeIndex: 3
         trustGain: 0
         trustRequirement: -99
-        timeIncrease: 0
+        timeIncrease: 15
         oneUse: 1
         quest:
           questID: 
@@ -83968,7 +83968,7 @@ MonoBehaviour:
         nextNodeIndex: 4
         trustGain: 0
         trustRequirement: 0
-        timeIncrease: 0
+        timeIncrease: 15
         oneUse: 0
         quest:
           questID: 
