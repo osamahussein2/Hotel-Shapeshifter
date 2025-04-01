@@ -6277,7 +6277,7 @@ MonoBehaviour:
         nextNodeIndex: 1
         trustGain: 0
         trustRequirement: 0
-        timeIncrease: 10
+        timeIncrease: 20
         oneUse: 1
         quest:
           questID: 
@@ -6291,7 +6291,7 @@ MonoBehaviour:
         nextNodeIndex: 2
         trustGain: 0
         trustRequirement: 0
-        timeIncrease: 10
+        timeIncrease: 20
         oneUse: 1
         quest:
           questID: 
@@ -6323,7 +6323,7 @@ MonoBehaviour:
         nextNodeIndex: 2
         trustGain: 0
         trustRequirement: 0
-        timeIncrease: 15
+        timeIncrease: 20
         oneUse: 0
         quest:
           questID: 
@@ -6356,7 +6356,7 @@ MonoBehaviour:
         nextNodeIndex: 3
         trustGain: 0
         trustRequirement: 0
-        timeIncrease: 15
+        timeIncrease: 20
         oneUse: 0
         quest:
           questID: 
@@ -6394,7 +6394,7 @@ MonoBehaviour:
         nextNodeIndex: 1
         trustGain: 0
         trustRequirement: 0
-        timeIncrease: 15
+        timeIncrease: 20
         oneUse: 0
         quest:
           questID: 
@@ -6408,7 +6408,7 @@ MonoBehaviour:
         nextNodeIndex: 2
         trustGain: 0
         trustRequirement: 0
-        timeIncrease: 15
+        timeIncrease: 20
         oneUse: 0
         quest:
           questID: 
@@ -6440,7 +6440,7 @@ MonoBehaviour:
         nextNodeIndex: 2
         trustGain: 0
         trustRequirement: 0
-        timeIncrease: 15
+        timeIncrease: 20
         oneUse: 0
         quest:
           questID: 
@@ -6472,7 +6472,7 @@ MonoBehaviour:
         nextNodeIndex: 3
         trustGain: 0
         trustRequirement: 0
-        timeIncrease: 15
+        timeIncrease: 20
         oneUse: 0
         quest:
           questID: 
@@ -9660,7 +9660,7 @@ MonoBehaviour:
         nextNodeIndex: 1
         trustGain: 0
         trustRequirement: -99
-        timeIncrease: 10
+        timeIncrease: 20
         oneUse: 1
         quest:
           questID: 
@@ -9674,7 +9674,7 @@ MonoBehaviour:
         nextNodeIndex: 2
         trustGain: 0
         trustRequirement: -99
-        timeIncrease: 10
+        timeIncrease: 20
         oneUse: 1
         quest:
           questID: 
@@ -9706,7 +9706,7 @@ MonoBehaviour:
         nextNodeIndex: 4
         trustGain: 0
         trustRequirement: 0
-        timeIncrease: 15
+        timeIncrease: 20
         oneUse: 0
         quest:
           questID: 
@@ -9720,7 +9720,7 @@ MonoBehaviour:
         nextNodeIndex: -1
         trustGain: 0
         trustRequirement: 0
-        timeIncrease: 15
+        timeIncrease: 20
         oneUse: 0
         quest:
           questID: 
@@ -9842,7 +9842,7 @@ MonoBehaviour:
         nextNodeIndex: 3
         trustGain: 0
         trustRequirement: 0
-        timeIncrease: 15
+        timeIncrease: 20
         oneUse: 0
         quest:
           questID: 
@@ -23713,7 +23713,7 @@ MonoBehaviour:
         nextNodeIndex: 2
         trustGain: 0
         trustRequirement: -99
-        timeIncrease: 15
+        timeIncrease: 20
         oneUse: 1
         quest:
           questID: 
@@ -23727,7 +23727,7 @@ MonoBehaviour:
         nextNodeIndex: 3
         trustGain: 0
         trustRequirement: -99
-        timeIncrease: 15
+        timeIncrease: 20
         oneUse: 1
         quest:
           questID: 
@@ -23837,7 +23837,7 @@ MonoBehaviour:
         nextNodeIndex: 2
         trustGain: 0
         trustRequirement: -99
-        timeIncrease: 15
+        timeIncrease: 20
         oneUse: 1
         quest:
           questID: 
@@ -23851,7 +23851,7 @@ MonoBehaviour:
         nextNodeIndex: 3
         trustGain: 0
         trustRequirement: -99
-        timeIncrease: 15
+        timeIncrease: 20
         oneUse: 1
         quest:
           questID: 
@@ -29800,7 +29800,7 @@ MonoBehaviour:
         nextNodeIndex: 2
         trustGain: 0
         trustRequirement: 0
-        timeIncrease: 15
+        timeIncrease: 20
         oneUse: 1
         quest:
           questID: 
@@ -29814,7 +29814,7 @@ MonoBehaviour:
         nextNodeIndex: 3
         trustGain: 0
         trustRequirement: 0
-        timeIncrease: 15
+        timeIncrease: 20
         oneUse: 1
         quest:
           questID: 
@@ -29959,7 +29959,7 @@ MonoBehaviour:
         nextNodeIndex: 2
         trustGain: 0
         trustRequirement: 0
-        timeIncrease: 10
+        timeIncrease: 20
         oneUse: 1
         quest:
           questID: 
@@ -29973,7 +29973,7 @@ MonoBehaviour:
         nextNodeIndex: 3
         trustGain: 0
         trustRequirement: 0
-        timeIncrease: 15
+        timeIncrease: 20
         oneUse: 1
         quest:
           questID: 
@@ -30019,7 +30019,7 @@ MonoBehaviour:
         nextNodeIndex: 4
         trustGain: 0
         trustRequirement: 0
-        timeIncrease: 0
+        timeIncrease: 10
         oneUse: 0
         quest:
           questID: 
@@ -36981,7 +36981,7 @@ MonoBehaviour:
         nextNodeIndex: 2
         trustGain: 0
         trustRequirement: 0
-        timeIncrease: 15
+        timeIncrease: 20
         oneUse: 1
         quest:
           questID: 
@@ -36995,7 +36995,7 @@ MonoBehaviour:
         nextNodeIndex: 3
         trustGain: 1
         trustRequirement: 0
-        timeIncrease: 15
+        timeIncrease: 20
         oneUse: 1
         quest:
           questID: 
@@ -37028,7 +37028,7 @@ MonoBehaviour:
         nextNodeIndex: 4
         trustGain: 0
         trustRequirement: 0
-        timeIncrease: 15
+        timeIncrease: 20
         oneUse: 1
         quest:
           questID: 
@@ -37042,7 +37042,7 @@ MonoBehaviour:
         nextNodeIndex: 5
         trustGain: 0
         trustRequirement: 0
-        timeIncrease: 15
+        timeIncrease: 20
         oneUse: 1
         quest:
           questID: 
@@ -37079,7 +37079,7 @@ MonoBehaviour:
         nextNodeIndex: 2
         trustGain: 0
         trustRequirement: 0
-        timeIncrease: 15
+        timeIncrease: 20
         oneUse: 1
         quest:
           questID: 
@@ -37093,7 +37093,7 @@ MonoBehaviour:
         nextNodeIndex: 3
         trustGain: 1
         trustRequirement: 0
-        timeIncrease: 15
+        timeIncrease: 20
         oneUse: 1
         quest:
           questID: 
@@ -37107,7 +37107,7 @@ MonoBehaviour:
         nextNodeIndex: 4
         trustGain: 0
         trustRequirement: 0
-        timeIncrease: 15
+        timeIncrease: 20
         oneUse: 1
         quest:
           questID: 
@@ -46834,7 +46834,7 @@ MonoBehaviour:
         nextNodeIndex: 1
         trustGain: -3
         trustRequirement: -99
-        timeIncrease: 15
+        timeIncrease: 20
         oneUse: 1
         quest:
           questID: 
@@ -46848,7 +46848,7 @@ MonoBehaviour:
         nextNodeIndex: 2
         trustGain: 3
         trustRequirement: 9
-        timeIncrease: 15
+        timeIncrease: 20
         oneUse: 1
         quest:
           questID: 
@@ -46895,7 +46895,7 @@ MonoBehaviour:
         nextNodeIndex: 3
         trustGain: 2
         trustRequirement: 9
-        timeIncrease: 10
+        timeIncrease: 15
         oneUse: 1
         quest:
           questID: 
@@ -46909,7 +46909,7 @@ MonoBehaviour:
         nextNodeIndex: 4
         trustGain: -2
         trustRequirement: -99
-        timeIncrease: 10
+        timeIncrease: 15
         oneUse: 0
         quest:
           questID: 
@@ -46946,7 +46946,7 @@ MonoBehaviour:
         nextNodeIndex: 1
         trustGain: 0
         trustRequirement: 0
-        timeIncrease: 15
+        timeIncrease: 20
         oneUse: 1
         quest:
           questID: 
@@ -46960,7 +46960,7 @@ MonoBehaviour:
         nextNodeIndex: 2
         trustGain: 0
         trustRequirement: 0
-        timeIncrease: 15
+        timeIncrease: 20
         oneUse: 1
         quest:
           questID: 
@@ -46974,7 +46974,7 @@ MonoBehaviour:
         nextNodeIndex: 3
         trustGain: 0
         trustRequirement: 0
-        timeIncrease: 10
+        timeIncrease: 20
         oneUse: 1
         quest:
           questID: d3g
@@ -47029,7 +47029,7 @@ MonoBehaviour:
         that of a diseased gerbil. Please tell him I said that too.
       choices:
       - choiceText: That's valid
-        nextNodeIndex: 0
+        nextNodeIndex: -1
         trustGain: 0
         trustRequirement: 0
         timeIncrease: 0
@@ -47047,8 +47047,8 @@ MonoBehaviour:
     - dialogueText: TELL EUGENE THAT I'M GOING TO SHIVE MY FOOT SO FAR UP HIS ###
         #### ### ### #### ### ### ### ### ########### ############
       choices:
-      - choiceText: That's valid
-        nextNodeIndex: 0
+      - choiceText: Well, um, okay
+        nextNodeIndex: -1
         trustGain: 0
         trustRequirement: 0
         timeIncrease: 0
@@ -83804,7 +83804,7 @@ MonoBehaviour:
         nextNodeIndex: 1
         trustGain: -2
         trustRequirement: -99
-        timeIncrease: 15
+        timeIncrease: 20
         oneUse: 1
         quest:
           questID: 
@@ -83845,7 +83845,7 @@ MonoBehaviour:
         nextNodeIndex: 4
         trustGain: 0
         trustRequirement: 0
-        timeIncrease: 15
+        timeIncrease: 20
         oneUse: 0
         quest:
           questID: 
@@ -83859,7 +83859,7 @@ MonoBehaviour:
         nextNodeIndex: 5
         trustGain: -2
         trustRequirement: 0
-        timeIncrease: 15
+        timeIncrease: 20
         oneUse: 0
         quest:
           questID: 
@@ -83886,7 +83886,7 @@ MonoBehaviour:
         nextNodeIndex: 1
         trustGain: -2
         trustRequirement: -99
-        timeIncrease: 15
+        timeIncrease: 20
         oneUse: 1
         quest:
           questID: 
@@ -83900,7 +83900,7 @@ MonoBehaviour:
         nextNodeIndex: 3
         trustGain: 0
         trustRequirement: -99
-        timeIncrease: 15
+        timeIncrease: 20
         oneUse: 1
         quest:
           questID: 
@@ -83968,7 +83968,7 @@ MonoBehaviour:
         nextNodeIndex: 4
         trustGain: 0
         trustRequirement: 0
-        timeIncrease: 15
+        timeIncrease: 20
         oneUse: 0
         quest:
           questID: 
