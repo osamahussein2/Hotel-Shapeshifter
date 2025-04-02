@@ -16,7 +16,7 @@ public class TimeManager : MonoBehaviour
     public Vector3 outRoomPosition;
     public Material[] skyboxes;
     private int currentSkyboxIndex = 0;
-    private int changesPerDay;
+    public int changesPerDay = 1;
 
     // So the hours and minutes can be set outside of this script using TimeManager class
     public static int hours, minutes;
@@ -97,7 +97,7 @@ public class TimeManager : MonoBehaviour
         if (hours > 6 && gameState.currentDay != 1 && changesPerDay !=0)
         {
             gameState.dialogueProgress++;
-            changesPerDay--;
+            changesPerDay = 0;
         }
 
         TransitionToNightEvent();
