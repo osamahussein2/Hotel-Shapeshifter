@@ -40378,6 +40378,270 @@ MonoBehaviour:
           killChar: 0
       nextNodeIndex: 0
       clueWords: []
+  - dialogueNodes:
+    - dialogueText: Would You Like To Sleep?
+      choices:
+      - choiceText: Yes
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 1
+          moveGameState: 0
+          killChar: 0
+      - choiceText: No
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      nextNodeIndex: 0
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: Would You Like To Sleep?
+      choices:
+      - choiceText: Yes
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 1
+          moveGameState: 0
+          killChar: 0
+      - choiceText: No
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      nextNodeIndex: 0
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: Would You Like To Sleep?
+      choices:
+      - choiceText: Yes
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 1
+          moveGameState: 0
+          killChar: 0
+      - choiceText: No
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      nextNodeIndex: 0
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: Would You Like To Sleep?
+      choices:
+      - choiceText: Yes
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 1
+          moveGameState: 0
+          killChar: 0
+      - choiceText: No
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      nextNodeIndex: 0
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: Would You Like To Sleep?
+      choices:
+      - choiceText: Yes
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 1
+          moveGameState: 0
+          killChar: 0
+      - choiceText: No
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      nextNodeIndex: 0
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: Would You Like To Sleep?
+      choices:
+      - choiceText: Yes
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 1
+          moveGameState: 0
+          killChar: 0
+      - choiceText: No
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      nextNodeIndex: 0
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: Would You Like To Sleep?
+      choices:
+      - choiceText: Yes
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 1
+          moveGameState: 0
+          killChar: 0
+      - choiceText: No
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      nextNodeIndex: 0
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: Would You Like To Sleep?
+      choices:
+      - choiceText: Yes
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 1
+          moveGameState: 0
+          killChar: 0
+      - choiceText: No
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      nextNodeIndex: 0
+      clueWords: []
   gameState: {fileID: 54618526}
 --- !u!65 &875407169
 BoxCollider:
