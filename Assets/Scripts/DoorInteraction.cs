@@ -62,7 +62,7 @@ public class DoorInteraction : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (!isOpening && !isWalking && !isClosing && canOpen)
+        if (!isOpening && !isWalking && !isClosing && canOpen && !QuitGame.paused)
         {
             isOpening = true;
         }

@@ -80,6 +80,7 @@
     <Compile Include="Assets\Scripts\QuestPopUp.cs" />
     <Compile Include="Assets\Scripts\NightEventQuestionButtons.cs" />
     <Compile Include="Assets\Scripts\LookAtCamera.cs" />
+    <Compile Include="Assets\Scripts\RestartGame.cs" />
     <Compile Include="Assets\Scripts\DialogueManager.cs" />
     <Compile Include="Assets\Scripts\DialogueSection.cs" />
     <Compile Include="Assets\Scripts\PopUpChoiceless.cs" />

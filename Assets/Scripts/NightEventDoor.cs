@@ -82,7 +82,7 @@ public class NightEventDoor : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (interactable && !interacted)
+        if (interactable && !interacted && !RestartGame.paused)
         {
             interacted=true;
             StartDialouge();

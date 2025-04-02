@@ -40,7 +40,7 @@ public class LookAtWindow : MonoBehaviour
 
         /* If the player can look outside though, set the camera's position to the invisible window's position
         minus its offset so that the player can see they're looking through the window */
-        else if (playerCanLookOutside)
+        else if (playerCanLookOutside && !QuitGame.paused)
         {
             /* Increment the timer so that the camera position can go back to the way it was once the player
             presses the left mouse button again */
@@ -62,7 +62,7 @@ public class LookAtWindow : MonoBehaviour
     private void OnMouseDown()
     {
         // When the player clicks on the invisible window, make them look through the window
-        if (!playerCanLookOutside)
+        if (!playerCanLookOutside && !QuitGame.paused)
         {
             playerCanLookOutside = true;
         }
