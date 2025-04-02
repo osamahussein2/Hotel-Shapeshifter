@@ -36,7 +36,7 @@ public class CameraController : MonoBehaviour
                 isMoving = false;
                 return;
             }
-            if (!EventSystem.current.IsPointerOverGameObject())
+            if (!EventSystem.current.IsPointerOverGameObject() && !QuitGame.paused)
             {
                 if (Input.GetMouseButtonDown(0) && !DialogueManager.isDialogueTriggered)
                 {
