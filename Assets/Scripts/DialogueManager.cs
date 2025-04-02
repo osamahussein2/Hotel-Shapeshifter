@@ -40,6 +40,7 @@ public class DialogueManager : MonoBehaviour
     public static bool isDialogueTriggered;
 
     public AudioSource talk;
+    public Tutorial tut;
 
     void Start()
     {
@@ -180,10 +181,17 @@ public class DialogueManager : MonoBehaviour
     IEnumerator TypeText(string text)
     {
         isTyping = true;
-
-        if (!talk.isPlaying && talk!=null)
+        //Nikki, Allie, Pato, Howard
+        if (currentCharacter.characterName == "Gerard" || currentCharacter.characterName == "Ben" || currentCharacter.characterName == "Big Man" || currentCharacter.characterName == "Nikki" || currentCharacter.characterName == "Allie" || currentCharacter.characterName == "Pato" || currentCharacter.characterName == "Howard" || currentCharacter.characterName == "Eugene" || currentCharacter.characterName == "Bob")
         {
-            talk.Play();
+            if (!talk.isPlaying && talk!=null)
+            {
+                talk.Play();
+            }
+        }
+        else
+        {
+            Debug.Log(currentCharacter);
         }
 
         dialogueText.text = ""; // Clear the current text so we can get our awesome new fancy text
@@ -343,6 +351,10 @@ public class DialogueManager : MonoBehaviour
                 { 
                     quest.isActive = true; 
                     popUp.PopUp(quest.questName, 0, "Quest Got");
+                    if (quest.questName== "Introductions")
+                    {
+                        tut.currentText = 4;
+                    }
                     var data1 = new StartQuestData()
                     {
                         quest = quest.questName,
