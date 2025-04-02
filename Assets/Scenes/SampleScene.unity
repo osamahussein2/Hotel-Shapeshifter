@@ -6388,7 +6388,7 @@ MonoBehaviour:
       nextNodeIndex: -1
       clueWords: []
   - dialogueNodes:
-    - dialogueText: I'm so done with this
+    - dialogueText: I'm so done with this...
       choices:
       - choiceText: why?
         nextNodeIndex: 1
@@ -6434,7 +6434,7 @@ MonoBehaviour:
           killChar: 0
       nextNodeIndex: -1
       clueWords: []
-    - dialogueText: None of your business
+    - dialogueText: None of your business, dude.
       choices:
       - choiceText: why?
         nextNodeIndex: 2
@@ -9775,7 +9775,7 @@ MonoBehaviour:
       nextNodeIndex: 3
       clueWords: []
   - dialogueNodes:
-    - dialogueText: Little man. Nice to see you're okay.
+    - dialogueText: Hey little man. Nice to see you're okay.
       choices:
       - choiceText: Glad to see you're safe too
         nextNodeIndex: 1
@@ -9821,7 +9821,7 @@ MonoBehaviour:
           killChar: 0
       nextNodeIndex: 0
       clueWords: []
-    - dialogueText: Yeah. I mean I haven't seen the monster recently, you think he
+    - dialogueText: Yeah. I mean I haven't seen the monster recently. You think he
         only comes out at night?
       choices:
       - choiceText: You might be right
@@ -9854,12 +9854,12 @@ MonoBehaviour:
           killChar: 0
       nextNodeIndex: 3
       clueWords: []
-    - dialogueText: Yeah, just watch out littl eman, don't be exploring the halls
+    - dialogueText: Yeah, just watch out little man, don't be exploring the halls
         too late.
       choices: []
       nextNodeIndex: -1
       clueWords: []
-    - dialogueText: Yeah don't worry I'm on guard 24/7. If the monsters ever come
+    - dialogueText: Yeah don't worry. I'm on guard 24/7. If the monsters ever come
         for me they won't know what hits them.
       choices: []
       nextNodeIndex: -1
@@ -23768,7 +23768,7 @@ MonoBehaviour:
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: You need to trust me, it's all their doing, they wanna tear me
-        down, they wanna tear us all down
+        down, they wanna tear us all down!
       choices: []
       nextNodeIndex: -1
       clueWords: []
@@ -23805,9 +23805,9 @@ MonoBehaviour:
           killChar: 0
       nextNodeIndex: -1
       clueWords: []
-    - dialogueText: Ugh. I guess everyone can't be as sane as you and I are. You
-        know what it's her loss. Maybe we need to be more selective with who we choose
-        next time.
+    - dialogueText: Ugh. I guess everyone can't be as redpilled as you and I are.
+        You know what? It's her loss. Maybe we need to be more selective with who
+        we choose next time.
       choices: []
       nextNodeIndex: -1
       clueWords: []
@@ -23830,8 +23830,8 @@ MonoBehaviour:
           killChar: 0
       nextNodeIndex: 0
       clueWords: []
-    - dialogueText: Yeah I've saved up enough crypto to last me at least like.. 5
-        weeks.
+    - dialogueText: Yeah I've saved up enough crypto to last me at least like...
+        5 weeks.
       choices:
       - choiceText: Isn't crypto useless at this point?
         nextNodeIndex: 2
@@ -23905,8 +23905,8 @@ MonoBehaviour:
           killChar: 0
       nextNodeIndex: -1
       clueWords: []
-    - dialogueText: Actually crypto is only raising in the market. Pay me about 3
-        bottles of water and I can maybe let you in on this.
+    - dialogueText: Crypto is only raising in the market. Pay me about 3 bottles
+        of water and I can maybe let you in on this.
       choices:
       - choiceText: No thanks
         nextNodeIndex: -1
@@ -23939,7 +23939,7 @@ MonoBehaviour:
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: I'm starting to think that you may be quite the genius yourself.
-        It's not easy to recognize someone of my intelligence calibur.
+        It's not easy to recognize someone of my intelligence caliber.
       choices:
       - choiceText: Okay
         nextNodeIndex: -1
@@ -23957,8 +23957,8 @@ MonoBehaviour:
           killChar: 0
       nextNodeIndex: -1
       clueWords: []
-    - dialogueText: Wow. Well tell Nikki that I don't really like her outfit. It
-        makes her look like an ugly pink cloud.
+    - dialogueText: Wow. Well, how about you tell Nikki that I don't really like
+        her outfit? It makes her look like... like an ugly pink cloud!
       choices:
       - choiceText: Damn alright
         nextNodeIndex: -1
@@ -30046,7 +30046,7 @@ MonoBehaviour:
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Eugene? You mean that weird guy with the glasses? I don't know
-        what crypto is, but if it involves him, I'm probably good.
+        what crypto is, but if it involves him, I'd rather not.
       choices:
       - choiceText: Yeah, I get that
         nextNodeIndex: -1
@@ -30084,8 +30084,7 @@ MonoBehaviour:
           killChar: 0
       nextNodeIndex: 0
       clueWords: []
-    - dialogueText: Thank you so much, I needed these. As promised I'll give you
-        the carrots now.
+    - dialogueText: Thank you so much, I needed these. As promised, here's your carrots.
       choices: []
       nextNodeIndex: -1
       clueWords: []
@@ -37021,7 +37020,7 @@ MonoBehaviour:
           killChar: 0
       nextNodeIndex: -1
       clueWords: []
-    - dialogueText: Yeah? How's a brat like you gonna survive ina  world gone to
+    - dialogueText: Yeah? How's a brat like you gonna survive in a  world gone to
         hell?
       choices:
       - choiceText: I'll find a way
@@ -37068,12 +37067,12 @@ MonoBehaviour:
       nextNodeIndex: -1
       clueWords: []
   - dialogueNodes:
-    - dialogueText: If this were back in the old days I bet ya those monsters wouldn'tve
-        been able to take over so easy
+    - dialogueText: If this were back in the old days, I bet ya those monsters wouldn'tve
+        been able to take over so easy...
       choices: []
       nextNodeIndex: 1
       clueWords: []
-    - dialogueText: Your generation is far too soft, you and those other brats
+    - dialogueText: Your generation is far too soft! You and those other brats.
       choices:
       - choiceText: Okay
         nextNodeIndex: 2
@@ -37143,11 +37142,6 @@ MonoBehaviour:
       clueWords: []
     - dialogueText: I got a lot of problems right now, your generation bein' weak
         ain't one of them. I'm just bein' honest.
-      choices: []
-      nextNodeIndex: -1
-      clueWords: []
-    - dialogueText: Why don't you stop being a little rat with it's head up it's
-        ass?
       choices: []
       nextNodeIndex: -1
       clueWords: []
@@ -47189,12 +47183,12 @@ MonoBehaviour:
       choices: []
       nextNodeIndex: -1
       clueWords: []
-    - dialogueText: See? now you're starting to get it.
+    - dialogueText: See? Now you're starting to get it.
       choices: []
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Ugh, I just can't deal with people like you. Talk to the hand
-        because I'm not  even going to look at you right now.
+        because I'm not even going to look at you right now.
       choices: []
       nextNodeIndex: -1
       clueWords: []
@@ -47288,9 +47282,9 @@ MonoBehaviour:
       choices: []
       nextNodeIndex: -1
       clueWords: []
-    - dialogueText: Yeah. Eugene and his weird ass fantasies. If I'm being real I
-        am so sick of that man like I absolutely just cannot. His fashion looks like
-        that of a diseased gerbil. Please tell him I said that too.
+    - dialogueText: Yeah. Eugene and his weird ass fantasies. If I'm being real,
+        I am so sick of that man like I absolutely just cannot. His fashion looks
+        like that of a diseased gerbil. Please tell him I said that too.
       choices:
       - choiceText: That's valid
         nextNodeIndex: -1
@@ -47308,7 +47302,7 @@ MonoBehaviour:
           killChar: 0
       nextNodeIndex: -1
       clueWords: []
-    - dialogueText: TELL EUGENE THAT I'M GOING TO SHIVE MY FOOT SO FAR UP HIS ###
+    - dialogueText: TELL EUGENE THAT I'M GOING TO SHOVE MY FOOT SO FAR UP HIS ###
         #### ### ### #### ### ### ### ### ########### ############
       choices:
       - choiceText: Well, um, okay
@@ -84138,7 +84132,7 @@ MonoBehaviour:
       choices: []
       nextNodeIndex: -1
       clueWords: []
-    - dialogueText: I'd appreciate if you left
+    - dialogueText: I'd appreciate if you left.
       choices: []
       nextNodeIndex: -1
       clueWords: []
@@ -84207,7 +84201,7 @@ MonoBehaviour:
       choices: []
       nextNodeIndex: 2
       clueWords: []
-    - dialogueText: There's not really much in here either.
+    - dialogueText: There's not really much in here either...
       choices: []
       nextNodeIndex: -1
       clueWords: []
