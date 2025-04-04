@@ -38,6 +38,14 @@ public class InfoGatherer : MonoBehaviour
             }
             backFromNight = false;
             PlayerPrefs.SetInt("BackFromNight", 0);
+
+            //check if a character died last night
+            if(PlayerPrefs.GetInt("CHARKILLED") != -1)
+            {
+                characters[PlayerPrefs.GetInt("CHARKILLED")].GetComponent<Character>().charDead = true;
+
+                PlayerPrefs.SetInt("CHARKILLED", -1);
+            }
         }
         else
         {

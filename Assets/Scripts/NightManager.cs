@@ -53,6 +53,8 @@ public class NightManager : MonoBehaviour
 
     void Start()
     {
+        PlayerPrefs.SetInt("CHARKILLED", -1);
+
         ending = false;
 
         PickCharacter();
