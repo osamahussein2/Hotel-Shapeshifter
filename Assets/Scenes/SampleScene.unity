@@ -32353,11 +32353,14 @@ MonoBehaviour:
   - {fileID: 532401670}
   - {fileID: 1993475999}
   - {fileID: 1048935379}
+  - {fileID: 126196402}
   - {fileID: 926742067}
   - {fileID: 186845146}
   - {fileID: 654045070}
   updating: 0
   backFromNight: 0
+  dayNumber: 0
+  gameManager: {fileID: 54618526}
 --- !u!4 &703104704
 Transform:
   m_ObjectHideFlags: 0

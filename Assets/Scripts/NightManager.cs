@@ -7,6 +7,11 @@ public class NightManager : MonoBehaviour
 {
     public List<Character> characters;
 
+    public List<Character> day1Chars;
+    public List<Character> day2Chars;
+    public List<Character> day3Chars;
+    public List<Character> day4Chars;
+
     public List<GameObject> normModels;
     public List<GameObject> evilModels;
 
@@ -43,6 +48,9 @@ public class NightManager : MonoBehaviour
 
     public AudioSource jump;
 
+    public int curDay;
+    public bool daySpesificChars;
+
     void Start()
     {
         ending = false;
@@ -62,6 +70,7 @@ public class NightManager : MonoBehaviour
                 collectedClues.Add(clue);
             }
         }
+        curDay = PlayerPrefs.GetInt("CURRENTDAY");
     }
 
     void PickCharacter()
@@ -73,10 +82,49 @@ public class NightManager : MonoBehaviour
                 characters[i].trustLevel = PlayerPrefs.GetInt(characters[i].characterName + "TRUST");
             }
         }
-        int rand = Random.Range(0, characters.Count);
-        currentChar = characters[rand];
-        normalChar = normModels[rand];
-        evilChar = evilModels[rand];
+        if (daySpesificChars)
+        {
+            if(curDay == 1)
+            {
+                int rand = Random.Range(0, day1Chars.Count);
+                currentChar = day1Chars[rand];
+                normalChar = normModels[characters.IndexOf(day1Chars[rand])];
+                evilChar = evilModels[characters.IndexOf(day1Chars[rand])];
+            }
+            else if (curDay == 2)
+            {
+                int rand = Random.Range(0, day2Chars.Count);
+                currentChar = day2Chars[rand];
+                normalChar = normModels[characters.IndexOf(day2Chars[rand])];
+                evilChar = evilModels[characters.IndexOf(day2Chars[rand])];
+            }
+            else if (curDay == 3)
+            {
+                int rand = Random.Range(0, day3Chars.Count);
+                currentChar = day3Chars[rand];
+                normalChar = normModels[characters.IndexOf(day3Chars[rand])];
+                evilChar = evilModels[characters.IndexOf(day3Chars[rand])];
+            }
+            else if (curDay == 4)
+            {
+                int rand = Random.Range(0, day4Chars.Count);
+                currentChar = day4Chars[rand];
+                normalChar = normModels[characters.IndexOf(day4Chars[rand])];
+                evilChar = evilModels[characters.IndexOf(day4Chars[rand])];
+            }
+            else
+            {
+                Debug.LogError("Day was invalid");
+            }
+        }
+        else
+        {
+            int rand = Random.Range(0, characters.Count);
+            currentChar = characters[rand];
+            normalChar = normModels[rand];
+            evilChar = evilModels[rand];
+        }
+        
 
         if (Random.Range(1, 100) <= shapeshifterChance)
         {

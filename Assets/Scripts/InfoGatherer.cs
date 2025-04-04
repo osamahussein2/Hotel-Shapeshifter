@@ -9,7 +9,8 @@ public class InfoGatherer : MonoBehaviour
     public List<GameObject> characters;
     public bool updating;
     public bool backFromNight;
-
+    public int dayNumber;
+    public GameState gameManager;
     void Start()
     {
         
@@ -84,6 +85,10 @@ public class InfoGatherer : MonoBehaviour
                 PlayerPrefs.SetString("CLUECOLLECTED" + clueName, "NOTCOLLECTED");
             }
         }
+
+        //update current day
+        dayNumber = gameManager.currentDay;
+        PlayerPrefs.SetInt("CURRENTDAY", dayNumber);
 
         updating = false;
     }
