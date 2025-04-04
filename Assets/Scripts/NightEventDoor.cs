@@ -239,7 +239,10 @@ public class NightEventDoor : MonoBehaviour
             int oldTrust = PlayerPrefs.GetInt(nightMan.currentChar.characterName + "TRUST");
             PlayerPrefs.SetInt(nightMan.currentChar.characterName + "TRUST", oldTrust - 10);
 
-            PlayerPrefs.SetInt("CHARKILLED", nightMan.characters.IndexOf(nightMan.currentChar));
+            if(Random.Range(1,100) >= 50)
+            {
+                PlayerPrefs.SetInt("CHARKILLED", nightMan.characters.IndexOf(nightMan.currentChar));
+            }
         }
     }
 
