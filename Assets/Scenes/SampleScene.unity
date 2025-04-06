@@ -10286,7 +10286,7 @@ MonoBehaviour:
         oneUse: 1
         quest:
           questID: SurvivalPlan
-          questProgressGain: 25
+          questProgressGain: 50
           questRequirement: 50
         specialOptions:
           sleepTime: 0
