@@ -29,10 +29,14 @@ public class DoorInteraction : MonoBehaviour
     private Quaternion targetRotation;
     private float walkTimer = 0f;
 
+    public static bool doorInteracted;
+
     private void Start()
     {
         initialRotation = hinge.rotation;
         targetRotation = Quaternion.Euler(hinge.eulerAngles + new Vector3(0, openAngle, 0));
+
+        doorInteracted = false;
     }
 
     void Update()
@@ -58,6 +62,11 @@ public class DoorInteraction : MonoBehaviour
                 StartCoroutine(Delay(walkStartDelay));
             }
         }
+
+        if (doorInteracted)
+        {
+            cameraController.objectText.gameObject.SetActive(false);
+        }
     }
 
     private void OnMouseDown()
@@ -66,6 +75,7 @@ public class DoorInteraction : MonoBehaviour
             !DialogueManager.isDialogueTriggered)
         {
             isOpening = true;
+            doorInteracted = true;
         }
     }
 
@@ -100,6 +110,7 @@ public class DoorInteraction : MonoBehaviour
         }
 
         cameraController.transform.position = newAreaPosition;
+        doorInteracted = false;
         if (walking.isPlaying)
         {
             walking.Stop();  // Stop the sound immediately
@@ -107,7 +118,6 @@ public class DoorInteraction : MonoBehaviour
         soundplayed = false;
         isWalking = false;
         CameraController.teleporting = false;
-
 
         yield return new WaitForSeconds(closeDelay);
         StartCoroutine(CloseDoor());

@@ -25,7 +25,7 @@ public class DialogueTrigger : MonoBehaviour
 
         if (!EventSystem.current.IsPointerOverGameObject()) // Ensures UI blocks game interaction
         {
-            if (!dialogueManager.dialogueActive)
+            if (!dialogueManager.dialogueActive && !DoorInteraction.doorInteracted)
             {
                 // Check if the current quest progress is within the bounds of the list
                 if (gameState.dialogueProgress >= 0 && gameState.dialogueProgress < dialogueSections.Count)
