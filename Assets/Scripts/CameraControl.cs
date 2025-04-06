@@ -1,3 +1,4 @@
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -20,6 +21,8 @@ public class CameraController : MonoBehaviour
     private float fixedYPosition;
     private Quaternion targetRotation;
     private bool isRotatingWithButton = false;
+
+    public TextMeshProUGUI objectText;
 
     void Start()
     {
@@ -65,7 +68,11 @@ public class CameraController : MonoBehaviour
                         isRotatingWithButton = false;
                     }
                 }
-
+            }
+            
+            if (DialogueManager.isDialogueTriggered)
+            {
+                objectText.gameObject.SetActive(false);
             }
 
             if (isMoving)
