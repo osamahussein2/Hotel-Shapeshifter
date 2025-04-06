@@ -6814,6 +6814,100 @@ MonoBehaviour:
       choices: []
       nextNodeIndex: -1
       clueWords: []
+  - dialogueNodes:
+    - dialogueText: I finally did it.
+      choices:
+      - choiceText: Did what?
+        nextNodeIndex: 1
+        trustGain: 0
+        trustRequirement: -99
+        timeIncrease: 20
+        oneUse: 1
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      - choiceText: Don't care.
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: -99
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      nextNodeIndex: -1
+      clueWords: []
+    - dialogueText: Contacted the military. All I had to do was hack into their database
+        and send them a friendly message asking for help.
+      choices:
+      - choiceText: Wait... WHAT?!
+        nextNodeIndex: 2
+        trustGain: 0
+        trustRequirement: -99
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      - choiceText: So that's what you've been doing...
+        nextNodeIndex: 2
+        trustGain: 0
+        trustRequirement: -99
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      nextNodeIndex: -1
+      clueWords: []
+    - dialogueText: Yup. They should be here fairly soon. All we gotta do is survive
+        until then.
+      choices:
+      - choiceText: Should we tell the others?
+        nextNodeIndex: 3
+        trustGain: 0
+        trustRequirement: -99
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      nextNodeIndex: -1
+      clueWords: []
+    - dialogueText: Nah. I think it'll be more interesting if we don't.
+      choices: []
+      nextNodeIndex: 4
+      clueWords: []
+    - dialogueText: These people are idiots. It's more fun to watch them writhe in
+        their own stupidity trying to survive.
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
   gameState: {fileID: 54618526}
 --- !u!65 &126196407
 BoxCollider:
@@ -30738,6 +30832,135 @@ MonoBehaviour:
       clueWords: []
     - dialogueText: Thank you so much, I needed these. As promised, here's your carrots.
       choices: []
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: Milo...
+      choices:
+      - choiceText: What's wrong?
+        nextNodeIndex: 1
+        trustGain: 0
+        trustRequirement: 5
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      - choiceText: (Leave)
+        nextNodeIndex: 0
+        trustGain: 0
+        trustRequirement: -99
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      nextNodeIndex: 1
+      clueWords: []
+    - dialogueText: I'm... I'm okay. Don't worry about me.
+      choices:
+      - choiceText: Are you sure?
+        nextNodeIndex: 2
+        trustGain: 2
+        trustRequirement: -99
+        timeIncrease: 20
+        oneUse: 1
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      - choiceText: If you say so.
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: -99
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      nextNodeIndex: 1
+      clueWords: []
+    - dialogueText: '*sigh* I guess I''m not good at hiding things, huh?'
+      choices: []
+      nextNodeIndex: 3
+      clueWords: []
+    - dialogueText: It's Milo... He was talking care of the farm. I just received
+        word that... the farm was destroyed. Milo is dead.
+      choices: []
+      nextNodeIndex: 4
+      clueWords: []
+    - dialogueText: Damn it, I should have stayed... I could have helped him...
+      choices:
+      - choiceText: It's not your fault.
+        nextNodeIndex: 5
+        trustGain: 2
+        trustRequirement: -99
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      nextNodeIndex: 4
+      clueWords: []
+    - dialogueText: '*sniff* How can you be so sure?'
+      choices:
+      - choiceText: None of us knew this was going to happen.
+        nextNodeIndex: 6
+        trustGain: 0
+        trustRequirement: -99
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      nextNodeIndex: 4
+      clueWords: []
+    - dialogueText: That's the worst part, isn't it? Anything could happen... What
+        am I supposed to do now?
+      choices:
+      - choiceText: None of us knew this was going to happen.
+        nextNodeIndex: 6
+        trustGain: 2
+        trustRequirement: -99
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
       nextNodeIndex: -1
       clueWords: []
   gameState: {fileID: 54618526}
