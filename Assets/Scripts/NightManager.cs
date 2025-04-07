@@ -53,6 +53,7 @@ public class NightManager : MonoBehaviour
 
     void Start()
     {
+        curDay = PlayerPrefs.GetInt("CURRENTDAY");
         PlayerPrefs.SetInt("CHARKILLED", -1);
 
         ending = false;
@@ -72,7 +73,6 @@ public class NightManager : MonoBehaviour
                 collectedClues.Add(clue);
             }
         }
-        curDay = PlayerPrefs.GetInt("CURRENTDAY");
     }
 
     void PickCharacter()
