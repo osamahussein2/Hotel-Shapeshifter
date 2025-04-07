@@ -27933,7 +27933,7 @@ MonoBehaviour:
         nextNodeIndex: 1
         trustGain: 2
         trustRequirement: 0
-        timeIncrease: 80
+        timeIncrease: 0
         oneUse: 0
         quest:
           questID: 
@@ -27945,9 +27945,9 @@ MonoBehaviour:
           killChar: 0
       - choiceText: What are you doing up there?
         nextNodeIndex: 2
-        trustGain: 0
+        trustGain: 2
         trustRequirement: 0
-        timeIncrease: 10
+        timeIncrease: 0
         oneUse: 1
         quest:
           questID: 
@@ -27975,7 +27975,7 @@ MonoBehaviour:
         nextNodeIndex: 1
         trustGain: 2
         trustRequirement: 0
-        timeIncrease: 80
+        timeIncrease: 0
         oneUse: 0
         quest:
           questID: 
@@ -27987,9 +27987,9 @@ MonoBehaviour:
           killChar: 0
       - choiceText: Get down here right now
         nextNodeIndex: 2
-        trustGain: 0
+        trustGain: -2
         trustRequirement: 0
-        timeIncrease: 10
+        timeIncrease: 0
         oneUse: 1
         quest:
           questID: 
@@ -28015,7 +28015,7 @@ MonoBehaviour:
       choices:
       - choiceText: What do i do now?
         nextNodeIndex: 1
-        trustGain: 0
+        trustGain: 1
         trustRequirement: 0
         timeIncrease: 0
         oneUse: 1
@@ -28029,7 +28029,7 @@ MonoBehaviour:
           killChar: 0
       - choiceText: Who are you?
         nextNodeIndex: 2
-        trustGain: 0
+        trustGain: -2
         trustRequirement: 0
         timeIncrease: 0
         oneUse: 1
@@ -28043,7 +28043,7 @@ MonoBehaviour:
           killChar: 0
       - choiceText: Bye
         nextNodeIndex: -1
-        trustGain: 0
+        trustGain: -1
         trustRequirement: 0
         timeIncrease: 0
         oneUse: 0
@@ -28073,7 +28073,7 @@ MonoBehaviour:
       choices:
       - choiceText: What?
         nextNodeIndex: 1
-        trustGain: 0
+        trustGain: 1
         trustRequirement: 0
         timeIncrease: 0
         oneUse: 1
@@ -28087,7 +28087,7 @@ MonoBehaviour:
           killChar: 0
       - choiceText: How can I stop them?
         nextNodeIndex: 2
-        trustGain: 0
+        trustGain: -2
         trustRequirement: 0
         timeIncrease: 0
         oneUse: 1
@@ -28101,7 +28101,7 @@ MonoBehaviour:
           killChar: 0
       - choiceText: Bye
         nextNodeIndex: -1
-        trustGain: 0
+        trustGain: -1
         trustRequirement: 0
         timeIncrease: 0
         oneUse: 0
@@ -28131,7 +28131,7 @@ MonoBehaviour:
       choices:
       - choiceText: I am
         nextNodeIndex: 1
-        trustGain: 0
+        trustGain: -4
         trustRequirement: 0
         timeIncrease: 0
         oneUse: 1
@@ -28145,7 +28145,7 @@ MonoBehaviour:
           killChar: 0
       - choiceText: Why not?
         nextNodeIndex: 2
-        trustGain: 0
+        trustGain: 3
         trustRequirement: 0
         timeIncrease: 0
         oneUse: 1
@@ -28159,7 +28159,7 @@ MonoBehaviour:
           killChar: 0
       - choiceText: Bye
         nextNodeIndex: -1
-        trustGain: 0
+        trustGain: -2
         trustRequirement: 0
         timeIncrease: 0
         oneUse: 0
@@ -43355,9 +43355,9 @@ MonoBehaviour:
           killChar: 0
       - choiceText: I've spoken to everyone
         nextNodeIndex: 2
-        trustGain: 0
+        trustGain: 2
         trustRequirement: -99
-        timeIncrease: 0
+        timeIncrease: 40
         oneUse: 1
         quest:
           questID: Tutorial
@@ -43428,9 +43428,9 @@ MonoBehaviour:
       choices:
       - choiceText: Any other tasks for me?
         nextNodeIndex: 3
-        trustGain: 0
+        trustGain: 2
         trustRequirement: -2
-        timeIncrease: 10
+        timeIncrease: 60
         oneUse: 1
         quest:
           questID: 
@@ -43442,7 +43442,7 @@ MonoBehaviour:
           killChar: 0
       - choiceText: End Day
         nextNodeIndex: -1
-        trustGain: 0
+        trustGain: 20
         trustRequirement: -99
         timeIncrease: 800
         oneUse: 0
@@ -43456,9 +43456,9 @@ MonoBehaviour:
           killChar: 1
       - choiceText: I don't need anything
         nextNodeIndex: -1
-        trustGain: 0
+        trustGain: 2
         trustRequirement: -99
-        timeIncrease: 0
+        timeIncrease: 20
         oneUse: 0
         quest:
           questID: 
