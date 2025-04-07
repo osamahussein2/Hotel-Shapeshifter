@@ -404,7 +404,7 @@ Transform:
   m_GameObject: {fileID: 3297541}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.02, y: 6.0999985, z: 25}
+  m_LocalPosition: {x: 260.15002, y: 6.0999985, z: 1322.13}
   m_LocalScale: {x: 20, y: 20, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -781,7 +781,7 @@ Transform:
   m_GameObject: {fileID: 18817105}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.09, y: 13.68, z: 25}
+  m_LocalPosition: {x: 117.68001, y: 13.68, z: 1117.3}
   m_LocalScale: {x: 4, y: 5, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1080,7 +1080,7 @@ GameObject:
   - component: {fileID: 31004869}
   - component: {fileID: 31004868}
   - component: {fileID: 31004867}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Chair (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1096,7 +1096,7 @@ Transform:
   m_GameObject: {fileID: 31004865}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.5, z: 0, w: 0.8660254}
-  m_LocalPosition: {x: 16.71, y: 1.17, z: -11.98}
+  m_LocalPosition: {x: 291.88, y: 1.17, z: 1285.15}
   m_LocalScale: {x: 5, y: 2, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1412,7 +1412,7 @@ Transform:
   m_GameObject: {fileID: 40581767}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -25, y: 13.5, z: 17.409975}
+  m_LocalPosition: {x: 179, y: 13.5, z: 668.4}
   m_LocalScale: {x: 0.1, y: 5, z: 5.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1518,7 +1518,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1613659068}
   - {fileID: 965023554}
   - {fileID: 54618527}
   - {fileID: 799987391}
@@ -1665,7 +1664,7 @@ Transform:
   m_GameObject: {fileID: 43520185}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -19.6, y: 3.2, z: -19.14}
+  m_LocalPosition: {x: 255.57, y: 3.2, z: 1277.99}
   m_LocalScale: {x: 0.5, y: 15, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1876,7 +1875,7 @@ Transform:
   m_GameObject: {fileID: 46984569}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -25, y: 6.0999985, z: 0}
+  m_LocalPosition: {x: 250.17001, y: 6.0999985, z: 1297.13}
   m_LocalScale: {x: 0.1, y: 20, z: 50}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2400,7 +2399,7 @@ Transform:
   m_GameObject: {fileID: 61456017}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0.7071068, z: 0, w: 0}
-  m_LocalPosition: {x: 17.67, y: 0.1, z: -2.81}
+  m_LocalPosition: {x: 135.44, y: 0.1, z: 1089.49}
   m_LocalScale: {x: 3, y: 0.3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2615,7 +2614,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 62054956}
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: -13.812}
+  m_LocalPosition: {x: 0, y: 0, z: -1.4}
   m_LocalScale: {x: 0.009999997, y: 0.01, z: 0.009999997}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -2624,7 +2623,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -0, y: 12.45}
+  m_AnchoredPosition: {x: 0, y: 1.31}
   m_SizeDelta: {x: 200, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &62054958
@@ -3981,7 +3980,7 @@ Transform:
   m_GameObject: {fileID: 82386971}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: -1.1}
+  m_LocalPosition: {x: -651, y: 0, z: 407}
   m_LocalScale: {x: 1, y: 1, z: 6}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5546,7 +5545,7 @@ Transform:
   m_GameObject: {fileID: 108777900}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -25, y: 1.68, z: 17.409975}
+  m_LocalPosition: {x: 179, y: 1.68, z: 668.4}
   m_LocalScale: {x: 0.1, y: 11, z: 5.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6958,8 +6957,8 @@ MonoBehaviour:
     - dialogueText: There's a lot to think about at the end of the world. What will
         I do with all the classified data I stole now?
       choices:
-      - choiceText: Can you share some with me?
-        nextNodeIndex: 3
+      - choiceText: Whats the data on?
+        nextNodeIndex: 4
         trustGain: 0
         trustRequirement: 0
         timeIncrease: 20
@@ -6972,8 +6971,8 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
-      - choiceText: Whats the data on?
-        nextNodeIndex: 4
+      - choiceText: Can you share some with me?
+        nextNodeIndex: 3
         trustGain: 0
         trustRequirement: 0
         timeIncrease: 0
@@ -7909,7 +7908,7 @@ GameObject:
   - component: {fileID: 142333983}
   - component: {fileID: 142333982}
   - component: {fileID: 142333981}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Curtain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7925,7 +7924,7 @@ Transform:
   m_GameObject: {fileID: 142333979}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -24.62, y: 4.83, z: -18.52}
+  m_LocalPosition: {x: 250.55002, y: 4.83, z: 1278.6101}
   m_LocalScale: {x: 0.1, y: 17, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -9112,7 +9111,7 @@ GameObject:
   - component: {fileID: 165241929}
   - component: {fileID: 165241928}
   - component: {fileID: 165241927}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Circle table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9128,7 +9127,7 @@ Transform:
   m_GameObject: {fileID: 165241925}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.65, y: -0.03, z: 0}
+  m_LocalPosition: {x: 272.52002, y: -0.03, z: 1297.13}
   m_LocalScale: {x: 10, y: 0.1, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -9899,7 +9898,7 @@ Transform:
   m_GameObject: {fileID: 184536450}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 16.099998, z: 0}
+  m_LocalPosition: {x: 275.17, y: 16.099998, z: 1297.13}
   m_LocalScale: {x: 50, y: 0.1, z: 50}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11428,7 +11427,7 @@ GameObject:
   - component: {fileID: 210504928}
   - component: {fileID: 210504927}
   - component: {fileID: 210504926}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Chair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11444,7 +11443,7 @@ Transform:
   m_GameObject: {fileID: 210504924}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 8.05, y: 1.17, z: -18.13}
+  m_LocalPosition: {x: 283.22, y: 1.17, z: 1279}
   m_LocalScale: {x: 5, y: 2, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -13114,7 +13113,7 @@ Transform:
   m_GameObject: {fileID: 254382405}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.52, y: 10.11, z: 25}
+  m_LocalPosition: {x: 277.69, y: 10.11, z: 1322.13}
   m_LocalScale: {x: 5, y: 4, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13219,7 +13218,7 @@ Transform:
   m_GameObject: {fileID: 255529302}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.06, y: 2.09, z: -25}
+  m_LocalPosition: {x: 275.11002, y: 2.09, z: 1272.13}
   m_LocalScale: {x: 10, y: 12, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13467,7 +13466,7 @@ GameObject:
   - component: {fileID: 260391542}
   - component: {fileID: 260391541}
   - component: {fileID: 260391540}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: DiningTable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13483,7 +13482,7 @@ Transform:
   m_GameObject: {fileID: 260391538}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.45, y: 0.099998474, z: 1.44}
+  m_LocalPosition: {x: 123.22, y: 0.099998474, z: 1093.74}
   m_LocalScale: {x: 20, y: 0.5, z: 20}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -14127,7 +14126,7 @@ Transform:
   m_GameObject: {fileID: 265543568}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -25, y: 6.0999985, z: 0}
+  m_LocalPosition: {x: 250.17001, y: 6.0999985, z: 1297.13}
   m_LocalScale: {x: 0.1, y: 20, z: 50}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -14565,7 +14564,7 @@ Transform:
   m_GameObject: {fileID: 282064145}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 17.4, y: 6.0999985, z: 25}
+  m_LocalPosition: {x: 292.57, y: 6.0999985, z: 1322.13}
   m_LocalScale: {x: 15, y: 20, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -16165,7 +16164,7 @@ Transform:
   m_GameObject: {fileID: 327559590}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.5, y: 2.11, z: 25}
+  m_LocalPosition: {x: 277.67, y: 2.11, z: 1322.13}
   m_LocalScale: {x: 15, y: 12, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -18260,7 +18259,7 @@ GameObject:
   - component: {fileID: 386845581}
   - component: {fileID: 386845580}
   - component: {fileID: 386845579}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Chair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18276,7 +18275,7 @@ Transform:
   m_GameObject: {fileID: 386845577}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 8.05, y: 1.17, z: -11.98}
+  m_LocalPosition: {x: 283.22, y: 1.17, z: 1285.15}
   m_LocalScale: {x: 5, y: 2, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -18770,7 +18769,7 @@ Transform:
   m_GameObject: {fileID: 396272110}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 16.099998, z: 0}
+  m_LocalPosition: {x: 275.17, y: 16.099998, z: 1297.13}
   m_LocalScale: {x: 50, y: 0.1, z: 50}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -18980,7 +18979,7 @@ Transform:
   m_GameObject: {fileID: 400197916}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -25, y: 6.0999985, z: -22.8}
+  m_LocalPosition: {x: 179, y: 6.0999985, z: 628.19006}
   m_LocalScale: {x: 0.1, y: 20, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19302,7 +19301,7 @@ Transform:
   m_GameObject: {fileID: 405785852}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 16.099998, z: 0}
+  m_LocalPosition: {x: 275.17, y: 16.099998, z: 1297.13}
   m_LocalScale: {x: 50, y: 0.1, z: 50}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19473,6 +19472,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1613659068}
   - {fileID: 373727972}
   - {fileID: 122866127}
   - {fileID: 1838699441}
@@ -19612,7 +19612,7 @@ GameObject:
   - component: {fileID: 419780349}
   - component: {fileID: 419780348}
   - component: {fileID: 419780347}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Lamp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19628,7 +19628,7 @@ Transform:
   m_GameObject: {fileID: 419780345}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -20.66, y: 1.11, z: -21.48}
+  m_LocalPosition: {x: 97.11, y: 1.11, z: 1070.8201}
   m_LocalScale: {x: 0.5, y: 10, z: 0.93}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -20240,7 +20240,7 @@ Transform:
   m_GameObject: {fileID: 424505685}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 24.68, y: 6.0999985, z: 0}
+  m_LocalPosition: {x: 299.85, y: 6.0999985, z: 1297.13}
   m_LocalScale: {x: 0.1, y: 20, z: 50}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -20713,7 +20713,7 @@ GameObject:
   - component: {fileID: 446625682}
   - component: {fileID: 446625681}
   - component: {fileID: 446625680}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Lamp Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21697,7 +21697,7 @@ GameObject:
   - component: {fileID: 460927934}
   - component: {fileID: 460927933}
   - component: {fileID: 460927932}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21820,7 +21820,7 @@ Transform:
   m_GameObject: {fileID: 468946094}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 16.099998, z: 0}
+  m_LocalPosition: {x: 204, y: 16.099998, z: 650.99005}
   m_LocalScale: {x: 50, y: 0.1, z: 50}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -22334,7 +22334,7 @@ Transform:
   m_GameObject: {fileID: 483578434}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 18.5, y: 14.14, z: -25}
+  m_LocalPosition: {x: 293.67, y: 14.14, z: 1272.13}
   m_LocalScale: {x: 12.5, y: 4, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -25402,7 +25402,7 @@ Transform:
   m_GameObject: {fileID: 539781645}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -22.97, y: 10.13, z: -25}
+  m_LocalPosition: {x: 252.20001, y: 10.13, z: 1272.13}
   m_LocalScale: {x: 4, y: 4, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -26074,7 +26074,7 @@ GameObject:
   - component: {fileID: 574151130}
   - component: {fileID: 574151129}
   - component: {fileID: 574151128}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Bed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26090,7 +26090,7 @@ Transform:
   m_GameObject: {fileID: 574151126}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 11.47, y: 1.39, z: -10.3}
+  m_LocalPosition: {x: 286.64, y: 1.39, z: 1286.8301}
   m_LocalScale: {x: 10, y: 2, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -26364,7 +26364,7 @@ GameObject:
   - component: {fileID: 579437835}
   - component: {fileID: 579437834}
   - component: {fileID: 579437833}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Closet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26380,7 +26380,7 @@ Transform:
   m_GameObject: {fileID: 579437831}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -23.42, y: 3.58, z: 9.4}
+  m_LocalPosition: {x: 251.75002, y: 3.58, z: 1306.53}
   m_LocalScale: {x: 3, y: 15, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -26995,7 +26995,7 @@ GameObject:
   - component: {fileID: 592433043}
   - component: {fileID: 592433042}
   - component: {fileID: 592433041}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Big couch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27011,7 +27011,7 @@ Transform:
   m_GameObject: {fileID: 592433039}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -1.7, y: 1.17, z: 14.85}
+  m_LocalPosition: {x: 273.47, y: 1.17, z: 1311.98}
   m_LocalScale: {x: 5, y: 2, z: 20}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -27707,7 +27707,7 @@ Transform:
   m_GameObject: {fileID: 607894653}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 24.68, y: 6.0999985, z: 0}
+  m_LocalPosition: {x: 142.45001, y: 6.0999985, z: 1092.3}
   m_LocalScale: {x: 0.1, y: 20, z: 50}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -28540,7 +28540,7 @@ Transform:
   m_GameObject: {fileID: 618507588}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 6.0999985, z: -25}
+  m_LocalPosition: {x: 117.770004, y: 6.0999985, z: 1067.3}
   m_LocalScale: {x: 50, y: 20, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -28750,7 +28750,7 @@ Transform:
   m_GameObject: {fileID: 621403595}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -25, y: 6.0999985, z: 0}
+  m_LocalPosition: {x: 92.770004, y: 6.0999985, z: 1092.3}
   m_LocalScale: {x: 0.1, y: 20, z: 50}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -29521,7 +29521,7 @@ Transform:
   m_GameObject: {fileID: 631483531}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: -1.1}
+  m_LocalPosition: {x: -1297, y: 0, z: 549}
   m_LocalScale: {x: 1, y: 1, z: 6}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -29778,7 +29778,7 @@ Transform:
   m_GameObject: {fileID: 640681693}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 24.57, y: 8.43, z: -16.88}
+  m_LocalPosition: {x: 299.74002, y: 8.43, z: 1280.25}
   m_LocalScale: {x: 5, y: 1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -30647,7 +30647,7 @@ Transform:
   m_GameObject: {fileID: 650799245}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -25, y: 6.0999985, z: 0}
+  m_LocalPosition: {x: 250.17001, y: 6.0999985, z: 1297.13}
   m_LocalScale: {x: 0.1, y: 20, z: 50}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -31423,6 +31423,20 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+      - choiceText: (Grab meds)
+        nextNodeIndex: 7
+        trustGain: 0
+        trustRequirement: -99
+        timeIncrease: 0
+        oneUse: 1
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
       - choiceText: (Leave)
         nextNodeIndex: 0
         trustGain: 0
@@ -31500,7 +31514,7 @@ MonoBehaviour:
       clueWords: []
     - dialogueText: '*sniff* How can you be so sure?'
       choices:
-      - choiceText: None of us knew this was going to happen.
+      - choiceText: Nobody knew this would happen.
         nextNodeIndex: 6
         trustGain: 0
         trustRequirement: -99
@@ -31520,7 +31534,7 @@ MonoBehaviour:
         am I supposed to do now?
       choices:
       - choiceText: None of us knew this was going to happen.
-        nextNodeIndex: 6
+        nextNodeIndex: -1
         trustGain: 2
         trustRequirement: -99
         timeIncrease: 0
@@ -31528,6 +31542,124 @@ MonoBehaviour:
         quest:
           questID: 
           questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      nextNodeIndex: -1
+      clueWords: []
+    - dialogueText: HEY. What are you doing?
+      choices:
+      - choiceText: Sorry, slipped
+        nextNodeIndex: 11
+        trustGain: 2
+        trustRequirement: -99
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      - choiceText: I was just tryna find something
+        nextNodeIndex: 8
+        trustGain: 2
+        trustRequirement: -99
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      nextNodeIndex: -1
+      clueWords: []
+    - dialogueText: Find what?
+      choices:
+      - choiceText: Meds
+        nextNodeIndex: 9
+        trustGain: 2
+        trustRequirement: -99
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      - choiceText: A bouncy ball
+        nextNodeIndex: 10
+        trustGain: 2
+        trustRequirement: -99
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      nextNodeIndex: -1
+      clueWords: []
+    - dialogueText: I need those. I'm taking them back and you are leaving.
+      choices:
+      - choiceText: Okay
+        nextNodeIndex: -1
+        trustGain: 2
+        trustRequirement: -99
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: borrow
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      nextNodeIndex: -1
+      clueWords: []
+    - dialogueText: Uh okay, well try not to lose it in the future.
+      choices:
+      - choiceText: Thanks
+        nextNodeIndex: -1
+        trustGain: 2
+        trustRequirement: -99
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: borrow
+          questProgressGain: 60
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      nextNodeIndex: -1
+      clueWords: []
+    - dialogueText: Okay, well shoo now, I'm not feeling so great.
+      choices:
+      - choiceText: Thanks
+        nextNodeIndex: -1
+        trustGain: 2
+        trustRequirement: -99
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: borrow
+          questProgressGain: 60
           questRequirement: 0
         specialOptions:
           sleepTime: 0
@@ -31689,7 +31821,7 @@ Transform:
   m_GameObject: {fileID: 657055363}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.62, y: 6.0999985, z: 25}
+  m_LocalPosition: {x: 289.79, y: 6.0999985, z: 1322.13}
   m_LocalScale: {x: 20, y: 20, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -31794,7 +31926,7 @@ Transform:
   m_GameObject: {fileID: 657819692}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 16.099998, z: 0}
+  m_LocalPosition: {x: 117.770004, y: 16.099998, z: 1092.3}
   m_LocalScale: {x: 50, y: 0.1, z: 50}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -32409,7 +32541,7 @@ Transform:
   m_GameObject: {fileID: 681492110}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 24.68, y: 6.0999985, z: 0}
+  m_LocalPosition: {x: 299.85, y: 6.0999985, z: 1297.13}
   m_LocalScale: {x: 0.1, y: 20, z: 50}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -32772,7 +32904,7 @@ Transform:
   m_GameObject: {fileID: 697011009}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: -1.1}
+  m_LocalPosition: {x: 117.770004, y: 0, z: 2183.5}
   m_LocalScale: {x: 1, y: 1, z: 6}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -33358,7 +33490,7 @@ Transform:
   m_GameObject: {fileID: 705338942}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 6.0999985, z: 25}
+  m_LocalPosition: {x: 275.17, y: 6.0999985, z: 1322.13}
   m_LocalScale: {x: 50, y: 20, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -34192,7 +34324,7 @@ GameObject:
   - component: {fileID: 712658786}
   - component: {fileID: 712658785}
   - component: {fileID: 712658784}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Lamp Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34683,7 +34815,7 @@ Transform:
   m_GameObject: {fileID: 723002386}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -3.9000015, z: 0}
+  m_LocalPosition: {x: 117.770004, y: -3.9000015, z: 1092.3}
   m_LocalScale: {x: 50, y: 0.1, z: 50}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -35103,7 +35235,7 @@ Transform:
   m_GameObject: {fileID: 739985947}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14.98, y: 6.0999985, z: -25}
+  m_LocalPosition: {x: 260.19, y: 6.0999985, z: 1272.13}
   m_LocalScale: {x: 20, y: 20, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -36246,7 +36378,7 @@ GameObject:
   - component: {fileID: 773990016}
   - component: {fileID: 773990015}
   - component: {fileID: 773990014}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Couch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36262,7 +36394,7 @@ Transform:
   m_GameObject: {fileID: 773990012}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 8.05, y: 1.17, z: 14.85}
+  m_LocalPosition: {x: 283.22, y: 1.17, z: 1311.98}
   m_LocalScale: {x: 5, y: 2, z: 15}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -36571,7 +36703,7 @@ GameObject:
   - component: {fileID: 777219196}
   - component: {fileID: 777219195}
   - component: {fileID: 777219194}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Computer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36693,7 +36825,7 @@ Transform:
   m_GameObject: {fileID: 778588295}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -6.93, y: 0.1, z: 4.58}
+  m_LocalPosition: {x: 110.840004, y: 0.1, z: 1096.8801}
   m_LocalScale: {x: 3, y: 0.3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -36803,7 +36935,7 @@ Transform:
   m_GameObject: {fileID: 778995365}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.06, y: 14.59, z: -25}
+  m_LocalPosition: {x: 275.11002, y: 14.59, z: 1272.13}
   m_LocalScale: {x: 10, y: 3, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -37453,7 +37585,7 @@ Transform:
   m_GameObject: {fileID: 791155290}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 6.0999985, z: -25}
+  m_LocalPosition: {x: 275.17, y: 6.0999985, z: 1272.13}
   m_LocalScale: {x: 50, y: 20, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -37558,7 +37690,7 @@ Transform:
   m_GameObject: {fileID: 791498065}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -25, y: 1.68, z: -17.69}
+  m_LocalPosition: {x: 179, y: 1.68, z: 633.30005}
   m_LocalScale: {x: 0.1, y: 11, z: 5.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -37663,7 +37795,7 @@ Transform:
   m_GameObject: {fileID: 791675656}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 16.099998, z: 0}
+  m_LocalPosition: {x: 275.17, y: 16.099998, z: 1297.13}
   m_LocalScale: {x: 50, y: 0.1, z: 50}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -37857,7 +37989,7 @@ GameObject:
   - component: {fileID: 796494419}
   - component: {fileID: 796494418}
   - component: {fileID: 796494417}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: TV
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37873,7 +38005,7 @@ Transform:
   m_GameObject: {fileID: 796494415}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: -0.1986837, w: 0.9800637}
-  m_LocalPosition: {x: -23.87, y: 12.4, z: -1.41}
+  m_LocalPosition: {x: 93.9, y: 12.4, z: 1090.89}
   m_LocalScale: {x: 0.4, y: 4, z: 6}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -37978,7 +38110,7 @@ Transform:
   m_GameObject: {fileID: 797342222}
   serializedVersion: 2
   m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: 10, y: 0.1, z: 14.43}
+  m_LocalPosition: {x: 127.770004, y: 0.1, z: 1106.73}
   m_LocalScale: {x: 3, y: 0.3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -38492,14 +38624,13 @@ MonoBehaviour:
       nextNodeIndex: -1
       clueWords: []
   - dialogueNodes:
-    - dialogueText: If this were back in the old days, I bet ya those monsters wouldn'tve
-        been able to take over so easy...
+    - dialogueText: Please.. I need to get out of here now
       choices: []
       nextNodeIndex: 1
       clueWords: []
-    - dialogueText: Your generation is far too soft! You and those other brats.
+    - dialogueText: This can't be happening. Not again. I'm not ready
       choices:
-      - choiceText: Okay
+      - choiceText: Are you okay?
         nextNodeIndex: 2
         trustGain: 0
         trustRequirement: 0
@@ -38513,7 +38644,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
-      - choiceText: You're just old
+      - choiceText: What's up with you?
         nextNodeIndex: 3
         trustGain: 1
         trustRequirement: 0
@@ -38527,16 +38658,16 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
-      - choiceText: What's your problem?
+      - choiceText: Got the meds
         nextNodeIndex: 4
         trustGain: 0
         trustRequirement: 0
         timeIncrease: 20
         oneUse: 1
         quest:
-          questID: 
+          questID: borrow
           questProgressGain: 0
-          questRequirement: 0
+          questRequirement: 60
         specialOptions:
           sleepTime: 0
           moveGameState: 0
@@ -38557,18 +38688,147 @@ MonoBehaviour:
           killChar: 0
       nextNodeIndex: -1
       clueWords: []
-    - dialogueText: Don't look at me like that. You know I'm right about all this.
+    - dialogueText: Do I look okay? These monsters.... Why do these things keep happening...
+        I- I- I can't do this again. I can't lose everything again.
+      choices:
+      - choiceText: Anything I can do to help?
+        nextNodeIndex: 6
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      - choiceText: Sorry to hear that
+        nextNodeIndex: 0
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      nextNodeIndex: -1
+      clueWords: []
+    - dialogueText: I haven't lived a peaceful insignificant stupid life like you
+        have, you could never understand what I have seen, what I have done, what
+        I have been forced to become
+      choices:
+      - choiceText: Life isn't exactly easy for me either right now
+        nextNodeIndex: 5
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      - choiceText: I guess so
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      nextNodeIndex: -1
+      clueWords: []
+    - dialogueText: Thanks, I'll take them all now. Maybe you're not so bad, kid.
+      choices:
+      - choiceText: Thanks
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: borrow
+          questProgressGain: 35
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      nextNodeIndex: -1
+      clueWords: []
+    - dialogueText: Yeah.. I guess it isn't, at least you don't have to kill people
+        though.
       choices: []
       nextNodeIndex: -1
       clueWords: []
-    - dialogueText: Yeah, well at least I ain't useless like you, boy.
-      choices: []
+    - dialogueText: Yeah there is. That brat Ben, I heard he has medication. If you
+        could just maybe "borrow" some for me, that'd be great.
+      choices:
+      - choiceText: Okay I'll "borrow" some
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: borrow
+          questProgressGain: 5
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      - choiceText: No
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
       nextNodeIndex: -1
       clueWords: []
-    - dialogueText: I got a lot of problems right now, your generation bein' weak
-        ain't one of them. I'm just bein' honest.
-      choices: []
-      nextNodeIndex: -1
+  - dialogueNodes:
+    - dialogueText: We need to get back into our rooms, right now. C'mon brat.
+      choices:
+      - choiceText: Okay
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 1
+          moveGameState: 0
+          killChar: 0
+      nextNodeIndex: 1
       clueWords: []
   gameState: {fileID: 54618526}
 --- !u!65 &799987388
@@ -40454,7 +40714,7 @@ GameObject:
   - component: {fileID: 841987499}
   - component: {fileID: 841987498}
   - component: {fileID: 841987497}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Curtain (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40470,7 +40730,7 @@ Transform:
   m_GameObject: {fileID: 841987495}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -24.62, y: 4.83, z: 17.66}
+  m_LocalPosition: {x: 250.55002, y: 4.83, z: 1314.79}
   m_LocalScale: {x: 0.1, y: 17, z: 12}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -42759,7 +43019,7 @@ Transform:
   m_GameObject: {fileID: 898163068}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -3.9000015, z: 0}
+  m_LocalPosition: {x: 275.17, y: -3.9000015, z: 1297.13}
   m_LocalScale: {x: 50, y: 0.1, z: 50}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -43222,7 +43482,7 @@ Transform:
   m_GameObject: {fileID: 925221597}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -25, y: 6.0999985, z: 12.3}
+  m_LocalPosition: {x: 179, y: 6.0999985, z: 663.29004}
   m_LocalScale: {x: 0.1, y: 20, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -44814,7 +45074,7 @@ GameObject:
   - component: {fileID: 947718313}
   - component: {fileID: 947718312}
   - component: {fileID: 947718311}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Couch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44830,7 +45090,7 @@ Transform:
   m_GameObject: {fileID: 947718309}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.03, y: 1.17, z: -16.13}
+  m_LocalPosition: {x: 275.14, y: 1.17, z: 1281}
   m_LocalScale: {x: 5, y: 4, z: 15}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -45241,7 +45501,7 @@ GameObject:
   - component: {fileID: 960236776}
   - component: {fileID: 960236775}
   - component: {fileID: 960236774}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: TV
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45816,6 +46076,15 @@ MonoBehaviour:
       itemReward: an empty gum wrapper
       trustReward: 5
       questItems: []
+    - questID: borrow
+      questName: '"Borrow" some meds from Ben'
+      description: Howard needs some meds. Take them from Ben.
+      questProgress: 0
+      isActive: 0
+      isCompleted: 0
+      itemReward: Howard's pill addiction gets worse
+      trustReward: 5
+      questItems: []
   popUp: {fileID: 1692012226}
   talk: {fileID: 801717587}
   tut: {fileID: 622070246}
@@ -46106,7 +46375,7 @@ Transform:
   m_GameObject: {fileID: 989984412}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 6.0999985, z: 25}
+  m_LocalPosition: {x: 204, y: 6.0999985, z: 675.99005}
   m_LocalScale: {x: 50, y: 20, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -46941,7 +47210,7 @@ Transform:
   m_GameObject: {fileID: 1003397695}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 24.68, y: 6.0999985, z: 0}
+  m_LocalPosition: {x: 299.85, y: 6.0999985, z: 1297.13}
   m_LocalScale: {x: 0.1, y: 20, z: 50}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -47436,7 +47705,7 @@ Transform:
   m_GameObject: {fileID: 1016109998}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 6.0999985, z: -25}
+  m_LocalPosition: {x: 204, y: 6.0999985, z: 625.99005}
   m_LocalScale: {x: 50, y: 20, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -49081,36 +49350,8 @@ MonoBehaviour:
           killChar: 0
       nextNodeIndex: -1
       clueWords: []
-    - dialogueText: Honesttly you're so real for that
-      choices:
-      - choiceText: I was just tryna help
-        nextNodeIndex: 3
-        trustGain: 0
-        trustRequirement: 0
-        timeIncrease: 0
-        oneUse: 0
-        quest:
-          questID: 
-          questProgressGain: 0
-          questRequirement: 0
-        specialOptions:
-          sleepTime: 0
-          moveGameState: 0
-          killChar: 0
-      - choiceText: You'll get nothing
-        nextNodeIndex: 4
-        trustGain: 0
-        trustRequirement: 0
-        timeIncrease: 0
-        oneUse: 0
-        quest:
-          questID: 
-          questProgressGain: 0
-          questRequirement: 0
-        specialOptions:
-          sleepTime: 0
-          moveGameState: 0
-          killChar: 0
+    - dialogueText: Honestly you're so real for that
+      choices: []
       nextNodeIndex: -1
       clueWords: []
   gameState: {fileID: 54618526}
@@ -49826,7 +50067,7 @@ Transform:
   m_GameObject: {fileID: 1065762836}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -25, y: 6.0999985, z: 0}
+  m_LocalPosition: {x: 179, y: 6.0999985, z: 650.99005}
   m_LocalScale: {x: 0.1, y: 20, z: 20}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -50379,7 +50620,7 @@ Transform:
   m_GameObject: {fileID: 1079879537}
   serializedVersion: 2
   m_LocalRotation: {x: 0.27059805, y: 0.6532815, z: 0.27059805, w: 0.6532815}
-  m_LocalPosition: {x: 24.56, y: 7.46, z: 10.25}
+  m_LocalPosition: {x: 299.73, y: 7.46, z: 1307.38}
   m_LocalScale: {x: 8, y: 3, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -51141,7 +51382,7 @@ GameObject:
   - component: {fileID: 1119409744}
   - component: {fileID: 1119409743}
   - component: {fileID: 1119409742}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Lamp Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51758,7 +51999,7 @@ Transform:
   m_GameObject: {fileID: 1130622842}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -23.8, y: 8.8, z: -17}
+  m_LocalPosition: {x: 251.37001, y: 8.8, z: 1280.13}
   m_LocalScale: {x: 2, y: 10, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -52484,7 +52725,7 @@ Transform:
   m_GameObject: {fileID: 1146675104}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.62, y: 6.0999985, z: -25}
+  m_LocalPosition: {x: 289.79, y: 6.0999985, z: 1272.13}
   m_LocalScale: {x: 20, y: 20, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -53013,7 +53254,7 @@ Transform:
   m_GameObject: {fileID: 1157498851}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0.7071068, z: 0, w: 0}
-  m_LocalPosition: {x: 17.669998, y: 0.1, z: 4.58}
+  m_LocalPosition: {x: 135.44, y: 0.1, z: 1096.8801}
   m_LocalScale: {x: 3, y: 0.3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -53686,7 +53927,7 @@ Transform:
   m_GameObject: {fileID: 1187788114}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 22.62, y: 10.13, z: -25}
+  m_LocalPosition: {x: 297.79, y: 10.13, z: 1272.13}
   m_LocalScale: {x: 4, y: 4, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -54212,7 +54453,7 @@ Transform:
   m_GameObject: {fileID: 1194574645}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14.72, y: 10.13, z: -25}
+  m_LocalPosition: {x: 260.45, y: 10.13, z: 1272.13}
   m_LocalScale: {x: 4, y: 4, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -55083,7 +55324,7 @@ Transform:
   m_GameObject: {fileID: 1215941440}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.2, y: 6.0999985, z: -25}
+  m_LocalPosition: {x: 274.97, y: 6.0999985, z: 1272.13}
   m_LocalScale: {x: 25, y: 20, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -55785,7 +56026,7 @@ Transform:
   m_GameObject: {fileID: 1228240900}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -25, y: 6.0999985, z: -12.53}
+  m_LocalPosition: {x: 179, y: 6.0999985, z: 638.46}
   m_LocalScale: {x: 0.1, y: 20, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -56208,7 +56449,7 @@ Transform:
   m_GameObject: {fileID: 1234982824}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.52, y: -3.46, z: 0.32}
+  m_LocalPosition: {x: 277.69, y: -3.46, z: 1297.4501}
   m_LocalScale: {x: 41, y: 0.1, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -56476,7 +56717,7 @@ GameObject:
   - component: {fileID: 1239214398}
   - component: {fileID: 1239214397}
   - component: {fileID: 1239214396}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Chair (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56492,7 +56733,7 @@ Transform:
   m_GameObject: {fileID: 1239214394}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.86602545, z: 0, w: 0.49999994}
-  m_LocalPosition: {x: -2.97, y: 1.17, z: -11.98}
+  m_LocalPosition: {x: 272.2, y: 1.17, z: 1285.15}
   m_LocalScale: {x: 5, y: 2, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -59221,7 +59462,7 @@ Transform:
   m_GameObject: {fileID: 1329892233}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.06, y: 2.09, z: 25}
+  m_LocalPosition: {x: 275.11002, y: 2.09, z: 1322.13}
   m_LocalScale: {x: 10, y: 12, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -59444,7 +59685,7 @@ GameObject:
   - component: {fileID: 1335900938}
   - component: {fileID: 1335900937}
   - component: {fileID: 1335900936}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Lamp (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59460,7 +59701,7 @@ Transform:
   m_GameObject: {fileID: 1335900934}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19.12, y: 1.11, z: 21.48}
+  m_LocalPosition: {x: 136.89, y: 1.11, z: 1113.78}
   m_LocalScale: {x: 0.5, y: 10, z: 0.93}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -60990,7 +61231,7 @@ GameObject:
   - component: {fileID: 1375049082}
   - component: {fileID: 1375049081}
   - component: {fileID: 1375049080}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Sofa (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61006,7 +61247,7 @@ Transform:
   m_GameObject: {fileID: 1375049078}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 13.66, y: -1.2, z: 14.85}
+  m_LocalPosition: {x: 288.83002, y: -1.2, z: 1311.98}
   m_LocalScale: {x: 5, y: 5, z: 15}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -61822,7 +62063,7 @@ Transform:
   m_GameObject: {fileID: 1393412514}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -18.900002, y: 14.14, z: -25}
+  m_LocalPosition: {x: 256.27002, y: 14.14, z: 1272.13}
   m_LocalScale: {x: 12.5, y: 4, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -62079,7 +62320,7 @@ Transform:
   m_GameObject: {fileID: 1398500805}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.500001, y: 14.17, z: 25}
+  m_LocalPosition: {x: 277.67, y: 14.17, z: 1322.13}
   m_LocalScale: {x: 15, y: 4, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -62289,7 +62530,7 @@ Transform:
   m_GameObject: {fileID: 1407169641}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -20.87, y: 1.2, z: 0}
+  m_LocalPosition: {x: 254.30002, y: 1.2, z: 1297.13}
   m_LocalScale: {x: 5, y: 10, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -63058,7 +63299,7 @@ Transform:
   m_GameObject: {fileID: 1421247772}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -25, y: 13.5, z: -17.69}
+  m_LocalPosition: {x: 179, y: 13.5, z: 633.30005}
   m_LocalScale: {x: 0.1, y: 5, z: 5.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -64230,7 +64471,7 @@ GameObject:
   - component: {fileID: 1449672433}
   - component: {fileID: 1449672432}
   - component: {fileID: 1449672431}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Bed (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64246,7 +64487,7 @@ Transform:
   m_GameObject: {fileID: 1449672429}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -2.84, y: 1.39, z: -10.3}
+  m_LocalPosition: {x: 272.33002, y: 1.39, z: 1286.8301}
   m_LocalScale: {x: 10, y: 2, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -64926,7 +65167,7 @@ Transform:
   m_GameObject: {fileID: 1468183688}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.06, y: 14.59, z: 25}
+  m_LocalPosition: {x: 275.11002, y: 14.59, z: 1322.13}
   m_LocalScale: {x: 10, y: 3, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -66130,7 +66371,7 @@ Transform:
   m_GameObject: {fileID: 1510406775}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -25, y: 6.0999985, z: 22.569977}
+  m_LocalPosition: {x: 179, y: 6.0999985, z: 673.56006}
   m_LocalScale: {x: 0.1, y: 20, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -66235,7 +66476,7 @@ Transform:
   m_GameObject: {fileID: 1510435406}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -1297, y: 0, z: 550}
   m_LocalScale: {x: 1, y: 1, z: 6}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -66548,7 +66789,7 @@ GameObject:
   - component: {fileID: 1521429427}
   - component: {fileID: 1521429426}
   - component: {fileID: 1521429425}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Chair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -66564,7 +66805,7 @@ Transform:
   m_GameObject: {fileID: 1521429423}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.83, y: -1.48, z: -1.51}
+  m_LocalPosition: {x: 195.17, y: -1.48, z: 649.48004}
   m_LocalScale: {x: 4, y: 1, z: 4}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -66658,7 +66899,7 @@ GameObject:
   - component: {fileID: 1524847714}
   - component: {fileID: 1524847713}
   - component: {fileID: 1524847712}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Keyboard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -67169,7 +67410,7 @@ Transform:
   m_GameObject: {fileID: 1531926380}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 6.0999985, z: 25}
+  m_LocalPosition: {x: 275.17, y: 6.0999985, z: 1322.13}
   m_LocalScale: {x: 50, y: 20, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -67829,7 +68070,7 @@ Transform:
   m_GameObject: {fileID: 1554297875}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -23.8, y: 8.8, z: -9.9}
+  m_LocalPosition: {x: 251.37001, y: 8.8, z: 1287.23}
   m_LocalScale: {x: 2, y: 10, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -68679,7 +68920,7 @@ Transform:
   m_GameObject: {fileID: 1570674398}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14.98, y: 6.0999985, z: 25}
+  m_LocalPosition: {x: 260.19, y: 6.0999985, z: 1322.13}
   m_LocalScale: {x: 20, y: 20, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -68859,7 +69100,7 @@ Transform:
   m_GameObject: {fileID: 1574536642}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -25, y: 6.0999985, z: 0}
+  m_LocalPosition: {x: 250.17001, y: 6.0999985, z: 1297.13}
   m_LocalScale: {x: 0.1, y: 20, z: 20}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -69158,7 +69399,7 @@ GameObject:
   - component: {fileID: 1582201653}
   - component: {fileID: 1582201652}
   - component: {fileID: 1582201651}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Sofa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -69174,7 +69415,7 @@ Transform:
   m_GameObject: {fileID: 1582201649}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -6.3, y: -1.2, z: 14.85}
+  m_LocalPosition: {x: 268.87003, y: -1.2, z: 1311.98}
   m_LocalScale: {x: 5, y: 5, z: 15}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -69279,7 +69520,7 @@ Transform:
   m_GameObject: {fileID: 1582343608}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -25, y: 6.0999985, z: 17.55}
+  m_LocalPosition: {x: 250.17001, y: 6.0999985, z: 1314.68}
   m_LocalScale: {x: 0.1, y: 20, z: 15}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -69384,7 +69625,7 @@ Transform:
   m_GameObject: {fileID: 1584144431}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: -1.1}
+  m_LocalPosition: {x: -1297, y: 0, z: 549}
   m_LocalScale: {x: 1, y: 1, z: 6}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -70058,7 +70299,7 @@ GameObject:
   - component: {fileID: 1609636386}
   - component: {fileID: 1609636385}
   - component: {fileID: 1609636384}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Lamp (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70074,7 +70315,7 @@ Transform:
   m_GameObject: {fileID: 1609636382}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19.12, y: 1.11, z: -21.48}
+  m_LocalPosition: {x: 136.89, y: 1.11, z: 1070.8201}
   m_LocalScale: {x: 0.5, y: 10, z: 0.93}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -70288,11 +70529,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 41328959}
+  m_Father: {fileID: 411370556}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 186.29999, y: 1060}
+  m_AnchoredPosition: {x: 186.29999, y: -20}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1613659069
@@ -70315,7 +70556,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: '0: 00'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4ed654a443fa40644ab4d923992e1f6d, type: 2}
   m_sharedMaterial: {fileID: -934957446168156121, guid: 4ed654a443fa40644ab4d923992e1f6d, type: 2}
@@ -70863,7 +71104,7 @@ Transform:
   m_GameObject: {fileID: 1628629029}
   serializedVersion: 2
   m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: 0.06, y: 0.1, z: 14.43}
+  m_LocalPosition: {x: 117.83, y: 0.1, z: 1106.73}
   m_LocalScale: {x: 3, y: 0.3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -71303,7 +71544,7 @@ Transform:
   m_GameObject: {fileID: 1643165833}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -3.9000015, z: 0}
+  m_LocalPosition: {x: 275.17, y: -3.9000015, z: 1297.13}
   m_LocalScale: {x: 50, y: 0.1, z: 50}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -71501,7 +71742,7 @@ GameObject:
   - component: {fileID: 1646019716}
   - component: {fileID: 1646019715}
   - component: {fileID: 1646019714}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Fireplace
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71517,7 +71758,7 @@ Transform:
   m_GameObject: {fileID: 1646019712}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -24.62, y: 0.88, z: 0}
+  m_LocalPosition: {x: 250.55002, y: 0.88, z: 1297.13}
   m_LocalScale: {x: 1, y: 5, z: 7}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -72456,7 +72697,7 @@ Transform:
   m_GameObject: {fileID: 1667448009}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 24.68, y: 6.0999985, z: 0}
+  m_LocalPosition: {x: 228.68, y: 6.0999985, z: 650.99005}
   m_LocalScale: {x: 0.1, y: 20, z: 50}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -73308,7 +73549,7 @@ Transform:
   m_GameObject: {fileID: 1692096573}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 7.46, z: -24.87}
+  m_LocalPosition: {x: 275.17, y: 7.46, z: 1272.26}
   m_LocalScale: {x: 8, y: 3, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -75251,7 +75492,7 @@ Transform:
   m_GameObject: {fileID: 1721509331}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 6.0999985, z: -25}
+  m_LocalPosition: {x: 275.17, y: 6.0999985, z: 1272.13}
   m_LocalScale: {x: 50, y: 20, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -75356,7 +75597,7 @@ Transform:
   m_GameObject: {fileID: 1723342917}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.29, y: 10.13, z: -25}
+  m_LocalPosition: {x: 289.46002, y: 10.13, z: 1272.13}
   m_LocalScale: {x: 4, y: 4, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -76300,7 +76541,7 @@ Transform:
   m_GameObject: {fileID: 1746984885}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -3.9000015, z: 0}
+  m_LocalPosition: {x: 275.17, y: -3.9000015, z: 1297.13}
   m_LocalScale: {x: 50, y: 0.1, z: 50}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -76706,7 +76947,7 @@ GameObject:
   - component: {fileID: 1755138196}
   - component: {fileID: 1755138195}
   - component: {fileID: 1755138194}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Lamp Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76999,7 +77240,7 @@ GameObject:
   - component: {fileID: 1761297502}
   - component: {fileID: 1761297501}
   - component: {fileID: 1761297500}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77015,7 +77256,7 @@ Transform:
   m_GameObject: {fileID: 1761297498}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -17.6, y: 0.14, z: -1.24}
+  m_LocalPosition: {x: 186.4, y: 0.14, z: 649.75006}
   m_LocalScale: {x: 10, y: 0.5, z: 20}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -77111,7 +77352,7 @@ GameObject:
   - component: {fileID: 1762527984}
   - component: {fileID: 1762527983}
   - component: {fileID: 1762527982}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Chair (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77127,7 +77368,7 @@ Transform:
   m_GameObject: {fileID: 1762527980}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -2.97, y: 1.17, z: -18.129993}
+  m_LocalPosition: {x: 272.2, y: 1.17, z: 1279}
   m_LocalScale: {x: 5, y: 2, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -77237,7 +77478,7 @@ Transform:
   m_GameObject: {fileID: 1763916844}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 24.68, y: 6.0999985, z: 0}
+  m_LocalPosition: {x: 299.85, y: 6.0999985, z: 1297.13}
   m_LocalScale: {x: 0.1, y: 20, z: 50}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -77783,7 +78024,7 @@ GameObject:
   - component: {fileID: 1787040622}
   - component: {fileID: 1787040621}
   - component: {fileID: 1787040620}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Fireplace
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77799,7 +78040,7 @@ Transform:
   m_GameObject: {fileID: 1787040618}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -24.5, y: -1.36, z: 0}
+  m_LocalPosition: {x: 250.67001, y: -1.36, z: 1297.13}
   m_LocalScale: {x: 1, y: 5, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -78631,7 +78872,7 @@ Transform:
   m_GameObject: {fileID: 1806127435}
   serializedVersion: 2
   m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: -0.5}
-  m_LocalPosition: {x: 10, y: 0.1, z: -11.61}
+  m_LocalPosition: {x: 127.770004, y: 0.1, z: 1080.6901}
   m_LocalScale: {x: 3, y: 0.3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -79505,7 +79746,7 @@ Transform:
   m_GameObject: {fileID: 1835900707}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 18.5, y: 2.25, z: -25}
+  m_LocalPosition: {x: 293.67, y: 2.25, z: 1272.13}
   m_LocalScale: {x: 12.5, y: 12, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -80853,7 +81094,7 @@ GameObject:
   - component: {fileID: 1859311641}
   - component: {fileID: 1859311640}
   - component: {fileID: 1859311639}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Wooden Table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -80869,7 +81110,7 @@ Transform:
   m_GameObject: {fileID: 1859311637}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.49, y: -2.04, z: -0.42}
+  m_LocalPosition: {x: 276.66, y: -2.04, z: 1296.71}
   m_LocalScale: {x: 10, y: 3, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -81126,7 +81367,7 @@ GameObject:
   - component: {fileID: 1863794586}
   - component: {fileID: 1863794585}
   - component: {fileID: 1863794584}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: TV
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -81142,7 +81383,7 @@ Transform:
   m_GameObject: {fileID: 1863794582}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -24.4, y: 7.97, z: 0}
+  m_LocalPosition: {x: 250.77002, y: 7.97, z: 1297.13}
   m_LocalScale: {x: 1, y: 5, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -81996,7 +82237,7 @@ GameObject:
   - component: {fileID: 1888041386}
   - component: {fileID: 1888041385}
   - component: {fileID: 1888041384}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Lamp (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82012,7 +82253,7 @@ Transform:
   m_GameObject: {fileID: 1888041382}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -20.66, y: 1.11, z: 21.48}
+  m_LocalPosition: {x: 97.11, y: 1.11, z: 1113.78}
   m_LocalScale: {x: 0.5, y: 10, z: 0.93}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -82263,7 +82504,7 @@ Transform:
   m_GameObject: {fileID: 1895250638}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.470001, y: 6.0999985, z: 25}
+  m_LocalPosition: {x: 104.3, y: 6.0999985, z: 1117.3}
   m_LocalScale: {x: 23, y: 20, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -82776,7 +83017,7 @@ GameObject:
   - component: {fileID: 1904018531}
   - component: {fileID: 1904018530}
   - component: {fileID: 1904018529}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Mouse
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82948,7 +83189,7 @@ Transform:
   m_GameObject: {fileID: 1906196833}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -3.9000015, z: 0}
+  m_LocalPosition: {x: 204, y: -3.9000015, z: 650.99005}
   m_LocalScale: {x: 50, y: 0.1, z: 50}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -84308,7 +84549,7 @@ Transform:
   m_GameObject: {fileID: 1943891180}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -6.93, y: 0.1, z: -2.81}
+  m_LocalPosition: {x: 110.840004, y: 0.1, z: 1089.49}
   m_LocalScale: {x: 3, y: 0.3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -85438,7 +85679,7 @@ Transform:
   m_GameObject: {fileID: 1976029427}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -3.9000015, z: 0}
+  m_LocalPosition: {x: 275.17, y: -3.9000015, z: 1297.13}
   m_LocalScale: {x: 50, y: 0.1, z: 50}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -86918,8 +87159,8 @@ MonoBehaviour:
     - dialogueText: It's the end of the world. We derserve everything. You will die,
         and there's nothing you can do to stop it.
       choices:
-      - choiceText: Alright
-        nextNodeIndex: -1
+      - choiceText: You're wrong
+        nextNodeIndex: 4
         trustGain: 0
         trustRequirement: 0
         timeIncrease: 0
@@ -86932,8 +87173,8 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
-      - choiceText: No
-        nextNodeIndex: 4
+      - choiceText: I get it
+        nextNodeIndex: 5
         trustGain: 0
         trustRequirement: 0
         timeIncrease: 20
@@ -86948,40 +87189,14 @@ MonoBehaviour:
           killChar: 0
       nextNodeIndex: -1
       clueWords: []
-    - dialogueText: Please?
-      choices:
-      - choiceText: Fine
-        nextNodeIndex: -1
-        trustGain: 0
-        trustRequirement: 0
-        timeIncrease: 0
-        oneUse: 0
-        quest:
-          questID: 
-          questProgressGain: 0
-          questRequirement: 0
-        specialOptions:
-          sleepTime: 0
-          moveGameState: 0
-          killChar: 0
+    - dialogueText: Am I? Then why do you say this is happening? Why would this happen
+        if not a punishment
+      choices: []
       nextNodeIndex: -1
       clueWords: []
-    - dialogueText: No. That box over there looks kinda suspicious though.
-      choices:
-      - choiceText: Thanks
-        nextNodeIndex: -1
-        trustGain: 0
-        trustRequirement: 0
-        timeIncrease: 0
-        oneUse: 0
-        quest:
-          questID: meds
-          questProgressGain: 25
-          questRequirement: 30
-        specialOptions:
-          sleepTime: 0
-          moveGameState: 0
-          killChar: 0
+    - dialogueText: Yeah I mean it's the only thing that makes sense right? It has
+        to be, it has to be, there's nothing else that could explain it
+      choices: []
       nextNodeIndex: -1
       clueWords: []
   gameState: {fileID: 54618526}
@@ -87244,7 +87459,7 @@ Transform:
   m_GameObject: {fileID: 1997973513}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -18.9, y: 2.25, z: -25}
+  m_LocalPosition: {x: 256.27002, y: 2.25, z: 1272.13}
   m_LocalScale: {x: 12.5, y: 12, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -87349,7 +87564,7 @@ Transform:
   m_GameObject: {fileID: 2008807085}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -25, y: 6.0999985, z: -17.55}
+  m_LocalPosition: {x: 250.17001, y: 6.0999985, z: 1279.5801}
   m_LocalScale: {x: 0.1, y: 20, z: 15}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -88135,7 +88350,7 @@ GameObject:
   - component: {fileID: 2036491216}
   - component: {fileID: 2036491215}
   - component: {fileID: 2036491214}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Big drawer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88151,7 +88366,7 @@ Transform:
   m_GameObject: {fileID: 2036491212}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 1.18, y: 2.15, z: 18.71}
+  m_LocalPosition: {x: 276.35, y: 2.15, z: 1315.8401}
   m_LocalScale: {x: 5, y: 5, z: 20}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -88350,7 +88565,7 @@ GameObject:
   - component: {fileID: 2038353748}
   - component: {fileID: 2038353747}
   - component: {fileID: 2038353746}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Closet (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88366,7 +88581,7 @@ Transform:
   m_GameObject: {fileID: 2038353744}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -23.42, y: 3.58, z: -10.3}
+  m_LocalPosition: {x: 251.75002, y: 3.58, z: 1286.8301}
   m_LocalScale: {x: 3, y: 15, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -88939,7 +89154,7 @@ Transform:
   m_GameObject: {fileID: 2050339239}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.11, y: 2.09, z: 25}
+  m_LocalPosition: {x: 117.66, y: 2.09, z: 1117.3}
   m_LocalScale: {x: 4, y: 12, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -90131,7 +90346,7 @@ Transform:
   m_GameObject: {fileID: 2066174671}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -23.8, y: 8.8, z: 18.269999}
+  m_LocalPosition: {x: 251.37001, y: 8.8, z: 1315.4}
   m_LocalScale: {x: 2, y: 10, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -90341,7 +90556,7 @@ Transform:
   m_GameObject: {fileID: 2068568404}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -23.8, y: 8.8, z: 11.17}
+  m_LocalPosition: {x: 251.37001, y: 8.8, z: 1308.3}
   m_LocalScale: {x: 2, y: 10, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -90732,7 +90947,7 @@ Transform:
   m_GameObject: {fileID: 2083789099}
   serializedVersion: 2
   m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: -0.5}
-  m_LocalPosition: {x: 0.06, y: 0.1, z: -11.61}
+  m_LocalPosition: {x: 117.83, y: 0.1, z: 1080.6901}
   m_LocalScale: {x: 3, y: 0.3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -90842,7 +91057,7 @@ Transform:
   m_GameObject: {fileID: 2085183807}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: -1.1}
+  m_LocalPosition: {x: -1297, y: 0, z: 549}
   m_LocalScale: {x: 1, y: 1, z: 6}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -92679,7 +92894,7 @@ GameObject:
   - component: {fileID: 2125665760}
   - component: {fileID: 2125665759}
   - component: {fileID: 2125665758}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Chair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92695,7 +92910,7 @@ Transform:
   m_GameObject: {fileID: 2125665756}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.38268343, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: 18.43, y: 1.67, z: -18.13}
+  m_LocalPosition: {x: 293.6, y: 1.67, z: 1279}
   m_LocalScale: {x: 5, y: 3, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -92805,7 +93020,7 @@ Transform:
   m_GameObject: {fileID: 2126909958}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.23, y: 6.0999985, z: 25}
+  m_LocalPosition: {x: 131, y: 6.0999985, z: 1117.3}
   m_LocalScale: {x: 23, y: 20, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
