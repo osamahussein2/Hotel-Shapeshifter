@@ -12,6 +12,7 @@ public class LoadNightScene : MonoBehaviour
     private void Start()
     {
         gameoverScreen = GameObject.Find("GAMEOVER");
+        gameoverScreen.SetActive(false);
         infoGatherer = GameObject.Find("Information Gatherer");
     }
 
