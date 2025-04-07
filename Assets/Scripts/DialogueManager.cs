@@ -182,7 +182,7 @@ public class DialogueManager : MonoBehaviour
     {
         isTyping = true;
         //Nikki, Allie, Pato, Howard
-        if (currentCharacter.characterName == "Gerard" || currentCharacter.characterName == "Ben" || currentCharacter.characterName == "Big Man" || currentCharacter.characterName == "Nikki" || currentCharacter.characterName == "Allie" || currentCharacter.characterName == "Pato" || currentCharacter.characterName == "Howard" || currentCharacter.characterName == "Eugene" || currentCharacter.characterName == "Bob")
+        if (currentCharacter.characterName == "Gerard" || currentCharacter.characterName == "Ben" || currentCharacter.characterName == "Big Man" || currentCharacter.characterName == "Allie" || currentCharacter.characterName == "Pato" || currentCharacter.characterName == "Howard" || currentCharacter.characterName == "Eugene" || currentCharacter.characterName == "Bob")
         {
             if (!talk.isPlaying && talk!=null)
             {
