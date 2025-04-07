@@ -11975,9 +11975,14 @@ MonoBehaviour:
   day1Chars:
   - {fileID: 1628820449}
   day2Chars:
-  - {fileID: 1628820449}
+  - {fileID: 1782291503}
+  - {fileID: 862751362}
+  - {fileID: 1218967794}
   day3Chars:
   - {fileID: 1628820449}
+  - {fileID: 99950588}
+  - {fileID: 1049737002}
+  - {fileID: 1978919452}
   day4Chars:
   - {fileID: 1628820449}
   normModels:
