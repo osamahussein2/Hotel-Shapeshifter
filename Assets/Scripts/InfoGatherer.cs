@@ -11,6 +11,8 @@ public class InfoGatherer : MonoBehaviour
     public bool backFromNight;
     public int dayNumber;
     public GameState gameManager;
+
+    public string killingChar;
     void Start()
     {
         
@@ -97,6 +99,16 @@ public class InfoGatherer : MonoBehaviour
         //update current day
         dayNumber = gameManager.currentDay;
         PlayerPrefs.SetInt("CURRENTDAY", dayNumber);
+
+        //check if a character would kill you
+        killingChar = "";
+        foreach (GameObject charObj in characters)
+        {
+            if (charObj.GetComponent<Character>().trustLevel < 0)
+            {
+                killingChar = charObj.GetComponent<Character>().characterName;
+            }
+        }
 
         updating = false;
     }
