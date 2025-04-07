@@ -2123,7 +2123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueProgress: 0
-  currentDay: 1
+  currentDay: 2
 --- !u!4 &54618527
 Transform:
   m_ObjectHideFlags: 0
@@ -3329,6 +3329,31 @@ MonoBehaviour:
   dialogueManager: {fileID: 965023553}
   character: {fileID: 70196340}
   dialogueSections:
+  - dialogueNodes:
+    - dialogueText: This does not look comfortable. Hope I don't have to wait much.
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: This does not look comfortable. Hope I don't have to wait much.
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: This does not look comfortable. Hope I don't have to wait much.
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: This does not look comfortable. Hope I don't have to wait much.
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: This does not look comfortable. Hope I don't have to wait much.
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
   - dialogueNodes:
     - dialogueText: This does not look comfortable. Hope I don't have to wait much.
       choices: []
@@ -6495,7 +6520,7 @@ MonoBehaviour:
           killChar: 0
       nextNodeIndex: 0
       clueWords: []
-    - dialogueText: Only if I get caught. Which I wouldn't.
+    - dialogueText: Only if I get caught. Which I won't.
       choices:
       - choiceText: Whatever you say.
         nextNodeIndex: -1
@@ -6513,7 +6538,7 @@ MonoBehaviour:
           killChar: 0
       nextNodeIndex: 0
       clueWords: []
-    - dialogueText: Well, you're not worth my time anyways.
+    - dialogueText: Well, you're not worth my time anyways. Loser.
       choices:
       - choiceText: Whatever you say.
         nextNodeIndex: -1
@@ -6562,49 +6587,16 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
-      - choiceText: Bye.
-        nextNodeIndex: -1
-        trustGain: 0
-        trustRequirement: -99
-        timeIncrease: 0
-        oneUse: 0
-        quest:
-          questID: 
-          questProgressGain: 0
-          questRequirement: 0
-        specialOptions:
-          sleepTime: 0
-          moveGameState: 0
-          killChar: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: I'm busy with some important stuff.
-      choices: []
-      nextNodeIndex: -1
-      clueWords: []
-  - dialogueNodes:
-    - dialogueText: (Allie seems deep in thought about something.)
       choices:
-      - choiceText: HEY ALLIE
-        nextNodeIndex: 1
-        trustGain: 0
-        trustRequirement: 0
-        timeIncrease: 30
-        oneUse: 1
-        quest:
-          questID: 
-          questProgressGain: 0
-          questRequirement: 0
-        specialOptions:
-          sleepTime: 0
-          moveGameState: 0
-          killChar: 0
-      - choiceText: You okay?
+      - choiceText: Can I be involved?
         nextNodeIndex: 2
         trustGain: 0
         trustRequirement: 0
-        timeIncrease: 30
-        oneUse: 1
+        timeIncrease: 0
+        oneUse: 0
         quest:
           questID: 
           questProgressGain: 0
@@ -6613,8 +6605,8 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
-      - choiceText: (Leave Her Alone)
-        nextNodeIndex: -1
+      - choiceText: What is it?
+        nextNodeIndex: 2
         trustGain: 0
         trustRequirement: 0
         timeIncrease: 0
@@ -6629,46 +6621,13 @@ MonoBehaviour:
           killChar: 0
       nextNodeIndex: -1
       clueWords: []
-    - dialogueText: SHUT UP
+    - dialogueText: It's VERY important stuff
       choices:
-      - choiceText: why?
-        nextNodeIndex: 2
-        trustGain: 0
-        trustRequirement: 0
-        timeIncrease: 20
-        oneUse: 0
-        quest:
-          questID: 
-          questProgressGain: 0
-          questRequirement: 0
-        specialOptions:
-          sleepTime: 0
-          moveGameState: 0
-          killChar: 0
-      - choiceText: nvm I don't care
-        nextNodeIndex: -1
-        trustGain: 0
-        trustRequirement: 0
-        timeIncrease: 0
-        oneUse: 0
-        quest:
-          questID: 
-          questProgressGain: 0
-          questRequirement: 0
-        specialOptions:
-          sleepTime: 0
-          moveGameState: 0
-          killChar: 0
-      nextNodeIndex: -1
-      clueWords: []
-    - dialogueText: There's a lot to think about at the end of the world. What will
-        I do with all the classified data I stole now?
-      choices:
-      - choiceText: Can you share some with me?
+      - choiceText: Okay but what is it?
         nextNodeIndex: 3
-        trustGain: 0
+        trustGain: -1
         trustRequirement: 0
-        timeIncrease: 20
+        timeIncrease: -1
         oneUse: 0
         quest:
           questID: 
@@ -6678,7 +6637,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
-      - choiceText: Well I'll leave you to it.
+      - choiceText: I'll leave you to it then
         nextNodeIndex: -1
         trustGain: 0
         trustRequirement: 0
@@ -6694,9 +6653,22 @@ MonoBehaviour:
           killChar: 0
       nextNodeIndex: -1
       clueWords: []
-    - dialogueText: No. It's classified for a reason. Why would I share it with someone
-        like you?
-      choices: []
+    - dialogueText: Shoo. Go away. Get out of here. Adios. Au revoir. Bye bye.
+      choices:
+      - choiceText: Ugh okay
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
       nextNodeIndex: -1
       clueWords: []
   - dialogueNodes:
@@ -6812,6 +6784,208 @@ MonoBehaviour:
       clueWords: []
     - dialogueText: Nah, you're just really really annoying.
       choices: []
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: (Allie seems deep in thought about something.)
+      choices:
+      - choiceText: HEY ALLIE
+        nextNodeIndex: 1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 30
+        oneUse: 1
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      - choiceText: You okay?
+        nextNodeIndex: 2
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 30
+        oneUse: 1
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      - choiceText: (Leave Her Alone)
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      - choiceText: There was nothing there?
+        nextNodeIndex: 6
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 1
+        quest:
+          questID: Allieoop
+          questProgressGain: 0
+          questRequirement: 50
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      nextNodeIndex: -1
+      clueWords: []
+    - dialogueText: SHUT UP
+      choices:
+      - choiceText: why?
+        nextNodeIndex: 2
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 20
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      - choiceText: nvm I don't care
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      nextNodeIndex: -1
+      clueWords: []
+    - dialogueText: There's a lot to think about at the end of the world. What will
+        I do with all the classified data I stole now?
+      choices:
+      - choiceText: Can you share some with me?
+        nextNodeIndex: 3
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 20
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      - choiceText: Whats the data on?
+        nextNodeIndex: 4
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      nextNodeIndex: -1
+      clueWords: []
+    - dialogueText: No. It's classified for a reason. Why would I share it with someone
+        like you?
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+    - dialogueText: Just some secret stuff I've been up to. Maybe I'll tell you more
+        if you help me with something.
+      choices:
+      - choiceText: Sure
+        nextNodeIndex: 4
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: Allieoop
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      - choiceText: No thanks
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      nextNodeIndex: -1
+      clueWords: []
+    - dialogueText: Okay, can you go check the clock in the lobby. I put something
+        behind it.
+      choices:
+      - choiceText: Sure
+        nextNodeIndex: 4
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: Allieoop
+          questProgressGain: 10
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      nextNodeIndex: -1
+      clueWords: []
+    - dialogueText: Oh you actually went to check? Yeah I just wanted you to leave
+        me alone. Anyways. Bye bye. Not telling you anything.
+      choices:
+      - choiceText: sigh
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: Allieoop
+          questProgressGain: 50
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
       nextNodeIndex: -1
       clueWords: []
   - dialogueNodes:
@@ -17593,6 +17767,31 @@ MonoBehaviour:
       choices: []
       nextNodeIndex: -1
       clueWords: []
+  - dialogueNodes:
+    - dialogueText: This sure is something!
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: This sure is something!
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: This sure is something!
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: This sure is something!
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: This sure is something!
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
   gameState: {fileID: 54618526}
 --- !u!65 &376614053
 BoxCollider:
@@ -18162,6 +18361,31 @@ MonoBehaviour:
   dialogueManager: {fileID: 965023553}
   character: {fileID: 392502035}
   dialogueSections:
+  - dialogueNodes:
+    - dialogueText: They're covered in dust.
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: They're covered in dust.
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: They're covered in dust.
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: They're covered in dust.
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: They're covered in dust.
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
   - dialogueNodes:
     - dialogueText: They're covered in dust.
       choices: []
@@ -19716,6 +19940,31 @@ MonoBehaviour:
       choices: []
       nextNodeIndex: -1
       clueWords: []
+  - dialogueNodes:
+    - dialogueText: Don't really feel like sitting right now
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: Don't really feel like sitting right now
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: Don't really feel like sitting right now
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: Don't really feel like sitting right now
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: Don't really feel like sitting right now
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
   gameState: {fileID: 54618526}
 --- !u!65 &424367623
 BoxCollider:
@@ -20070,6 +20319,31 @@ MonoBehaviour:
   dialogueManager: {fileID: 965023553}
   character: {fileID: 443346431}
   dialogueSections:
+  - dialogueNodes:
+    - dialogueText: This does not look comfortable. Hope I don't have to wait much.
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: This does not look comfortable. Hope I don't have to wait much.
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: This does not look comfortable. Hope I don't have to wait much.
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: This does not look comfortable. Hope I don't have to wait much.
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: This does not look comfortable. Hope I don't have to wait much.
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
   - dialogueNodes:
     - dialogueText: This does not look comfortable. Hope I don't have to wait much.
       choices: []
@@ -23338,6 +23612,21 @@ MonoBehaviour:
       choices: []
       nextNodeIndex: -1
       clueWords: []
+  - dialogueNodes:
+    - dialogueText: That table does not look sturdy.
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: That table does not look sturdy.
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: That table does not look sturdy.
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
   gameState: {fileID: 54618526}
 --- !u!65 &519886006
 BoxCollider:
@@ -25396,6 +25685,31 @@ MonoBehaviour:
       choices: []
       nextNodeIndex: -1
       clueWords: []
+  - dialogueNodes:
+    - dialogueText: Don't really feel like sitting right now
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: Don't really feel like sitting right now
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: Don't really feel like sitting right now
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: Don't really feel like sitting right now
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: Don't really feel like sitting right now
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
   gameState: {fileID: 54618526}
 --- !u!65 &559963873
 BoxCollider:
@@ -26883,6 +27197,31 @@ MonoBehaviour:
       choices: []
       nextNodeIndex: -1
       clueWords: []
+  - dialogueNodes:
+    - dialogueText: Don't really feel like sitting right now
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: Don't really feel like sitting right now
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: Don't really feel like sitting right now
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: Don't really feel like sitting right now
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: Don't really feel like sitting right now
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
   gameState: {fileID: 54618526}
 --- !u!65 &602502904
 BoxCollider:
@@ -27608,6 +27947,64 @@ MonoBehaviour:
       clueWords:
       - billy
     - dialogueText: Use the information.
+      choices: []
+      nextNodeIndex: -1
+      clueWords:
+      - billy
+  - dialogueNodes:
+    - dialogueText: You're never safe
+      choices:
+      - choiceText: I am
+        nextNodeIndex: 1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 1
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      - choiceText: Why not?
+        nextNodeIndex: 2
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 1
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      - choiceText: Bye
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      nextNodeIndex: -1
+      clueWords:
+      - billy
+    - dialogueText: Liar.
+      choices: []
+      nextNodeIndex: -1
+      clueWords:
+      - billy
+    - dialogueText: They're going to get you.
       choices: []
       nextNodeIndex: -1
       clueWords:
@@ -38621,6 +39018,21 @@ MonoBehaviour:
       choices: []
       nextNodeIndex: -1
       clueWords: []
+  - dialogueNodes:
+    - dialogueText: The door out of my room. I'll leave when it's day
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: The door out of my room. I'll leave when it's day
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: The door out of my room. I'll leave when it's day
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
   gameState: {fileID: 54618526}
 --- !u!65 &814175578
 BoxCollider:
@@ -45140,6 +45552,15 @@ MonoBehaviour:
       itemReward: gun
       trustReward: 5
       questItems: []
+    - questID: Allieoop
+      questName: Obtain Info
+      description: Gain information from Allie by grabbing what's behind the clock
+      questProgress: 0
+      isActive: 0
+      isCompleted: 0
+      itemReward: an empty gum wrapper
+      trustReward: 5
+      questItems: []
   popUp: {fileID: 1692012226}
   talk: {fileID: 801717587}
   tut: {fileID: 622070246}
@@ -45230,6 +45651,64 @@ MonoBehaviour:
   dialogueManager: {fileID: 965023553}
   character: {fileID: 970767871}
   dialogueSections:
+  - dialogueNodes:
+    - dialogueText: This'll be nice if I'm ever feeling thirsty
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: This'll be nice if I'm ever feeling thirsty
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: This'll be nice if I'm ever feeling thirsty
+      choices:
+      - choiceText: Is there something here?
+        nextNodeIndex: 1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: Allieoop
+          questProgressGain: 0
+          questRequirement: 20
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      nextNodeIndex: -1
+      clueWords: []
+    - dialogueText: No. There is nothing here. Maybe Allie will be able to make sense
+        of this?
+      choices:
+      - choiceText: Sounds good
+        nextNodeIndex: 1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: Allieoop
+          questProgressGain: 30
+          questRequirement: 20
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: This'll be nice if I'm ever feeling thirsty
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: This'll be nice if I'm ever feeling thirsty
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
   - dialogueNodes:
     - dialogueText: This'll be nice if I'm ever feeling thirsty
       choices: []
@@ -45736,6 +46215,31 @@ MonoBehaviour:
       choices: []
       nextNodeIndex: -1
       clueWords: []
+  - dialogueNodes:
+    - dialogueText: This does not look comfortable. Hope I don't have to wait much.
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: This does not look comfortable. Hope I don't have to wait much.
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: This does not look comfortable. Hope I don't have to wait much.
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: This does not look comfortable. Hope I don't have to wait much.
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: This does not look comfortable. Hope I don't have to wait much.
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
   gameState: {fileID: 54618526}
 --- !u!65 &997263049
 BoxCollider:
@@ -46013,6 +46517,69 @@ MonoBehaviour:
   dialogueManager: {fileID: 965023553}
   character: {fileID: 1001203079}
   dialogueSections:
+  - dialogueNodes:
+    - dialogueText: It's a clock. Very useful if my phone and watch both manage to
+        die.
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: It's a clock. Very useful if my phone and watch both manage to
+        die.
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: It's a clock. Very useful if my phone and watch both manage to
+        die.
+      choices:
+      - choiceText: Check for something.
+        nextNodeIndex: 1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 1
+        quest:
+          questID: Allieoop
+          questProgressGain: 0
+          questRequirement: 10
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      nextNodeIndex: -1
+      clueWords: []
+    - dialogueText: There seems to be a note behind the clock. It has a picture of
+        a water tank on it?
+      choices:
+      - choiceText: Okay
+        nextNodeIndex: 1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: Allieoop
+          questProgressGain: 10
+          questRequirement: 10
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: It's a clock. Very useful if my phone and watch both manage to
+        die.
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: It's a clock. Very useful if my phone and watch both manage to
+        die.
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
   - dialogueNodes:
     - dialogueText: It's a clock. Very useful if my phone and watch both manage to
         die.
@@ -64216,6 +64783,24 @@ MonoBehaviour:
   dialogueManager: {fileID: 965023553}
   character: {fileID: 1470357565}
   dialogueSections:
+  - dialogueNodes:
+    - dialogueText: A crappy old stove, put together using pieces from the dollar
+        store.
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: A crappy old stove, put together using pieces from the dollar
+        store.
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: A crappy old stove, put together using pieces from the dollar
+        store.
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
   - dialogueNodes:
     - dialogueText: A crappy old stove, put together using pieces from the dollar
         store.
@@ -87282,6 +87867,26 @@ MonoBehaviour:
   dialogueSections:
   - dialogueNodes:
     - dialogueText: The door out. But why would I leave? I just got here.
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: Still can't leave. Too much to do.
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: Still can't leave. Too much to do.
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: Still can't leave. Too much to do.
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: Still can't leave. Too much to do.
       choices: []
       nextNodeIndex: -1
       clueWords: []
