@@ -6921,7 +6921,7 @@ MonoBehaviour:
         if you help me with something.
       choices:
       - choiceText: Sure
-        nextNodeIndex: 4
+        nextNodeIndex: 5
         trustGain: 0
         trustRequirement: 0
         timeIncrease: 0
@@ -6954,7 +6954,7 @@ MonoBehaviour:
         behind it.
       choices:
       - choiceText: Sure
-        nextNodeIndex: 4
+        nextNodeIndex: -1
         trustGain: 0
         trustRequirement: 0
         timeIncrease: 0
@@ -38413,6 +38413,85 @@ MonoBehaviour:
       choices: []
       nextNodeIndex: -1
       clueWords: []
+  - dialogueNodes:
+    - dialogueText: If this were back in the old days, I bet ya those monsters wouldn'tve
+        been able to take over so easy...
+      choices: []
+      nextNodeIndex: 1
+      clueWords: []
+    - dialogueText: Your generation is far too soft! You and those other brats.
+      choices:
+      - choiceText: Okay
+        nextNodeIndex: 2
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 20
+        oneUse: 1
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      - choiceText: You're just old
+        nextNodeIndex: 3
+        trustGain: 1
+        trustRequirement: 0
+        timeIncrease: 20
+        oneUse: 1
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      - choiceText: What's your problem?
+        nextNodeIndex: 4
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 20
+        oneUse: 1
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      - choiceText: Bye
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      nextNodeIndex: -1
+      clueWords: []
+    - dialogueText: Don't look at me like that. You know I'm right about all this.
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+    - dialogueText: Yeah, well at least I ain't useless like you, boy.
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+    - dialogueText: I got a lot of problems right now, your generation bein' weak
+        ain't one of them. I'm just bein' honest.
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
   gameState: {fileID: 54618526}
 --- !u!65 &799987388
 BoxCollider:
@@ -45761,6 +45840,11 @@ MonoBehaviour:
       clueWords: []
   - dialogueNodes:
     - dialogueText: This'll be nice if I'm ever feeling thirsty
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: This'll be nice if I'm ever feeling thirsty
       choices:
       - choiceText: Is there something here?
         nextNodeIndex: 1
@@ -45782,7 +45866,7 @@ MonoBehaviour:
         of this?
       choices:
       - choiceText: Sounds good
-        nextNodeIndex: 1
+        nextNodeIndex: -1
         trustGain: 0
         trustRequirement: 0
         timeIncrease: 0
@@ -45795,11 +45879,6 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
-      nextNodeIndex: -1
-      clueWords: []
-  - dialogueNodes:
-    - dialogueText: This'll be nice if I'm ever feeling thirsty
-      choices: []
       nextNodeIndex: -1
       clueWords: []
   - dialogueNodes:
@@ -46630,6 +46709,12 @@ MonoBehaviour:
   - dialogueNodes:
     - dialogueText: It's a clock. Very useful if my phone and watch both manage to
         die.
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: It's a clock. Very useful if my phone and watch both manage to
+        die.
       choices:
       - choiceText: Check for something.
         nextNodeIndex: 1
@@ -46640,7 +46725,7 @@ MonoBehaviour:
         quest:
           questID: Allieoop
           questProgressGain: 0
-          questRequirement: 10
+          questRequirement: 0
         specialOptions:
           sleepTime: 0
           moveGameState: 0
@@ -46651,7 +46736,7 @@ MonoBehaviour:
         a water tank on it?
       choices:
       - choiceText: Okay
-        nextNodeIndex: 1
+        nextNodeIndex: -1
         trustGain: 0
         trustRequirement: 0
         timeIncrease: 0
@@ -46664,12 +46749,6 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
-      nextNodeIndex: -1
-      clueWords: []
-  - dialogueNodes:
-    - dialogueText: It's a clock. Very useful if my phone and watch both manage to
-        die.
-      choices: []
       nextNodeIndex: -1
       clueWords: []
   - dialogueNodes:
@@ -48767,6 +48846,188 @@ MonoBehaviour:
         quest:
           questID: d4g
           questProgressGain: 30
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: I have not been able to buy any new makeup in a few days. This
+        is awful.
+      choices:
+      - choiceText: I don't even know where you would get that
+        nextNodeIndex: 1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 20
+        oneUse: 1
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      - choiceText: There might be some in the lobby
+        nextNodeIndex: 2
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 20
+        oneUse: 1
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      - choiceText: Good luck with that
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      nextNodeIndex: -1
+      clueWords: []
+    - dialogueText: Ugh. You are no help. Maybe I'll ask Allie. She's hogging all
+        the fucking makeup
+      choices:
+      - choiceText: Honestly slay
+        nextNodeIndex: 5
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      - choiceText: That's rude
+        nextNodeIndex: 4
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      nextNodeIndex: -1
+      clueWords: []
+    - dialogueText: I have already checked the lobby and I found NOTHING. Don't lie
+        to me you dumbass rat
+      choices:
+      - choiceText: I was just tryna help
+        nextNodeIndex: 3
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      - choiceText: You'll get nothing
+        nextNodeIndex: 4
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      nextNodeIndex: -1
+      clueWords: []
+    - dialogueText: Well maybe you should help better
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+    - dialogueText: fuck you
+      choices:
+      - choiceText: I was just tryna help
+        nextNodeIndex: 3
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      - choiceText: You'll get nothing
+        nextNodeIndex: 4
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      nextNodeIndex: -1
+      clueWords: []
+    - dialogueText: Thank you. I appreciate the positivity.
+      choices:
+      - choiceText: I was just tryna help
+        nextNodeIndex: 3
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      - choiceText: You'll get nothing
+        nextNodeIndex: 4
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
           questRequirement: 0
         specialOptions:
           sleepTime: 0
