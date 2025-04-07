@@ -237,7 +237,7 @@ public class NightEventDoor : MonoBehaviour
         if (!nightMan.isShapeshifter)
         {
             int oldTrust = PlayerPrefs.GetInt(nightMan.currentChar.characterName + "TRUST");
-            PlayerPrefs.SetInt(nightMan.currentChar.characterName + "TRUST", oldTrust - 10);
+            PlayerPrefs.SetInt(nightMan.currentChar.characterName + "TRUST", oldTrust - 5);
 
             if(Random.Range(1,100) >= 50)
             {
@@ -260,7 +260,7 @@ public class NightEventDoor : MonoBehaviour
         if (!nightMan.isShapeshifter)
         {
             int oldTrust = PlayerPrefs.GetInt(nightMan.currentChar.characterName + "TRUST");
-            PlayerPrefs.SetInt(nightMan.currentChar.characterName + "TRUST", oldTrust + 20);
+            PlayerPrefs.SetInt(nightMan.currentChar.characterName + "TRUST", oldTrust + 5);
         }
     }
 
