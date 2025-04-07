@@ -49081,7 +49081,7 @@ MonoBehaviour:
           killChar: 0
       nextNodeIndex: -1
       clueWords: []
-    - dialogueText: Thank you. I appreciate the positivity.
+    - dialogueText: Honesttly you're so real for that
       choices:
       - choiceText: I was just tryna help
         nextNodeIndex: 3
@@ -58045,7 +58045,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1296586931
 RectTransform:
   m_ObjectHideFlags: 0
@@ -86790,6 +86790,133 @@ MonoBehaviour:
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Nothing.. Just leave me alone
+      choices:
+      - choiceText: Alright
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      - choiceText: No
+        nextNodeIndex: 4
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 20
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      nextNodeIndex: -1
+      clueWords: []
+    - dialogueText: Please?
+      choices:
+      - choiceText: Fine
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      nextNodeIndex: -1
+      clueWords: []
+    - dialogueText: No. That box over there looks kinda suspicious though.
+      choices:
+      - choiceText: Thanks
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: meds
+          questProgressGain: 25
+          questRequirement: 30
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: It's coming. It's our punishment. We deserve this. We are the
+        cause.
+      choices:
+      - choiceText: Huh??
+        nextNodeIndex: 1
+        trustGain: -2
+        trustRequirement: -99
+        timeIncrease: 20
+        oneUse: 1
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      - choiceText: What do you mean?
+        nextNodeIndex: 3
+        trustGain: 0
+        trustRequirement: -99
+        timeIncrease: 20
+        oneUse: 1
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      - choiceText: (Leave)
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: -99
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+      nextNodeIndex: 0
+      clueWords: []
+    - dialogueText: Think about it. Humanity is evil. This is our punishment
+      choices: []
+      nextNodeIndex: 2
+      clueWords: []
+    - dialogueText: We are all going to die. We deserve it too. Everything that has
+        happened has been their doing, we will unrael and die just as we have done
+        to those around us, the powers will end us, we will die.
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+    - dialogueText: It's the end of the world. We derserve everything. You will die,
+        and there's nothing you can do to stop it.
       choices:
       - choiceText: Alright
         nextNodeIndex: -1
