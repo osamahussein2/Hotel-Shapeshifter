@@ -17,6 +17,7 @@ public class DoorInteraction : MonoBehaviour
     public float closeSpeed = 2f;
     public float closeDelay = 1f;
     public bool canOpen = true;
+    public GameState gameState;
 
     public AudioSource walking;
     public AudioSource doorSound;
@@ -41,7 +42,7 @@ public class DoorInteraction : MonoBehaviour
 
     void Update()
     {
-        if (TimeManager.hours >= 12)
+        if (TimeManager.hours >= 12 || gameState.currentDay == 4)
         {
             canOpen = false;
         } else {

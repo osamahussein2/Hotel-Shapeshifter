@@ -18,6 +18,7 @@ public class DialogueManager : MonoBehaviour
     public GameObject choiceContainer; // Container for choice buttons
     public GameObject choiceButtonPrefab; // Prefab for choice buttons
     public GameState gameState;
+    public GameObject endingIMG;
     private bool canSkipText = false; // Prevents skipping immediately
 
     public DialogueNode[] dialogueNodes; // All the dialogue nodes
@@ -326,6 +327,10 @@ public class DialogueManager : MonoBehaviour
         };
         TelemetryLogger.Log(this, "Option Selected", data);
 
+        if (choice.specialOptions.ending)
+        {
+            endingIMG.SetActive(true);
+        }
         if (choice.specialOptions.sleepTime)
         {
             Debug.Log("time");

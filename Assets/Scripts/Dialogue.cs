@@ -33,6 +33,7 @@ public class Choice
         public bool sleepTime;
         public bool moveGameState;
         public bool killChar;
+        public bool ending;
     }
 
     [System.Serializable]

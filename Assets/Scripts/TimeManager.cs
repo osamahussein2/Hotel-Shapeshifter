@@ -17,6 +17,7 @@ public class TimeManager : MonoBehaviour
     public Material[] skyboxes;
     private int currentSkyboxIndex = 0;
     public int changesPerDay = 1;
+    public GameObject playerdoor;
 
     // So the hours and minutes can be set outside of this script using TimeManager class
     public static int hours, minutes;
@@ -39,6 +40,14 @@ public class TimeManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(hours >= 12 || gameState.currentDay == 4)
+        {
+            playerdoor.SetActive(true);
+        }
+        else if (hours < 12 && gameState.currentDay != 4)
+        {
+            playerdoor.SetActive(false);
+        }
         ChangeSkybox();
 
         // If the time is less than hours, print the extra 0 inside of the hours variable in text
@@ -101,6 +110,14 @@ public class TimeManager : MonoBehaviour
         }
 
         TransitionToNightEvent();
+
+        if (gameState.currentDay == 4)
+        {
+            if (player.transform.position != outRoomPosition)
+            {
+                player.transform.position = outRoomPosition;
+            }
+        }
     }
 
     private void ChangeSkybox()

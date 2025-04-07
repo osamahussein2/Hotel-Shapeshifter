@@ -122,88 +122,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &154803
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 154804}
-  - component: {fileID: 154806}
-  - component: {fileID: 154805}
-  m_Layer: 0
-  m_Name: EugeneDoorTransfer
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &154804
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 154803}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 24.45, y: 1.099998, z: 0.02}
-  m_LocalScale: {x: 1, y: 9, z: 0.5}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1589826862}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!65 &154805
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 154803}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 6.1166368, y: 1, z: 1}
-  m_Center: {x: 0.077442646, y: 0, z: -4.2469597e-16}
---- !u!114 &154806
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 154803}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b659203afc00a964292772da4c59e72a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hinge: {fileID: 154804}
-  door: {fileID: 0}
-  cameraController: {fileID: 963194229}
-  openAngle: 90
-  openSpeed: 2
-  stopPosition: {x: 0, y: 0, z: 21}
-  newAreaPosition: {x: -59.08, y: 0, z: -15}
-  walkSpeed: 1
-  walkDuration: 4
-  bobbingHeight: 0.1
-  walkStartDelay: 0.5
-  closeSpeed: 2
-  closeDelay: 1
-  canOpen: 1
-  walking: {fileID: 0}
-  doorSound: {fileID: 0}
 --- !u!1 &1252103
 GameObject:
   m_ObjectHideFlags: 0
@@ -620,8 +538,8 @@ MonoBehaviour:
     m_Right: 0
     m_Top: 0
     m_Bottom: 0
-  m_ChildAlignment: 0
-  m_Spacing: 1.5
+  m_ChildAlignment: 4
+  m_Spacing: -300
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 0
@@ -643,10 +561,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 211614903}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -488, y: 0}
-  m_SizeDelta: {x: 100, y: 352.72}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 37, y: 369}
+  m_SizeDelta: {x: -1266, y: 297.15002}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &17510647
 GameObject:
@@ -1770,7 +1688,7 @@ Transform:
   m_GameObject: {fileID: 46107652}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -5.8784995, y: -0.4466667, z: 0.2080017}
+  m_LocalPosition: {x: -5.8784995, y: -0.54, z: 0.2080017}
   m_LocalScale: {x: 0.31300008, y: 1.8766668, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2121,8 +2039,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd02feddd4469f244b03a19d27202a87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueProgress: 0
-  currentDay: 2
+  dialogueProgress: 6
+  currentDay: 4
 --- !u!4 &54618527
 Transform:
   m_ObjectHideFlags: 0
@@ -3952,195 +3870,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 75828137}
   m_CullTransparentMesh: 1
---- !u!1 &82386971
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 82386972}
-  - component: {fileID: 82386975}
-  - component: {fileID: 82386974}
-  - component: {fileID: 82386973}
-  m_Layer: 0
-  m_Name: Door
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &82386972
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 82386971}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -651, y: 0, z: 407}
-  m_LocalScale: {x: 1, y: 1, z: 6}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2045023669}
-  m_Father: {fileID: 287236649}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!65 &82386973
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 82386971}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &82386974
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 82386971}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 64f5886ea61b2cd43bb5ae740ff729ec, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &82386975
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 82386971}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &83626592
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 83626593}
-  - component: {fileID: 83626595}
-  - component: {fileID: 83626594}
-  m_Layer: 0
-  m_Name: PatoDoorTransfer
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &83626593
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 83626592}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 24.45, y: 1.099998, z: 0.02}
-  m_LocalScale: {x: 1, y: 9, z: 0.5}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 631483532}
-  m_Father: {fileID: 256395334}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!65 &83626594
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 83626592}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 6.1166368, y: 1, z: 1}
-  m_Center: {x: 0.077442646, y: 0, z: -4.2469597e-16}
---- !u!114 &83626595
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 83626592}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b659203afc00a964292772da4c59e72a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hinge: {fileID: 83626593}
-  door: {fileID: 631483532}
-  cameraController: {fileID: 963194229}
-  openAngle: 90
-  openSpeed: 2
-  stopPosition: {x: 0, y: 0, z: 21}
-  newAreaPosition: {x: -59.08, y: 0, z: -15}
-  walkSpeed: 1
-  walkDuration: 4
-  bobbingHeight: 0.1
-  walkStartDelay: 0.5
-  closeSpeed: 2
-  closeDelay: 1
-  canOpen: 1
-  walking: {fileID: 0}
-  doorSound: {fileID: 0}
 --- !u!1 &83912697
 GameObject:
   m_ObjectHideFlags: 0
@@ -6515,6 +6244,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: Go away Allie.
         nextNodeIndex: 4
         trustGain: -1
@@ -6529,6 +6259,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: Bye.
         nextNodeIndex: -1
         trustGain: 0
@@ -6543,6 +6274,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: Going good, just hacked NASA.
@@ -6561,6 +6293,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: Isn't that illegal?
         nextNodeIndex: 3
         trustGain: 1
@@ -6575,6 +6308,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: It's all for the love of the game.
@@ -6593,6 +6327,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: Only if I get caught. Which I won't.
@@ -6611,6 +6346,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: Well, you're not worth my time anyways. Loser.
@@ -6629,6 +6365,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: 0
       clueWords: []
   - dialogueNodes:
@@ -6648,6 +6385,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: Okay
         nextNodeIndex: -1
         trustGain: 0
@@ -6662,6 +6400,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: I'm busy with some important stuff.
@@ -6680,6 +6419,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: What is it?
         nextNodeIndex: 2
         trustGain: 0
@@ -6694,6 +6434,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: It's VERY important stuff
@@ -6712,6 +6453,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: I'll leave you to it then
         nextNodeIndex: -1
         trustGain: 0
@@ -6726,6 +6468,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Shoo. Go away. Get out of here. Adios. Au revoir. Bye bye.
@@ -6744,6 +6487,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
   - dialogueNodes:
@@ -6763,6 +6507,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: done with what?
         nextNodeIndex: 2
         trustGain: 0
@@ -6777,6 +6522,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: (Leave Her Alone)
         nextNodeIndex: -1
         trustGain: 0
@@ -6791,6 +6537,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: None of your business, dude.
@@ -6809,6 +6556,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: okay
         nextNodeIndex: -1
         trustGain: 0
@@ -6823,6 +6571,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Well right now I'm kinda done with you.
@@ -6841,6 +6590,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: damn alright then
         nextNodeIndex: -1
         trustGain: 0
@@ -6855,6 +6605,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Nah, you're just really really annoying.
@@ -6878,6 +6629,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: You okay?
         nextNodeIndex: 2
         trustGain: 0
@@ -6892,6 +6644,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: (Leave Her Alone)
         nextNodeIndex: -1
         trustGain: 0
@@ -6906,6 +6659,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: There was nothing there?
         nextNodeIndex: 6
         trustGain: 0
@@ -6920,6 +6674,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: SHUT UP
@@ -6938,6 +6693,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: nvm I don't care
         nextNodeIndex: -1
         trustGain: 0
@@ -6952,6 +6708,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: There's a lot to think about at the end of the world. What will
@@ -6971,6 +6728,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: Can you share some with me?
         nextNodeIndex: 3
         trustGain: 0
@@ -6985,6 +6743,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: No. It's classified for a reason. Why would I share it with someone
@@ -7009,6 +6768,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: No thanks
         nextNodeIndex: -1
         trustGain: 0
@@ -7023,6 +6783,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Okay, can you go check the clock in the lobby. I put something
@@ -7042,6 +6803,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Oh you actually went to check? Yeah I just wanted you to leave
@@ -7061,6 +6823,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
   - dialogueNodes:
@@ -7080,6 +6843,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: Don't care.
         nextNodeIndex: -1
         trustGain: 0
@@ -7094,6 +6858,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Contacted the military. All I had to do was hack into their database
@@ -7113,6 +6878,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: So that's what you've been doing...
         nextNodeIndex: 2
         trustGain: 0
@@ -7127,6 +6893,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Yup. They should be here fairly soon. All we gotta do is survive
@@ -7146,6 +6913,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Nah. I think it'll be more interesting if we don't.
@@ -7155,6 +6923,26 @@ MonoBehaviour:
     - dialogueText: These people are idiots. It's more fun to watch them writhe in
         their own stupidity trying to survive.
       choices: []
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: Hey. You need to head to your room.
+      choices:
+      - choiceText: Okay?
+        nextNodeIndex: 1
+        trustGain: 0
+        trustRequirement: -99
+        timeIncrease: 800
+        oneUse: 1
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
   gameState: {fileID: 54618526}
@@ -10144,6 +9932,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: What's with the nickname?
         nextNodeIndex: 2
         trustGain: 0
@@ -10158,6 +9947,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: Adios
         nextNodeIndex: -1
         trustGain: 0
@@ -10172,6 +9962,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: I used to play football in high school. I was a defensive lineman,
@@ -10199,6 +9990,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
   - dialogueNodes:
@@ -10218,6 +10010,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: Why am I "little man"?
         nextNodeIndex: 2
         trustGain: 0
@@ -10232,6 +10025,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: Adios
         nextNodeIndex: -1
         trustGain: 0
@@ -10246,6 +10040,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: I mean, there's not really that much else to know about me. I
@@ -10271,6 +10066,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: Shut up
         nextNodeIndex: 4
         trustGain: -1
@@ -10285,6 +10081,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Tell yourself whatever you want, little man.
@@ -10312,6 +10109,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: What's happening?
         nextNodeIndex: 2
         trustGain: 0
@@ -10326,6 +10124,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: Not now, Big Man
         nextNodeIndex: -1
         trustGain: 0
@@ -10340,6 +10139,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: Good to hear, champ. Stay strong.
@@ -10358,6 +10158,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: I'll try
         nextNodeIndex: -1
         trustGain: 0
@@ -10372,6 +10173,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: 3
       clueWords: []
     - dialogueText: I don't know. Things are getting pretty scary right now.
@@ -10395,6 +10197,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: 3
       clueWords: []
     - dialogueText: I'm as okay as I've ever been. Don't worry about me little man,
@@ -10414,6 +10217,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: 3
       clueWords: []
   - dialogueNodes:
@@ -10433,6 +10237,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: I'm really not that little
         nextNodeIndex: 4
         trustGain: 0
@@ -10447,6 +10252,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: We'll talk later
         nextNodeIndex: -1
         trustGain: 0
@@ -10461,6 +10267,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: Yeah. I mean I haven't seen the monster recently. You think he
@@ -10480,6 +10287,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: Still, better watch out
         nextNodeIndex: 3
         trustGain: 0
@@ -10494,6 +10302,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: 3
       clueWords: []
     - dialogueText: Yeah, just watch out little man, don't be exploring the halls
@@ -10527,6 +10336,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: Eugene is plotting something
         nextNodeIndex: 3
         trustGain: 2
@@ -10541,6 +10351,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: Not now
         nextNodeIndex: -1
         trustGain: 0
@@ -10555,6 +10366,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: I'm doing alright, buddy. I have a feeling this is gonna be all
@@ -10575,6 +10387,27 @@ MonoBehaviour:
         get his way.
       choices: []
       nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: Little man, you need to get back to your room, it's not good
+        out here
+      choices:
+      - choiceText: Okay Big Man
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: -99
+        timeIncrease: 800
+        oneUse: 1
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+          ending: 0
+      nextNodeIndex: 0
       clueWords: []
   gameState: {fileID: 54618526}
 --- !u!65 &186845148
@@ -11180,6 +11013,7 @@ MonoBehaviour:
   closeSpeed: 1
   closeDelay: 1
   canOpen: 1
+  gameState: {fileID: 54618526}
   walking: {fileID: 963194230}
   doorSound: {fileID: 206961647}
 --- !u!1 &204724547
@@ -11556,13 +11390,14 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 819615620}
+  - {fileID: 1858465740}
   - {fileID: 14730214}
   m_Father: {fileID: 293642357}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 224.62}
-  m_SizeDelta: {x: 0.00012207031, y: 337.15002}
+  m_AnchoredPosition: {x: 0, y: 190}
+  m_SizeDelta: {x: 0, y: 291.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &211614904
 MonoBehaviour:
@@ -11662,6 +11497,7 @@ MonoBehaviour:
   closeSpeed: 2
   closeDelay: 1
   canOpen: 1
+  gameState: {fileID: 54618526}
   walking: {fileID: 963194230}
   doorSound: {fileID: 206961647}
 --- !u!65 &212851269
@@ -12546,89 +12382,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 237947705}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &238171301
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 238171302}
-  - component: {fileID: 238171304}
-  - component: {fileID: 238171303}
-  m_Layer: 0
-  m_Name: HowardDoorTransfer
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &238171302
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 238171301}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.33, y: 1.099998, z: -23.63}
-  m_LocalScale: {x: 1, y: 9, z: 0.5}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 697011010}
-  m_Father: {fileID: 1516387557}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &238171303
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 238171301}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 6.1166368, y: 1, z: 1}
-  m_Center: {x: 0.077442646, y: 0, z: -4.2469597e-16}
---- !u!114 &238171304
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 238171301}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b659203afc00a964292772da4c59e72a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hinge: {fileID: 238171302}
-  door: {fileID: 697011010}
-  cameraController: {fileID: 963194229}
-  openAngle: 90
-  openSpeed: 2
-  stopPosition: {x: 0, y: 0, z: 21}
-  newAreaPosition: {x: -55, y: -1, z: 89.8}
-  walkSpeed: 1
-  walkDuration: 4
-  bobbingHeight: 0.1
-  walkStartDelay: 0.5
-  closeSpeed: 2
-  closeDelay: 1
-  canOpen: 1
-  walking: {fileID: 0}
-  doorSound: {fileID: 0}
 --- !u!1 &240149335
 GameObject:
   m_ObjectHideFlags: 0
@@ -13346,7 +13099,6 @@ Transform:
   - {fileID: 386845578}
   - {fileID: 1239214395}
   - {fileID: 31004866}
-  - {fileID: 83626593}
   m_Father: {fileID: 1390543949}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &257445207
@@ -14641,89 +14393,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 282064145}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &287236648
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 287236649}
-  - component: {fileID: 287236651}
-  - component: {fileID: 287236650}
-  m_Layer: 0
-  m_Name: BigManDoorTransfer
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &287236649
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 287236648}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 24.45, y: 1.099998, z: 1.93}
-  m_LocalScale: {x: 1, y: 9, z: 0.5}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 82386972}
-  m_Father: {fileID: 1474466608}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!65 &287236650
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 287236648}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 6.1166368, y: 1, z: 1}
-  m_Center: {x: 0.077442646, y: 0, z: -4.2469597e-16}
---- !u!114 &287236651
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 287236648}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b659203afc00a964292772da4c59e72a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hinge: {fileID: 287236649}
-  door: {fileID: 82386972}
-  cameraController: {fileID: 963194229}
-  openAngle: 90
-  openSpeed: 2
-  stopPosition: {x: 0, y: 0, z: 21}
-  newAreaPosition: {x: -59.08, y: 0, z: -15}
-  walkSpeed: 1
-  walkDuration: 4
-  bobbingHeight: 0.1
-  walkStartDelay: 0.5
-  closeSpeed: 2
-  closeDelay: 1
-  canOpen: 1
-  walking: {fileID: 0}
-  doorSound: {fileID: 0}
 --- !u!1 &293642356
 GameObject:
   m_ObjectHideFlags: 0
@@ -14755,7 +14424,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1572774867}
-  - {fileID: 1858465740}
   - {fileID: 211614903}
   m_Father: {fileID: 411370556}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -16241,111 +15909,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 327559590}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &328337560
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 328337561}
-  - component: {fileID: 328337564}
-  - component: {fileID: 328337563}
-  - component: {fileID: 328337562}
-  m_Layer: 0
-  m_Name: knob_3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &328337561
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 328337560}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.5799999, y: 0.0019999982, z: 0.22333336}
-  m_LocalScale: {x: 0.6, y: 0.060000002, z: 0.10000001}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1510435407}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &328337562
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 328337560}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &328337563
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 328337560}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 33e7fa3d0f5489c40827fef80ac3bbe8, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &328337564
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 328337560}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &328960787
 GameObject:
   m_ObjectHideFlags: 0
@@ -17512,6 +17075,81 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 353910699}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &354301394
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 354301395}
+  - component: {fileID: 354301397}
+  - component: {fileID: 354301396}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &354301395
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 354301394}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 411370556}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &354301396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 354301394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &354301397
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 354301394}
+  m_CullTransparentMesh: 1
 --- !u!1 &356665718
 GameObject:
   m_ObjectHideFlags: 0
@@ -19477,7 +19115,6 @@ RectTransform:
   - {fileID: 122866127}
   - {fileID: 1838699441}
   - {fileID: 997650014}
-  - {fileID: 293642357}
   - {fileID: 1642543165}
   - {fileID: 140798255}
   - {fileID: 963268784}
@@ -19485,6 +19122,8 @@ RectTransform:
   - {fileID: 1885365777}
   - {fileID: 1692012225}
   - {fileID: 2140543810}
+  - {fileID: 354301395}
+  - {fileID: 293642357}
   - {fileID: 1847980216}
   - {fileID: 622070245}
   - {fileID: 1296586931}
@@ -23802,6 +23441,11 @@ MonoBehaviour:
       choices: []
       nextNodeIndex: -1
       clueWords: []
+  - dialogueNodes:
+    - dialogueText: That table does not look sturdy.
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
   gameState: {fileID: 54618526}
 --- !u!65 &519886006
 BoxCollider:
@@ -24423,6 +24067,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: No thanks
         nextNodeIndex: 3
         trustGain: 0
@@ -24437,6 +24082,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: What about this quest?
         nextNodeIndex: 5
         trustGain: 0
@@ -24451,6 +24097,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: 'Heh, I knew you''d say that. EugeneCoin is simply the most logical
@@ -24475,6 +24122,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Heh, I knew you'd say that. People like you simply don't understand
@@ -24508,6 +24156,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: Absolutely not
         nextNodeIndex: 2
         trustGain: 0
@@ -24522,6 +24171,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: (Run Away)
         nextNodeIndex: -1
         trustGain: 0
@@ -24536,6 +24186,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: 0
       clueWords:
       - Eugenely
@@ -24556,6 +24207,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: You simply do not understand. Get in now while EugeneCoin is
@@ -24575,6 +24227,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: Still no (but with emphasis)
         nextNodeIndex: 3
         trustGain: 0
@@ -24589,6 +24242,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: URGH. You're just like my mom.. I mean it's your loss.
@@ -24607,6 +24261,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: 0
       clueWords: []
   - dialogueNodes:
@@ -24626,6 +24281,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: This invasion! It's all a part of their plan to create a new
@@ -24645,6 +24301,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: That makes sense
         nextNodeIndex: 3
         trustGain: 0
@@ -24659,6 +24316,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: She did not respond well
         nextNodeIndex: 4
         trustGain: 5
@@ -24673,6 +24331,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: I think I'll head somewhere else.
         nextNodeIndex: -1
         trustGain: 0
@@ -24687,6 +24346,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: You need to trust me, it's all their doing, they wanna tear me
@@ -24711,6 +24371,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: No thanks
         nextNodeIndex: -1
         trustGain: 0
@@ -24725,6 +24386,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Ugh. I guess everyone can't be as redpilled as you and I are.
@@ -24750,6 +24412,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: Yeah I've saved up enough crypto to last me at least like...
@@ -24769,6 +24432,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: You're a genius
         nextNodeIndex: 3
         trustGain: 0
@@ -24783,6 +24447,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: Nikki called you a gerbil
         nextNodeIndex: 4
         trustGain: 5
@@ -24797,6 +24462,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: Nikki said some ...horrific things
         nextNodeIndex: 5
         trustGain: 0
@@ -24811,6 +24477,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: I think I'll head somewhere else.
         nextNodeIndex: -1
         trustGain: 0
@@ -24825,6 +24492,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Crypto is only raising in the market. Pay me about 3 bottles
@@ -24844,6 +24512,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: Still good on the crypto
         nextNodeIndex: -1
         trustGain: 0
@@ -24858,6 +24527,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: I'm starting to think that you may be quite the genius yourself.
@@ -24877,6 +24547,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Wow. Well, how about you tell Nikki that I don't really like
@@ -24896,6 +24567,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: You know what, I will remove myself from this argument like the
@@ -24915,6 +24587,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
   - dialogueNodes:
@@ -24935,6 +24608,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: No
         nextNodeIndex: -1
         trustGain: 0
@@ -24949,6 +24623,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: 1
       clueWords: []
     - dialogueText: All we need to do is use a 'volunteer' to lure out the shapeshifter.
@@ -24974,6 +24649,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: You're a real piece of shit.
         nextNodeIndex: 4
         trustGain: -2
@@ -24988,6 +24664,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: 2
       clueWords: []
     - dialogueText: I knew you'd understand. Now to find a 'volunteer'...
@@ -25008,6 +24685,26 @@ MonoBehaviour:
         help.
       choices: []
       nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: The crypto gods have given me a vision, go back to your room.
+      choices:
+      - choiceText: What the fuck? Also okay
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: -99
+        timeIncrease: 800
+        oneUse: 1
+        quest:
+          questID: SurvivalPlan
+          questProgressGain: 50
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+          ending: 0
+      nextNodeIndex: 1
       clueWords: []
   gameState: {fileID: 54618526}
 --- !u!65 &532401672
@@ -27943,6 +27640,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: What are you doing up there?
         nextNodeIndex: 2
         trustGain: 2
@@ -27957,6 +27655,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: 0
       clueWords:
       - billy
@@ -27985,6 +27684,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: Get down here right now
         nextNodeIndex: 2
         trustGain: -2
@@ -27999,6 +27699,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: 0
       clueWords:
       - billy
@@ -28027,6 +27728,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: Who are you?
         nextNodeIndex: 2
         trustGain: -2
@@ -28041,6 +27743,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: Bye
         nextNodeIndex: -1
         trustGain: -1
@@ -28055,6 +27758,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords:
       - billy
@@ -28085,6 +27789,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: How can I stop them?
         nextNodeIndex: 2
         trustGain: -2
@@ -28099,6 +27804,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: Bye
         nextNodeIndex: -1
         trustGain: -1
@@ -28113,6 +27819,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords:
       - billy
@@ -28143,6 +27850,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: Why not?
         nextNodeIndex: 2
         trustGain: 3
@@ -28157,6 +27865,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: Bye
         nextNodeIndex: -1
         trustGain: -2
@@ -28171,6 +27880,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords:
       - billy
@@ -28181,6 +27891,27 @@ MonoBehaviour:
       - billy
     - dialogueText: They're going to get you.
       choices: []
+      nextNodeIndex: -1
+      clueWords:
+      - billy
+  - dialogueNodes:
+    - dialogueText: Take my advice. Go to yoour room now.
+      choices:
+      - choiceText: Okay
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 800
+        oneUse: 1
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords:
       - billy
@@ -29280,6 +29011,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: There appears to be a severed limb, as well as some buttons in
@@ -29493,112 +29225,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 631169476}
   m_CullTransparentMesh: 1
---- !u!1 &631483531
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 631483532}
-  - component: {fileID: 631483535}
-  - component: {fileID: 631483534}
-  - component: {fileID: 631483533}
-  m_Layer: 0
-  m_Name: Door
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &631483532
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 631483531}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -1297, y: 0, z: 549}
-  m_LocalScale: {x: 1, y: 1, z: 6}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1658892135}
-  m_Father: {fileID: 83626593}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!65 &631483533
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 631483531}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &631483534
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 631483531}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 64f5886ea61b2cd43bb5ae740ff729ec, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &631483535
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 631483531}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &636202986
 GameObject:
   m_ObjectHideFlags: 0
@@ -30828,6 +30454,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: The mice scurry about as you check the fridge. It seems the meds
@@ -30961,6 +30588,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: What's it like being a farmer?
         nextNodeIndex: 3
         trustGain: 2
@@ -30975,6 +30603,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: Goodbye
         nextNodeIndex: -1
         trustGain: 0
@@ -30989,6 +30618,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: I'm a farmer. I grow various crops throughout the year and take
@@ -31014,6 +30644,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Glad you asked. It's hard work, but taking care of the animals
@@ -31045,6 +30676,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: Why the hat?
         nextNodeIndex: 3
         trustGain: 2
@@ -31059,6 +30691,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: Goodbye
         nextNodeIndex: -1
         trustGain: 0
@@ -31073,6 +30706,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: Cuz I'm a big fan of the farming lifestyle.
@@ -31096,6 +30730,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: My buddy gave it to me, called it his "lucky hat".
@@ -31128,6 +30763,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: You doing alright?
         nextNodeIndex: 3
         trustGain: 0
@@ -31142,6 +30778,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: I have more important things to do
         nextNodeIndex: -1
         trustGain: 0
@@ -31156,6 +30793,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: Thanks, I'm not sure though. Can't get a hold of anyone out there.
@@ -31181,6 +30819,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: Thanks but I'm not sure anything will really get better. Think
@@ -31202,6 +30841,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: Is it? I barely even think that right now. I'm hanging by a thread.
@@ -31223,6 +30863,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: That's all I've ever done. It's never worked before, since everything
@@ -31244,6 +30885,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: But still what? There's no point. Just leave me be here and get
@@ -31264,6 +30906,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: 0
       clueWords: []
   - dialogueNodes:
@@ -31287,6 +30930,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: I'm sure you could farm some crypto with Eugene
         nextNodeIndex: 3
         trustGain: 0
@@ -31301,6 +30945,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: I found them!
         nextNodeIndex: 5
         trustGain: 0
@@ -31315,6 +30960,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: I have more important things to do
         nextNodeIndex: -1
         trustGain: 0
@@ -31329,6 +30975,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: I have a few leftover carrots. Why?
@@ -31347,6 +30994,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: No reason
         nextNodeIndex: -1
         trustGain: 0
@@ -31361,6 +31009,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Eugene? You mean that weird guy with the glasses? I don't know
@@ -31380,6 +31029,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: I'll give them to you if you help me with something. Someone
@@ -31400,6 +31050,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: Thank you so much, I needed these. As promised, here's your carrots.
@@ -31423,6 +31074,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: (Grab meds)
         nextNodeIndex: 7
         trustGain: 0
@@ -31437,6 +31089,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: (Leave)
         nextNodeIndex: 0
         trustGain: 0
@@ -31451,6 +31104,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: 1
       clueWords: []
     - dialogueText: I'm... I'm okay. Don't worry about me.
@@ -31469,6 +31123,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: If you say so.
         nextNodeIndex: -1
         trustGain: 0
@@ -31483,6 +31138,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: 1
       clueWords: []
     - dialogueText: '*sigh* I guess I''m not good at hiding things, huh?'
@@ -31510,6 +31166,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: 4
       clueWords: []
     - dialogueText: '*sniff* How can you be so sure?'
@@ -31528,6 +31185,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: 4
       clueWords: []
     - dialogueText: That's the worst part, isn't it? Anything could happen... What
@@ -31547,6 +31205,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: HEY. What are you doing?
@@ -31565,6 +31224,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: I was just tryna find something
         nextNodeIndex: 8
         trustGain: 2
@@ -31579,6 +31239,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Find what?
@@ -31597,6 +31258,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: A bouncy ball
         nextNodeIndex: 10
         trustGain: 2
@@ -31611,6 +31273,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: I need those. I'm taking them back and you are leaving.
@@ -31629,6 +31292,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Uh okay, well try not to lose it in the future.
@@ -31647,6 +31311,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Okay, well shoo now, I'm not feeling so great.
@@ -31665,7 +31330,28 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: Hey. I'd appreciate it if you went to your room right now. Okay?
+      choices:
+      - choiceText: Okay Ben
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 800
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+          ending: 0
+      nextNodeIndex: 1
       clueWords: []
   gameState: {fileID: 54618526}
 --- !u!65 &654045072
@@ -32086,6 +31772,7 @@ MonoBehaviour:
   closeSpeed: 2
   closeDelay: 1
   canOpen: 1
+  gameState: {fileID: 54618526}
   walking: {fileID: 963194230}
   doorSound: {fileID: 206961647}
 --- !u!1 &661542812
@@ -32760,7 +32447,6 @@ Transform:
   - {fileID: 327559591}
   - {fileID: 1398500806}
   - {fileID: 254382406}
-  - {fileID: 875262583}
   - {fileID: 1643165834}
   - {fileID: 405785853}
   - {fileID: 1859311638}
@@ -32875,112 +32561,6 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 694809717}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &697011009
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 697011010}
-  - component: {fileID: 697011013}
-  - component: {fileID: 697011012}
-  - component: {fileID: 697011011}
-  m_Layer: 0
-  m_Name: Door
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &697011010
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 697011009}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 117.770004, y: 0, z: 2183.5}
-  m_LocalScale: {x: 1, y: 1, z: 6}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1729116457}
-  m_Father: {fileID: 238171302}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!65 &697011011
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 697011009}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &697011012
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 697011009}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 64f5886ea61b2cd43bb5ae740ff729ec, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &697011013
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 697011009}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &697503585
 GameObject:
@@ -33297,111 +32877,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 700616579}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &702582368
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 702582369}
-  - component: {fileID: 702582372}
-  - component: {fileID: 702582371}
-  - component: {fileID: 702582370}
-  m_Layer: 0
-  m_Name: knob_3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &702582369
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 702582368}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.5799999, y: 0.0019999982, z: 0.22333336}
-  m_LocalScale: {x: 0.6, y: 0.060000002, z: 0.10000001}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1584144432}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &702582370
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 702582368}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &702582371
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 702582368}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 33e7fa3d0f5489c40827fef80ac3bbe8, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &702582372
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 702582368}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &703104702
 GameObject:
   m_ObjectHideFlags: 0
@@ -38351,6 +37826,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: Could you tell me a bit about yourself?
         nextNodeIndex: 2
         trustGain: 0
@@ -38365,6 +37841,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: Goodbye.
         nextNodeIndex: -1
         trustGain: 0
@@ -38379,6 +37856,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: Wha-!? Get out of my face!
@@ -38406,6 +37884,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
   - dialogueNodes:
@@ -38426,6 +37905,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: Sorry to bother you
         nextNodeIndex: -1
         trustGain: 0
@@ -38440,6 +37920,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: Didn't you hear a single word I just said? It's none of your
@@ -38468,6 +37949,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: You might be right
         nextNodeIndex: 3
         trustGain: 1
@@ -38482,6 +37964,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: Bye
         nextNodeIndex: -1
         trustGain: 0
@@ -38496,6 +37979,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Yeah? How's a brat like you gonna survive in a  world gone to
@@ -38515,6 +37999,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: Stop being a downer
         nextNodeIndex: 5
         trustGain: 0
@@ -38529,6 +38014,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Yeah of course I'm right, I'm always right.
@@ -38566,6 +38052,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: You're just old
         nextNodeIndex: 3
         trustGain: 1
@@ -38580,6 +38067,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: What's your problem?
         nextNodeIndex: 4
         trustGain: 0
@@ -38594,6 +38082,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: Bye
         nextNodeIndex: -1
         trustGain: 0
@@ -38608,6 +38097,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Don't look at me like that. You know I'm right about all this.
@@ -38644,6 +38134,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: What's up with you?
         nextNodeIndex: 3
         trustGain: 1
@@ -38658,6 +38149,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: Got the meds
         nextNodeIndex: 4
         trustGain: 0
@@ -38672,6 +38164,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: Bye
         nextNodeIndex: -1
         trustGain: 0
@@ -38686,6 +38179,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Do I look okay? These monsters.... Why do these things keep happening...
@@ -38705,6 +38199,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: Sorry to hear that
         nextNodeIndex: 0
         trustGain: 0
@@ -38719,6 +38214,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: I haven't lived a peaceful insignificant stupid life like you
@@ -38739,6 +38235,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: I guess so
         nextNodeIndex: -1
         trustGain: 0
@@ -38753,6 +38250,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Thanks, I'll take them all now. Maybe you're not so bad, kid.
@@ -38771,6 +38269,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Yeah.. I guess it isn't, at least you don't have to kill people
@@ -38795,6 +38294,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: No
         nextNodeIndex: -1
         trustGain: 0
@@ -38809,6 +38309,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
   - dialogueNodes:
@@ -38818,16 +38319,17 @@ MonoBehaviour:
         nextNodeIndex: -1
         trustGain: 0
         trustRequirement: 0
-        timeIncrease: 0
+        timeIncrease: 800
         oneUse: 0
         quest:
           questID: 
           questProgressGain: 0
           questRequirement: 0
         specialOptions:
-          sleepTime: 1
+          sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: 1
       clueWords: []
   gameState: {fileID: 54618526}
@@ -39476,7 +38978,7 @@ Transform:
   m_GameObject: {fileID: 814175574}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -116.58995, y: -1.81, z: -374.80005}
+  m_LocalPosition: {x: -117.57, y: -1.81, z: -374.80005}
   m_LocalScale: {x: 2.2, y: 1.6, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -39544,7 +39046,140 @@ MonoBehaviour:
       nextNodeIndex: -1
       clueWords: []
   - dialogueNodes:
-    - dialogueText: The door out of my room. I'll leave when it's day
+    - dialogueText: okay
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: You hear noise outside. People loudly shouting at eachother,
+        then some gunfire. This is an important decision. What do you do?
+      choices:
+      - choiceText: Head Outside
+        nextNodeIndex: 1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+          ending: 1
+      - choiceText: Wait in the Room
+        nextNodeIndex: 7
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 1
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+          ending: 1
+      - choiceText: Stop Eugene
+        nextNodeIndex: 15
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 1
+        quest:
+          questID: SurvivalPlan
+          questProgressGain: 0
+          questRequirement: 50
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+          ending: 1
+      nextNodeIndex: -1
+      clueWords: []
+    - dialogueText: You head outside and can hear more clearly. It's the military.
+        You glance at your room one more time. Your eyes turn to under your bed,
+        where you see a pair of eyes looking back at you.
+      choices: []
+      nextNodeIndex: 2
+      clueWords: []
+    - dialogueText: You start to run, harder than you ever have before. Why did it
+        leave you alive? What was this monster's goal? As you run through the hallway
+        you see Eugene dragging a body.
+      choices: []
+      nextNodeIndex: 3
+      clueWords: []
+    - dialogueText: You can't afford to stop now though. You run and run until you're
+        out of breath, gasping, groaning for air to return to your lungs. You're
+        in pain, but if you get out of here, your trouble will finally be over.
+      choices: []
+      nextNodeIndex: 4
+      clueWords: []
+    - dialogueText: You dash through the door to the entrance, drenched in sweat
+        and tears, as you finally are able to see them. The military glance at you
+        with suspicion, but upon seeing your desperation, they feel no choice but
+        to help you.
+      choices: []
+      nextNodeIndex: 5
+      clueWords: []
+    - dialogueText: They escort you outside of the building, as the rest of the hotel
+        starts collapsing. A fire breaking out and scorching anyone who had not managed
+        to escape in time.
+      choices: []
+      nextNodeIndex: 6
+      clueWords: []
+    - dialogueText: You survived.
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+    - dialogueText: You wait inside the room, terrified of what might be beyond.
+        You hide underneath the covers, hidden from any potential harm that may befall
+        upon you
+      choices: []
+      nextNodeIndex: 8
+      clueWords: []
+    - dialogueText: You hear a crackling noise before a hand reaches for you. The
+        hand seems to nudge you, as if telling you that it means no harm. You look
+        out from the covers.
+      choices: []
+      nextNodeIndex: 9
+      clueWords: []
+    - dialogueText: You see a familiar face. It's Big Man. He greets you as he normally
+        does, calls you little man, laughs with you, but something is off. Something
+        is not right.
+      choices: []
+      nextNodeIndex: 10
+      clueWords: []
+    - dialogueText: As he approaches closer, you feel more uneasy. Why is Big Man
+        in my room? Did I not lock the door? You have many questions for yourself.
+      choices: []
+      nextNodeIndex: 11
+      clueWords: []
+    - dialogueText: The questions quickly end though as you see a tendrill, going
+        right through your stomach. Big Man, no, the monster laughs as it takes over
+        your appearance.
+      choices: []
+      nextNodeIndex: 12
+      clueWords: []
+    - dialogueText: As you bleed out, you see the monster start to act, act like
+        its you, act like its injured, as it runs out of the room.
+      choices: []
+      nextNodeIndex: 13
+      clueWords: []
+    - dialogueText: Blood stains the building as the screams echo around you. You
+        are about to die, but you're not the only one.
+      choices: []
+      nextNodeIndex: 14
+      clueWords: []
+    - dialogueText: You bleed out.
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+    - dialogueText: Game end
       choices: []
       nextNodeIndex: -1
       clueWords: []
@@ -39969,7 +39604,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 25, y: 0}
+  m_AnchoredPosition: {x: 25, y: -8.5}
   m_SizeDelta: {x: 50, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &819615621
@@ -40055,7 +39690,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 261.5256, y: 0, z: 629.14667, w: 0}
+  m_margin: {x: 261.5256, y: 0, z: 322.54034, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -41883,89 +41518,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 873182322}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &875262582
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 875262583}
-  - component: {fileID: 875262585}
-  - component: {fileID: 875262584}
-  m_Layer: 0
-  m_Name: BenDoorTransfer
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &875262583
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 875262582}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 24.45, y: 1.099998, z: 1.93}
-  m_LocalScale: {x: 1, y: 9, z: 0.5}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1510435407}
-  m_Father: {fileID: 694576699}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!65 &875262584
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 875262582}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 6.1166368, y: 1, z: 1}
-  m_Center: {x: 0.077442646, y: 0, z: -4.2469597e-16}
---- !u!114 &875262585
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 875262582}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b659203afc00a964292772da4c59e72a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hinge: {fileID: 875262583}
-  door: {fileID: 1510435407}
-  cameraController: {fileID: 963194229}
-  openAngle: 90
-  openSpeed: 2
-  stopPosition: {x: 0, y: 0, z: 21}
-  newAreaPosition: {x: -59.08, y: 0, z: -15}
-  walkSpeed: 1
-  walkDuration: 4
-  bobbingHeight: 0.1
-  walkStartDelay: 0.5
-  closeSpeed: 2
-  closeDelay: 1
-  canOpen: 1
-  walking: {fileID: 0}
-  doorSound: {fileID: 0}
 --- !u!1 &875407165
 GameObject:
   m_ObjectHideFlags: 0
@@ -42058,6 +41610,7 @@ MonoBehaviour:
           sleepTime: 1
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: No
         nextNodeIndex: -1
         trustGain: 0
@@ -42072,6 +41625,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: 0
       clueWords: []
   - dialogueNodes:
@@ -42091,6 +41645,7 @@ MonoBehaviour:
           sleepTime: 1
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: No
         nextNodeIndex: -1
         trustGain: 0
@@ -42105,6 +41660,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: 0
       clueWords: []
   - dialogueNodes:
@@ -42124,6 +41680,7 @@ MonoBehaviour:
           sleepTime: 1
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: No
         nextNodeIndex: -1
         trustGain: 0
@@ -42138,6 +41695,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: 0
       clueWords: []
   - dialogueNodes:
@@ -42157,6 +41715,7 @@ MonoBehaviour:
           sleepTime: 1
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: No
         nextNodeIndex: -1
         trustGain: 0
@@ -42171,6 +41730,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: 0
       clueWords: []
   - dialogueNodes:
@@ -42190,6 +41750,7 @@ MonoBehaviour:
           sleepTime: 1
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: No
         nextNodeIndex: -1
         trustGain: 0
@@ -42204,6 +41765,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: 0
       clueWords: []
   - dialogueNodes:
@@ -42223,6 +41785,7 @@ MonoBehaviour:
           sleepTime: 1
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: No
         nextNodeIndex: -1
         trustGain: 0
@@ -42237,105 +41800,12 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: 0
       clueWords: []
   - dialogueNodes:
-    - dialogueText: Would You Like To Sleep?
-      choices:
-      - choiceText: Yes
-        nextNodeIndex: -1
-        trustGain: 0
-        trustRequirement: 0
-        timeIncrease: 0
-        oneUse: 0
-        quest:
-          questID: 
-          questProgressGain: 0
-          questRequirement: 0
-        specialOptions:
-          sleepTime: 1
-          moveGameState: 0
-          killChar: 0
-      - choiceText: No
-        nextNodeIndex: -1
-        trustGain: 0
-        trustRequirement: 0
-        timeIncrease: 0
-        oneUse: 0
-        quest:
-          questID: 
-          questProgressGain: 0
-          questRequirement: 0
-        specialOptions:
-          sleepTime: 0
-          moveGameState: 0
-          killChar: 0
-      nextNodeIndex: 0
-      clueWords: []
-  - dialogueNodes:
-    - dialogueText: Would You Like To Sleep?
-      choices:
-      - choiceText: Yes
-        nextNodeIndex: -1
-        trustGain: 0
-        trustRequirement: 0
-        timeIncrease: 0
-        oneUse: 0
-        quest:
-          questID: 
-          questProgressGain: 0
-          questRequirement: 0
-        specialOptions:
-          sleepTime: 1
-          moveGameState: 0
-          killChar: 0
-      - choiceText: No
-        nextNodeIndex: -1
-        trustGain: 0
-        trustRequirement: 0
-        timeIncrease: 0
-        oneUse: 0
-        quest:
-          questID: 
-          questProgressGain: 0
-          questRequirement: 0
-        specialOptions:
-          sleepTime: 0
-          moveGameState: 0
-          killChar: 0
-      nextNodeIndex: 0
-      clueWords: []
-  - dialogueNodes:
-    - dialogueText: Would You Like To Sleep?
-      choices:
-      - choiceText: Yes
-        nextNodeIndex: -1
-        trustGain: 0
-        trustRequirement: 0
-        timeIncrease: 0
-        oneUse: 0
-        quest:
-          questID: 
-          questProgressGain: 0
-          questRequirement: 0
-        specialOptions:
-          sleepTime: 1
-          moveGameState: 0
-          killChar: 0
-      - choiceText: No
-        nextNodeIndex: -1
-        trustGain: 0
-        trustRequirement: 0
-        timeIncrease: 0
-        oneUse: 0
-        quest:
-          questID: 
-          questProgressGain: 0
-          questRequirement: 0
-        specialOptions:
-          sleepTime: 0
-          moveGameState: 0
-          killChar: 0
+    - dialogueText: No time for sleep
+      choices: []
       nextNodeIndex: 0
       clueWords: []
   gameState: {fileID: 54618526}
@@ -43613,6 +43083,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: I've spoken to everyone
         nextNodeIndex: 2
         trustGain: 2
@@ -43627,6 +43098,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: Bye-bye
         nextNodeIndex: -1
         trustGain: 0
@@ -43641,6 +43113,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: How about you speak to the other residents? I think it would
@@ -43662,6 +43135,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Oh that's good. Feel free to roam around the hotel and do as
@@ -43681,6 +43155,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 1
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
   - dialogueNodes:
@@ -43700,6 +43175,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: End Day
         nextNodeIndex: -1
         trustGain: 20
@@ -43714,6 +43190,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 1
+          ending: 0
       - choiceText: I don't need anything
         nextNodeIndex: -1
         trustGain: 2
@@ -43728,6 +43205,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: Glad to hear it. If any problems arise, make sure to let me know.
@@ -43756,6 +43234,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: No thanks
         nextNodeIndex: -1
         trustGain: 0
@@ -43770,6 +43249,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
   - dialogueNodes:
@@ -45681,14 +45161,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.8731328, z: -0, w: -0.48748237}
+  m_LocalRotation: {x: 0, y: 0.9349496, z: -0, w: -0.35478055}
   m_LocalPosition: {x: -120.92, y: 0, z: 22.62}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 825262339}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 238.35, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 221.56, z: 0}
 --- !u!114 &963194229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45831,7 +45311,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &963268781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45995,8 +45475,9 @@ MonoBehaviour:
   charImage: {fileID: 1572774868}
   dialogueBoxIMG: {fileID: 211614904}
   choiceContainer: {fileID: 14730212}
-  choiceButtonPrefab: {fileID: 3955439934205926547, guid: e119247aafbc3bf4585f85ae90bb0c49, type: 3}
+  choiceButtonPrefab: {fileID: 712263809744008487, guid: 39d99a448df32e9428b4f4c07169f8cd, type: 3}
   gameState: {fileID: 54618526}
+  endingIMG: {fileID: 354301394}
   dialogueNodes: []
   typingSpeed: 0.05
   dialogueActive: 0
@@ -46207,6 +45688,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: No. There is nothing here. Maybe Allie will be able to make sense
@@ -46226,6 +45708,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
   - dialogueNodes:
@@ -47077,6 +46560,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: There seems to be a note behind the clock. It has a picture of
@@ -47096,6 +46580,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
   - dialogueNodes:
@@ -48819,6 +48304,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: ...Excuse me? Do you KNOW who I am?
@@ -48847,6 +48333,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: I don't like your tone.
         nextNodeIndex: 3
         trustGain: -2
@@ -48861,6 +48348,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: ...bye
         nextNodeIndex: -1
         trustGain: 0
@@ -48875,6 +48363,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: 1
       clueWords: []
   - dialogueNodes:
@@ -48898,6 +48387,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: ...bye
         nextNodeIndex: -1
         trustGain: 0
@@ -48912,6 +48402,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: Your tailor supplies are in the lobby
         nextNodeIndex: 4
         trustGain: 1
@@ -48926,6 +48417,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: 1
       clueWords: []
     - dialogueText: 'My advice for the time being: dress a little less like a slob.'
@@ -48944,6 +48436,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Thanks for letting me know. I'll go grab them.
@@ -48962,6 +48455,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
   - dialogueNodes:
@@ -48981,6 +48475,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: Fashion will prevail!
         nextNodeIndex: 2
         trustGain: 3
@@ -48995,6 +48490,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: (Explain the "Truth")
         nextNodeIndex: 5
         trustGain: 0
@@ -49009,6 +48505,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: Goodbye
         nextNodeIndex: -1
         trustGain: 0
@@ -49023,6 +48520,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: 1
       clueWords: []
     - dialogueText: What? How preposterous! If I cannot grace the runway with my
@@ -49042,6 +48540,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: Better off that way
         nextNodeIndex: 4
         trustGain: -2
@@ -49056,6 +48555,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: I certainly hope so!
@@ -49093,6 +48593,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: At least they look better than you
         nextNodeIndex: 2
         trustGain: 0
@@ -49107,6 +48608,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: Is there anyone here you dislike?
         nextNodeIndex: 3
         trustGain: 0
@@ -49121,6 +48623,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: Eugene just said you look like an "ugly pink cloud"
         nextNodeIndex: 4
         trustGain: 0
@@ -49135,6 +48638,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: Goodbye
         nextNodeIndex: -1
         trustGain: 0
@@ -49149,6 +48653,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Thank you. Just imagining a shapeshifter stealing MY style, it
@@ -49179,6 +48684,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: TELL EUGENE THAT I'M GOING TO SHOVE MY FOOT SO FAR UP HIS ###
@@ -49198,6 +48704,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
   - dialogueNodes:
@@ -49218,6 +48725,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: There might be some in the lobby
         nextNodeIndex: 2
         trustGain: 0
@@ -49232,6 +48740,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: Good luck with that
         nextNodeIndex: -1
         trustGain: 0
@@ -49246,6 +48755,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Ugh. You are no help. Maybe I'll ask Allie. She's hogging all
@@ -49265,6 +48775,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: That's rude
         nextNodeIndex: 4
         trustGain: 0
@@ -49279,6 +48790,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: I have already checked the lobby and I found NOTHING. Don't lie
@@ -49298,6 +48810,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: You'll get nothing
         nextNodeIndex: 4
         trustGain: 0
@@ -49312,6 +48825,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Well maybe you should help better
@@ -49334,6 +48848,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: You'll get nothing
         nextNodeIndex: 4
         trustGain: 0
@@ -49348,10 +48863,31 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Honestly you're so real for that
       choices: []
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: Hey. You should go to your room. Now
+      choices:
+      - choiceText: Uh, Okay
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 800
+        oneUse: 1
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
   gameState: {fileID: 54618526}
@@ -55890,7 +55426,6 @@ Transform:
   - {fileID: 210504925}
   - {fileID: 1762527981}
   - {fileID: 43520186}
-  - {fileID: 1931603981}
   m_Father: {fileID: 1390543949}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1225212352
@@ -60788,6 +60323,7 @@ MonoBehaviour:
   closeSpeed: 1
   closeDelay: 1
   canOpen: 1
+  gameState: {fileID: 54618526}
   walking: {fileID: 963194230}
   doorSound: {fileID: 206961647}
 --- !u!1 &1365011200
@@ -64964,7 +64500,6 @@ Transform:
   - {fileID: 2036491213}
   - {fileID: 579437832}
   - {fileID: 2038353745}
-  - {fileID: 2135233411}
   m_Father: {fileID: 1390543949}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1460050348
@@ -65567,7 +65102,6 @@ Transform:
   - {fileID: 468946095}
   - {fileID: 1761297499}
   - {fileID: 1521429424}
-  - {fileID: 287236649}
   m_Father: {fileID: 1390543949}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1476232333
@@ -66448,112 +65982,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1510406775}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1510435406
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1510435407}
-  - component: {fileID: 1510435410}
-  - component: {fileID: 1510435409}
-  - component: {fileID: 1510435408}
-  m_Layer: 0
-  m_Name: Door
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1510435407
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1510435406}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -1297, y: 0, z: 550}
-  m_LocalScale: {x: 1, y: 1, z: 6}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 328337561}
-  m_Father: {fileID: 875262583}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!65 &1510435408
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1510435406}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &1510435409
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1510435406}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 64f5886ea61b2cd43bb5ae740ff729ec, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1510435410
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1510435406}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1516387556
 GameObject:
   m_ObjectHideFlags: 0
@@ -66606,7 +66034,6 @@ Transform:
   - {fileID: 1609636383}
   - {fileID: 1888041383}
   - {fileID: 1335900935}
-  - {fileID: 238171302}
   m_Father: {fileID: 1390543949}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1517208752
@@ -68501,7 +67928,22 @@ MonoBehaviour:
       nextNodeIndex: -1
       clueWords: []
   - dialogueNodes:
-    - dialogueText: The news showcases monsters terrorizing the people.
+    - dialogueText: It's off
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: It's off
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: It's off
+      choices: []
+      nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: It's off
       choices: []
       nextNodeIndex: -1
       clueWords: []
@@ -69031,7 +68473,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 323, y: 186}
+  m_AnchoredPosition: {x: 323, y: 124}
   m_SizeDelta: {x: 450, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1572774868
@@ -69597,112 +69039,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1582343608}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1584144431
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1584144432}
-  - component: {fileID: 1584144435}
-  - component: {fileID: 1584144434}
-  - component: {fileID: 1584144433}
-  m_Layer: 0
-  m_Name: Door
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1584144432
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1584144431}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -1297, y: 0, z: 549}
-  m_LocalScale: {x: 1, y: 1, z: 6}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 702582369}
-  m_Father: {fileID: 2135233411}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!65 &1584144433
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1584144431}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &1584144434
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1584144431}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 64f5886ea61b2cd43bb5ae740ff729ec, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1584144435
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1584144431}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1585298581
 GameObject:
   m_ObjectHideFlags: 0
@@ -69877,7 +69213,6 @@ Transform:
   - {fileID: 774662823}
   - {fileID: 669517040}
   - {fileID: 1976672327}
-  - {fileID: 154804}
   m_Father: {fileID: 1390543949}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1589848727
@@ -70656,6 +69991,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 8fb668123e6483243a0250f90f7bdb00, type: 2}
   - {fileID: 2100000, guid: f592dcbffc2dc974e9e1db9238d4bd8c, type: 2}
   changesPerDay: 1
+  playerdoor: {fileID: 814175574}
 --- !u!1 &1615333830
 GameObject:
   m_ObjectHideFlags: 0
@@ -72349,111 +71685,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!1 &1658892134
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1658892135}
-  - component: {fileID: 1658892138}
-  - component: {fileID: 1658892137}
-  - component: {fileID: 1658892136}
-  m_Layer: 0
-  m_Name: knob_3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1658892135
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1658892134}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.5799999, y: 0.0019999982, z: 0.22333336}
-  m_LocalScale: {x: 0.6, y: 0.060000002, z: 0.10000001}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 631483532}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &1658892136
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1658892134}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &1658892137
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1658892134}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 33e7fa3d0f5489c40827fef80ac3bbe8, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1658892138
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1658892134}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1661861607
 GameObject:
   m_ObjectHideFlags: 0
@@ -75779,111 +75010,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1724255545}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1729116456
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1729116457}
-  - component: {fileID: 1729116460}
-  - component: {fileID: 1729116459}
-  - component: {fileID: 1729116458}
-  m_Layer: 0
-  m_Name: knob_3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1729116457
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1729116456}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.5799999, y: 0.0019999982, z: 0.22333336}
-  m_LocalScale: {x: 0.6, y: 0.060000002, z: 0.10000001}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 697011010}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &1729116458
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1729116456}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &1729116459
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1729116456}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 33e7fa3d0f5489c40827fef80ac3bbe8, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1729116460
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1729116456}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1734192183
 GameObject:
   m_ObjectHideFlags: 0
@@ -77226,6 +76352,7 @@ MonoBehaviour:
   closeSpeed: 2
   closeDelay: 1
   canOpen: 1
+  gameState: {fileID: 54618526}
   walking: {fileID: 963194230}
   doorSound: {fileID: 206961647}
 --- !u!1 &1761297498
@@ -77802,111 +76929,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1775972152}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1779588856
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1779588857}
-  - component: {fileID: 1779588860}
-  - component: {fileID: 1779588859}
-  - component: {fileID: 1779588858}
-  m_Layer: 0
-  m_Name: knob_3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1779588857
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1779588856}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.5799999, y: 0.0019999982, z: 0.22333336}
-  m_LocalScale: {x: 0.6, y: 0.060000002, z: 0.10000001}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2085183808}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &1779588858
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1779588856}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &1779588859
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1779588856}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 33e7fa3d0f5489c40827fef80ac3bbe8, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1779588860
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1779588856}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1786547958
 GameObject:
   m_ObjectHideFlags: 0
@@ -78584,7 +77606,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 0.9675422, b: 0, a: 1}
-  m_Intensity: 2
+  m_Intensity: 2.3
   m_Range: 20
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -80635,7 +79657,7 @@ Transform:
   m_GameObject: {fileID: 1853790249}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -6.1398, y: -0.33666667, z: 0.363}
+  m_LocalPosition: {x: -6.1398, y: -0.443, z: 0.363}
   m_LocalScale: {x: 0.05, y: 1.6666667, z: 0.3}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -80680,7 +79702,7 @@ MonoBehaviour:
   cameraController: {fileID: 963194229}
   openAngle: 90
   openSpeed: 5
-  stopPosition: {x: -116, y: 0, z: -373}
+  stopPosition: {x: -116, y: 0, z: -374.6}
   newAreaPosition: {x: -1, y: 0, z: -3}
   walkSpeed: 1
   walkDuration: 2.5
@@ -80689,6 +79711,7 @@ MonoBehaviour:
   closeSpeed: 2
   closeDelay: 1
   canOpen: 1
+  gameState: {fileID: 54618526}
   walking: {fileID: 963194230}
   doorSound: {fileID: 206961647}
 --- !u!1 &1855332460
@@ -81033,16 +80056,16 @@ RectTransform:
   m_GameObject: {fileID: 1858465739}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.0256, y: 1, z: 1}
+  m_LocalScale: {x: 1.0256, y: 0.7504691, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1979308075}
-  m_Father: {fileID: 293642357}
+  m_Father: {fileID: 211614903}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0.8812256, y: 481}
-  m_SizeDelta: {x: -96.162415, y: 75.6}
+  m_AnchoredPosition: {x: -735, y: 276.4}
+  m_SizeDelta: {x: -1502.9813, y: 46.52}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1858465741
 MonoBehaviour:
@@ -81057,14 +80080,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.5707547, b: 0.73334074, a: 1}
+  m_Color: {r: 0.14150941, g: 0.14150941, b: 0.14150941, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 99735042e9625e044991884e9e625af1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 658172a7c9afb324db82e7dd9e95684a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -84123,89 +83146,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1930143524}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1931603980
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1931603981}
-  - component: {fileID: 1931603983}
-  - component: {fileID: 1931603982}
-  m_Layer: 0
-  m_Name: GerardDoorTransfer
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1931603981
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1931603980}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 24.45, y: 1.099998, z: 1.93}
-  m_LocalScale: {x: 1, y: 9, z: 0.5}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2085183808}
-  m_Father: {fileID: 1224139348}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!65 &1931603982
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1931603980}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 6.1166368, y: 1, z: 1}
-  m_Center: {x: 0.077442646, y: 0, z: -4.2469597e-16}
---- !u!114 &1931603983
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1931603980}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b659203afc00a964292772da4c59e72a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hinge: {fileID: 1931603981}
-  door: {fileID: 2085183808}
-  cameraController: {fileID: 963194229}
-  openAngle: 90
-  openSpeed: 2
-  stopPosition: {x: 0, y: 0, z: 21}
-  newAreaPosition: {x: -59.08, y: 0, z: -15}
-  walkSpeed: 1
-  walkDuration: 4
-  bobbingHeight: 0.1
-  walkStartDelay: 0.5
-  closeSpeed: 2
-  closeDelay: 1
-  canOpen: 1
-  walking: {fileID: 0}
-  doorSound: {fileID: 0}
 --- !u!1 &1936754159
 GameObject:
   m_ObjectHideFlags: 0
@@ -84224,7 +83164,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1936754160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -86110,7 +85050,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 129, y: 0.79999924}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1979308076
@@ -86196,7 +85136,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 91.55435, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -86396,6 +85336,7 @@ MonoBehaviour:
   closeSpeed: 1
   closeDelay: 1
   canOpen: 1
+  gameState: {fileID: 54618526}
   walking: {fileID: 963194230}
   doorSound: {fileID: 206961647}
 --- !u!1 &1980083236
@@ -86766,6 +85707,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: Could you tell me about yourself?
         nextNodeIndex: 1
         trustGain: 0
@@ -86780,6 +85722,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: I don't need anything
         nextNodeIndex: -1
         trustGain: 0
@@ -86794,6 +85737,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: I am quite unwell. I need some time to mourn.
@@ -86812,6 +85756,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: 2
       clueWords:
       - mourn
@@ -86838,6 +85783,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: You probably don't want to hear about my personal troubles. I
@@ -86857,6 +85803,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: Do you want to talk more about it?
         nextNodeIndex: 2
         trustGain: 0
@@ -86871,6 +85818,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: 2
       clueWords:
       - mourn
@@ -86896,6 +85844,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: (Leave)
         nextNodeIndex: -1
         trustGain: 0
@@ -86910,6 +85859,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: You... stay away from me. You could be one of them...
@@ -86937,6 +85887,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: You need to get over this
         nextNodeIndex: 5
         trustGain: -2
@@ -86951,6 +85902,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: I'm sure they would say the same thing.
@@ -86978,6 +85930,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: What do you mean?
         nextNodeIndex: 3
         trustGain: 0
@@ -86992,6 +85945,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: Have you seen any meds?
         nextNodeIndex: 5
         trustGain: 0
@@ -87006,6 +85960,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: (Leave)
         nextNodeIndex: -1
         trustGain: 0
@@ -87020,6 +85975,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: Why not? I think it'd be perfect timing. Not much out there anyways.
@@ -87046,6 +86002,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: No
         nextNodeIndex: 4
         trustGain: 0
@@ -87060,6 +86017,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Please?
@@ -87078,6 +86036,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: No. That box over there looks kinda suspicious though.
@@ -87096,6 +86055,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
   - dialogueNodes:
@@ -87116,6 +86076,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: What do you mean?
         nextNodeIndex: 3
         trustGain: 0
@@ -87130,6 +86091,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: (Leave)
         nextNodeIndex: -1
         trustGain: 0
@@ -87144,6 +86106,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: Think about it. Humanity is evil. This is our punishment
@@ -87173,6 +86136,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       - choiceText: I get it
         nextNodeIndex: 5
         trustGain: 0
@@ -87187,6 +86151,7 @@ MonoBehaviour:
           sleepTime: 0
           moveGameState: 0
           killChar: 0
+          ending: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Am I? Then why do you say this is happening? Why would this happen
@@ -87198,6 +86163,27 @@ MonoBehaviour:
         to be, it has to be, there's nothing else that could explain it
       choices: []
       nextNodeIndex: -1
+      clueWords: []
+  - dialogueNodes:
+    - dialogueText: Something is telling me. Whisepring to me from beyond. It's telling
+        me to tell you to return to your room this instance.
+      choices:
+      - choiceText: Okay I guess
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: -99
+        timeIncrease: 800
+        oneUse: 1
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+          ending: 0
+      nextNodeIndex: 0
       clueWords: []
   gameState: {fileID: 54618526}
 --- !u!65 &1993476001
@@ -88916,111 +87902,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2044217316}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &2045023668
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2045023669}
-  - component: {fileID: 2045023672}
-  - component: {fileID: 2045023671}
-  - component: {fileID: 2045023670}
-  m_Layer: 0
-  m_Name: knob_3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2045023669
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2045023668}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.5799999, y: 0.0019999982, z: 0.22333336}
-  m_LocalScale: {x: 0.6, y: 0.060000002, z: 0.10000001}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 82386972}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &2045023670
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2045023668}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &2045023671
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2045023668}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 33e7fa3d0f5489c40827fef80ac3bbe8, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &2045023672
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2045023668}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &2049183894
 GameObject:
   m_ObjectHideFlags: 0
@@ -91029,112 +89910,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2083789099}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &2085183807
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2085183808}
-  - component: {fileID: 2085183811}
-  - component: {fileID: 2085183810}
-  - component: {fileID: 2085183809}
-  m_Layer: 0
-  m_Name: Door
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2085183808
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2085183807}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -1297, y: 0, z: 549}
-  m_LocalScale: {x: 1, y: 1, z: 6}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1779588857}
-  m_Father: {fileID: 1931603981}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!65 &2085183809
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2085183807}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &2085183810
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2085183807}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 64f5886ea61b2cd43bb5ae740ff729ec, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &2085183811
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2085183807}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &2087720087
 GameObject:
   m_ObjectHideFlags: 0
@@ -91426,6 +90201,7 @@ MonoBehaviour:
   closeSpeed: 1
   closeDelay: 1
   canOpen: 1
+  gameState: {fileID: 54618526}
   walking: {fileID: 963194230}
   doorSound: {fileID: 206961647}
 --- !u!1 &2097452155
@@ -93307,89 +92083,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2134911080}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &2135233410
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2135233411}
-  - component: {fileID: 2135233413}
-  - component: {fileID: 2135233412}
-  m_Layer: 0
-  m_Name: NikkiDoorTransfer
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2135233411
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2135233410}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 24.45, y: 1.099998, z: -2.37}
-  m_LocalScale: {x: 1, y: 9, z: 0.5}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1584144432}
-  m_Father: {fileID: 1453010638}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!65 &2135233412
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2135233410}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 6.1166368, y: 1, z: 1}
-  m_Center: {x: 0.077442646, y: 0, z: -4.2469597e-16}
---- !u!114 &2135233413
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2135233410}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b659203afc00a964292772da4c59e72a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hinge: {fileID: 2135233411}
-  door: {fileID: 1584144432}
-  cameraController: {fileID: 963194229}
-  openAngle: 90
-  openSpeed: 2
-  stopPosition: {x: 0, y: 0, z: 21}
-  newAreaPosition: {x: -59.08, y: 0, z: -15}
-  walkSpeed: 1
-  walkDuration: 4
-  bobbingHeight: 0.1
-  walkStartDelay: 0.5
-  closeSpeed: 2
-  closeDelay: 1
-  canOpen: 1
-  walking: {fileID: 0}
-  doorSound: {fileID: 0}
 --- !u!1 &2138841125
 GameObject:
   m_ObjectHideFlags: 0
@@ -93902,6 +92595,103 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2146872114}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &6989998019192212173
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 712263809744008487, guid: 39d99a448df32e9428b4f4c07169f8cd, type: 3}
+      propertyPath: m_Name
+      value: btn_choices 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3238919318995640324, guid: 39d99a448df32e9428b4f4c07169f8cd, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3238919318995640324, guid: 39d99a448df32e9428b4f4c07169f8cd, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3238919318995640324, guid: 39d99a448df32e9428b4f4c07169f8cd, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3238919318995640324, guid: 39d99a448df32e9428b4f4c07169f8cd, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3238919318995640324, guid: 39d99a448df32e9428b4f4c07169f8cd, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3238919318995640324, guid: 39d99a448df32e9428b4f4c07169f8cd, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3238919318995640324, guid: 39d99a448df32e9428b4f4c07169f8cd, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 924.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 3238919318995640324, guid: 39d99a448df32e9428b4f4c07169f8cd, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 3238919318995640324, guid: 39d99a448df32e9428b4f4c07169f8cd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3238919318995640324, guid: 39d99a448df32e9428b4f4c07169f8cd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3238919318995640324, guid: 39d99a448df32e9428b4f4c07169f8cd, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3238919318995640324, guid: 39d99a448df32e9428b4f4c07169f8cd, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3238919318995640324, guid: 39d99a448df32e9428b4f4c07169f8cd, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3238919318995640324, guid: 39d99a448df32e9428b4f4c07169f8cd, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3238919318995640324, guid: 39d99a448df32e9428b4f4c07169f8cd, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3238919318995640324, guid: 39d99a448df32e9428b4f4c07169f8cd, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3238919318995640324, guid: 39d99a448df32e9428b4f4c07169f8cd, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3238919318995640324, guid: 39d99a448df32e9428b4f4c07169f8cd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3238919318995640324, guid: 39d99a448df32e9428b4f4c07169f8cd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3238919318995640324, guid: 39d99a448df32e9428b4f4c07169f8cd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 39d99a448df32e9428b4f4c07169f8cd, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -93926,3 +92716,4 @@ SceneRoots:
   - {fileID: 646826854}
   - {fileID: 1126696113}
   - {fileID: 71549328}
+  - {fileID: 6989998019192212173}
