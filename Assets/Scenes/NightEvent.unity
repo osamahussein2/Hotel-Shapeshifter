@@ -21365,12 +21365,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Big Man
   characterImage: {fileID: 21300000, guid: edf00fde79848b541bec10b8f753557a, type: 3}
-  deadCharImage: {fileID: 0}
+  deadCharImage: {fileID: 21300000, guid: 98375b7e3b01bfa4bb5cb7167e235b9a, type: 3}
   charDead: 0
-  dialogueBox: {fileID: 0}
-  trustLevel: 0
+  dialogueBox: {fileID: 21300000, guid: b639ae619db707641873e69371843f7a, type: 3}
+  trustLevel: 10
   schedule: []
-  currentLocation: {fileID: 1049737001}
+  currentLocation: {fileID: 0}
   sr: {fileID: 0}
 --- !u!114 &1049737003
 MonoBehaviour:
@@ -32054,12 +32054,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Nikki
   characterImage: {fileID: 21300000, guid: 4806be272bae7e04ebefa8eb15c808d3, type: 3}
-  deadCharImage: {fileID: 0}
+  deadCharImage: {fileID: 21300000, guid: a41c1335905032c48a059729fbe14c67, type: 3}
   charDead: 0
-  dialogueBox: {fileID: 0}
-  trustLevel: 0
+  dialogueBox: {fileID: 21300000, guid: b639ae619db707641873e69371843f7a, type: 3}
+  trustLevel: 10
   schedule: []
-  currentLocation: {fileID: 1628820448}
+  currentLocation: {fileID: 0}
   sr: {fileID: 0}
 --- !u!114 &1628820450
 MonoBehaviour:

@@ -73,6 +73,12 @@ public class ClueList : MonoBehaviour
             }
         }
     }
+    public void UpdateAll()
+    {
+        UpdateClueUI();
+        UpdateQuestUI();
+        UpdateItemUI();
+    }
 
     // Check if a clue is already in the list
     public bool HasClue(string clue, int type)

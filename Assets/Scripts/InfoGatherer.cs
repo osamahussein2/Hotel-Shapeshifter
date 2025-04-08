@@ -1,11 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class InfoGatherer : MonoBehaviour
 {
 
-    public GameObject clueHolder;
+    //held info
+    //clues
+    [SerializeField] List<string> heldCollectedClues = new List<string>(); // List of collected clues
+    [SerializeField] List<string> heldCollectedQuests = new List<string>(); // List of collected quests
+    [SerializeField] List<string> heldCollectedItems = new List<string>(); // List of collected items
+    //gameState
+    [SerializeField] int dialogueProgress = 0; // Tracks progress of game
+
+    public ClueList clueHolder;
     public List<GameObject> characters;
     public bool updating;
     public bool backFromNight;
@@ -13,22 +22,89 @@ public class InfoGatherer : MonoBehaviour
     public GameState gameManager;
 
     public string killingChar;
-    void Start()
+
+    bool justLoaded;
+    int framesTillLoad;
+
+    private void Awake()
     {
-        
-        if(PlayerPrefs.GetInt("BackFromNight") == 1)
+        justLoaded = true;
+        framesTillLoad = 1;
+        if (PlayerPrefs.GetInt("BackFromNight") == 1)
         {
             backFromNight = true;
         }
         else
         {
-            backFromNight= false;
+            backFromNight = false;
         }
 
+        Reassign();
+
+        //UploadInfo();
+    }
+
+    private void Update()
+    {
+        //Debug.Log(SceneManager.GetActiveScene().name);
+        if(SceneManager.GetActiveScene().name != "NightEvent")
+        {
+            if (PlayerPrefs.GetInt("BackFromNight") == 1)
+            {
+                backFromNight = true;
+                UploadInfo();
+            }
+            else
+            {
+                backFromNight = false;
+            }
+        }
+        else
+        {
+            PlayerPrefs.SetInt("BackFromNight", 1);
+        }
+    }
+
+    public void Reassign()
+    {
+        Debug.Log("Reassigning referances");
+        characters = new List<GameObject>();
+        foreach (GameObject root in SceneManager.GetActiveScene().GetRootGameObjects())
+        {
+            if (root.name == "Characters")
+            {
+                gameManager = root.GetComponentInChildren<GameState>();
+
+                for (int i = 0; i < root.transform.childCount; i++)
+                {
+                    if (root.transform.GetChild(i).gameObject.TryGetComponent<Character>(out Character charComp))
+                    {
+                        characters.Add(root.transform.GetChild(i).gameObject);
+                    }
+                }
+            }
+            if (root.name == "In-game UI") { clueHolder = root.GetComponentInChildren<ClueList>(); }
+        }
+    }
+
+    private void OnApplicationQuit()
+    {
+        PlayerPrefs.SetInt("BackFromNight", 0);
+    }
+
+    public void UploadInfo()
+    {
+        Reassign();
+
+        Debug.Log("Uploading...");
         string charName;
         int charTrust;
         if (backFromNight)
         {
+            Debug.Log("Back from night event");
+            //check what day it is supposed to be
+            gameManager.currentDay = PlayerPrefs.GetInt("CURRENTDAY");
+
             //if trust values were updated during night, apply the change
             for (int i = 0; i < characters.Count; i++)
             {
@@ -42,12 +118,19 @@ public class InfoGatherer : MonoBehaviour
             PlayerPrefs.SetInt("BackFromNight", 0);
 
             //check if a character died last night
-            if(PlayerPrefs.GetInt("CHARKILLED") != -1)
+            if (PlayerPrefs.GetInt("CHARKILLED") != -1)
             {
                 characters[PlayerPrefs.GetInt("CHARKILLED")].GetComponent<Character>().charDead = true;
 
                 PlayerPrefs.SetInt("CHARKILLED", -1);
             }
+
+            //give held info
+            clueHolder.collectedClues = heldCollectedClues;
+            clueHolder.collectedQuests = heldCollectedQuests;
+            clueHolder.collectedItems = heldCollectedItems;
+            gameManager.dialogueProgress = dialogueProgress;
+            clueHolder.UpdateAll();
         }
         else
         {
@@ -60,11 +143,15 @@ public class InfoGatherer : MonoBehaviour
                 PlayerPrefs.SetInt(charName + "TRUST", charTrust);
             }
         }
-        
+
+
     }
 
     public void UpdateInfo()
     {
+        Reassign();
+
+        Debug.Log("Updating...");
         updating = true;
 
         //update trust
@@ -78,7 +165,7 @@ public class InfoGatherer : MonoBehaviour
             PlayerPrefs.SetInt(charName + "TRUST", charTrust);
         }
 
-        List<string> collectedClues = clueHolder.GetComponent<ClueList>().collectedClues;
+        List<string> collectedClues = clueHolder.collectedClues;
         List<string> allClues = new List<string>();
 
         //update clues
@@ -109,6 +196,12 @@ public class InfoGatherer : MonoBehaviour
                 killingChar = charObj.GetComponent<Character>().characterName;
             }
         }
+
+        //hold info
+        heldCollectedClues = clueHolder.collectedClues;
+        heldCollectedQuests = clueHolder.collectedQuests;
+        heldCollectedItems = clueHolder.collectedItems;
+        dialogueProgress = gameManager.dialogueProgress;
 
         updating = false;
     }
