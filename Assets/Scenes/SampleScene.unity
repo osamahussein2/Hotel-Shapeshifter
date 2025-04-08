@@ -14144,7 +14144,7 @@ GameObject:
   - component: {fileID: 274725262}
   - component: {fileID: 274725261}
   - component: {fileID: 274725260}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Room Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29473,6 +29473,22 @@ MonoBehaviour:
           killChar: 0
           ending: 0
           endingNo: 0
+      - choiceText: Nothing
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+          ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: There appears to be a severed limb, as well as some buttons in
@@ -30917,6 +30933,22 @@ MonoBehaviour:
           killChar: 0
           ending: 0
           endingNo: 0
+      - choiceText: Leave
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+          ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: The mice scurry about as you check the fridge. It seems the meds
@@ -31579,7 +31611,7 @@ MonoBehaviour:
           ending: 0
           endingNo: 0
       - choiceText: (Leave)
-        nextNodeIndex: 0
+        nextNodeIndex: -1
         trustGain: 0
         trustRequirement: -99
         timeIncrease: 0
@@ -33422,7 +33454,6 @@ MonoBehaviour:
   updating: 0
   backFromNight: 0
   dayNumber: 0
-  gameState: 0
   gameManager: {fileID: 54618526}
   killingChar: 
 --- !u!4 &703104704
@@ -38418,7 +38449,7 @@ MonoBehaviour:
         nextNodeIndex: -1
         trustGain: 0
         trustRequirement: -99
-        timeIncrease: 10
+        timeIncrease: 0
         oneUse: 0
         quest:
           questID: 
@@ -43886,7 +43917,7 @@ MonoBehaviour:
           questProgressGain: 30
           questRequirement: 0
         specialOptions:
-          sleepTime: 1
+          sleepTime: 0
           moveGameState: 0
           killChar: 0
           ending: 0
@@ -44070,7 +44101,23 @@ MonoBehaviour:
       clueWords: []
   - dialogueNodes:
     - dialogueText: He's dead.
-      choices: []
+      choices:
+      - choiceText: aa
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 800
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+          ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
   gameState: {fileID: 54618526}
@@ -46509,6 +46556,22 @@ MonoBehaviour:
           killChar: 0
           ending: 0
           endingNo: 0
+      - choiceText: I like water
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+          ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: No. There is nothing here. Maybe Allie will be able to make sense
@@ -47375,6 +47438,22 @@ MonoBehaviour:
         oneUse: 1
         quest:
           questID: Allieoop
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+          ending: 0
+          endingNo: 0
+      - choiceText: Wow it's a clock
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
           questProgressGain: 0
           questRequirement: 0
         specialOptions:
@@ -80616,8 +80695,8 @@ GameObject:
   - component: {fileID: 1853790250}
   - component: {fileID: 1853790252}
   - component: {fileID: 1853790251}
-  m_Layer: 0
-  m_Name: door_transfer_outRoom
+  m_Layer: 9
+  m_Name: Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -81575,7 +81654,7 @@ GameObject:
   - component: {fileID: 1868775464}
   - component: {fileID: 1868775463}
   - component: {fileID: 1868775462}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: knob_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86790,7 +86869,7 @@ MonoBehaviour:
         trustGain: 0
         trustRequirement: -99
         timeIncrease: 20
-        oneUse: 0
+        oneUse: 1
         quest:
           questID: 
           questProgressGain: 0
@@ -86941,7 +87020,7 @@ MonoBehaviour:
         timeIncrease: 0
         oneUse: 1
         quest:
-          questID: 
+          questID: meds
           questProgressGain: 0
           questRequirement: 0
         specialOptions:
