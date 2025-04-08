@@ -93,7 +93,7 @@ public class TimeManager : MonoBehaviour
         {
             if (gameState.currentDay != 2)
             {
-                //nightSceneScript.LoadNight();
+                nightSceneScript.LoadNight();
             }
             CameraController.teleporting = true;
             player.transform.position = outRoomPosition;
