@@ -20,6 +20,10 @@ public class DialogueManager : MonoBehaviour
     public GameState gameState;
     public GameObject endingIMG;
     private bool canSkipText = false; // Prevents skipping immediately
+    public GameObject ending1;
+    public GameObject ending2;
+    public GameObject ending3;
+
 
     public DialogueNode[] dialogueNodes; // All the dialogue nodes
     private int currentNodeIndex = 0; // Current node that we are currently being on
@@ -330,6 +334,18 @@ public class DialogueManager : MonoBehaviour
         if (choice.specialOptions.ending)
         {
             endingIMG.SetActive(true);
+        }
+        if (choice.specialOptions.endingNo == 1)
+        {
+            ending1.SetActive(true);
+        }
+        if (choice.specialOptions.endingNo == 2)
+        {
+            ending2.SetActive(true);
+        }
+        if (choice.specialOptions.endingNo == 3)
+        {
+            ending3.SetActive(true);
         }
         if (choice.specialOptions.sleepTime)
         {

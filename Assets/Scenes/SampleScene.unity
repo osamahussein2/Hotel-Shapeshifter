@@ -6245,6 +6245,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: Go away Allie.
         nextNodeIndex: 4
         trustGain: -1
@@ -6260,6 +6261,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: Bye.
         nextNodeIndex: -1
         trustGain: 0
@@ -6275,6 +6277,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: Going good, just hacked NASA.
@@ -6294,6 +6297,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: Isn't that illegal?
         nextNodeIndex: 3
         trustGain: 1
@@ -6309,6 +6313,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: It's all for the love of the game.
@@ -6328,6 +6333,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: Only if I get caught. Which I won't.
@@ -6347,6 +6353,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: Well, you're not worth my time anyways. Loser.
@@ -6366,6 +6373,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: 0
       clueWords: []
   - dialogueNodes:
@@ -6386,6 +6394,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: Okay
         nextNodeIndex: -1
         trustGain: 0
@@ -6401,6 +6410,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: I'm busy with some important stuff.
@@ -6420,6 +6430,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: What is it?
         nextNodeIndex: 2
         trustGain: 0
@@ -6435,6 +6446,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: It's VERY important stuff
@@ -6454,6 +6466,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: I'll leave you to it then
         nextNodeIndex: -1
         trustGain: 0
@@ -6469,6 +6482,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Shoo. Go away. Get out of here. Adios. Au revoir. Bye bye.
@@ -6488,6 +6502,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
   - dialogueNodes:
@@ -6508,6 +6523,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: done with what?
         nextNodeIndex: 2
         trustGain: 0
@@ -6523,6 +6539,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: (Leave Her Alone)
         nextNodeIndex: -1
         trustGain: 0
@@ -6538,6 +6555,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: None of your business, dude.
@@ -6557,6 +6575,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: okay
         nextNodeIndex: -1
         trustGain: 0
@@ -6572,6 +6591,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Well right now I'm kinda done with you.
@@ -6591,6 +6611,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: damn alright then
         nextNodeIndex: -1
         trustGain: 0
@@ -6606,6 +6627,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Nah, you're just really really annoying.
@@ -6630,6 +6652,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: You okay?
         nextNodeIndex: 2
         trustGain: 0
@@ -6645,6 +6668,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: (Leave Her Alone)
         nextNodeIndex: -1
         trustGain: 0
@@ -6660,6 +6684,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: There was nothing there?
         nextNodeIndex: 6
         trustGain: 0
@@ -6675,6 +6700,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: SHUT UP
@@ -6694,6 +6720,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: nvm I don't care
         nextNodeIndex: -1
         trustGain: 0
@@ -6709,6 +6736,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: There's a lot to think about at the end of the world. What will
@@ -6729,6 +6757,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: Can you share some with me?
         nextNodeIndex: 3
         trustGain: 0
@@ -6744,6 +6773,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: No. It's classified for a reason. Why would I share it with someone
@@ -6769,6 +6799,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: No thanks
         nextNodeIndex: -1
         trustGain: 0
@@ -6784,6 +6815,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Okay, can you go check the clock in the lobby. I put something
@@ -6804,6 +6836,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Oh you actually went to check? Yeah I just wanted you to leave
@@ -6824,6 +6857,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
   - dialogueNodes:
@@ -6844,6 +6878,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: Don't care.
         nextNodeIndex: -1
         trustGain: 0
@@ -6859,6 +6894,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Contacted the military. All I had to do was hack into their database
@@ -6879,6 +6915,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: So that's what you've been doing...
         nextNodeIndex: 2
         trustGain: 0
@@ -6894,6 +6931,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Yup. They should be here fairly soon. All we gotta do is survive
@@ -6914,6 +6952,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Nah. I think it'll be more interesting if we don't.
@@ -6943,6 +6982,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
   gameState: {fileID: 54618526}
@@ -9933,6 +9973,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: What's with the nickname?
         nextNodeIndex: 2
         trustGain: 0
@@ -9948,6 +9989,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: Adios
         nextNodeIndex: -1
         trustGain: 0
@@ -9963,6 +10005,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: I used to play football in high school. I was a defensive lineman,
@@ -9991,6 +10034,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
   - dialogueNodes:
@@ -10011,6 +10055,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: Why am I "little man"?
         nextNodeIndex: 2
         trustGain: 0
@@ -10026,6 +10071,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: Adios
         nextNodeIndex: -1
         trustGain: 0
@@ -10041,6 +10087,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: I mean, there's not really that much else to know about me. I
@@ -10067,6 +10114,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: Shut up
         nextNodeIndex: 4
         trustGain: -1
@@ -10082,6 +10130,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Tell yourself whatever you want, little man.
@@ -10110,6 +10159,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: What's happening?
         nextNodeIndex: 2
         trustGain: 0
@@ -10125,6 +10175,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: Not now, Big Man
         nextNodeIndex: -1
         trustGain: 0
@@ -10140,6 +10191,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: Good to hear, champ. Stay strong.
@@ -10159,6 +10211,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: I'll try
         nextNodeIndex: -1
         trustGain: 0
@@ -10174,6 +10227,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: 3
       clueWords: []
     - dialogueText: I don't know. Things are getting pretty scary right now.
@@ -10198,6 +10252,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: 3
       clueWords: []
     - dialogueText: I'm as okay as I've ever been. Don't worry about me little man,
@@ -10218,6 +10273,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: 3
       clueWords: []
   - dialogueNodes:
@@ -10238,6 +10294,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: I'm really not that little
         nextNodeIndex: 4
         trustGain: 0
@@ -10253,6 +10310,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: We'll talk later
         nextNodeIndex: -1
         trustGain: 0
@@ -10268,6 +10326,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: Yeah. I mean I haven't seen the monster recently. You think he
@@ -10288,6 +10347,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: Still, better watch out
         nextNodeIndex: 3
         trustGain: 0
@@ -10303,6 +10363,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: 3
       clueWords: []
     - dialogueText: Yeah, just watch out little man, don't be exploring the halls
@@ -10326,7 +10387,7 @@ MonoBehaviour:
         nextNodeIndex: 1
         trustGain: 1
         trustRequirement: -99
-        timeIncrease: 15
+        timeIncrease: 20
         oneUse: 1
         quest:
           questID: 
@@ -10337,11 +10398,12 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: Eugene is plotting something
         nextNodeIndex: 3
         trustGain: 2
         trustRequirement: -99
-        timeIncrease: 10
+        timeIncrease: 15
         oneUse: 1
         quest:
           questID: SurvivalPlan
@@ -10352,6 +10414,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: Not now
         nextNodeIndex: -1
         trustGain: 0
@@ -10367,6 +10430,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: I'm doing alright, buddy. I have a feeling this is gonna be all
@@ -10407,6 +10471,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: 0
       clueWords: []
   gameState: {fileID: 54618526}
@@ -18379,6 +18444,82 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 394230929}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &394746977
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 394746978}
+  - component: {fileID: 394746980}
+  - component: {fileID: 394746979}
+  m_Layer: 5
+  m_Name: ed3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &394746978
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 394746977}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 590046633}
+  m_Father: {fileID: 411370556}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -600, y: -400}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &394746979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 394746977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 98713c21fad070841b594cae5cf7f9c0, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &394746980
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 394746977}
+  m_CullTransparentMesh: 1
 --- !u!1 &396272110
 GameObject:
   m_ObjectHideFlags: 0
@@ -19116,13 +19257,16 @@ RectTransform:
   - {fileID: 1838699441}
   - {fileID: 997650014}
   - {fileID: 1642543165}
-  - {fileID: 140798255}
   - {fileID: 963268784}
   - {fileID: 1262093644}
   - {fileID: 1885365777}
   - {fileID: 1692012225}
   - {fileID: 2140543810}
   - {fileID: 354301395}
+  - {fileID: 1464960993}
+  - {fileID: 1254404847}
+  - {fileID: 394746978}
+  - {fileID: 140798255}
   - {fileID: 293642357}
   - {fileID: 1847980216}
   - {fileID: 622070245}
@@ -24068,6 +24212,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: No thanks
         nextNodeIndex: 3
         trustGain: 0
@@ -24083,6 +24228,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: What about this quest?
         nextNodeIndex: 5
         trustGain: 0
@@ -24098,6 +24244,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: 'Heh, I knew you''d say that. EugeneCoin is simply the most logical
@@ -24123,6 +24270,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Heh, I knew you'd say that. People like you simply don't understand
@@ -24157,6 +24305,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: Absolutely not
         nextNodeIndex: 2
         trustGain: 0
@@ -24172,6 +24321,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: (Run Away)
         nextNodeIndex: -1
         trustGain: 0
@@ -24187,6 +24337,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: 0
       clueWords:
       - Eugenely
@@ -24208,6 +24359,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: You simply do not understand. Get in now while EugeneCoin is
@@ -24228,6 +24380,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: Still no (but with emphasis)
         nextNodeIndex: 3
         trustGain: 0
@@ -24243,6 +24396,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: URGH. You're just like my mom.. I mean it's your loss.
@@ -24262,6 +24416,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: 0
       clueWords: []
   - dialogueNodes:
@@ -24282,6 +24437,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: This invasion! It's all a part of their plan to create a new
@@ -24302,6 +24458,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: That makes sense
         nextNodeIndex: 3
         trustGain: 0
@@ -24317,6 +24474,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: She did not respond well
         nextNodeIndex: 4
         trustGain: 5
@@ -24332,6 +24490,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: I think I'll head somewhere else.
         nextNodeIndex: -1
         trustGain: 0
@@ -24347,6 +24506,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: You need to trust me, it's all their doing, they wanna tear me
@@ -24372,6 +24532,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: No thanks
         nextNodeIndex: -1
         trustGain: 0
@@ -24387,6 +24548,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Ugh. I guess everyone can't be as redpilled as you and I are.
@@ -24413,6 +24575,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: Yeah I've saved up enough crypto to last me at least like...
@@ -24433,6 +24596,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: You're a genius
         nextNodeIndex: 3
         trustGain: 0
@@ -24448,6 +24612,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: Nikki called you a gerbil
         nextNodeIndex: 4
         trustGain: 5
@@ -24463,6 +24628,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: Nikki said some ...horrific things
         nextNodeIndex: 5
         trustGain: 0
@@ -24478,6 +24644,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: I think I'll head somewhere else.
         nextNodeIndex: -1
         trustGain: 0
@@ -24493,6 +24660,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Crypto is only raising in the market. Pay me about 3 bottles
@@ -24513,6 +24681,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: Still good on the crypto
         nextNodeIndex: -1
         trustGain: 0
@@ -24528,6 +24697,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: I'm starting to think that you may be quite the genius yourself.
@@ -24548,6 +24718,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Wow. Well, how about you tell Nikki that I don't really like
@@ -24568,6 +24739,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: You know what, I will remove myself from this argument like the
@@ -24588,6 +24760,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
   - dialogueNodes:
@@ -24609,6 +24782,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: No
         nextNodeIndex: -1
         trustGain: 0
@@ -24624,6 +24798,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: 1
       clueWords: []
     - dialogueText: All we need to do is use a 'volunteer' to lure out the shapeshifter.
@@ -24639,7 +24814,7 @@ MonoBehaviour:
         nextNodeIndex: 3
         trustGain: 3
         trustRequirement: 8
-        timeIncrease: 0
+        timeIncrease: 15
         oneUse: 0
         quest:
           questID: 
@@ -24650,11 +24825,12 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: You're a real piece of shit.
         nextNodeIndex: 4
         trustGain: -2
         trustRequirement: -99
-        timeIncrease: 0
+        timeIncrease: 15
         oneUse: 0
         quest:
           questID: 
@@ -24665,6 +24841,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: 2
       clueWords: []
     - dialogueText: I knew you'd understand. Now to find a 'volunteer'...
@@ -24704,6 +24881,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: 1
       clueWords: []
   gameState: {fileID: 54618526}
@@ -25480,6 +25658,140 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 547041646}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &550547328
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 550547329}
+  - component: {fileID: 550547331}
+  - component: {fileID: 550547330}
+  m_Layer: 5
+  m_Name: Text (TMP) (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &550547329
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 550547328}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1254404847}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -186, y: 455}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &550547330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 550547328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: You got the good ending
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 4ed654a443fa40644ab4d923992e1f6d, type: 2}
+  m_sharedMaterial: {fileID: -934957446168156121, guid: 4ed654a443fa40644ab4d923992e1f6d, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 80
+  m_fontSizeBase: 80
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: -617.2163, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &550547331
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 550547328}
+  m_CullTransparentMesh: 1
 --- !u!1 &559963869
 GameObject:
   m_ObjectHideFlags: 0
@@ -26470,6 +26782,140 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 588870224}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &590046632
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 590046633}
+  - component: {fileID: 590046635}
+  - component: {fileID: 590046634}
+  m_Layer: 5
+  m_Name: Text (TMP) (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &590046633
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 590046632}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 394746978}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -186, y: 455}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &590046634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 590046632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: You got the secret ending
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 4ed654a443fa40644ab4d923992e1f6d, type: 2}
+  m_sharedMaterial: {fileID: -934957446168156121, guid: 4ed654a443fa40644ab4d923992e1f6d, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 80
+  m_fontSizeBase: 80
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: -617.2163, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &590046635
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 590046632}
+  m_CullTransparentMesh: 1
 --- !u!1 &591242889
 GameObject:
   m_ObjectHideFlags: 0
@@ -27641,6 +28087,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: What are you doing up there?
         nextNodeIndex: 2
         trustGain: 2
@@ -27656,6 +28103,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: 0
       clueWords:
       - billy
@@ -27685,6 +28133,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: Get down here right now
         nextNodeIndex: 2
         trustGain: -2
@@ -27700,6 +28149,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: 0
       clueWords:
       - billy
@@ -27729,6 +28179,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: Who are you?
         nextNodeIndex: 2
         trustGain: -2
@@ -27744,6 +28195,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: Bye
         nextNodeIndex: -1
         trustGain: -1
@@ -27759,6 +28211,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords:
       - billy
@@ -27790,6 +28243,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: How can I stop them?
         nextNodeIndex: 2
         trustGain: -2
@@ -27805,6 +28259,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: Bye
         nextNodeIndex: -1
         trustGain: -1
@@ -27820,6 +28275,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords:
       - billy
@@ -27851,6 +28307,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: Why not?
         nextNodeIndex: 2
         trustGain: 3
@@ -27866,6 +28323,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: Bye
         nextNodeIndex: -1
         trustGain: -2
@@ -27881,6 +28339,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords:
       - billy
@@ -27912,6 +28371,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords:
       - billy
@@ -29012,6 +29472,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: There appears to be a severed limb, as well as some buttons in
@@ -30455,6 +30916,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: The mice scurry about as you check the fridge. It seems the meds
@@ -30589,6 +31051,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: What's it like being a farmer?
         nextNodeIndex: 3
         trustGain: 2
@@ -30604,6 +31067,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: Goodbye
         nextNodeIndex: -1
         trustGain: 0
@@ -30619,6 +31083,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: I'm a farmer. I grow various crops throughout the year and take
@@ -30645,6 +31110,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Glad you asked. It's hard work, but taking care of the animals
@@ -30677,6 +31143,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: Why the hat?
         nextNodeIndex: 3
         trustGain: 2
@@ -30692,6 +31159,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: Goodbye
         nextNodeIndex: -1
         trustGain: 0
@@ -30707,6 +31175,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: Cuz I'm a big fan of the farming lifestyle.
@@ -30731,6 +31200,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: My buddy gave it to me, called it his "lucky hat".
@@ -30764,6 +31234,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: You doing alright?
         nextNodeIndex: 3
         trustGain: 0
@@ -30779,6 +31250,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: I have more important things to do
         nextNodeIndex: -1
         trustGain: 0
@@ -30794,6 +31266,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: Thanks, I'm not sure though. Can't get a hold of anyone out there.
@@ -30820,6 +31293,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: Thanks but I'm not sure anything will really get better. Think
@@ -30842,6 +31316,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: Is it? I barely even think that right now. I'm hanging by a thread.
@@ -30864,6 +31339,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: That's all I've ever done. It's never worked before, since everything
@@ -30886,6 +31362,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: But still what? There's no point. Just leave me be here and get
@@ -30907,6 +31384,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: 0
       clueWords: []
   - dialogueNodes:
@@ -30931,6 +31409,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: I'm sure you could farm some crypto with Eugene
         nextNodeIndex: 3
         trustGain: 0
@@ -30946,6 +31425,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: I found them!
         nextNodeIndex: 5
         trustGain: 0
@@ -30961,6 +31441,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: I have more important things to do
         nextNodeIndex: -1
         trustGain: 0
@@ -30976,6 +31457,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: I have a few leftover carrots. Why?
@@ -30995,6 +31477,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: No reason
         nextNodeIndex: -1
         trustGain: 0
@@ -31010,6 +31493,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Eugene? You mean that weird guy with the glasses? I don't know
@@ -31030,6 +31514,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: I'll give them to you if you help me with something. Someone
@@ -31051,6 +31536,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: Thank you so much, I needed these. As promised, here's your carrots.
@@ -31064,7 +31550,7 @@ MonoBehaviour:
         nextNodeIndex: 1
         trustGain: 0
         trustRequirement: 5
-        timeIncrease: 0
+        timeIncrease: 15
         oneUse: 0
         quest:
           questID: 
@@ -31075,11 +31561,12 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: (Grab meds)
         nextNodeIndex: 7
         trustGain: 0
         trustRequirement: -99
-        timeIncrease: 0
+        timeIncrease: 5
         oneUse: 1
         quest:
           questID: 
@@ -31090,6 +31577,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: (Leave)
         nextNodeIndex: 0
         trustGain: 0
@@ -31105,6 +31593,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: 1
       clueWords: []
     - dialogueText: I'm... I'm okay. Don't worry about me.
@@ -31124,6 +31613,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: If you say so.
         nextNodeIndex: -1
         trustGain: 0
@@ -31139,6 +31629,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: 1
       clueWords: []
     - dialogueText: '*sigh* I guess I''m not good at hiding things, huh?'
@@ -31156,7 +31647,7 @@ MonoBehaviour:
         nextNodeIndex: 5
         trustGain: 2
         trustRequirement: -99
-        timeIncrease: 0
+        timeIncrease: 15
         oneUse: 0
         quest:
           questID: 
@@ -31167,6 +31658,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: 4
       clueWords: []
     - dialogueText: '*sniff* How can you be so sure?'
@@ -31186,12 +31678,13 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: 4
       clueWords: []
     - dialogueText: That's the worst part, isn't it? Anything could happen... What
         am I supposed to do now?
       choices:
-      - choiceText: None of us knew this was going to happen.
+      - choiceText: Live on
         nextNodeIndex: -1
         trustGain: 2
         trustRequirement: -99
@@ -31206,6 +31699,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: HEY. What are you doing?
@@ -31214,7 +31708,7 @@ MonoBehaviour:
         nextNodeIndex: 11
         trustGain: 2
         trustRequirement: -99
-        timeIncrease: 0
+        timeIncrease: 15
         oneUse: 0
         quest:
           questID: 
@@ -31225,11 +31719,12 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: I was just tryna find something
         nextNodeIndex: 8
         trustGain: 2
         trustRequirement: -99
-        timeIncrease: 0
+        timeIncrease: 15
         oneUse: 0
         quest:
           questID: 
@@ -31240,6 +31735,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Find what?
@@ -31248,7 +31744,7 @@ MonoBehaviour:
         nextNodeIndex: 9
         trustGain: 2
         trustRequirement: -99
-        timeIncrease: 0
+        timeIncrease: 15
         oneUse: 0
         quest:
           questID: 
@@ -31259,11 +31755,12 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: A bouncy ball
         nextNodeIndex: 10
         trustGain: 2
         trustRequirement: -99
-        timeIncrease: 0
+        timeIncrease: 15
         oneUse: 0
         quest:
           questID: 
@@ -31274,6 +31771,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: I need those. I'm taking them back and you are leaving.
@@ -31293,6 +31791,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Uh okay, well try not to lose it in the future.
@@ -31312,6 +31811,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Okay, well shoo now, I'm not feeling so great.
@@ -31331,6 +31831,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
   - dialogueNodes:
@@ -31351,6 +31852,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: 1
       clueWords: []
   gameState: {fileID: 54618526}
@@ -37827,6 +38329,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: Could you tell me a bit about yourself?
         nextNodeIndex: 2
         trustGain: 0
@@ -37842,6 +38345,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: Goodbye.
         nextNodeIndex: -1
         trustGain: 0
@@ -37857,6 +38361,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: Wha-!? Get out of my face!
@@ -37885,6 +38390,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
   - dialogueNodes:
@@ -37906,6 +38412,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: Sorry to bother you
         nextNodeIndex: -1
         trustGain: 0
@@ -37921,6 +38428,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: Didn't you hear a single word I just said? It's none of your
@@ -37950,6 +38458,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: You might be right
         nextNodeIndex: 3
         trustGain: 1
@@ -37965,6 +38474,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: Bye
         nextNodeIndex: -1
         trustGain: 0
@@ -37980,6 +38490,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Yeah? How's a brat like you gonna survive in a  world gone to
@@ -38000,6 +38511,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: Stop being a downer
         nextNodeIndex: 5
         trustGain: 0
@@ -38015,6 +38527,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Yeah of course I'm right, I'm always right.
@@ -38053,6 +38566,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: You're just old
         nextNodeIndex: 3
         trustGain: 1
@@ -38068,6 +38582,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: What's your problem?
         nextNodeIndex: 4
         trustGain: 0
@@ -38083,6 +38598,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: Bye
         nextNodeIndex: -1
         trustGain: 0
@@ -38098,6 +38614,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Don't look at me like that. You know I'm right about all this.
@@ -38135,6 +38652,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: What's up with you?
         nextNodeIndex: 3
         trustGain: 1
@@ -38150,6 +38668,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: Got the meds
         nextNodeIndex: 4
         trustGain: 0
@@ -38165,6 +38684,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: Bye
         nextNodeIndex: -1
         trustGain: 0
@@ -38180,6 +38700,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Do I look okay? These monsters.... Why do these things keep happening...
@@ -38189,7 +38710,7 @@ MonoBehaviour:
         nextNodeIndex: 6
         trustGain: 0
         trustRequirement: 0
-        timeIncrease: 0
+        timeIncrease: 25
         oneUse: 0
         quest:
           questID: 
@@ -38200,8 +38721,9 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: Sorry to hear that
-        nextNodeIndex: 0
+        nextNodeIndex: -1
         trustGain: 0
         trustRequirement: 0
         timeIncrease: 0
@@ -38215,6 +38737,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: I haven't lived a peaceful insignificant stupid life like you
@@ -38225,7 +38748,7 @@ MonoBehaviour:
         nextNodeIndex: 5
         trustGain: 0
         trustRequirement: 0
-        timeIncrease: 0
+        timeIncrease: 25
         oneUse: 0
         quest:
           questID: 
@@ -38236,6 +38759,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: I guess so
         nextNodeIndex: -1
         trustGain: 0
@@ -38251,6 +38775,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Thanks, I'll take them all now. Maybe you're not so bad, kid.
@@ -38270,6 +38795,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Yeah.. I guess it isn't, at least you don't have to kill people
@@ -38295,6 +38821,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: No
         nextNodeIndex: -1
         trustGain: 0
@@ -38310,6 +38837,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
   - dialogueNodes:
@@ -38330,6 +38858,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: 1
       clueWords: []
   gameState: {fileID: 54618526}
@@ -39069,6 +39598,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 1
+          endingNo: 0
       - choiceText: Wait in the Room
         nextNodeIndex: 7
         trustGain: 0
@@ -39084,6 +39614,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 1
+          endingNo: 0
       - choiceText: Stop Eugene
         nextNodeIndex: 15
         trustGain: 0
@@ -39099,6 +39630,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 1
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: You head outside and can hear more clearly. It's the military.
@@ -39133,7 +39665,23 @@ MonoBehaviour:
       nextNodeIndex: 6
       clueWords: []
     - dialogueText: You survived.
-      choices: []
+      choices:
+      - choiceText: (ending)
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+          ending: 0
+          endingNo: 2
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: You wait inside the room, terrified of what might be beyond.
@@ -39176,12 +39724,123 @@ MonoBehaviour:
       nextNodeIndex: 14
       clueWords: []
     - dialogueText: You bleed out.
-      choices: []
+      choices:
+      - choiceText: (Pass on)
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+          ending: 0
+          endingNo: 1
       nextNodeIndex: -1
       clueWords: []
-    - dialogueText: Game end
+    - dialogueText: Ignoring the noise, you slam your door open, rushing out to Big
+        Man's room, to stop Eugene before anything awful happens
       choices: []
-      nextNodeIndex: -1
+      nextNodeIndex: 16
+      clueWords: []
+    - dialogueText: Before you can reach him though, you see Eugene out of the corner
+        of your eye. he's carrying a body
+      choices: []
+      nextNodeIndex: 17
+      clueWords: []
+    - dialogueText: Eugene has a malicious grin, preparing himself for the sacrifice,
+        carrying the body of Allie along with him. You see her unconscious face,
+        bruised by a brick used in the assault
+      choices: []
+      nextNodeIndex: 18
+      clueWords: []
+    - dialogueText: He calls out for the shapeshifter, leaving Allie on the floor
+        and hiding behind a door, waiting for it to approach with the bloodied brick
+        in his hand
+      choices: []
+      nextNodeIndex: 19
+      clueWords: []
+    - dialogueText: The shapeshifter exits out of a room and approaches the body,
+        wary about the trap Eugene has set
+      choices: []
+      nextNodeIndex: 20
+      clueWords: []
+    - dialogueText: The monster is about to grab Allie when Big Man suddenly tackles
+        it to the ground. Eugene panicks, he grabs a lighter to throw at the monster
+        as a last ditch plan
+      choices: []
+      nextNodeIndex: 21
+      clueWords: []
+    - dialogueText: You jump and grab the lighter out of his hands before he's able
+        to do anything. You gab the brick out of his hand and bash his skull in.
+        He falls to the floor unconscious
+      choices: []
+      nextNodeIndex: 22
+      clueWords: []
+    - dialogueText: Big Man still wrangles the monster, with it stabbing into the
+        flesh of his arm with it's sharp nails. It throws Big Man to the side and
+        approaches Allie once more
+      choices: []
+      nextNodeIndex: 23
+      clueWords: []
+    - dialogueText: You grab the brick again and bash the monster's skull in. Smash,
+        Thud, Crack, Crunch. You repeatedly smash the brick on the monster's head,
+        over and over. Your hands start to tear and bleed as the monster's skull
+        is caved in more and more
+      choices: []
+      nextNodeIndex: 24
+      clueWords: []
+    - dialogueText: You can't let this monster do anything else. He needs to die
+        now. You keep relentlessly attacking the monster until there's nothing left
+        of it's head
+      choices: []
+      nextNodeIndex: 25
+      clueWords: []
+    - dialogueText: You help Big Man up, and you bring Allie and Eugene with you
+        towards the noise. You see the military out in the lobby. You call for them,
+        bruised and battered, but alive.
+      choices: []
+      nextNodeIndex: 26
+      clueWords: []
+    - dialogueText: The army men patrol where you came from and see the dead monster.
+        They bring out everyone from the hotel with them
+      choices: []
+      nextNodeIndex: 27
+      clueWords: []
+    - dialogueText: You sit in a military helicopter, thinking about the events that
+        just transpired. These have been the longest 3 days of your life.
+      choices: []
+      nextNodeIndex: 28
+      clueWords: []
+    - dialogueText: Eugene is arrested for his crimes, and despite the broken world,
+        you keep contact with the people from the hotel
+      choices: []
+      nextNodeIndex: 29
+      clueWords: []
+    - dialogueText: You won.
+      choices:
+      - choiceText: Thank god
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+          ending: 0
+          endingNo: 3
+      nextNodeIndex: 29
       clueWords: []
   gameState: {fileID: 54618526}
 --- !u!65 &814175578
@@ -40548,6 +41207,140 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 842260873}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &843529143
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 843529144}
+  - component: {fileID: 843529146}
+  - component: {fileID: 843529145}
+  m_Layer: 5
+  m_Name: Text (TMP) (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &843529144
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 843529143}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1464960993}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -186, y: 455}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &843529145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 843529143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: You got the bad ending
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 4ed654a443fa40644ab4d923992e1f6d, type: 2}
+  m_sharedMaterial: {fileID: -934957446168156121, guid: 4ed654a443fa40644ab4d923992e1f6d, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 80
+  m_fontSizeBase: 80
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: -617.2163, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &843529146
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 843529143}
+  m_CullTransparentMesh: 1
 --- !u!1 &846172899
 GameObject:
   m_ObjectHideFlags: 0
@@ -41611,6 +42404,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: No
         nextNodeIndex: -1
         trustGain: 0
@@ -41626,6 +42420,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: 0
       clueWords: []
   - dialogueNodes:
@@ -41646,6 +42441,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: No
         nextNodeIndex: -1
         trustGain: 0
@@ -41661,6 +42457,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: 0
       clueWords: []
   - dialogueNodes:
@@ -41681,6 +42478,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: No
         nextNodeIndex: -1
         trustGain: 0
@@ -41696,6 +42494,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: 0
       clueWords: []
   - dialogueNodes:
@@ -41716,6 +42515,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: No
         nextNodeIndex: -1
         trustGain: 0
@@ -41731,6 +42531,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: 0
       clueWords: []
   - dialogueNodes:
@@ -41751,6 +42552,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: No
         nextNodeIndex: -1
         trustGain: 0
@@ -41766,6 +42568,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: 0
       clueWords: []
   - dialogueNodes:
@@ -41786,6 +42589,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: No
         nextNodeIndex: -1
         trustGain: 0
@@ -41801,6 +42605,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: 0
       clueWords: []
   - dialogueNodes:
@@ -43084,6 +43889,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: I've spoken to everyone
         nextNodeIndex: 2
         trustGain: 2
@@ -43099,6 +43905,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: Bye-bye
         nextNodeIndex: -1
         trustGain: 0
@@ -43114,6 +43921,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: How about you speak to the other residents? I think it would
@@ -43136,6 +43944,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Oh that's good. Feel free to roam around the hotel and do as
@@ -43156,6 +43965,7 @@ MonoBehaviour:
           moveGameState: 1
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
   - dialogueNodes:
@@ -43176,6 +43986,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: End Day
         nextNodeIndex: -1
         trustGain: 20
@@ -43191,6 +44002,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 1
           ending: 0
+          endingNo: 0
       - choiceText: I don't need anything
         nextNodeIndex: -1
         trustGain: 2
@@ -43206,6 +44018,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: Glad to hear it. If any problems arise, make sure to let me know.
@@ -43235,6 +44048,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: No thanks
         nextNodeIndex: -1
         trustGain: 0
@@ -43250,6 +44064,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
   - dialogueNodes:
@@ -45478,6 +46293,9 @@ MonoBehaviour:
   choiceButtonPrefab: {fileID: 712263809744008487, guid: 39d99a448df32e9428b4f4c07169f8cd, type: 3}
   gameState: {fileID: 54618526}
   endingIMG: {fileID: 354301394}
+  ending1: {fileID: 1464960992}
+  ending2: {fileID: 1254404846}
+  ending3: {fileID: 394746977}
   dialogueNodes: []
   typingSpeed: 0.05
   dialogueActive: 0
@@ -45689,6 +46507,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: No. There is nothing here. Maybe Allie will be able to make sense
@@ -45709,6 +46528,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
   - dialogueNodes:
@@ -46561,6 +47381,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: There seems to be a note behind the clock. It has a picture of
@@ -46581,6 +47402,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
   - dialogueNodes:
@@ -48305,6 +49127,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: ...Excuse me? Do you KNOW who I am?
@@ -48334,6 +49157,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: I don't like your tone.
         nextNodeIndex: 3
         trustGain: -2
@@ -48349,6 +49173,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: ...bye
         nextNodeIndex: -1
         trustGain: 0
@@ -48364,6 +49189,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: 1
       clueWords: []
   - dialogueNodes:
@@ -48388,6 +49214,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: ...bye
         nextNodeIndex: -1
         trustGain: 0
@@ -48403,6 +49230,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: Your tailor supplies are in the lobby
         nextNodeIndex: 4
         trustGain: 1
@@ -48418,6 +49246,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: 1
       clueWords: []
     - dialogueText: 'My advice for the time being: dress a little less like a slob.'
@@ -48437,6 +49266,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Thanks for letting me know. I'll go grab them.
@@ -48456,6 +49286,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
   - dialogueNodes:
@@ -48476,6 +49307,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: Fashion will prevail!
         nextNodeIndex: 2
         trustGain: 3
@@ -48491,6 +49323,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: (Explain the "Truth")
         nextNodeIndex: 5
         trustGain: 0
@@ -48506,6 +49339,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: Goodbye
         nextNodeIndex: -1
         trustGain: 0
@@ -48521,6 +49355,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: 1
       clueWords: []
     - dialogueText: What? How preposterous! If I cannot grace the runway with my
@@ -48541,6 +49376,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: Better off that way
         nextNodeIndex: 4
         trustGain: -2
@@ -48556,6 +49392,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: I certainly hope so!
@@ -48594,6 +49431,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: At least they look better than you
         nextNodeIndex: 2
         trustGain: 0
@@ -48609,6 +49447,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: Is there anyone here you dislike?
         nextNodeIndex: 3
         trustGain: 0
@@ -48624,6 +49463,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: Eugene just said you look like an "ugly pink cloud"
         nextNodeIndex: 4
         trustGain: 0
@@ -48639,6 +49479,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: Goodbye
         nextNodeIndex: -1
         trustGain: 0
@@ -48654,6 +49495,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Thank you. Just imagining a shapeshifter stealing MY style, it
@@ -48685,6 +49527,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: TELL EUGENE THAT I'M GOING TO SHOVE MY FOOT SO FAR UP HIS ###
@@ -48705,6 +49548,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
   - dialogueNodes:
@@ -48726,6 +49570,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: There might be some in the lobby
         nextNodeIndex: 2
         trustGain: 0
@@ -48741,6 +49586,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: Good luck with that
         nextNodeIndex: -1
         trustGain: 0
@@ -48756,6 +49602,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Ugh. You are no help. Maybe I'll ask Allie. She's hogging all
@@ -48776,6 +49623,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: That's rude
         nextNodeIndex: 4
         trustGain: 0
@@ -48791,6 +49639,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: I have already checked the lobby and I found NOTHING. Don't lie
@@ -48800,7 +49649,7 @@ MonoBehaviour:
         nextNodeIndex: 3
         trustGain: 0
         trustRequirement: 0
-        timeIncrease: 0
+        timeIncrease: 20
         oneUse: 0
         quest:
           questID: 
@@ -48811,11 +49660,12 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: You'll get nothing
         nextNodeIndex: 4
         trustGain: 0
         trustRequirement: 0
-        timeIncrease: 0
+        timeIncrease: 20
         oneUse: 0
         quest:
           questID: 
@@ -48826,6 +49676,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Well maybe you should help better
@@ -48833,37 +49684,7 @@ MonoBehaviour:
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: fuck you
-      choices:
-      - choiceText: I was just tryna help
-        nextNodeIndex: 3
-        trustGain: 0
-        trustRequirement: 0
-        timeIncrease: 0
-        oneUse: 0
-        quest:
-          questID: 
-          questProgressGain: 0
-          questRequirement: 0
-        specialOptions:
-          sleepTime: 0
-          moveGameState: 0
-          killChar: 0
-          ending: 0
-      - choiceText: You'll get nothing
-        nextNodeIndex: 4
-        trustGain: 0
-        trustRequirement: 0
-        timeIncrease: 0
-        oneUse: 0
-        quest:
-          questID: 
-          questProgressGain: 0
-          questRequirement: 0
-        specialOptions:
-          sleepTime: 0
-          moveGameState: 0
-          killChar: 0
-          ending: 0
+      choices: []
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Honestly you're so real for that
@@ -48888,6 +49709,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
   gameState: {fileID: 54618526}
@@ -56905,6 +57727,82 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1249570792}
   m_CullTransparentMesh: 1
+--- !u!1 &1254404846
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1254404847}
+  - component: {fileID: 1254404849}
+  - component: {fileID: 1254404848}
+  m_Layer: 5
+  m_Name: ed2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1254404847
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1254404846}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 550547329}
+  m_Father: {fileID: 411370556}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1254404848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1254404846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 95b348563bf266e4fa760040a314a796, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1254404849
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1254404846}
+  m_CullTransparentMesh: 1
 --- !u!1 &1262093643
 GameObject:
   m_ObjectHideFlags: 0
@@ -64569,6 +65467,82 @@ Transform:
   - {fileID: 177343032}
   m_Father: {fileID: 856823577}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1464960992
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1464960993}
+  - component: {fileID: 1464960995}
+  - component: {fileID: 1464960994}
+  m_Layer: 5
+  m_Name: ed1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1464960993
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464960992}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 843529144}
+  m_Father: {fileID: 411370556}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1464960994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464960992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.3207547, g: 0.3207547, b: 0.3207547, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 315dde7869f6d4d469012d53b9442c73, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1464960995
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464960992}
+  m_CullTransparentMesh: 1
 --- !u!1 &1465710812
 GameObject:
   m_ObjectHideFlags: 0
@@ -85708,6 +86682,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: Could you tell me about yourself?
         nextNodeIndex: 1
         trustGain: 0
@@ -85723,6 +86698,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: I don't need anything
         nextNodeIndex: -1
         trustGain: 0
@@ -85738,6 +86714,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: I am quite unwell. I need some time to mourn.
@@ -85757,6 +86734,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: 2
       clueWords:
       - mourn
@@ -85784,6 +86762,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: You probably don't want to hear about my personal troubles. I
@@ -85804,6 +86783,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: Do you want to talk more about it?
         nextNodeIndex: 2
         trustGain: 0
@@ -85819,6 +86799,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: 2
       clueWords:
       - mourn
@@ -85845,6 +86826,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: (Leave)
         nextNodeIndex: -1
         trustGain: 0
@@ -85860,6 +86842,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: You... stay away from me. You could be one of them...
@@ -85888,6 +86871,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: You need to get over this
         nextNodeIndex: 5
         trustGain: -2
@@ -85903,6 +86887,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: I'm sure they would say the same thing.
@@ -85931,6 +86916,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: What do you mean?
         nextNodeIndex: 3
         trustGain: 0
@@ -85946,6 +86932,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: Have you seen any meds?
         nextNodeIndex: 5
         trustGain: 0
@@ -85961,6 +86948,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: (Leave)
         nextNodeIndex: -1
         trustGain: 0
@@ -85976,6 +86964,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: Why not? I think it'd be perfect timing. Not much out there anyways.
@@ -86003,6 +86992,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: No
         nextNodeIndex: 4
         trustGain: 0
@@ -86018,6 +87008,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Please?
@@ -86037,6 +87028,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: No. That box over there looks kinda suspicious though.
@@ -86056,6 +87048,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
   - dialogueNodes:
@@ -86077,6 +87070,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: What do you mean?
         nextNodeIndex: 3
         trustGain: 0
@@ -86092,6 +87086,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: (Leave)
         nextNodeIndex: -1
         trustGain: 0
@@ -86107,6 +87102,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: 0
       clueWords: []
     - dialogueText: Think about it. Humanity is evil. This is our punishment
@@ -86126,7 +87122,7 @@ MonoBehaviour:
         nextNodeIndex: 4
         trustGain: 0
         trustRequirement: 0
-        timeIncrease: 0
+        timeIncrease: 25
         oneUse: 0
         quest:
           questID: 
@@ -86137,6 +87133,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       - choiceText: I get it
         nextNodeIndex: 5
         trustGain: 0
@@ -86152,6 +87149,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: -1
       clueWords: []
     - dialogueText: Am I? Then why do you say this is happening? Why would this happen
@@ -86183,6 +87181,7 @@ MonoBehaviour:
           moveGameState: 0
           killChar: 0
           ending: 0
+          endingNo: 0
       nextNodeIndex: 0
       clueWords: []
   gameState: {fileID: 54618526}

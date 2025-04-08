@@ -34,6 +34,7 @@ public class Choice
         public bool moveGameState;
         public bool killChar;
         public bool ending;
+        public int endingNo;
     }
 
     [System.Serializable]
