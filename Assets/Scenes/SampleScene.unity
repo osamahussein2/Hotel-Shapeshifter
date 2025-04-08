@@ -2040,7 +2040,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueProgress: 0
-  currentDay: 1
+  currentDay: 2
 --- !u!4 &54618527
 Transform:
   m_ObjectHideFlags: 0
@@ -6513,7 +6513,7 @@ MonoBehaviour:
         trustGain: 0
         trustRequirement: 0
         timeIncrease: 20
-        oneUse: 0
+        oneUse: 1
         quest:
           questID: 
           questProgressGain: 0
@@ -6529,7 +6529,7 @@ MonoBehaviour:
         trustGain: 0
         trustRequirement: 0
         timeIncrease: 20
-        oneUse: 0
+        oneUse: 1
         quest:
           questID: 
           questProgressGain: 0
@@ -31431,7 +31431,7 @@ MonoBehaviour:
         trustGain: 0
         trustRequirement: 0
         timeIncrease: 0
-        oneUse: 0
+        oneUse: 1
         quest:
           questID: meds
           questProgressGain: 20
@@ -43885,7 +43885,7 @@ MonoBehaviour:
           questProgressGain: 30
           questRequirement: 0
         specialOptions:
-          sleepTime: 0
+          sleepTime: 1
           moveGameState: 0
           killChar: 0
           ending: 0
@@ -44007,7 +44007,7 @@ MonoBehaviour:
         nextNodeIndex: -1
         trustGain: 2
         trustRequirement: -99
-        timeIncrease: 20
+        timeIncrease: 0
         oneUse: 0
         quest:
           questID: 
@@ -86788,7 +86788,7 @@ MonoBehaviour:
         nextNodeIndex: 2
         trustGain: 0
         trustRequirement: -99
-        timeIncrease: 0
+        timeIncrease: 20
         oneUse: 0
         quest:
           questID: 

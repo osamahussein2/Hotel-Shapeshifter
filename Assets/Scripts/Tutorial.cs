@@ -26,7 +26,7 @@ public class Tutorial : MonoBehaviour
         }
         if (Input.GetMouseButtonDown(0) && currentText == 6)
         {
-            tutText.text = tutText.text = "One more thing to note. <br>People who don't trust you are dangours. <br>Try to not let anyone's trust to 0. <br>If you understand press 'space'";
+            tutText.text = tutText.text = "One more thing to note. <br>People who don't trust you are dangerous. <br>Try to not let anyone's trust to 0. <br>If you understand press 'space'";
             currentText = 7;
         }
         if (Input.GetMouseButtonDown(0) && currentText == 5)
@@ -36,7 +36,7 @@ public class Tutorial : MonoBehaviour
         }
         if (Input.GetMouseButtonDown(0) && currentText == 4)
         {
-            tutText.text = "You should get on that. <br>You can click on doors to travel to diffrent rooms";
+            tutText.text = "You should get on that. <br>You can click on doors to travel to different rooms";
             currentText = 5;
         }
         if (Input.GetMouseButtonDown(0) && currentText == 3)
