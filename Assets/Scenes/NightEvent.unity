@@ -11469,7 +11469,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8024307312282344671, guid: e119247aafbc3bf4585f85ae90bb0c49, type: 3}
       propertyPath: m_text
-      value: Let inside (+20 trust)
+      value: Let inside (+5 trust)
       objectReference: {fileID: 0}
     - target: {fileID: 8024307312282344671, guid: e119247aafbc3bf4585f85ae90bb0c49, type: 3}
       propertyPath: m_fontSize
@@ -14798,7 +14798,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8024307312282344671, guid: e119247aafbc3bf4585f85ae90bb0c49, type: 3}
       propertyPath: m_text
-      value: Don't let inside (-10 trust)
+      value: Don't let inside (-5 trust)
       objectReference: {fileID: 0}
     - target: {fileID: 8024307312282344671, guid: e119247aafbc3bf4585f85ae90bb0c49, type: 3}
       propertyPath: m_fontSize

@@ -16,6 +16,7 @@ public class InfoGatherer : MonoBehaviour
 
     public ClueList clueHolder;
     public List<GameObject> characters;
+    List<bool> isCharAlive;
     public bool updating;
     public bool backFromNight;
     public int dayNumber;
@@ -117,6 +118,12 @@ public class InfoGatherer : MonoBehaviour
             backFromNight = false;
             PlayerPrefs.SetInt("BackFromNight", 0);
 
+            //kill dead chars
+            for (int i = 0; i < characters.Count; i++)
+            {
+                characters[i].GetComponent<Character>().charDead = !isCharAlive[i];
+            }
+
             //check if a character died last night
             if (PlayerPrefs.GetInt("CHARKILLED") != -1)
             {
@@ -195,6 +202,13 @@ public class InfoGatherer : MonoBehaviour
             {
                 killingChar = charObj.GetComponent<Character>().characterName;
             }
+        }
+
+        //save all the chars that died
+        isCharAlive = new List<bool>();
+        for(int i = 0; i < characters.Count; i++)
+        {
+            isCharAlive.Add(!characters[i].GetComponent<Character>().charDead);
         }
 
         //hold info
