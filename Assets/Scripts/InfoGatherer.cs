@@ -10,6 +10,7 @@ public class InfoGatherer : MonoBehaviour
     public bool updating;
     public bool backFromNight;
     public int dayNumber;
+    public int gameState;
     public GameState gameManager;
 
     public string killingChar;

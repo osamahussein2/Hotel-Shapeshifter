@@ -21364,7 +21364,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: Big Man
-  characterImage: {fileID: 21300000, guid: c53b1d7ae2a9a01429a71ebd9fe38ea3, type: 3}
+  characterImage: {fileID: 21300000, guid: edf00fde79848b541bec10b8f753557a, type: 3}
   deadCharImage: {fileID: 0}
   charDead: 0
   dialogueBox: {fileID: 0}
@@ -32053,7 +32053,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: Nikki
-  characterImage: {fileID: 21300000, guid: 27de9e67e49daf8428092dcaff1bae99, type: 3}
+  characterImage: {fileID: 21300000, guid: 4806be272bae7e04ebefa8eb15c808d3, type: 3}
   deadCharImage: {fileID: 0}
   charDead: 0
   dialogueBox: {fileID: 0}

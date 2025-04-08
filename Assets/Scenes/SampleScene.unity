@@ -2040,7 +2040,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueProgress: 0
-  currentDay: 2
+  currentDay: 1
 --- !u!4 &54618527
 Transform:
   m_ObjectHideFlags: 0
@@ -33422,6 +33422,7 @@ MonoBehaviour:
   updating: 0
   backFromNight: 0
   dayNumber: 0
+  gameState: 0
   gameManager: {fileID: 54618526}
   killingChar: 
 --- !u!4 &703104704
@@ -49110,36 +49111,6 @@ MonoBehaviour:
       choices: []
       nextNodeIndex: 1
       clueWords: []
-    - dialogueText: 'My advice for the time being: dress a little more... colorfully.'
-      choices:
-      - choiceText: I'll keep that in mind
-        nextNodeIndex: -1
-        trustGain: 0
-        trustRequirement: 0
-        timeIncrease: 0
-        oneUse: 0
-        quest:
-          questID: Tutorial
-          questProgressGain: 10
-          questRequirement: 0
-        specialOptions:
-          sleepTime: 0
-          moveGameState: 0
-          killChar: 0
-          ending: 0
-          endingNo: 0
-      nextNodeIndex: -1
-      clueWords: []
-    - dialogueText: ...Excuse me? Do you KNOW who I am?
-      choices: []
-      nextNodeIndex: 4
-      clueWords: []
-    - dialogueText: I am Nikki Shiningson, one of the most stylish fashion designers
-        of this age, and I would APPRECIATE if you did not cramp my style. Now get
-        out.
-      choices: []
-      nextNodeIndex: -1
-      clueWords: []
     - dialogueText: Your fashion sense is rather boring.
       choices:
       - choiceText: How can I improve it?
@@ -49191,6 +49162,36 @@ MonoBehaviour:
           ending: 0
           endingNo: 0
       nextNodeIndex: 1
+      clueWords: []
+    - dialogueText: 'My advice for the time being: dress a little more... colorfully.'
+      choices:
+      - choiceText: I'll keep that in mind
+        nextNodeIndex: -1
+        trustGain: 0
+        trustRequirement: 0
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: Tutorial
+          questProgressGain: 10
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+          ending: 0
+          endingNo: 0
+      nextNodeIndex: -1
+      clueWords: []
+    - dialogueText: ...Excuse me? Do you KNOW who I am?
+      choices: []
+      nextNodeIndex: 4
+      clueWords: []
+    - dialogueText: I am Nikki Shiningson, one of the most stylish fashion designers
+        of this age, and I would APPRECIATE if you did not cramp my style. Now get
+        out.
+      choices: []
+      nextNodeIndex: -1
       clueWords: []
   - dialogueNodes:
     - dialogueText: Hmm...
