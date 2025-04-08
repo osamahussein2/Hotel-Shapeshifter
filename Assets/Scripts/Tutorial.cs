@@ -22,7 +22,7 @@ public class Tutorial : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && currentText == 7)
         {
             tutText.text = tutText.text = "";
-            currentText = 8;
+            currentText = 9;
         }
         if (Input.GetMouseButtonDown(0) && currentText == 6)
         {

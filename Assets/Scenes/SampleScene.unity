@@ -6361,7 +6361,7 @@ MonoBehaviour:
       - choiceText: Whatever you say.
         nextNodeIndex: -1
         trustGain: 1
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 0
         oneUse: 0
         quest:
@@ -6399,7 +6399,7 @@ MonoBehaviour:
         nextNodeIndex: -1
         trustGain: 1
         trustRequirement: -99
-        timeIncrease: 20
+        timeIncrease: 0
         oneUse: 0
         quest:
           questID: 
@@ -6418,7 +6418,7 @@ MonoBehaviour:
       - choiceText: Can I be involved?
         nextNodeIndex: 2
         trustGain: 1
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 20
         oneUse: 0
         quest:
@@ -6434,7 +6434,7 @@ MonoBehaviour:
       - choiceText: What is it?
         nextNodeIndex: 2
         trustGain: 0
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 30
         oneUse: 0
         quest:
@@ -6454,7 +6454,7 @@ MonoBehaviour:
       - choiceText: Okay but what is it?
         nextNodeIndex: 3
         trustGain: -1
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 20
         oneUse: 0
         quest:
@@ -6470,7 +6470,7 @@ MonoBehaviour:
       - choiceText: I'll leave you to it then
         nextNodeIndex: -1
         trustGain: 2
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 10
         oneUse: 0
         quest:
@@ -6490,7 +6490,7 @@ MonoBehaviour:
       - choiceText: Ugh okay
         nextNodeIndex: -1
         trustGain: -1
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 10
         oneUse: 0
         quest:
@@ -6511,7 +6511,7 @@ MonoBehaviour:
       - choiceText: why?
         nextNodeIndex: 1
         trustGain: 1
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 30
         oneUse: 1
         quest:
@@ -6527,7 +6527,7 @@ MonoBehaviour:
       - choiceText: done with what?
         nextNodeIndex: 2
         trustGain: 1
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 20
         oneUse: 1
         quest:
@@ -6543,8 +6543,8 @@ MonoBehaviour:
       - choiceText: (Leave Her Alone)
         nextNodeIndex: -1
         trustGain: -1
-        trustRequirement: 0
-        timeIncrease: 10
+        trustRequirement: -99
+        timeIncrease: 0
         oneUse: 0
         quest:
           questID: 
@@ -6563,7 +6563,7 @@ MonoBehaviour:
       - choiceText: why?
         nextNodeIndex: 2
         trustGain: -2
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 20
         oneUse: 0
         quest:
@@ -6579,7 +6579,7 @@ MonoBehaviour:
       - choiceText: okay
         nextNodeIndex: -1
         trustGain: 1
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 30
         oneUse: 0
         quest:
@@ -6599,7 +6599,7 @@ MonoBehaviour:
       - choiceText: Harsh
         nextNodeIndex: 3
         trustGain: 1
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 20
         oneUse: 0
         quest:
@@ -6615,7 +6615,7 @@ MonoBehaviour:
       - choiceText: damn alright then
         nextNodeIndex: -1
         trustGain: -1
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 10
         oneUse: 0
         quest:
@@ -6640,7 +6640,7 @@ MonoBehaviour:
       - choiceText: HEY ALLIE
         nextNodeIndex: 1
         trustGain: -1
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 30
         oneUse: 1
         quest:
@@ -6656,7 +6656,7 @@ MonoBehaviour:
       - choiceText: You okay?
         nextNodeIndex: 2
         trustGain: 1
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 30
         oneUse: 1
         quest:
@@ -6672,7 +6672,7 @@ MonoBehaviour:
       - choiceText: (Leave Her Alone)
         nextNodeIndex: -1
         trustGain: -1
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 0
         oneUse: 0
         quest:
@@ -6688,7 +6688,7 @@ MonoBehaviour:
       - choiceText: There was nothing there?
         nextNodeIndex: 6
         trustGain: 1
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 0
         oneUse: 1
         quest:
@@ -6708,7 +6708,7 @@ MonoBehaviour:
       - choiceText: why?
         nextNodeIndex: 2
         trustGain: 1
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 30
         oneUse: 0
         quest:
@@ -6745,7 +6745,7 @@ MonoBehaviour:
       - choiceText: Whats the data on?
         nextNodeIndex: 4
         trustGain: 0
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 20
         oneUse: 0
         quest:
@@ -6761,7 +6761,7 @@ MonoBehaviour:
       - choiceText: Can you share some with me?
         nextNodeIndex: 3
         trustGain: 2
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 30
         oneUse: 0
         quest:
@@ -6787,7 +6787,7 @@ MonoBehaviour:
       - choiceText: Sure
         nextNodeIndex: 5
         trustGain: 1
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 20
         oneUse: 0
         quest:
@@ -6803,7 +6803,7 @@ MonoBehaviour:
       - choiceText: No thanks
         nextNodeIndex: -1
         trustGain: -1
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 20
         oneUse: 0
         quest:
@@ -6824,7 +6824,7 @@ MonoBehaviour:
       - choiceText: Sure
         nextNodeIndex: -1
         trustGain: 1
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 30
         oneUse: 0
         quest:
@@ -6845,7 +6845,7 @@ MonoBehaviour:
       - choiceText: sigh
         nextNodeIndex: -1
         trustGain: 6
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 30
         oneUse: 0
         quest:
@@ -10022,7 +10022,7 @@ MonoBehaviour:
       - choiceText: That's cool
         nextNodeIndex: -1
         trustGain: 2
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 0
         oneUse: 0
         quest:
@@ -10076,7 +10076,7 @@ MonoBehaviour:
         nextNodeIndex: -1
         trustGain: 0
         trustRequirement: -99
-        timeIncrease: 10
+        timeIncrease: 0
         oneUse: 0
         quest:
           questID: 
@@ -10180,7 +10180,7 @@ MonoBehaviour:
         nextNodeIndex: -1
         trustGain: -1
         trustRequirement: -99
-        timeIncrease: 10
+        timeIncrease: 0
         oneUse: 0
         quest:
           questID: 
@@ -10199,7 +10199,7 @@ MonoBehaviour:
       - choiceText: Are you okay?
         nextNodeIndex: 4
         trustGain: 2
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 30
         oneUse: 0
         quest:
@@ -10215,7 +10215,7 @@ MonoBehaviour:
       - choiceText: I'll try
         nextNodeIndex: -1
         trustGain: 2
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 25
         oneUse: 0
         quest:
@@ -24200,7 +24200,7 @@ MonoBehaviour:
       - choiceText: Sure
         nextNodeIndex: 1
         trustGain: 2
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 10
         oneUse: 1
         quest:
@@ -24216,7 +24216,7 @@ MonoBehaviour:
       - choiceText: No thanks
         nextNodeIndex: 3
         trustGain: -1
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 0
         oneUse: 0
         quest:
@@ -24232,7 +24232,7 @@ MonoBehaviour:
       - choiceText: What about this quest?
         nextNodeIndex: 5
         trustGain: 0
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 0
         oneUse: 0
         quest:
@@ -24258,7 +24258,7 @@ MonoBehaviour:
       - choiceText: Got it
         nextNodeIndex: -1
         trustGain: 1
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 0
         oneUse: 0
         quest:
@@ -24293,7 +24293,7 @@ MonoBehaviour:
       - choiceText: What's this about?
         nextNodeIndex: 1
         trustGain: 1
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 20
         oneUse: 1
         quest:
@@ -24520,7 +24520,7 @@ MonoBehaviour:
       - choiceText: Okay
         nextNodeIndex: -1
         trustGain: 1
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 0
         oneUse: 0
         quest:
@@ -24536,7 +24536,7 @@ MonoBehaviour:
       - choiceText: No thanks
         nextNodeIndex: -1
         trustGain: -1
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 0
         oneUse: 0
         quest:
@@ -24564,8 +24564,8 @@ MonoBehaviour:
         nextNodeIndex: 1
         trustGain: 0
         trustRequirement: -99
-        timeIncrease: 40
-        oneUse: 0
+        timeIncrease: 10
+        oneUse: 1
         quest:
           questID: 
           questProgressGain: 0
@@ -24649,7 +24649,7 @@ MonoBehaviour:
         nextNodeIndex: -1
         trustGain: 0
         trustRequirement: -99
-        timeIncrease: 10
+        timeIncrease: 0
         oneUse: 0
         quest:
           questID: 
@@ -24669,7 +24669,7 @@ MonoBehaviour:
       - choiceText: No thanks
         nextNodeIndex: -1
         trustGain: -2
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 0
         oneUse: 0
         quest:
@@ -24685,7 +24685,7 @@ MonoBehaviour:
       - choiceText: Still good on the crypto
         nextNodeIndex: -1
         trustGain: -1
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 20
         oneUse: 0
         quest:
@@ -24706,7 +24706,7 @@ MonoBehaviour:
       - choiceText: Okay
         nextNodeIndex: -1
         trustGain: 1
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 20
         oneUse: 0
         quest:
@@ -24727,7 +24727,7 @@ MonoBehaviour:
       - choiceText: Damn alright
         nextNodeIndex: -1
         trustGain: 3
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 0
         oneUse: 0
         quest:
@@ -24748,7 +24748,7 @@ MonoBehaviour:
       - choiceText: Okay Eugene
         nextNodeIndex: -1
         trustGain: 2
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 20
         oneUse: 0
         quest:
@@ -24787,7 +24787,7 @@ MonoBehaviour:
         nextNodeIndex: -1
         trustGain: -5
         trustRequirement: -99
-        timeIncrease: 15
+        timeIncrease: 0
         oneUse: 0
         quest:
           questID: 
@@ -24813,7 +24813,7 @@ MonoBehaviour:
       - choiceText: Great idea!
         nextNodeIndex: 3
         trustGain: 5
-        trustRequirement: 8
+        trustRequirement: -99
         timeIncrease: 40
         oneUse: 0
         quest:
@@ -28075,7 +28075,7 @@ MonoBehaviour:
       - choiceText: Hi
         nextNodeIndex: 1
         trustGain: 2
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 0
         oneUse: 0
         quest:
@@ -28091,7 +28091,7 @@ MonoBehaviour:
       - choiceText: What are you doing up there?
         nextNodeIndex: 2
         trustGain: 2
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 0
         oneUse: 1
         quest:
@@ -28121,7 +28121,7 @@ MonoBehaviour:
       - choiceText: Yo
         nextNodeIndex: 1
         trustGain: 2
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 0
         oneUse: 0
         quest:
@@ -28137,7 +28137,7 @@ MonoBehaviour:
       - choiceText: Get down here right now
         nextNodeIndex: 2
         trustGain: -2
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 0
         oneUse: 1
         quest:
@@ -28167,7 +28167,7 @@ MonoBehaviour:
       - choiceText: What do i do now?
         nextNodeIndex: 1
         trustGain: 1
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 0
         oneUse: 1
         quest:
@@ -28183,7 +28183,7 @@ MonoBehaviour:
       - choiceText: Who are you?
         nextNodeIndex: 2
         trustGain: -2
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 0
         oneUse: 1
         quest:
@@ -28231,7 +28231,7 @@ MonoBehaviour:
       - choiceText: What?
         nextNodeIndex: 1
         trustGain: 1
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 0
         oneUse: 1
         quest:
@@ -28247,7 +28247,7 @@ MonoBehaviour:
       - choiceText: How can I stop them?
         nextNodeIndex: 2
         trustGain: -2
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 0
         oneUse: 1
         quest:
@@ -28263,7 +28263,7 @@ MonoBehaviour:
       - choiceText: Bye
         nextNodeIndex: -1
         trustGain: -1
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 0
         oneUse: 0
         quest:
@@ -28295,7 +28295,7 @@ MonoBehaviour:
       - choiceText: I am
         nextNodeIndex: 1
         trustGain: -4
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 0
         oneUse: 1
         quest:
@@ -28311,7 +28311,7 @@ MonoBehaviour:
       - choiceText: Why not?
         nextNodeIndex: 2
         trustGain: 3
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 0
         oneUse: 1
         quest:
@@ -28327,7 +28327,7 @@ MonoBehaviour:
       - choiceText: Bye
         nextNodeIndex: -1
         trustGain: -2
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 0
         oneUse: 0
         quest:
@@ -28359,7 +28359,7 @@ MonoBehaviour:
       - choiceText: Okay
         nextNodeIndex: -1
         trustGain: 0
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 800
         oneUse: 1
         quest:
@@ -31130,7 +31130,7 @@ MonoBehaviour:
       - choiceText: Sounds good
         nextNodeIndex: -1
         trustGain: 1
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 0
         oneUse: 0
         quest:
@@ -31196,7 +31196,7 @@ MonoBehaviour:
         nextNodeIndex: -1
         trustGain: 1
         trustRequirement: -99
-        timeIncrease: 20
+        timeIncrease: 0
         oneUse: 0
         quest:
           questID: 
@@ -31254,7 +31254,7 @@ MonoBehaviour:
       - choiceText: I'm sure they are
         nextNodeIndex: 2
         trustGain: 2
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 20
         oneUse: 1
         quest:
@@ -31270,7 +31270,7 @@ MonoBehaviour:
       - choiceText: You doing alright?
         nextNodeIndex: 3
         trustGain: 1
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 40
         oneUse: 1
         quest:
@@ -31286,8 +31286,8 @@ MonoBehaviour:
       - choiceText: I have more important things to do
         nextNodeIndex: -1
         trustGain: -6
-        trustRequirement: 0
-        timeIncrease: 30
+        trustRequirement: -99
+        timeIncrease: 0
         oneUse: 0
         quest:
           questID: 
@@ -31313,7 +31313,7 @@ MonoBehaviour:
       - choiceText: I hope things get better
         nextNodeIndex: 4
         trustGain: 1
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 20
         oneUse: 0
         quest:
@@ -31336,7 +31336,7 @@ MonoBehaviour:
       - choiceText: But it's still worth living
         nextNodeIndex: 5
         trustGain: 1
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 20
         oneUse: 0
         quest:
@@ -31359,7 +31359,7 @@ MonoBehaviour:
       - choiceText: Just keep trying
         nextNodeIndex: 6
         trustGain: 1
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 10
         oneUse: 0
         quest:
@@ -31382,7 +31382,7 @@ MonoBehaviour:
       - choiceText: but still...
         nextNodeIndex: 7
         trustGain: 0
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 0
         oneUse: 0
         quest:
@@ -31404,7 +31404,7 @@ MonoBehaviour:
       - choiceText: okay
         nextNodeIndex: -1
         trustGain: -1
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 20
         oneUse: 0
         quest:
@@ -31429,7 +31429,7 @@ MonoBehaviour:
       - choiceText: You have any leftover crops?
         nextNodeIndex: 2
         trustGain: 1
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 20
         oneUse: 1
         quest:
@@ -31445,7 +31445,7 @@ MonoBehaviour:
       - choiceText: I'm sure you could farm some crypto with Eugene
         nextNodeIndex: 3
         trustGain: -4
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 30
         oneUse: 1
         quest:
@@ -31461,7 +31461,7 @@ MonoBehaviour:
       - choiceText: I found them!
         nextNodeIndex: 5
         trustGain: 4
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 10
         oneUse: 1
         quest:
@@ -31477,8 +31477,8 @@ MonoBehaviour:
       - choiceText: I have more important things to do
         nextNodeIndex: -1
         trustGain: -2
-        trustRequirement: 0
-        timeIncrease: 15
+        trustRequirement: -99
+        timeIncrease: 0
         oneUse: 0
         quest:
           questID: 
@@ -31497,7 +31497,7 @@ MonoBehaviour:
       - choiceText: Can I have them
         nextNodeIndex: 4
         trustGain: 2
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 30
         oneUse: 0
         quest:
@@ -31513,7 +31513,7 @@ MonoBehaviour:
       - choiceText: No reason
         nextNodeIndex: -1
         trustGain: 1
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 10
         oneUse: 0
         quest:
@@ -31534,7 +31534,7 @@ MonoBehaviour:
       - choiceText: Yeah, I get that
         nextNodeIndex: -1
         trustGain: -1
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 20
         oneUse: 0
         quest:
@@ -31556,7 +31556,7 @@ MonoBehaviour:
       - choiceText: Yeah I'll check
         nextNodeIndex: -1
         trustGain: 2
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 10
         oneUse: 0
         quest:
@@ -31578,10 +31578,26 @@ MonoBehaviour:
   - dialogueNodes:
     - dialogueText: Milo...
       choices:
+      - choiceText: (Leave)
+        nextNodeIndex: -1
+        trustGain: -1
+        trustRequirement: -99
+        timeIncrease: 0
+        oneUse: 0
+        quest:
+          questID: 
+          questProgressGain: 0
+          questRequirement: 0
+        specialOptions:
+          sleepTime: 0
+          moveGameState: 0
+          killChar: 0
+          ending: 0
+          endingNo: 0
       - choiceText: What's wrong?
         nextNodeIndex: 1
         trustGain: 2
-        trustRequirement: 5
+        trustRequirement: -99
         timeIncrease: 15
         oneUse: 0
         quest:
@@ -31610,22 +31626,6 @@ MonoBehaviour:
           killChar: 0
           ending: 0
           endingNo: 0
-      - choiceText: (Leave)
-        nextNodeIndex: -1
-        trustGain: -1
-        trustRequirement: -99
-        timeIncrease: 5
-        oneUse: 0
-        quest:
-          questID: 
-          questProgressGain: 0
-          questRequirement: 0
-        specialOptions:
-          sleepTime: 0
-          moveGameState: 0
-          killChar: 0
-          ending: 0
-          endingNo: 0
       nextNodeIndex: 1
       clueWords: []
     - dialogueText: I'm... I'm okay. Don't worry about me.
@@ -31634,7 +31634,7 @@ MonoBehaviour:
         nextNodeIndex: 2
         trustGain: 2
         trustRequirement: -99
-        timeIncrease: 30
+        timeIncrease: 0
         oneUse: 1
         quest:
           questID: 
@@ -31872,7 +31872,7 @@ MonoBehaviour:
       - choiceText: Okay Ben
         nextNodeIndex: -1
         trustGain: 0
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 800
         oneUse: 0
         quest:
@@ -38381,7 +38381,7 @@ MonoBehaviour:
           endingNo: 0
       - choiceText: Could you tell me a bit about yourself?
         nextNodeIndex: 2
-        trustGain: 0
+        trustGain: -99
         trustRequirement: 0
         timeIncrease: 10
         oneUse: 1
@@ -38427,7 +38427,7 @@ MonoBehaviour:
       - choiceText: Okay
         nextNodeIndex: -1
         trustGain: 0
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 0
         oneUse: 0
         quest:
@@ -38466,7 +38466,7 @@ MonoBehaviour:
         nextNodeIndex: -1
         trustGain: 1
         trustRequirement: -99
-        timeIncrease: 10
+        timeIncrease: 0
         oneUse: 0
         quest:
           questID: 
@@ -38495,7 +38495,7 @@ MonoBehaviour:
       - choiceText: We can make it through this
         nextNodeIndex: 2
         trustGain: -2
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 30
         oneUse: 1
         quest:
@@ -38511,7 +38511,7 @@ MonoBehaviour:
       - choiceText: You might be right
         nextNodeIndex: 3
         trustGain: 1
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 40
         oneUse: 1
         quest:
@@ -38527,7 +38527,7 @@ MonoBehaviour:
       - choiceText: Bye
         nextNodeIndex: -1
         trustGain: 0
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 0
         oneUse: 0
         quest:
@@ -38548,7 +38548,7 @@ MonoBehaviour:
       - choiceText: I'll find a way
         nextNodeIndex: 4
         trustGain: 1
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 40
         oneUse: 1
         quest:
@@ -38564,7 +38564,7 @@ MonoBehaviour:
       - choiceText: Stop being a downer
         nextNodeIndex: 5
         trustGain: -2
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 20
         oneUse: 1
         quest:
@@ -38603,7 +38603,7 @@ MonoBehaviour:
       - choiceText: Okay
         nextNodeIndex: 2
         trustGain: 1
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 30
         oneUse: 1
         quest:
@@ -38619,7 +38619,7 @@ MonoBehaviour:
       - choiceText: You're just old
         nextNodeIndex: 3
         trustGain: 1
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 20
         oneUse: 1
         quest:
@@ -38635,7 +38635,7 @@ MonoBehaviour:
       - choiceText: What's your problem?
         nextNodeIndex: 4
         trustGain: -1
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 30
         oneUse: 1
         quest:
@@ -38689,7 +38689,7 @@ MonoBehaviour:
       - choiceText: Are you okay?
         nextNodeIndex: 2
         trustGain: 2
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 40
         oneUse: 1
         quest:
@@ -38705,7 +38705,7 @@ MonoBehaviour:
       - choiceText: What's up with you?
         nextNodeIndex: 3
         trustGain: 1
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 20
         oneUse: 1
         quest:
@@ -38758,7 +38758,7 @@ MonoBehaviour:
       - choiceText: Anything I can do to help?
         nextNodeIndex: 6
         trustGain: 2
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 25
         oneUse: 0
         quest:
@@ -38774,8 +38774,8 @@ MonoBehaviour:
       - choiceText: Sorry to hear that
         nextNodeIndex: -1
         trustGain: 1
-        trustRequirement: 0
-        timeIncrease: 20
+        trustRequirement: -99
+        timeIncrease: 0
         oneUse: 0
         quest:
           questID: 
@@ -38796,7 +38796,7 @@ MonoBehaviour:
       - choiceText: Life isn't exactly easy for me either right now
         nextNodeIndex: 5
         trustGain: -2
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 35
         oneUse: 0
         quest:
@@ -38812,7 +38812,7 @@ MonoBehaviour:
       - choiceText: I guess so
         nextNodeIndex: -1
         trustGain: 2
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 20
         oneUse: 0
         quest:
@@ -38832,7 +38832,7 @@ MonoBehaviour:
       - choiceText: Thanks
         nextNodeIndex: -1
         trustGain: 1
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 0
         oneUse: 0
         quest:
@@ -38858,7 +38858,7 @@ MonoBehaviour:
       - choiceText: Okay I'll "borrow" some
         nextNodeIndex: -1
         trustGain: 6
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 60
         oneUse: 0
         quest:
@@ -38874,7 +38874,7 @@ MonoBehaviour:
       - choiceText: No
         nextNodeIndex: -1
         trustGain: -5
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 60
         oneUse: 0
         quest:
@@ -44047,7 +44047,7 @@ MonoBehaviour:
       - choiceText: Any other tasks for me?
         nextNodeIndex: 3
         trustGain: 2
-        trustRequirement: -2
+        trustRequirement: -99
         timeIncrease: 60
         oneUse: 1
         quest:
@@ -44146,8 +44146,8 @@ MonoBehaviour:
       - choiceText: aa
         nextNodeIndex: -1
         trustGain: 0
-        trustRequirement: 0
-        timeIncrease: 800
+        trustRequirement: -99
+        timeIncrease: 0
         oneUse: 0
         quest:
           questID: 
@@ -49288,7 +49288,7 @@ MonoBehaviour:
       - choiceText: I'll keep that in mind
         nextNodeIndex: -1
         trustGain: 0
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 0
         oneUse: 0
         quest:
@@ -49337,10 +49337,10 @@ MonoBehaviour:
           ending: 0
           endingNo: 0
       - choiceText: ...bye
-        nextNodeIndex: -2
+        nextNodeIndex: -1
         trustGain: 0
         trustRequirement: -99
-        timeIncrease: 10
+        timeIncrease: 0
         oneUse: 0
         quest:
           questID: 
@@ -49375,7 +49375,7 @@ MonoBehaviour:
       - choiceText: I'll keep that in mind
         nextNodeIndex: -1
         trustGain: 1
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 20
         oneUse: 0
         quest:
@@ -49395,7 +49395,7 @@ MonoBehaviour:
       - choiceText: Okay
         nextNodeIndex: -1
         trustGain: 2
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 10
         oneUse: 0
         quest:
@@ -49432,7 +49432,7 @@ MonoBehaviour:
       - choiceText: Fashion will prevail!
         nextNodeIndex: 2
         trustGain: 6
-        trustRequirement: 9
+        trustRequirement: -99
         timeIncrease: 40
         oneUse: 1
         quest:
@@ -49485,7 +49485,7 @@ MonoBehaviour:
       - choiceText: Truly a shame
         nextNodeIndex: 3
         trustGain: 2
-        trustRequirement: 9
+        trustRequirement: -99
         timeIncrease: 20
         oneUse: 1
         quest:
@@ -49540,7 +49540,7 @@ MonoBehaviour:
       - choiceText: You're probably right
         nextNodeIndex: 1
         trustGain: 3
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 40
         oneUse: 1
         quest:
@@ -49556,7 +49556,7 @@ MonoBehaviour:
       - choiceText: At least they look better than you
         nextNodeIndex: 2
         trustGain: -4
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 40
         oneUse: 1
         quest:
@@ -49572,7 +49572,7 @@ MonoBehaviour:
       - choiceText: Is there anyone here you dislike?
         nextNodeIndex: 3
         trustGain: 0
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 20
         oneUse: 1
         quest:
@@ -49588,7 +49588,7 @@ MonoBehaviour:
       - choiceText: Eugene just said you look like an "ugly pink cloud"
         nextNodeIndex: 4
         trustGain: 4
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 15
         oneUse: 1
         quest:
@@ -49604,8 +49604,8 @@ MonoBehaviour:
       - choiceText: Goodbye
         nextNodeIndex: -1
         trustGain: 0
-        trustRequirement: 0
-        timeIncrease: 10
+        trustRequirement: -99
+        timeIncrease: 0
         oneUse: 0
         quest:
           questID: 
@@ -49636,7 +49636,7 @@ MonoBehaviour:
       - choiceText: That's valid
         nextNodeIndex: -1
         trustGain: 3
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 40
         oneUse: 0
         quest:
@@ -49657,7 +49657,7 @@ MonoBehaviour:
       - choiceText: Well, um, okay
         nextNodeIndex: -1
         trustGain: 0
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 5
         oneUse: 0
         quest:
@@ -49679,7 +49679,7 @@ MonoBehaviour:
       - choiceText: I don't even know where you would get that
         nextNodeIndex: 1
         trustGain: 0
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 30
         oneUse: 1
         quest:
@@ -49695,7 +49695,7 @@ MonoBehaviour:
       - choiceText: There might be some in the lobby
         nextNodeIndex: 2
         trustGain: 2
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 20
         oneUse: 1
         quest:
@@ -49711,8 +49711,8 @@ MonoBehaviour:
       - choiceText: Good luck with that
         nextNodeIndex: -1
         trustGain: -2
-        trustRequirement: 0
-        timeIncrease: 10
+        trustRequirement: -99
+        timeIncrease: 0
         oneUse: 0
         quest:
           questID: 
@@ -49732,7 +49732,7 @@ MonoBehaviour:
       - choiceText: Honestly slay
         nextNodeIndex: 5
         trustGain: 12
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 20
         oneUse: 0
         quest:
@@ -49748,7 +49748,7 @@ MonoBehaviour:
       - choiceText: That's rude
         nextNodeIndex: 4
         trustGain: -2
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 15
         oneUse: 0
         quest:
@@ -49769,7 +49769,7 @@ MonoBehaviour:
       - choiceText: I was just tryna help
         nextNodeIndex: 3
         trustGain: -1
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 20
         oneUse: 0
         quest:
@@ -49785,7 +49785,7 @@ MonoBehaviour:
       - choiceText: You'll get nothing
         nextNodeIndex: 4
         trustGain: -4
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 30
         oneUse: 0
         quest:
@@ -49818,7 +49818,7 @@ MonoBehaviour:
       - choiceText: Uh, Okay
         nextNodeIndex: -1
         trustGain: 2
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 800
         oneUse: 1
         quest:
@@ -86843,7 +86843,7 @@ MonoBehaviour:
       - choiceText: Sorry
         nextNodeIndex: -1
         trustGain: 0
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 0
         oneUse: 0
         quest:
@@ -86952,7 +86952,7 @@ MonoBehaviour:
         nextNodeIndex: -1
         trustGain: -3
         trustRequirement: -99
-        timeIncrease: 10
+        timeIncrease: 0
         oneUse: 0
         quest:
           questID: 
@@ -86980,7 +86980,7 @@ MonoBehaviour:
       - choiceText: I'm not going to hurt you
         nextNodeIndex: 4
         trustGain: 4
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 50
         oneUse: 0
         quest:
@@ -86996,7 +86996,7 @@ MonoBehaviour:
       - choiceText: You need to get over this
         nextNodeIndex: 5
         trustGain: -2
-        trustRequirement: 0
+        trustRequirement: -99
         timeIncrease: 40
         oneUse: 0
         quest:
