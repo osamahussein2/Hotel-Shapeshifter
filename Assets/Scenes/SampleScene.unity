@@ -2040,7 +2040,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueProgress: 0
-  currentDay: 4
+  currentDay: 1
 --- !u!4 &54618527
 Transform:
   m_ObjectHideFlags: 0
@@ -47517,7 +47517,7 @@ MonoBehaviour:
         quest:
           questID: Allieoop
           questProgressGain: 10
-          questRequirement: 10
+          questRequirement: 0
         specialOptions:
           sleepTime: 0
           moveGameState: 0
