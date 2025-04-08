@@ -2039,8 +2039,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd02feddd4469f244b03a19d27202a87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueProgress: 6
-  currentDay: 4
+  dialogueProgress: 0
+  currentDay: 1
 --- !u!4 &54618527
 Transform:
   m_ObjectHideFlags: 0
