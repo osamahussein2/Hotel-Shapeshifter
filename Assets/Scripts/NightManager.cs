@@ -116,7 +116,11 @@ public class NightManager : MonoBehaviour
             }
             else
             {
-                Debug.LogError("Day was invalid");
+                int rand = Random.Range(0, day1Chars.Count);
+                currentChar = day1Chars[rand];
+                normalChar = normModels[characters.IndexOf(day1Chars[rand])];
+                evilChar = evilModels[characters.IndexOf(day1Chars[rand])];
+                //Debug.LogError("Day was invalid");
             }
         }
         else
