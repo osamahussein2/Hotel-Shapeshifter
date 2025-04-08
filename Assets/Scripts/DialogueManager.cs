@@ -347,7 +347,7 @@ public class DialogueManager : MonoBehaviour
         {
             ending3.SetActive(true);
         }
-        if (choice.specialOptions.sleepTime)
+        if (choice.specialOptions.sleepTime && TimeManager.hours > 11)
         {
             Debug.Log("time");
             gameState.currentDay += 1;
