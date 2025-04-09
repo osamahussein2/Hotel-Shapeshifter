@@ -23,6 +23,7 @@ public class Tutorial : MonoBehaviour
         {
             tutText.text = tutText.text = "";
             currentText = 9;
+            gameObject.SetActive(false);
         }
         if (Input.GetMouseButtonDown(0) && currentText == 6)
         {
