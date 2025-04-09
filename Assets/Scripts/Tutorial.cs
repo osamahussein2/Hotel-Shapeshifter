@@ -13,7 +13,11 @@ public class Tutorial : MonoBehaviour
     void Start()
     {
         tutText.text = "Welcome sir/ma'am. Could you come over?<br>Just click the ground to move";
-        currentText = 1;
+        if (currentText != 9)
+        {
+            currentText = 1;
+        }
+        
     }
 
     // Update is called once per frame
