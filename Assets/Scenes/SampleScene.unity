@@ -38381,8 +38381,8 @@ MonoBehaviour:
           endingNo: 0
       - choiceText: Could you tell me a bit about yourself?
         nextNodeIndex: 2
-        trustGain: -99
-        trustRequirement: 0
+        trustGain: 0
+        trustRequirement: -99
         timeIncrease: 10
         oneUse: 1
         quest:
